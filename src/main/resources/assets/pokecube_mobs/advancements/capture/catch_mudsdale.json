@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Mudsdale.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Mudsdale.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_mudsdale": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "mudsdale"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_mudbray"
+}

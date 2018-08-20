@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Geodude.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Geodude.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_geodude": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "geodude"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

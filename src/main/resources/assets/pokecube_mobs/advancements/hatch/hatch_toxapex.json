@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Toxapex.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Toxapex.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_toxapex": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "toxapex"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_mareanie"
+}

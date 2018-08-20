@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Electrode.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Electrode.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_electrode": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "electrode"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_voltorb"
+}

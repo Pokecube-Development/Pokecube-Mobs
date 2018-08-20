@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Whismur.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Whismur.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_whismur": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "whismur"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

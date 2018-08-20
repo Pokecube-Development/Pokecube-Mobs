@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale=".85"/>
+        <metadata headCap="-60,60" headAxis="1" headAxis2="0" headDir="1" head="Head"/>
+        <phase type="walking">
+            <part name="shape21">
+                <component name="1" startKey="0" length="10" rotChange="-10.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="10.0,0.0,0.0,"/>
+            </part>
+            <part name="shape14">
+                <component name="1" startKey="0" length="5" rotChange="20.0,0.0,0.0,"/>
+                <component name="2" startKey="5" length="10" rotChange="-40.0,0.0,0.0,"/>
+                <component name="3" startKey="15" length="5" rotChange="20.0,0.0,0.0,"/>
+            </part>
+            <part name="shape32">
+                <component name="1" startKey="0" length="5" rotChange="-15.0,0.0,0.0,"/>
+                <component name="2" startKey="5" length="10" rotChange="30.0,0.0,0.0,"/>
+                <component name="3" startKey="15" length="5" rotChange="-15.0,0.0,0.0,"/>
+            </part>
+            <part name="shape32_1">
+                <component name="1" startKey="0" length="5" rotChange="15.0,0.0,0.0,"/>
+                <component name="2" startKey="5" length="10" rotChange="-30.0,0.0,0.0,"/>
+                <component name="3" startKey="15" length="5" rotChange="15.0,0.0,0.0,"/>
+            </part>
+            <part name="shape26">
+                <component name="1" startKey="0" length="10" rotChange="-10.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="10.0,0.0,0.0,"/>
+            </part>
+            <part name="shape13">
+                <component name="1" startKey="0" length="5" rotChange="-20.0,0.0,0.0,"/>
+                <component name="2" startKey="5" length="10" rotChange="40.0,0.0,0.0,"/>
+                <component name="3" startKey="15" length="5" rotChange="-20.0,0.0,0.0,"/>
+            </part>
+        </phase>
+    </model>
+</ModelAnimator>

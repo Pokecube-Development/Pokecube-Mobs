@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.5"/>
+        <metadata headCap="-60,60" headAxis="1" headAxis2="0" headDir="1"/>
+        <phase type="idle">
+            <part name="Left_barb">
+                <component name="1" startKey="0" length="10" rotChange="4.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="-4.0,0.0,0.0,"/>
+            </part>
+            <part name="Right_barb">
+                <component name="1" startKey="0" length="10" rotChange="4.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="-4.0,0.0,0.0,"/>
+            </part>
+            <part name="Body_segment_3">
+                <component name="1" startKey="0" length="10" rotOffset="18.26,-0.0,-0.0," posOffset="0.0,0.0,-3.0999999999999996,"/>
+            </part>
+            <part name="Body_shield">
+                <component name="1" startKey="0" length="10" rotOffset="-26.09,-0.0,-0.0," posOffset="0.0,-1.7,-5.4,"/>
+            </part>
+            <part name="Body_segment_2">
+                <component name="1" startKey="0" length="10" rotOffset="23.48,-0.0,-0.0," posOffset="0.0,1.7,-4.699999999999999,"/>
+            </part>
+            <part name="Left_head_fin">
+                <component name="1" startKey="0" length="10" rotOffset="-0.0,2.0,-0.0," rotChange="0.0,0.0,4.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="0.0,0.0,-4.0,"/>
+            </part>
+            <part name="Right_barb_tip">
+                <component name="1" startKey="0" length="10" rotChange="-5.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="5.0,0.0,0.0,"/>
+            </part>
+            <part name="Left_barb_tip">
+                <component name="1" startKey="0" length="10" rotChange="-5.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="5.0,0.0,0.0,"/>
+            </part>
+            <part name="Body_segment_1">
+                <component name="1" startKey="0" length="10" rotOffset="-26.09,-0.0,-0.0," posOffset="0.0,-1.1,-4.6,"/>
+            </part>
+            <part name="Body_segment_4">
+                <component name="1" startKey="0" length="10" rotOffset="13.04,-0.0,-0.0," posOffset="0.0,0.0,-2.6,"/>
+            </part>
+            <part name="Right_head_fin">
+                <component name="1" startKey="0" length="10" rotOffset="-0.0,-2.0,-0.0," rotChange="0.0,0.0,-4.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="0.0,0.0,4.0,"/>
+            </part>
+        </phase>
+        <phase type="swimming">
+            <part name="Tail_segment_3">
+                <component name="1" startKey="0" length="10" rotOffset="-10.0,-0.0,-0.0," rotChange="20.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="-20.0,0.0,0.0,"/>
+            </part>
+            <part name="Tail_segment_2">
+                <component name="1" startKey="0" length="10" rotOffset="-5.0,-0.0,-0.0," rotChange="10.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="-10.0,0.0,0.0,"/>
+            </part>
+            <part name="Tail_fin_mid">
+                <component name="1" startKey="0" length="10" rotOffset="-20.0,-0.0,-0.0," rotChange="40.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="-40.0,0.0,0.0,"/>
+            </part>
+        </phase>
+    </model>
+    <details>
+        <RIDDENOFFSET>0.4</RIDDENOFFSET>
+        <MODELSIZE>6.5,1,1</MODELSIZE>
+    </details>
+</ModelAnimator>

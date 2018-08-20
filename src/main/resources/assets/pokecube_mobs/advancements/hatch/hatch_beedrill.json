@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Beedrill.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Beedrill.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_beedrill": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "beedrill"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_kakuna"
+}

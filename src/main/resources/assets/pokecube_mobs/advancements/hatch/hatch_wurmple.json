@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Wurmple.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Wurmple.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_wurmple": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "wurmple"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

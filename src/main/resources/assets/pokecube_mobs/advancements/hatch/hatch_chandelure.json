@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Chandelure.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Chandelure.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_chandelure": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "chandelure"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_lampent"
+}

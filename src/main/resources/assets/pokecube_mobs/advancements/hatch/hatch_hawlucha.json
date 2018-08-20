@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Hawlucha.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Hawlucha.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_hawlucha": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "hawlucha"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

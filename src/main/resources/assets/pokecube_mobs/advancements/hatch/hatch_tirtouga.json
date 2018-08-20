@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Tirtouga.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Tirtouga.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_tirtouga": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "tirtouga"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

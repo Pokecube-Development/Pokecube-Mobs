@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Ledian.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Ledian.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_ledian": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "ledian"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_ledyba"
+}

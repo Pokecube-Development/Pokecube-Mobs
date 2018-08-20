@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.Houndoom.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.Houndoom.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_houndoom": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "houndoom"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_houndour"
+}

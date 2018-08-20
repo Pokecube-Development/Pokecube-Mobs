@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Croagunk.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Croagunk.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_croagunk": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "croagunk"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

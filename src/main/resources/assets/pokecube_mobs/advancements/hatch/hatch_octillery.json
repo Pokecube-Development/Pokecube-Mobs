@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Octillery.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Octillery.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_octillery": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "octillery"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_remoraid"
+}

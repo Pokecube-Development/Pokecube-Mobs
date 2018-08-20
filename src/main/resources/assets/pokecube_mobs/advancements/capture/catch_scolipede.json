@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Scolipede.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Scolipede.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_scolipede": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "scolipede"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_whirlipede"
+}

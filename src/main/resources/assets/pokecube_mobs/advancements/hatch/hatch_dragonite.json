@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Dragonite.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Dragonite.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_dragonite": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "dragonite"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_dragonair"
+}

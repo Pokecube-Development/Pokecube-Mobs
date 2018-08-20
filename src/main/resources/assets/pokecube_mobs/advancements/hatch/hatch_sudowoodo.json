@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Sudowoodo.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Sudowoodo.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_sudowoodo": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "sudowoodo"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_bonsly"
+}

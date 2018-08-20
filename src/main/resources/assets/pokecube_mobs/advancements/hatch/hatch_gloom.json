@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Gloom.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Gloom.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_gloom": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "gloom"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_oddish"
+}

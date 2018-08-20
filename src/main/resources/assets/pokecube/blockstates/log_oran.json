@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y": { "model": "pokecube:log_oran" },
+        "axis=z":  { "model": "pokecube:log_oran","x": 90 },
+        "axis=x": { "model": "pokecube:log_oran", "x": 90, "y": 90 },
+        "axis=none":  { "model": "pokecube:bark_oran" }
+    }
+}

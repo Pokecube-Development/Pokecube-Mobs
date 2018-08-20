@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Tangela.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Tangela.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_tangela": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "tangela"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

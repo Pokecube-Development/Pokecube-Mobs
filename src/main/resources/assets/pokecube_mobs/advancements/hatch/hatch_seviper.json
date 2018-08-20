@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Seviper.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Seviper.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_seviper": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "seviper"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

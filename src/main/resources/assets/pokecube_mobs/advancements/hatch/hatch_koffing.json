@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Koffing.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Koffing.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_koffing": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "koffing"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Bibarel.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Bibarel.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_bibarel": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "bibarel"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_bidoof"
+}

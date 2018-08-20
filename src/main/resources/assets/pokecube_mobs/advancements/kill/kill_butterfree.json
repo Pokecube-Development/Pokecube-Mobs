@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.Butterfree.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.Butterfree.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_butterfree": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "butterfree"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_metapod"
+}

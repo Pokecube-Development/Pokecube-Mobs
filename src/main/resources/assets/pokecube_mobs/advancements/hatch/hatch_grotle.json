@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Grotle.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Grotle.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_grotle": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "grotle"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_turtwig"
+}

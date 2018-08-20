@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Bulbasaur.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Bulbasaur.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_bulbasaur": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "bulbasaur"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

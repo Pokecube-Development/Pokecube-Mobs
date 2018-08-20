@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.6"/>
+		<phase type="idle">
+			<part name="arm1">
+               <component name="1" rotOffset="0,0,-5" rotChange="0,0,-15" length="5" startKey="0"/>
+               <component name="2" rotChange="0,0,15" length="10" startKey="10"/>
+            </part>
+			<part name="arm1_1">
+               <component name="1" rotOffset="0,0,-5" rotChange="0,0,-10" length="5" startKey="0"/>
+               <component name="2" rotChange="0,0,10" length="10" startKey="10"/>
+            </part>
+			<part name="arm2">
+               <component name="1" rotOffset="0,0,5" rotChange="0,0,15" length="5" startKey="0"/>
+               <component name="2" rotChange="0,0,-15" length="10" startKey="10"/>
+            </part>
+			<part name="arm2_1">
+               <component name="1" rotOffset="0,0,-5" rotChange="0,0,15" length="5" startKey="0"/>
+               <component name="2" rotChange="0,0,-15" length="10" startKey="10"/>
+            </part>
+		</phase>
+		<phase type ="flying">
+			<part name="arm1">
+               <component name="1" rotOffset="25,0,0" rotChange="-15,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="15,0,0" length="10" startKey="10"/>
+            </part>
+			<part name="arm1_1">
+               <component name="1" rotOffset="15,0,0" rotChange="-15,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="15,0,0" length="10" startKey="10"/>
+            </part>
+			<part name="arm1_2">
+               <component name="1" rotOffset="18,0,-20" rotChange="15,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="-15,0,0" length="10" startKey="10"/>
+            </part>
+			<part name="arm2">
+               <component name="1" rotOffset="25,0,0" rotChange="-15,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="15,0,0" length="10" startKey="10"/>
+            </part>
+			<part name="arm2_1">
+               <component name="1" rotOffset="35,0,0" rotChange="-15,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="15,0,0" length="10" startKey="10"/>
+            </part>
+			<part name="arm2_2">
+               <component name="1" rotOffset="18,0,-20" rotChange="15,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="-15,0,0" length="10" startKey="10"/>
+            </part>
+		</phase>
+		<merges merge="idle->sitting" />
+        <merges merge="idle->flying" />
+    </model>
+</ModelAnimator>

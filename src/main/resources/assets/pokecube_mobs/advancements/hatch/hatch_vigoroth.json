@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Vigoroth.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Vigoroth.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_vigoroth": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "vigoroth"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_slakoth"
+}

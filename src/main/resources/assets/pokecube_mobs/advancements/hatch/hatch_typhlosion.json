@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Typhlosion.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Typhlosion.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_typhlosion": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "typhlosion"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_quilava"
+}

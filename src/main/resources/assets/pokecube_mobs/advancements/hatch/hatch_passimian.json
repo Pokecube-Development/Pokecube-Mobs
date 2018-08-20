@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Passimian.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Passimian.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_passimian": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "passimian"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

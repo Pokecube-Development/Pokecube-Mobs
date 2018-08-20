@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.35"/>
+        <metadata head="Head" headCap="-60,60" headCap1="-10,60" headAxis="1" headAxis2="0" headDir="1"/>
+        <phase name="snakeIdle" parts="tail0:tail1:tail2:tail3:tail4:tail5:tail6:tail7:tail8" angle="20" axis="2" length="30"/>
+        <phase type="sitting">
+            <part name="tail0">
+                <component name="up" startKey="0" length="10" rotOffset="-25,55,0,"/>
+            </part>
+            <part name="tail8">
+                <component name="1" startKey="0" length="2" rotChange="10.0,0.0,0.0,"/>
+                <component name="2" startKey="2" length="6" rotChange="-20.0,0.0,0.0,"/>
+                <component name="3" startKey="8" length="2" rotChange="10.0,0.0,0.0,"/>
+            </part>
+            <part name="tail4">
+                <component name="1" startKey="0" length="10" rotOffset="-0.0,-2,-41.49,"/>
+            </part>
+            <part name="tail3">
+                <component name="1" startKey="0" length="10" rotOffset="-0.0,13.54,-31,"/>
+            </part>
+            <part name="tail6">
+                <component name="1" startKey="0" length="10" rotOffset="-10.0,33.54,-31,"/>
+            </part>
+            <part name="tail7">
+                <component name="1" startKey="0" length="10" rotOffset="-10.0,33.54,-31,"/>
+            </part>
+            <part name="tail1">
+                <component name="1" startKey="0" length="10" rotOffset="-18.26,50.73,-31,"/>
+            </part>
+            <part name="tail5">
+                <component name="1" startKey="0" length="10" rotOffset="-0.0,-0.0,-25.84,"/>
+            </part>
+            <part name="tail2">
+                <component name="1" startKey="0" length="10" rotOffset="-0.0,-20.36,-36.6,"/>
+            </part>
+            <part name="leftLeg">
+                <component name="leg" startKey="0" length="10" rotOffset="68.0,-0.0,-0.0,"/>
+            </part>
+            <part name="rightLeg">
+                <component name="leg" startKey="0" length="10" rotOffset="68.0,-0.0,-7.0,"/>
+            </part>
+        </phase>
+    </model>
+</ModelAnimator>

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Gliscor.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Gliscor.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_gliscor": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "gliscor"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_gligar"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Surskit.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Surskit.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_surskit": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "surskit"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

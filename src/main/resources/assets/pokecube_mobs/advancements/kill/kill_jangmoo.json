@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.Jangmo-o.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.Jangmo-o.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_jangmoo": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "jangmoo"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/root"
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.Weepinbell.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.Weepinbell.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_weepinbell": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "weepinbell"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_bellsprout"
+}

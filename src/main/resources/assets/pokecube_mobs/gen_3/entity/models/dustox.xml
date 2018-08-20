@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="1.5"/>
+        <phase type="flying">
+            <part name="wingl">
+                <component name="1" startKey="0" length="5" rotChange="0.0,0.0,-60.0,"/>
+                <component name="2" startKey="5" length="5" rotChange="0.0,0.0,60.0,"/>
+            </part>
+            <part name="wingr">
+                <component name="1" startKey="0" length="5" rotChange="0.0,0.0,60.0,"/>
+                <component name="2" startKey="5" length="5" rotChange="0.0,0.0,-60.0,"/>
+            </part>
+        </phase>
+    </model>
+</ModelAnimator>

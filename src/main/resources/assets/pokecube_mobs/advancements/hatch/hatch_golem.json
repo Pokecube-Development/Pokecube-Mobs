@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Golem.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Golem.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_golem": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "golem"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_graveler"
+}

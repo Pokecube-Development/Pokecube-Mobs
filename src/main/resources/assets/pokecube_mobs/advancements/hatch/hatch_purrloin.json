@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Purrloin.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Purrloin.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_purrloin": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "purrloin"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

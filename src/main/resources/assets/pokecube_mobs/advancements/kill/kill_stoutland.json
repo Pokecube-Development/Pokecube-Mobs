@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.Stoutland.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.Stoutland.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_stoutland": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "stoutland"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_herdier"
+}

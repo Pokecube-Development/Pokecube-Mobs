@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="2.6"/>
+        <metadata head="Head" headCap="-60,60" headCap1="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
+        <phase name="snakeIdle" parts="Cube_36:Cube_35:Cube_34:Cube_33" angle="20" axis="1" length="15"/>
+		<phase name="quadWalk" leftHind="Cube_1" rightHind="Cube_7" leftFront="" rightFront="" duration="10"/>
+        <phase type="flying">
+            <part name="Cube_23">
+                <component name="1" startKey="0" length="5" rotChange="0,-30,0"/>
+                <component name="2" startKey="5" length="5" rotChange="0,60,0"/>
+                <component name="3" startKey="10" length="5" rotChange="0,-30,0"/>
+            </part>
+            <part name="Cube_13">
+                <component name="1" startKey="0" length="5" rotChange="0,30,0"/>
+                <component name="2" startKey="5" length="5" rotChange="0,-60,0"/>
+                <component name="3" startKey="10" length="5" rotChange="0,30,0"/>
+            </part>
+        </phase>
+    </model>
+</ModelAnimator>

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Mudsdale.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Mudsdale.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_mudsdale": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "mudsdale"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_mudbray"
+}

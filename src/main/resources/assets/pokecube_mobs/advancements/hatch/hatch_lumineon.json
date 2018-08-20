@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Lumineon.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Lumineon.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_lumineon": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "lumineon"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_finneon"
+}

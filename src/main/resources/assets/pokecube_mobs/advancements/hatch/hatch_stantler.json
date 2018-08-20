@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Stantler.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Stantler.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_stantler": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "stantler"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

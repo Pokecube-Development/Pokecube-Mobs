@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.18"/>
+        <metadata head="head" headCap="-180,180" headCap1="-5,5" headAxis="2" headAxis2="0" headDir="1"/>
+        <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" duration="10" legAngle="25"/>
+		<phase type="idle">
+            <part name="wind1">
+                <component name="1" startKey="0" length="1" rotOffset="-0.0,10.0,-80.0,"/>
+            </part>
+			<part name="wind_1">
+                <component name="1" startKey="0" length="1" rotOffset="-0.0,0.0,-177.0,"/>
+            </part>
+            <part name="wind2">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,-10.0,80.0,"/>
+            </part>
+			<part name="wind_2">
+                <component name="1" startKey="0" length="1" rotOffset="-0.0,0.0,177.0,"/>
+            </part>
+        </phase>
+		<phase type="walking">
+            <part name="wind1">
+                <component name="1" startKey="0" length="1" rotOffset="-0.0,10.0,-80.0,"/>
+            </part>
+			<part name="wind_1">
+                <component name="1" startKey="0" length="1" rotOffset="-0.0,0.0,-177.0,"/>
+            </part>
+            <part name="wind2">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,-10.0,80.0,"/>
+            </part>
+			<part name="wind_2">
+                <component name="1" startKey="0" length="1" rotOffset="-0.0,0.0,177.0,"/>
+            </part>
+        </phase>
+		<phase type ="flying">
+			<part name="wind1">
+               <component name="1" rotOffset="10,0,10" rotChange="0,0,-30" length="5" startKey="0"/>
+               <component name="2" rotChange="0,0,30" length="5" startKey="10"/>
+            </part>
+			<part name="wind_1">
+               <component name="1" rotOffset="0,0,15" rotChange="0,0,-50" length="10" startKey="0"/>
+               <component name="2" rotChange="0,0,50" length="10" startKey="10"/>
+            </part>
+            <part name="wind2">
+               <component name="1" rotOffset="10,0,-10" rotChange="0,0,30" length="5" startKey="0"/>
+               <component name="2" rotChange="0,0,-30" length="5" startKey="10"/>
+            </part>
+			<part name="wind_2">
+               <component name="1" rotOffset="0,0,-15" rotChange="0,0,50" length="10" startKey="0"/>
+               <component name="2" rotChange="0,0,-50" length="10" startKey="10"/>
+            </part>
+			<part name="leg1">
+                <component name="1" startKey="0" length="1" rotOffset="15.0,10,0.0,"/>
+            </part>
+			<part name="leg2">
+                <component name="1" startKey="0" length="1" rotOffset="15.0,-10,0.0,"/>
+            </part>
+		</phase>
+    </model>
+</ModelAnimator>

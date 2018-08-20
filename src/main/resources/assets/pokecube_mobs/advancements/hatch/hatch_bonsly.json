@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Bonsly.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Bonsly.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_bonsly": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "bonsly"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

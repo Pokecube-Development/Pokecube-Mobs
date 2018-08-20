@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Ditto.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Ditto.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_ditto": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "ditto"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

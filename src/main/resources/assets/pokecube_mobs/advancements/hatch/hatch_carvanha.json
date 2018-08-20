@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Carvanha.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Carvanha.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_carvanha": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "carvanha"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

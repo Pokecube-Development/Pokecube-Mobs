@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="0,180,0,180" offset="0,0,0" scale="0.4"/>
+        <metadata head="head" headCap="-60,60" headCap1="-10,60" headAxis="1" headAxis2="2" headDir="1"/>
+		<phase type="idle">
+		    <part name="arm1">
+                <component name="1" rotOffset="5,0,0" rotChange="5,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="-5,0,0" length="10" startKey="10"/>
+            </part>
+			<part name="arm2">
+                <component name="1" rotOffset="-5,0,0" rotChange="-5,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="5,0,0" length="10" startKey="10"/>
+            </part>
+		</phase>
+        <phase type="walking">
+            <part name="perna1">
+                <component name="1" rotChange="0,-10,0" length="5" startKey="0"/>
+                <component name="2" rotChange="0,20,0" length="10" startKey="5"/>
+                <component name="1" rotChange="0,-10,0" length="5" startKey="15"/>
+            </part>
+            <part name="perna2">
+                <component name="1" rotChange="0,0,-10" length="5" startKey="0"/>
+                <component name="2" rotChange="0,0,20" length="10" startKey="5"/>
+                <component name="1" rotChange="0,0,-10" length="5" startKey="15"/>
+            </part>
+        </phase>
+		<merges merge="idle->walking" />
+    </model>
+</ModelAnimator>

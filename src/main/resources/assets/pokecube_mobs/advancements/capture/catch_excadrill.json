@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Excadrill.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Excadrill.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_excadrill": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "excadrill"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_drilbur"
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="0,1,0,0" offset="0.3,0,0" scale=".70"/>
+		<metadata head="anchor_head" headCap="-180,180" headCap1="-5,5" headAxis="2" headAxis2="0" headDir="1"/>
+		<phase type="idle">
+			<part name="base1">
+               <component name="1" rotOffset="0,0,0" rotChange="0,0,-30" length="8" startKey="0"/>
+               <component name="2" rotChange="0,0,30" length="8" startKey="10"/>
+            </part>
+			<part name="body">
+                <component name="1" rotChange="0,0,-360" length="120" startKey="0"/>
+            </part>
+		</phase>
+		<phase type="walking">
+			<part name="body">
+                <component name="1" rotChange="0,0,-360" length="120" startKey="0"/>
+            </part>
+			<part name="base1">
+			   <component name="1" startKey="0" length="1" rotOffset="10,0,0,"/>
+               <component name="1" rotOffset="0,0,0" rotChange="0,0,-30" length="10" startKey="0"/>
+               <component name="2" rotChange="0,0,30" length="10" startKey="10"/>
+            </part>
+		</phase>
+    </model>
+</ModelAnimator>

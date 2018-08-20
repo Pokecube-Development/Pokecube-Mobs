@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Frogadier.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Frogadier.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_frogadier": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "frogadier"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_froakie"
+}

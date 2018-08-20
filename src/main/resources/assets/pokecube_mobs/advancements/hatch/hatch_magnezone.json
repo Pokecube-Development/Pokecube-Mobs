@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Magnezone.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Magnezone.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_magnezone": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "magnezone"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_magneton"
+}

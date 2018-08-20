@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.Excadrill.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.Excadrill.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_excadrill": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "excadrill"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_drilbur"
+}

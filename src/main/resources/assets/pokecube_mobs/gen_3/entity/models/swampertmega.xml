@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="Camerupt Mega">
+		 <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.8"/>
+		 <metadata head="head" headCap="-40,40" headCap1="-40,40" headAxis="-1" headAxis2="0" headDir="-1"/>
+		 <phase name="quadWalk" leftHind="arm1_1" rightHind="arm2_1" leftFront="leg1" rightFront="leg2" duration="10"/>
+		 <phase type="idle">
+			<part name="boca">
+                <component name="1" rotOffset="1,0,0" rotChange="-1,0,0" length="10" startKey="0"/>
+				<component name="2" rotChange="1,0,0" length="10" startKey="10"/>
+			</part>
+        </phase>
+    </model>
+</ModelAnimator>

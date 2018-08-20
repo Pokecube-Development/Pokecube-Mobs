@@ -1,0 +1,23 @@
+{
+  "type": "forge:ore_shaped",
+  "group": "pokecube",
+  "pattern": [
+    "CGC",
+    "GPG",
+    "CGC"
+  ],
+  "key": {
+    "P": {
+      "item": "pokecube:premiercube"
+    },
+    "C": {
+      "item": "minecraft:gold_ingot"
+    },
+    "G": {
+      "item": "#DYEBLUE"
+    }
+  },
+  "result": {
+    "item": "pokecube:quickcube"
+  }
+}

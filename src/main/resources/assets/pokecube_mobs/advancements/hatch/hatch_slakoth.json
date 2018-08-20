@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Slakoth.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Slakoth.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_slakoth": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "slakoth"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.7" headAxis="1" headCap="-50,50"/>
+        <phase name="biWalk" leftLeg="leg2" rightLeg="leg1" leftArm="leg4" rightArm="leg3" duration="10" legAngle="45" armAngle="50"/>
+        <metadata head="head" />
+    </model>
+    <details>
+        <RIDDENOFFSET>0.9</RIDDENOFFSET>
+    </details>
+</ModelAnimator>

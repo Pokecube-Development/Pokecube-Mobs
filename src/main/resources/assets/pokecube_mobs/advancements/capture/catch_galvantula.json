@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Galvantula.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Galvantula.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_galvantula": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "galvantula"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_joltik"
+}

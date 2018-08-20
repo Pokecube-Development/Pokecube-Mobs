@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Skiddo.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Skiddo.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_skiddo": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "skiddo"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

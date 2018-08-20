@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Charjabug.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Charjabug.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_charjabug": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "charjabug"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_grubbin"
+}

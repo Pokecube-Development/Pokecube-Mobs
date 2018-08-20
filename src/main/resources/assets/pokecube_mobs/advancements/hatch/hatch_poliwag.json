@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Poliwag.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Poliwag.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_poliwag": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "poliwag"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

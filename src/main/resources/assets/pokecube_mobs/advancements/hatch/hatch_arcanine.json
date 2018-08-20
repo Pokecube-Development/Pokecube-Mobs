@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Arcanine.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Arcanine.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_arcanine": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "arcanine"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_growlithe"
+}

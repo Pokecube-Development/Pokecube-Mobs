@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Lombre.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Lombre.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_lombre": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "lombre"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_lotad"
+}

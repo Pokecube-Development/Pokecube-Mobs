@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.25" headAxis="1" headCap="-50,50"/>
+        <phase name="quadWalk" leftHind="leglef1" rightHind="legright1" leftFront="leglef2" rightFront="legright2" duration="10"/>
+        <phase type="idle">
+            <part name="rig1_garra2_m_ob1">
+                <component name="1" rotOffset="0,0,0" rotChange="0,20,0" length="10" startKey="0"/>
+                <component name="2" rotChange="0,-20,0" length="10" startKey="10"/>
+            </part>
+            <part name="rig1_garra2_m_obase">
+                <component name="1" rotOffset="0,-0,0" rotChange="0,-20,0" length="10" startKey="0"/>
+                <component name="2" rotChange="0,20,0" length="10" startKey="10"/>
+            </part>
+            <part name="rig_garra1_m_ob11">
+                <component name="1" rotOffset="0,0,0" rotChange="0,10,0" length="10" startKey="0"/>
+                <component name="2" rotChange="0,-10,0" length="10" startKey="10"/>
+            </part>
+            <part name="rig_garra1_m_ob">
+                <component name="1" rotOffset="0,-0,0" rotChange="0,-10,0" length="10" startKey="0"/>
+                <component name="2" rotChange="0,10,0" length="10" startKey="10"/>
+            </part>
+        </phase>
+    </model>
+</ModelAnimator>

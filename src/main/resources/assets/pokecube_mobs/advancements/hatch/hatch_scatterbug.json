@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Scatterbug.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Scatterbug.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_scatterbug": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "scatterbug"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

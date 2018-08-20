@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.45"/>
+        <metadata head="Cube_005" headCap="-60,60" headCap1="-60,60" headAxis="2" headAxis2="1" headDir="-1"/>
+        <phase name="snakeIdle" parts="Cube_009:Cube_017:Cube_016:Cube_015:Cube_014:Cube_014:Cube_013:Cube_012:Cube_011" angle="20" axis="2" length="10"/>
+        <phase type="walking">
+            <part name="Cube_003">
+                <component name="1" rotChange="-10,0,0" length="3" startKey="0"/>
+                <component name="2" rotChange="20,0,0" length="6" startKey="3"/>
+                <component name="3" rotChange="-10,0,0" length="3" startKey="9"/>
+            </part>
+            <part name="Cube_004">
+                <component name="1" rotChange="10,0,0" length="3" startKey="0"/>
+                <component name="2" rotChange="-20,0,0" length="6" startKey="3"/>
+                <component name="3" rotChange="10,0,0" length="3" startKey="9"/>
+            </part>
+            <part name="Cube_002">
+                <component name="1" rotChange="0,0,-10" length="3" startKey="0"/>
+                <component name="2" rotChange="0,0,20" length="6" startKey="3"/>
+                <component name="3" rotChange="0,0,-10" length="3" startKey="9"/>
+            </part>
+            <part name="Cube_001">
+                <component name="1" rotChange="0,0,10" length="3" startKey="0"/>
+                <component name="2" rotChange="0,0,-20" length="6" startKey="3"/>
+                <component name="3" rotChange="0,0,10" length="3" startKey="9"/>
+            </part>
+        </phase>
+    </model>
+</ModelAnimator>

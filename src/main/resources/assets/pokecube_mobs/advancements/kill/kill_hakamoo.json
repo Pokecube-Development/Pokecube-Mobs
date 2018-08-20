@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.Hakamo-o.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.Hakamo-o.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_hakamoo": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "hakamoo"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_jangmoo"
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Slurpuff.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Slurpuff.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_slurpuff": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "slurpuff"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_swirlix"
+}

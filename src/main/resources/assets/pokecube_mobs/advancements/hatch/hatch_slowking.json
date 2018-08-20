@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Slowking.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Slowking.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_slowking": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "slowking"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_slowpoke"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Torracat.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Torracat.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_torracat": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "torracat"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_litten"
+}

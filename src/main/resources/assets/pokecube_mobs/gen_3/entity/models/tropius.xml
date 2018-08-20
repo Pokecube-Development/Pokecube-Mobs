@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale=".6"/>
+        <metadata head="head" headCap="-60,60" headAxis="1" headAxis2="0" headDir="1" shear="Bananas"/>
+        <phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="10"/>
+        <phase type="flying">
+            <part name="Right_fan">
+                <component name="1" startKey="0" length="10" rotOffset="-30.0,3.9968028886505635E-15,-0.0," rotChange="-60.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="60.0,0.0,0.0,"/>
+            </part>
+            <part name="Left_fan">
+                <component name="1" startKey="0" length="10" rotOffset="30.0,-0.0,-0.0," rotChange="60.0,0.0,0.0,"/>
+                <component name="2" startKey="10" length="10" rotChange="-60.0,0.0,0.0,"/>
+            </part>
+        </phase>
+        <phase type="idle">
+            <part name="Right_fan">
+                <component name="1" startKey="0" length="5" rotOffset="60.0,-0.0,-0.0," rotChange="5.0,0.0,0.0,"/>
+                <component name="2" startKey="5" length="5" rotChange="-5.0,0.0,0.0,"/>
+            </part>
+            <part name="Left_fan">
+                <component name="1" startKey="0" length="5" rotOffset="-60.0,-0.0,-0.0," rotChange="-5.0,0.0,0.0,"/>
+                <component name="2" startKey="5" length="5" rotChange="5.0,0.0,0.0,"/>
+            </part>
+        </phase>
+        <merges merge="idle->walking" />
+    </model>
+    <details>
+        <RIDDENOFFSET>0.55</RIDDENOFFSET>
+    </details>
+</ModelAnimator>

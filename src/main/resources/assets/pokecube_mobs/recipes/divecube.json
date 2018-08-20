@@ -1,0 +1,23 @@
+{
+  "type": "forge:ore_shaped",
+  "group": "pokecube",
+  "pattern": [
+    "WWW",
+    "IPI",
+    "WWW"
+  ],
+  "key": {
+    "P": {
+      "item": "pokecube:premiercube"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "I": {
+      "item": "#DYEBLUE"
+    }
+  },
+  "result": {
+    "item": "pokecube:divecube"
+  }
+}

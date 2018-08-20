@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.20"/>
+		<phase type="idle">
+			<part name="body1">
+				<component name="1" rotOffset="5,0,0" rotChange="0,0,2" length="10" startKey="0"/>
+				<component name="2" rotChange="0,0,-2" length="10" startKey="10"/>
+            </part>
+		</phase>
+		<phase type="walking">
+			<part name="body1">
+				<component name="1" rotOffset="0,0,0" rotChange="3,0,0" length="10" startKey="0"/>
+				<component name="2" rotChange="-3,0,0" length="10" startKey="10"/>
+            </part>
+		</phase>
+	</model>
+</ModelAnimator>

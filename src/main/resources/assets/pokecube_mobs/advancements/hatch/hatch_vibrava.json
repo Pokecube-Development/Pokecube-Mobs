@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Vibrava.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Vibrava.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_vibrava": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "vibrava"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_trapinch"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+        <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,-0.2" scale="1.0"/>
+		
+		 <phase type="idle">
+            <part name="Body">
+                <component name="1" posOffset="0,-2,0" rotChange="0,5,0" posChange="0,-2,0" length="20" startKey="0"/>
+                <component name="2" rotChange="0,-5,0" posChange="0,-1,0" length="20" startKey="20"/>
+				<component name="3" rotChange="0,-5,0" posChange="0,2,0" length="20" startKey="40"/>
+				<component name="4" rotChange="0,5,0" posChange="0,1,0" length="20" startKey="60"/>
+            </part>
+			<part name="LegR">
+                <component name="1" rotChange="0,0,50" length="20" startKey="0"/>
+                <component name="2" rotChange="0,0,-100" length="40" startKey="20"/>
+				<component name="3" rotChange="0,0,50" length="20" startKey="60"/>
+            </part>
+			<part name="LegL">
+                <component name="1" rotChange="0,0,50" length="20" startKey="0"/>
+                <component name="2" rotChange="0,0,-100" length="40" startKey="20"/>
+				<component name="3" rotChange="0,0,50" length="20" startKey="60"/>
+            </part>
+			<part name="ArmR">
+                <component name="1" rotChange="0,-5,0" length="20" startKey="0"/>
+                <component name="2" rotChange="0,10,3" length="40" startKey="20"/>
+				<component name="3" rotChange="0,-5,-3" length="20" startKey="60"/>
+            </part>
+			<part name="ArmL">
+                <component name="1" rotChange="0,5,0" length="20" startKey="0"/>
+                <component name="2" rotChange="0,-10,-3" length="40" startKey="20"/>
+				<component name="3" rotChange="0,5,3" length="20" startKey="60"/>
+            </part>
+		 </phase>
+		</model>
+</ModelAnimator>

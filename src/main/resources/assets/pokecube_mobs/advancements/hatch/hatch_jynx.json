@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Jynx.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Jynx.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_jynx": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "jynx"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_smoochum"
+}

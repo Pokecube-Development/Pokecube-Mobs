@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0.4" scale="0.5" headAxis="1" headCap="-50,50"/>
+		<phase type="idle">
+			<part name="base">
+                <component name="1" posOffset="0,1.7,0" posChange="0,-1.7,0" length="10" startKey="0"/>
+                <component name="2" posChange="0,1.7,0" length="10" startKey="12"/>
+			</part>
+			<part name="hand1">
+                <component name="1" rotOffset="10,0,0" rotChange="7,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="-7,0,0" length="10" startKey="15"/>
+            </part>
+			<part name="hand2">
+                <component name="1" rotOffset="10,0,0" rotChange="5,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="-5,0,0" length="10" startKey="15"/>
+            </part>
+			<part name="hand3">
+                <component name="1" rotOffset="10,0,0" rotChange="-10,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="10,0,0" length="10" startKey="15"/>
+            </part>
+			<part name="hand4">
+                <component name="1" rotOffset="10,0,0" rotChange="-4,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="4,0,0" length="10" startKey="15"/>
+            </part>
+		</phase>
+    </model>
+</ModelAnimator>

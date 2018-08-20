@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Fletchinder.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Fletchinder.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_fletchinder": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "fletchinder"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_fletchling"
+}

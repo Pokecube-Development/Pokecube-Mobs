@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Dhelmise.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Dhelmise.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_dhelmise": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "dhelmise"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

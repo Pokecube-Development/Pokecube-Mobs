@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Nuzleaf.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Nuzleaf.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_nuzleaf": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "nuzleaf"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_seedot"
+}

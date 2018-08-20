@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Shellos.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Shellos.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_shellos": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "shellos"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

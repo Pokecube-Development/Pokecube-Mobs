@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.26"/>
+        <metadata head="head" headCap="-90,90" headCap1="-25,25" headAxis="2" headAxis2="0" headDir="-1"/>
+        <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" duration="10" legAngle="25"/>
+		<phase type="idle">
+            <part name="arm2">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,0.0,40.0,"/>
+            </part>
+            <part name="arm2_1">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,0.0,40.0,"/>
+            </part>
+			<part name="arm1">
+               <component name="1" startKey="0" length="1" rotOffset="90.0,20,0,"/>
+            </part>
+			<part name="arm1_1">
+                <component name="1" startKey="0" length="1" rotOffset="180.0,0.0,90.0,"/>
+            </part>
+        </phase>
+		<phase type ="walking">
+            <part name="arm2">
+               <component name="1" rotOffset="0,0,45" rotChange="10,0,0" length="9" startKey="0"/>
+               <component name="2" rotChange="-15,0,0" length="9" startKey="10"/>
+            </part>
+			<part name="arm1">
+               <component name="1" startKey="0" length="1" rotOffset="0,0,15,"/>
+            </part>
+			<part name="arm1_1">
+               <component name="1" startKey="0" length="1" rotOffset="180,0,95,"/>
+            </part>
+		</phase>
+    </model>
+</ModelAnimator>

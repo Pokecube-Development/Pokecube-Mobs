@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Magearna.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Magearna.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_magearna": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "magearna"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

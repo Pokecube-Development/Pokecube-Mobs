@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Purugly.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Purugly.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_purugly": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "purugly"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_glameow"
+}

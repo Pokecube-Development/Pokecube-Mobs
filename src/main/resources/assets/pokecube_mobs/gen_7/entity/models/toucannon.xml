@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator>
+    <model>
+        <phase name="global" rotation="0,1,0,180" offset="0,0,0" scale="0.18"/>
+        <metadata head="head" headCap="-180,180" headCap1="-50,50" headAxis="2" headAxis2="1" headDir="1"/>
+		<phase type="idle">
+		</phase>
+		<phase type ="flying">
+			<part name="wing1">
+               <component name="1" rotOffset="-20,-30,0" rotChange="-20,-30,0" length="5" startKey="0"/>
+               <component name="2" rotChange="20,30,0" length="5" startKey="10"/>
+            </part>
+            <part name="wing2">
+               <component name="1" rotOffset="20,30,0" rotChange="20,30,0" length="5" startKey="0"/>
+               <component name="2" rotChange="-20,-30,0" length="5" startKey="10"/>
+            </part>
+			<part name="tail">
+               <component name="1" rotOffset="0,0,10" rotChange="0,0,10" length="5" startKey="0"/>
+               <component name="2" rotChange="0,0,-10" length="5" startKey="10"/>
+            </part>
+			<part name="leg1">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,0,16.0,"/>
+            </part>
+			<part name="leg2">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,0,16.0,"/>
+			</part>
+			<part name="leg1_1">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,0,16.0,"/>
+            </part>
+			<part name="leg2_1">
+                <component name="1" startKey="0" length="1" rotOffset="0.0,0,16.0,"/>
+			</part>
+		</phase>
+		<merges merge="idle->sitting" />
+        <merges merge="idle->walking" />
+		<merges merge="idle->flying" />
+		<merges merge="walking->flying" />
+    </model>
+</ModelAnimator>

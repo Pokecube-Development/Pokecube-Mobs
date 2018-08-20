@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.Barbaracle.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Barbaracle.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_barbaracle": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "barbaracle"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_binacle"
+}

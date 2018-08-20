@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Goodra.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Goodra.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_goodra": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "goodra"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_sliggoo"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Vanillite.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Vanillite.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_vanillite": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "vanillite"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

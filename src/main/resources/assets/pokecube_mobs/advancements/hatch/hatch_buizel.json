@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Buizel.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Buizel.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_buizel": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "buizel"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

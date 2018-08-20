@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Excadrill.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Excadrill.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_excadrill": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "excadrill"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_drilbur"
+}

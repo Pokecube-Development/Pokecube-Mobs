@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+	<model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.03"/>
+		<metadata head="head" headCap="-60,60" headCap1="-60,60" headAxis="2" headAxis2="0" headDir="-1" dye="p1:p2:p3:p4:p5"/>		
+		<phase type="idle">
+			<part name="arm1">
+              <component name="1" rotOffset="-20,-10,-40" rotChange="0,0,-2" length="10" startKey="0"/>
+              <component name="2" rotChange="0,0,2" length="10" startKey="10"/>
+            </part>
+				<part name="arm1_1">
+				  <component name="1" startKey="0" length="1" rotOffset="0,-90,-40,"/>
+				</part>
+					<part name="hand1">
+						<component name="1" startKey="0" length="1" rotOffset="-20,-5,-10,"/>
+					</part>
+					
+			<part name="arm2">
+              <component name="1" rotOffset="0,90,40" rotChange="0,0,-2" length="10" startKey="0"/>
+              <component name="2" rotChange="0,0,2" length="10" startKey="10"/>
+            </part>
+				<part name="arm2_1">
+				  <component name="1" startKey="0" length="1" rotOffset="110,60,90,"/>
+				</part>
+					<part name="hand1">
+						<component name="1" startKey="0" length="1" rotOffset="-20,-5,-10,"/>
+					</part>
+			
+			<part name="tail">
+              <component name="1" rotOffset="10,0,0" rotChange="-5,0,0" length="10" startKey="0"/>
+              <component name="2" rotChange="5,0,0" length="10" startKey="10"/>
+            </part>
+			<part name="hair1">
+              <component name="1" rotOffset="0,0,-20" rotChange="0,0,-8" length="10" startKey="0"/>
+              <component name="2" rotChange="0,0,8" length="10" startKey="10"/>
+            </part>
+			<part name="hair2">
+              <component name="1" rotOffset="0,0,20" rotChange="0,0,8" length="10" startKey="0"/>
+              <component name="2" rotChange="0,0,-8" length="10" startKey="10"/>
+            </part>
+			<part name="head_flower">
+              <component name="1" rotOffset="0,0,0" rotChange="0,-5,0" length="10" startKey="0"/>
+              <component name="2" rotChange="0,5,0" length="10" startKey="10"/>
+            </part>
+        </phase>	
+		<phase type="flying">
+			<part name="arm1">
+              <component name="1" rotOffset="-20,-10,-40" rotChange="0,0,-2" length="8" startKey="0"/>
+              <component name="2" rotChange="0,0,2" length="8" startKey="10"/>
+            </part>
+				<part name="arm1_1">
+				  <component name="1" startKey="0" length="1" rotOffset="0,-90,-40,"/>
+				</part>
+					<part name="hand1">
+						<component name="1" startKey="0" length="1" rotOffset="-20,-5,-10,"/>
+					</part>
+					
+			<part name="arm2">
+              <component name="1" rotOffset="0,90,40" rotChange="0,0,-2" length="8" startKey="0"/>
+              <component name="2" rotChange="0,0,2" length="8" startKey="10"/>
+            </part>
+				<part name="arm2_1">
+				  <component name="1" startKey="0" length="1" rotOffset="110,60,90,"/>
+				</part>
+					<part name="hand1">
+						<component name="1" startKey="0" length="1" rotOffset="-20,-5,-10,"/>
+					</part>
+			
+			<part name="tail">
+              <component name="1" rotOffset="20,0,0" rotChange="-10,0,0" length="8" startKey="0"/>
+              <component name="2" rotChange="10,0,0" length="8" startKey="10"/>
+            </part>
+			<part name="hair1">
+              <component name="1" rotOffset="0,15,-20" rotChange="0,-8,0" length="8" startKey="0"/>
+              <component name="2" rotChange="0,8,0" length="8" startKey="10"/>
+            </part>
+			<part name="hair2">
+              <component name="1" rotOffset="0,-15,20" rotChange="0,8,0" length="8" startKey="0"/>
+              <component name="2" rotChange="0,-8,0" length="8" startKey="10"/>
+            </part>
+			<part name="head_flower">
+              <component name="1" rotOffset="0,-14,0" rotChange="0,-5,0" length="8" startKey="0"/>
+              <component name="2" rotChange="0,5,0" length="8" startKey="10"/>
+            </part>
+		</phase>
+	</model>
+</ModelAnimator>

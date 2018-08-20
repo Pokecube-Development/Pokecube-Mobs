@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Cranidos.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Cranidos.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_cranidos": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "cranidos"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.Solrock.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.Solrock.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_solrock": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "solrock"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

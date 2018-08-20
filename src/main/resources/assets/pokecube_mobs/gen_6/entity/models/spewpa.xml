@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.2"/>
+        <metadata head="head" headCap="-60,60" headAxis="1" headAxis2="2" headDir="1"/>
+    </model>
+    <Pokemon name="Spewpa" number="665">
+        <STATS>
+            <Evolution Name="Vivillon Elegant" Level="12">
+                <Location types="plains,forest" typesBlacklist="cold,hot,mountain"/>
+            </Evolution>
+            <Evolution Name="Vivillon Ocean" Level="12">
+                <Location types="ocean,beach" typesBlacklist="cold"/>
+            </Evolution>
+            <Evolution Name="Vivillon Sandstorm" Level="12">
+                <Location types="sandy"/>
+            </Evolution>
+            <Evolution Name="Vivillon Hell" Level="12">
+                <Location types="nether"/>
+            </Evolution>
+            <Evolution Name="Vivillon End" Level="12">
+                <Location types="end"/>
+            </Evolution>
+            <Evolution Name="Vivillon Polar" Level="12">
+                <Location biomes="iceplainsspikes"/>
+            </Evolution>
+            <Evolution Name="Vivillon IcySnow" Level="12">
+                <Location types="cold"/>
+            </Evolution>
+            <Evolution Name="Vivillon Monsoon" Level="12">
+                <Location types="swamp,jungle"/>
+            </Evolution>
+            <Evolution Name="Vivillon Sun" Level="12">
+                <Location types="savanna"/>
+            </Evolution>
+            <Evolution Name="Vivillon Modern" Level="12">
+                <Location types="village"/>
+            </Evolution>
+            <Evolution Name="Vivillon Highplains" Level="12">
+                <Location types="mountain"/>
+            </Evolution>
+            <Evolution Name="Vivillon" Level="12"/>
+        </STATS>
+    </Pokemon>
+</ModelAnimator>
