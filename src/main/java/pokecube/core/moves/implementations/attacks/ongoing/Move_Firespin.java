@@ -25,6 +25,7 @@ public class Move_Firespin extends Move_Ongoing
         super.doOngoingEffect(mob, effect);
     }
 
+    @Override
     public int getDuration()
     {
         Random r = new Random();

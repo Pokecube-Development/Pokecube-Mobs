@@ -31,6 +31,7 @@ public class Registeel extends Condition
         return false;
     }
 
+    @Override
     public void onSpawn(IPokemob mob)
     {
         mob = mob.setForSpawn(54500);

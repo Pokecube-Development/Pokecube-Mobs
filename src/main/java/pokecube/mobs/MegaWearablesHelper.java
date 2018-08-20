@@ -13,6 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import pokecube.core.PokecubeCore;
+import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.items.megastuff.ItemMegawearable;
 import pokecube.core.items.megastuff.WearablesCompat;
 import pokecube.core.items.megastuff.WearablesCompat.WearablesRenderer;
@@ -43,7 +44,7 @@ public class MegaWearablesHelper
                 if (slot != EnumWearable.HAT) return;
                 if (model == null)
                 {
-                    model = new X3dModel(new ResourceLocation(PokecubeCore.ID, "models/worn/megatiara.x3d"));
+                    model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megatiara.x3d"));
                 }
                 Minecraft minecraft = Minecraft.getMinecraft();
                 GL11.glRotatef(90, 1, 0, 0);
@@ -97,7 +98,7 @@ public class MegaWearablesHelper
 
                 if (model == null)
                 {
-                    model = new X3dModel(new ResourceLocation(PokecubeCore.ID, "models/worn/megaankletzinnia.x3d"));
+                    model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megaankletzinnia.x3d"));
                 }
                 Minecraft minecraft = Minecraft.getMinecraft();
                 GlStateManager.pushMatrix();
@@ -154,7 +155,7 @@ public class MegaWearablesHelper
                 if (slot != EnumWearable.NECK) return;
                 if (model == null)
                 {
-                    model = new X3dModel(new ResourceLocation(PokecubeCore.ID, "models/worn/megapendant.x3d"));
+                    model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megapendant.x3d"));
                 }
                 Minecraft minecraft = Minecraft.getMinecraft();
                 GL11.glRotatef(90, 1, 0, 0);
@@ -207,7 +208,7 @@ public class MegaWearablesHelper
                 if (slot != EnumWearable.EAR) return;
                 if (model == null)
                 {
-                    model = new X3dModel(new ResourceLocation(PokecubeCore.ID, "models/worn/megaearring.x3d"));
+                    model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megaearring.x3d"));
                 }
                 Minecraft minecraft = Minecraft.getMinecraft();
                 GL11.glRotatef(180, 0, 0, 1);
@@ -259,7 +260,7 @@ public class MegaWearablesHelper
                 if (slot != EnumWearable.EYE) return;
                 if (model == null)
                 {
-                    model = new X3dModel(new ResourceLocation(PokecubeCore.ID, "models/worn/megaglasses.x3d"));
+                    model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megaglasses.x3d"));
                 }
                 Minecraft minecraft = Minecraft.getMinecraft();
                 GL11.glRotatef(90, 1, 0, 0);

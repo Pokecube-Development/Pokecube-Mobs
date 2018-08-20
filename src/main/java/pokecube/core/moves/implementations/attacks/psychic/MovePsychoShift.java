@@ -1,5 +1,6 @@
 package pokecube.core.moves.implementations.attacks.psychic;
 
+import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
@@ -19,7 +20,7 @@ public class MovePsychoShift extends Move_Basic
         super.onAttack(packet);
         if (!(packet.canceled || packet.failed || packet.denied))
         {
-            if (packet.attacker.getStatus() == IPokemob.STATUS_NON)
+            if (packet.attacker.getStatus() == IMoveConstants.STATUS_NON)
             {
                 // TODO send failed message.
                 return;
@@ -27,7 +28,7 @@ public class MovePsychoShift extends Move_Basic
             IPokemob hit = CapabilityPokemob.getPokemobFor(packet.attacked);
             if (hit != null)
             {
-                if (hit.getStatus() != IPokemob.STATUS_NON)
+                if (hit.getStatus() != IMoveConstants.STATUS_NON)
                 {
                     // TODO send failed message.
                     return;

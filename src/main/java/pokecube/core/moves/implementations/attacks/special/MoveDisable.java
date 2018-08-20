@@ -1,8 +1,8 @@
 package pokecube.core.moves.implementations.attacks.special;
 
-import pokecube.core.PokecubeCore;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Basic;
 
@@ -27,7 +27,7 @@ public class MoveDisable extends Move_Basic
                 int timer = packet.attacker.getEntity().getRNG().nextInt(7);
                 if (target.getDisableTimer(index) <= 0 && timer > 0)
                 {
-                    target.setDisableTimer(index, PokecubeCore.core.getConfig().attackCooldown * timer);
+                    target.setDisableTimer(index, PokecubeMod.core.getConfig().attackCooldown * timer);
                 }
                 else
                 {

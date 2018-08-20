@@ -12,7 +12,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import pokecube.core.PokecubeCore;
 import pokecube.core.client.render.entity.RenderPokemobs;
 import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
@@ -34,7 +33,7 @@ public class PokecubeOrigin
     @EventHandler
     public void preInit(FMLPreInitializationEvent e)
     {
-        config = new Config(PokecubeCore.core.getPokecubeConfig(e).getConfigFile());
+        config = new Config(PokecubeMod.core.getPokecubeConfig(e).getConfigFile());
         if (config.active) MinecraftForge.EVENT_BUS.register(this);
         doMetastuff();
     }

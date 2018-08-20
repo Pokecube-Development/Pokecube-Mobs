@@ -9,6 +9,7 @@ public class BattleBond extends Ability
     /** Called when a pokemob tries to mega evolve.
      * 
      * @param mob */
+    @Override
     public boolean canChange(IPokemob mob, PokedexEntry changeTo)
     {
         return true;

@@ -117,7 +117,7 @@ public class BerryHelper implements IMoveConstants
         {
             HappinessType.applyHappiness(pokemob, HappinessType.EVBERRY);
             byte[] evs = pokemob.getEVs();
-            evs[0] = (byte) Math.max(Byte.MIN_VALUE, ((int) evs[0]) - 10);
+            evs[0] = (byte) Math.max(Byte.MIN_VALUE, (evs[0]) - 10);
             pokemob.setEVs(evs);
             return true;
         }
@@ -125,7 +125,7 @@ public class BerryHelper implements IMoveConstants
         {
             HappinessType.applyHappiness(pokemob, HappinessType.EVBERRY);
             byte[] evs = pokemob.getEVs();
-            evs[1] = (byte) Math.max(Byte.MIN_VALUE, ((int) evs[1]) - 10);
+            evs[1] = (byte) Math.max(Byte.MIN_VALUE, (evs[1]) - 10);
             pokemob.setEVs(evs);
             return true;
         }
@@ -133,7 +133,7 @@ public class BerryHelper implements IMoveConstants
         {
             HappinessType.applyHappiness(pokemob, HappinessType.EVBERRY);
             byte[] evs = pokemob.getEVs();
-            evs[2] = (byte) Math.max(Byte.MIN_VALUE, ((int) evs[2]) - 10);
+            evs[2] = (byte) Math.max(Byte.MIN_VALUE, (evs[2]) - 10);
             pokemob.setEVs(evs);
             return true;
         }
@@ -141,7 +141,7 @@ public class BerryHelper implements IMoveConstants
         {
             HappinessType.applyHappiness(pokemob, HappinessType.EVBERRY);
             byte[] evs = pokemob.getEVs();
-            evs[3] = (byte) Math.max(Byte.MIN_VALUE, ((int) evs[3]) - 10);
+            evs[3] = (byte) Math.max(Byte.MIN_VALUE, (evs[3]) - 10);
             pokemob.setEVs(evs);
             return true;
         }
@@ -149,7 +149,7 @@ public class BerryHelper implements IMoveConstants
         {
             HappinessType.applyHappiness(pokemob, HappinessType.EVBERRY);
             byte[] evs = pokemob.getEVs();
-            evs[4] = (byte) Math.max(Byte.MIN_VALUE, ((int) evs[4]) - 10);
+            evs[4] = (byte) Math.max(Byte.MIN_VALUE, (evs[4]) - 10);
             pokemob.setEVs(evs);
             return true;
         }
@@ -157,7 +157,7 @@ public class BerryHelper implements IMoveConstants
         {
             HappinessType.applyHappiness(pokemob, HappinessType.EVBERRY);
             byte[] evs = pokemob.getEVs();
-            evs[5] = (byte) Math.max(Byte.MIN_VALUE, ((int) evs[5]) - 10);
+            evs[5] = (byte) Math.max(Byte.MIN_VALUE, (evs[5]) - 10);
             pokemob.setEVs(evs);
             return true;
         }
