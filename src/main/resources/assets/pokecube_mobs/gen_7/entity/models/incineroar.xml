@@ -2,8 +2,11 @@
 <ModelAnimator>
     <model>
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.425"/>
-        <metadata head="neck" headCap="-80,80" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="-1"/>
+        <metadata head="head" headCap="-80,80" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="-1"/>
         <phase type="idle">
+			<part name="neck">
+				<component name="1" rotOffset="15,0,0" length="10" startKey="0"/>
+			</part>
             <part name="arm1">
                 <component name="1" startKey="0" length="15" rotOffset="0.0,0.0,-60.0," rotChange="0.0,0.0,5.0,"/>
                 <component name="2" startKey="10" length="15" rotChange="0.0,0.0,-5.0,"/>

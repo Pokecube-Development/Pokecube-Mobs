@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
 	<model>
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0.5" scale="1.0"/>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="1.0"/>
         <metadata head="Neck2:Neck3" headCap="-20,20" headCap1="-20,20" headAxis="2" headAxis2="0" headDir="1"/>
-        <phase name="snakeFly" parts="Body2:Body3:Body4:Body5:Body6:Body7:Body8:Body9:Body10:Body11" axis="2"/>
-        <phase type="idle">
+        <phase name="snakeWalk" parts="Body2:Body3:Body4:Body5:Body6:Body7:Body8:Body9:Body10:Body11" axis="0"/>
+		
+        <phase type="flying">
             <part name="RightShoulder">
                 <component name="1" rotChange="0, 10,0" length="10" startKey="0"/>
                 <component name="2" rotChange="0,-10,0" length="10" startKey="10"/>
@@ -14,8 +15,8 @@
                 <component name="2" rotChange="0, 10,0" length="10" startKey="10"/>
             </part>
         </phase>
-        <merges merge="idle->flying" />
-        <phase type="angry">
+		
+        <phase type="idle">
             <part name="Body7">
                 <component name="B7I1" startKey="0" length="10" rotOffset="-28.7,-0.0,-0.0,"/>
             </part>
@@ -93,7 +94,6 @@
 	</model>
     <details>
         <RIDDENOFFSET>0.45:0,0.45,-.1:0,0.45,-.2</RIDDENOFFSET>
-        <MODELSIZE>10.8,1,1</MODELSIZE>
     </details>
 </ModelAnimator>
 

@@ -76,8 +76,8 @@ public class PokecubeOrigin
         pikachu.texturePath = "textures/entity/";
 
         /** Manually register the old models for these. */
-        RenderPokemobs.addModel(pichu.getName() + "" + pichu.getModId(), new ModelPichu());
-        RenderPokemobs.addModel(pikachu.getName() + "" + pikachu.getModId(), new ModelPikachu());
+        RenderPokemobs.addModel(pichu.getTrimmedName(), new ModelPichu());
+        RenderPokemobs.addModel(pikachu.getTrimmedName(), new ModelPikachu());
     }
 
     public static class Config extends ConfigBase

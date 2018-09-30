@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
 	<model>
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0.5" scale="1.0"/>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="1.0"/>
         <metadata head="Neck1:Neck2:Neck3" headCap="-20,20" headCap1="-20,20" headAxis="1" headAxis2="0" headDir="1"/>
-        <phase name="snakeFly" parts="Body2:Body3:Body4:Body5:Body6:Body7:Body8:Body9:Body10:Body11" axis="2"/>
+        <phase name="snakeWalk" parts="Body2:Body3:Body4:Body5:Body6:Body7:Body8:Body9:Body10:Body11" axis="0"/>
+  
         <phase type="idle">
-            <part name="RightShoulder">
-                <component name="1" rotChange="0, 10,0" length="10" startKey="0"/>
-                <component name="2" rotChange="0,-10,0" length="10" startKey="10"/>
-            </part>
-            <part name="LeftShoulder">
-                <component name="1" rotChange="0,-10,0" length="10" startKey="0"/>
-                <component name="2" rotChange="0, 10,0" length="10" startKey="10"/>
-            </part>
-        </phase>
-        <merges merge="idle->flying" />
-        <phase type="angry">
             <part name="Body7">
                 <component name="B7I1" startKey="0" length="10" rotOffset="-28.7,-0.0,-0.0,"/>
             </part>
@@ -85,15 +75,24 @@
                 <component name="N1I1" startKey="0" length="10" rotOffset="-13.04,-0.0,-0.0,"/>
             </part>
             <part name="Body1">
-                <component name="BI1" startKey="0" length="10" rotOffset="70.5,-0.0,-0.0," posOffset="0.0,-60.0,0.0," posChange="0.0,-1.5,0.0,"/>
-                <component name="BI2" startKey="10" length="10" posChange="0.0,2.5,0.0,"/>
-                <component name="BI3" startKey="20" length="5" posChange="0.0,-1.0,0.0,"/>
+                <component name="0" startKey="0" length="10" rotOffset="70.5,-0.0,-0.0," posOffset="0.0,2.5,0.0," posChange="0.0,1.5,0.0,"/>
+                <component name="1" startKey="10" length="10" posChange="0.0,-1.5,0.0,"/>
+                <component name="2" startKey="20" length="5" posChange="0.0,-1.0,0.0,"/>
+            </part>
+        </phase>
+		<phase type="flying">
+            <part name="RightShoulder">
+                <component name="1" rotChange="0, 10,0" length="10" startKey="0"/>
+                <component name="2" rotChange="0,-10,0" length="10" startKey="10"/>
+            </part>
+            <part name="LeftShoulder">
+                <component name="1" rotChange="0,-10,0" length="10" startKey="0"/>
+                <component name="2" rotChange="0, 10,0" length="10" startKey="10"/>
             </part>
         </phase>
 	</model>
     <details>
         <RIDDENOFFSET>0.7</RIDDENOFFSET>
-        <MODELSIZE>7,1,1</MODELSIZE>
     </details>
 </ModelAnimator>
 
