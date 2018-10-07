@@ -1,8 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
     <model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="1.5" headAxis="1" headCap="-50,50"/>
-        <phase name="biWalk" leftLeg="Left_Leg" rightLeg="Right_Leg" leftArm="Left_Arm" rightArm="Right_Arm" duration="10" legAngle="45" armAngle="50"/>
-        <metadata head="_" />
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.5"/>
+        
+        <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="arm1" rightArm="arm2" duration="6" legAngle="25"/>
+        
+        <phase type="idle">
+            <part name="arm1">
+               <component name="1" rotOffset="0,0,-10" rotChange="0,0,2" length="7" startKey="0"/>
+               <component name="2" rotChange="0,0,-2" length="7" startKey="10"/>
+            </part>
+            <part name="arm2">
+               <component name="1" rotOffset="0,0,10" rotChange="0,0,-2" length="7" startKey="0"/>
+               <component name="2" rotChange="0,0,2" length="7" startKey="10"/>
+            </part>
+            
+            <part name="leg1">
+               <component name="1" rotOffset="0,14,0" length="10" startKey="0"/>
+            </part>
+            <part name="leg2">
+               <component name="1" rotOffset="0,-14,0" length="10" startKey="0"/>
+            </part>
+            <part name="pl1">
+               <component name="1" rotChange="1,0,0" length="7" startKey="0"/>
+               <component name="2" rotChange="-1,0,0" length="7" startKey="10"/>
+            </part>
+            <part name="pl2">
+               <component name="1" rotChange="0,0,1" length="7" startKey="0"/>
+               <component name="2" rotChange="0,0,-1" length="7" startKey="10"/>
+            </part>
+            <part name="pl3">
+               <component name="1" rotChange="0,0,-1" length="7" startKey="0"/>
+               <component name="2" rotChange="0,0,1" length="7" startKey="10"/>
+            </part>
+            <part name="pl4">
+               <component name="1" rotChange="1,0,0" length="7" startKey="0"/>
+               <component name="2" rotChange="-1,0,0" length="7" startKey="10"/>
+            </part>
+            <part name="pl5">
+               <component name="1" rotChange="1,0,0" length="7" startKey="0"/>
+               <component name="2" rotChange="-1,0,0" length="7" startKey="10"/>
+            </part>
+        </phase>
+        <phase type="walking">
+            <part name="pl1">
+               <component name="1" rotChange="1,0,0" length="7" startKey="0"/>
+               <component name="2" rotChange="-1,0,0" length="7" startKey="10"/>
+            </part>
+            <part name="pl2">
+               <component name="1" rotChange="0,0,1" length="7" startKey="0"/>
+               <component name="2" rotChange="0,0,-1" length="7" startKey="10"/>
+            </part>
+            <part name="pl3">
+               <component name="1" rotChange="0,0,-1" length="7" startKey="0"/>
+               <component name="2" rotChange="0,0,1" length="7" startKey="10"/>
+            </part>
+            <part name="pl4">
+               <component name="1" rotChange="1,0,0" length="7" startKey="0"/>
+               <component name="2" rotChange="-1,0,0" length="7" startKey="10"/>
+            </part>
+            <part name="pl5">
+               <component name="1" rotChange="1,0,0" length="7" startKey="0"/>
+               <component name="2" rotChange="-1,0,0" length="7" startKey="10"/>
+            </part>
+        </phase>
     </model>
 </ModelAnimator>
