@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Frogadier.name"
+          "translate": "pkmn.frogadier.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Frogadier.name"
+          "translate": "pkmn.frogadier.name"
         }
       ]
     }

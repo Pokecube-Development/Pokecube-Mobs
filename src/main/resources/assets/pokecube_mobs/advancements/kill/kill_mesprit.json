@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Mesprit.name"
+          "translate": "pkmn.mesprit.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Mesprit.name"
+          "translate": "pkmn.mesprit.name"
         }
       ]
     },

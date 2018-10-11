@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Panpour.name"
+          "translate": "pkmn.panpour.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Panpour.name"
+          "translate": "pkmn.panpour.name"
         }
       ]
     }

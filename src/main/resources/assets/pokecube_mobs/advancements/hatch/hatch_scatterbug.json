@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Scatterbug.name"
+          "translate": "pkmn.scatterbug.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Scatterbug.name"
+          "translate": "pkmn.scatterbug.name"
         }
       ]
     }

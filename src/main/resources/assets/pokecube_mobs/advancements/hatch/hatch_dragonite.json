@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Dragonite.name"
+          "translate": "pkmn.dragonite.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Dragonite.name"
+          "translate": "pkmn.dragonite.name"
         }
       ]
     }

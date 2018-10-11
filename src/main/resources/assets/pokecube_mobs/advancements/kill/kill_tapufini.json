@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Tapu Fini.name"
+          "translate": "pkmn.tapufini.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Tapu Fini.name"
+          "translate": "pkmn.tapufini.name"
         }
       ]
     },

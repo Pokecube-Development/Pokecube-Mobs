@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Golisopod.name"
+          "translate": "pkmn.golisopod.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Golisopod.name"
+          "translate": "pkmn.golisopod.name"
         }
       ]
     }

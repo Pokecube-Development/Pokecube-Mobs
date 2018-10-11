@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Torchic.name"
+          "translate": "pkmn.torchic.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Torchic.name"
+          "translate": "pkmn.torchic.name"
         }
       ]
     }

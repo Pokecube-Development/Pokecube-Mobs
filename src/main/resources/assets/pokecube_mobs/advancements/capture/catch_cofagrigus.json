@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Cofagrigus.name"
+          "translate": "pkmn.cofagrigus.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Cofagrigus.name"
+          "translate": "pkmn.cofagrigus.name"
         }
       ]
     }

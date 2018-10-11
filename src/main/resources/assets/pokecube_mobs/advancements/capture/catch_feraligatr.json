@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Feraligatr.name"
+          "translate": "pkmn.feraligatr.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Feraligatr.name"
+          "translate": "pkmn.feraligatr.name"
         }
       ]
     }

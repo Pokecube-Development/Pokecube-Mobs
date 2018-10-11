@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Nuzleaf.name"
+          "translate": "pkmn.nuzleaf.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Nuzleaf.name"
+          "translate": "pkmn.nuzleaf.name"
         }
       ]
     }

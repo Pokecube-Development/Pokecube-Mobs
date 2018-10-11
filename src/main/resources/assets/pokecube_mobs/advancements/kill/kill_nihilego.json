@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Nihilego.name"
+          "translate": "pkmn.nihilego.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Nihilego.name"
+          "translate": "pkmn.nihilego.name"
         }
       ]
     },

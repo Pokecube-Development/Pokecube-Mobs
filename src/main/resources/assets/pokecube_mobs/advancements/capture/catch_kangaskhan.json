@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Kangaskhan.name"
+          "translate": "pkmn.kangaskhan.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Kangaskhan.name"
+          "translate": "pkmn.kangaskhan.name"
         }
       ]
     }

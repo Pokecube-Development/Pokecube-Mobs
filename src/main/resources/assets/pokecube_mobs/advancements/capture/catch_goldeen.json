@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Goldeen.name"
+          "translate": "pkmn.goldeen.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Goldeen.name"
+          "translate": "pkmn.goldeen.name"
         }
       ]
     }

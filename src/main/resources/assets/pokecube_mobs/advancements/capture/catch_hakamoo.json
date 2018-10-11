@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Hakamo-o.name"
+          "translate": "pkmn.hakamoo.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Hakamo-o.name"
+          "translate": "pkmn.hakamoo.name"
         }
       ]
     }

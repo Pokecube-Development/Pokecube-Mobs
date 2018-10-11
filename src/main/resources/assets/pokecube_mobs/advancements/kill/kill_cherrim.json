@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Cherrim.name"
+          "translate": "pkmn.cherrim.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Cherrim.name"
+          "translate": "pkmn.cherrim.name"
         }
       ]
     }

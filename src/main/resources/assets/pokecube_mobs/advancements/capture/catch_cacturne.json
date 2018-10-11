@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Cacturne.name"
+          "translate": "pkmn.cacturne.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Cacturne.name"
+          "translate": "pkmn.cacturne.name"
         }
       ]
     }

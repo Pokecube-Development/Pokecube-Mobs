@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Flygon.name"
+          "translate": "pkmn.flygon.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Flygon.name"
+          "translate": "pkmn.flygon.name"
         }
       ]
     }

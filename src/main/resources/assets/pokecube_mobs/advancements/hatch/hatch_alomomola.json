@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Alomomola.name"
+          "translate": "pkmn.alomomola.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Alomomola.name"
+          "translate": "pkmn.alomomola.name"
         }
       ]
     }

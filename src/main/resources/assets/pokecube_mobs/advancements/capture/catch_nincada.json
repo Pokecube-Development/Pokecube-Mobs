@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Nincada.name"
+          "translate": "pkmn.nincada.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Nincada.name"
+          "translate": "pkmn.nincada.name"
         }
       ]
     }

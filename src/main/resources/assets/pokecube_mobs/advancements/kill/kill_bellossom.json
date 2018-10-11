@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Bellossom.name"
+          "translate": "pkmn.bellossom.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Bellossom.name"
+          "translate": "pkmn.bellossom.name"
         }
       ]
     }

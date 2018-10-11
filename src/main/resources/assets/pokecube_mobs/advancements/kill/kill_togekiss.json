@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Togekiss.name"
+          "translate": "pkmn.togekiss.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Togekiss.name"
+          "translate": "pkmn.togekiss.name"
         }
       ]
     }

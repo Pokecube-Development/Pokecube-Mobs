@@ -47046,6 +47046,20 @@
       }
     },
     {
+      "name": "Frillish Female",
+      "number": 592,
+      "gender": "female",
+      "genderBase": "Frillish",
+      "stats": {}
+    },
+    {
+      "name": "Frillish Male",
+      "number": 592,
+      "gender": "male",
+      "genderBase": "Frillish",
+      "stats": {}
+    },
+    {
       "name": "Jellicent",
       "number": 593,
       "base": true,
@@ -47118,6 +47132,20 @@
           "moves": "absorb, attract, bind, blizzard, brine, bubble, bubblebeam, confide, darkpulse, dazzlinggleam, dive, doubleteam, dreameater, energyball, facade, flash, frustration, gigadrain, gigaimpact, hail, hex, hiddenpower, hydropump, hyperbeam, icebeam, icywind, magiccoat, nightshade, ominouswind, painsplit, protect, psychic, psychup, raindance, recover, rest, return, round, safeguard, scald, secretpower, shadowball, shockwave, sleeptalk, sludgebomb, sludgewave, snore, spite, substitute, surf, swagger, taunt, toxic, trick, trickroom, waterfall, waterpulse, watersport, waterspout, willowisp, wringout"
         }
       }
+    },
+    {
+      "name": "Jellicent Female",
+      "number": 593,
+      "gender": "female",
+      "genderBase": "Jellicent",
+      "stats": {}
+    },
+    {
+      "name": "Jellicent Male",
+      "number": 593,
+      "gender": "male",
+      "genderBase": "Jellicent",
+      "stats": {}
     },
     {
       "name": "Alomomola",

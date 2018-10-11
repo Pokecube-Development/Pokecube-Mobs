@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Toxapex.name"
+          "translate": "pkmn.toxapex.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Toxapex.name"
+          "translate": "pkmn.toxapex.name"
         }
       ]
     }

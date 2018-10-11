@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+   <model>
+		<phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.59"/>
+		<metadata head="head" headCap="-80,80" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="-1"/>
+		
+		<phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="10"/>
+		
+		<phase type="idle">					
+			<part name="tail">
+               <component name="1" rotOffset="-7,0,0" rotChange="-8,0,0" length="10" startKey="0"/>
+               <component name="2" rotChange="8,0,0" length="10" startKey="10"/>
+            </part>
+		</phase>
+		<phase type="walking">
+			<part name="tail">
+               <component name="1" rotOffset="-7,0,0" rotChange="-8,0,0" length="10" startKey="0"/>
+               <component name="2" rotChange="8,0,0" length="10" startKey="10"/>
+            </part>
+		</phase>
+   </model>
+</ModelAnimator>

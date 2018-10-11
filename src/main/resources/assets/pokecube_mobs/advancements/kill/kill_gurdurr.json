@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Gurdurr.name"
+          "translate": "pkmn.gurdurr.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Gurdurr.name"
+          "translate": "pkmn.gurdurr.name"
         }
       ]
     }

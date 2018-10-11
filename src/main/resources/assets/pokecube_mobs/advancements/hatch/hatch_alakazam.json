@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Alakazam.name"
+          "translate": "pkmn.alakazam.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Alakazam.name"
+          "translate": "pkmn.alakazam.name"
         }
       ]
     }

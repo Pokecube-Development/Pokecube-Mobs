@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Bibarel.name"
+          "translate": "pkmn.bibarel.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Bibarel.name"
+          "translate": "pkmn.bibarel.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Lickitung.name"
+          "translate": "pkmn.lickitung.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Lickitung.name"
+          "translate": "pkmn.lickitung.name"
         }
       ]
     }

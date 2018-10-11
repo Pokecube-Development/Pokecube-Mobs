@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Incineroar.name"
+          "translate": "pkmn.incineroar.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Incineroar.name"
+          "translate": "pkmn.incineroar.name"
         }
       ]
     }

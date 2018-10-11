@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Stakataka.name"
+          "translate": "pkmn.stakataka.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Stakataka.name"
+          "translate": "pkmn.stakataka.name"
         }
       ]
     }

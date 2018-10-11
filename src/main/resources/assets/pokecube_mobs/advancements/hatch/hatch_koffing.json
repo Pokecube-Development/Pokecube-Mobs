@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Koffing.name"
+          "translate": "pkmn.koffing.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Koffing.name"
+          "translate": "pkmn.koffing.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Octillery.name"
+          "translate": "pkmn.octillery.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Octillery.name"
+          "translate": "pkmn.octillery.name"
         }
       ]
     }

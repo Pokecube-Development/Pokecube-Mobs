@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Milotic.name"
+          "translate": "pkmn.milotic.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Milotic.name"
+          "translate": "pkmn.milotic.name"
         }
       ]
     }

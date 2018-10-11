@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Swalot.name"
+          "translate": "pkmn.swalot.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Swalot.name"
+          "translate": "pkmn.swalot.name"
         }
       ]
     }

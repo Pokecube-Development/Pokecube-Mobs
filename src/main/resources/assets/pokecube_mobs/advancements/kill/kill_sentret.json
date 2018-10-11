@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Sentret.name"
+          "translate": "pkmn.sentret.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Sentret.name"
+          "translate": "pkmn.sentret.name"
         }
       ]
     }

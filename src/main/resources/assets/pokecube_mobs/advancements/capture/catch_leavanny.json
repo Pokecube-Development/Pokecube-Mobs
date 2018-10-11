@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Leavanny.name"
+          "translate": "pkmn.leavanny.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Leavanny.name"
+          "translate": "pkmn.leavanny.name"
         }
       ]
     }

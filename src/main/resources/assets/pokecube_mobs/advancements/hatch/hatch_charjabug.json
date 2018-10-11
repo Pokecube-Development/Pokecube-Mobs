@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Charjabug.name"
+          "translate": "pkmn.charjabug.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Charjabug.name"
+          "translate": "pkmn.charjabug.name"
         }
       ]
     }

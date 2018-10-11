@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Tyrogue.name"
+          "translate": "pkmn.tyrogue.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Tyrogue.name"
+          "translate": "pkmn.tyrogue.name"
         }
       ]
     }

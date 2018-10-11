@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Hypno.name"
+          "translate": "pkmn.hypno.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Hypno.name"
+          "translate": "pkmn.hypno.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Girafarig.name"
+          "translate": "pkmn.girafarig.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Girafarig.name"
+          "translate": "pkmn.girafarig.name"
         }
       ]
     }

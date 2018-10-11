@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Pachirisu.name"
+          "translate": "pkmn.pachirisu.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Pachirisu.name"
+          "translate": "pkmn.pachirisu.name"
         }
       ]
     }

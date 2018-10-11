@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Stufful.name"
+          "translate": "pkmn.stufful.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Stufful.name"
+          "translate": "pkmn.stufful.name"
         }
       ]
     }

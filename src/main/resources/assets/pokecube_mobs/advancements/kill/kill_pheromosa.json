@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Pheromosa.name"
+          "translate": "pkmn.pheromosa.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Pheromosa.name"
+          "translate": "pkmn.pheromosa.name"
         }
       ]
     }

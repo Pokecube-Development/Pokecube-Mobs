@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Dhelmise.name"
+          "translate": "pkmn.dhelmise.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Dhelmise.name"
+          "translate": "pkmn.dhelmise.name"
         }
       ]
     }

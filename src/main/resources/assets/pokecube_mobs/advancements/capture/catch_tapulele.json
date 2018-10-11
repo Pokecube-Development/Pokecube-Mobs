@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Tapu Lele.name"
+          "translate": "pkmn.tapulele.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Tapu Lele.name"
+          "translate": "pkmn.tapulele.name"
         }
       ]
     },

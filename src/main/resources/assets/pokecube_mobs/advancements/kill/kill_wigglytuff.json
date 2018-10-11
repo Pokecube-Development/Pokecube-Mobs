@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Wigglytuff.name"
+          "translate": "pkmn.wigglytuff.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Wigglytuff.name"
+          "translate": "pkmn.wigglytuff.name"
         }
       ]
     }

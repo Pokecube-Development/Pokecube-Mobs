@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Pansear.name"
+          "translate": "pkmn.pansear.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Pansear.name"
+          "translate": "pkmn.pansear.name"
         }
       ]
     }

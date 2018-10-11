@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Exeggcute.name"
+          "translate": "pkmn.exeggcute.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Exeggcute.name"
+          "translate": "pkmn.exeggcute.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Toxicroak.name"
+          "translate": "pkmn.toxicroak.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Toxicroak.name"
+          "translate": "pkmn.toxicroak.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Teddiursa.name"
+          "translate": "pkmn.teddiursa.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Teddiursa.name"
+          "translate": "pkmn.teddiursa.name"
         }
       ]
     }

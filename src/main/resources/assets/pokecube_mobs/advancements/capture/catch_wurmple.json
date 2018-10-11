@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Wurmple.name"
+          "translate": "pkmn.wurmple.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Wurmple.name"
+          "translate": "pkmn.wurmple.name"
         }
       ]
     }

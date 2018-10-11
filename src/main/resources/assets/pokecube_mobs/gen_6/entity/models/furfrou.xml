@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelAnimator version="0.1">
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.25"/>
+		<metadata head="head" headCap="-80,80" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="-1"/>
+        <metadata head="neck1" headCap="-10,10" headCap1="-5,5" headAxis="2" headAxis2="0" headDir="-1"/>
+		<metadata head="neck2" headCap="-10,10" headCap1="-5,5" headAxis="2" headAxis2="0" headDir="-1"/>
+       
+	   <phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="10"/>
+		
+		<phase type="idle">
+			<part name="orl1">
+				<component name="1" rotOffset="0,0,0" rotChange="0,0,-2" length="9" startKey="0"/>
+               <component name="2" rotChange="0,0,2" length="9" startKey="10"/>
+            </part>
+			<part name="orl2">
+				<component name="1" rotOffset="0,0,0" rotChange="0,0,-2" length="9" startKey="0"/>
+               <component name="2" rotChange="0,0,2" length="9" startKey="10"/>
+            </part>
+			<part name="Cube_037">
+				<component name="1" rotOffset="2,0,0" rotChange="5,0,0" length="9" startKey="0"/>
+               <component name="2" rotChange="-5,0,0" length="9" startKey="10"/>
+            </part>
+		</phase>
+		<phase type="walking">			
+			<part name="Cube_037">
+				<component name="1" rotOffset="-7,0,0" rotChange="5,0,0" length="9" startKey="0"/>
+               <component name="2" rotChange="-5,0,0" length="9" startKey="10"/>
+            </part>
+			<part name="orl1">
+				<component name="1" rotOffset="0,0,4" rotChange="0,0,-2" length="9" startKey="0"/>
+               <component name="2" rotChange="0,0,2" length="9" startKey="10"/>
+            </part>
+			<part name="orl2">
+				<component name="1" rotOffset="0,0,-4" rotChange="0,0,2" length="9" startKey="0"/>
+               <component name="2" rotChange="0,0,-2" length="9" startKey="10"/>
+            </part>
+		</phase>
+   </model>
+</ModelAnimator>

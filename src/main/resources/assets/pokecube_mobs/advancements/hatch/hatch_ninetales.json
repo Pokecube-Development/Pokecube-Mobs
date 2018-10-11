@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Ninetales.name"
+          "translate": "pkmn.ninetales.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Ninetales.name"
+          "translate": "pkmn.ninetales.name"
         }
       ]
     }

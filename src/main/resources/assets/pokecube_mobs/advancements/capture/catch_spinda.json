@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Spinda.name"
+          "translate": "pkmn.spinda.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Spinda.name"
+          "translate": "pkmn.spinda.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Abomasnow.name"
+          "translate": "pkmn.abomasnow.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Abomasnow.name"
+          "translate": "pkmn.abomasnow.name"
         }
       ]
     }

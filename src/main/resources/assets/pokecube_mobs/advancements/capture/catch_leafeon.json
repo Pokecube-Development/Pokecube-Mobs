@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Leafeon.name"
+          "translate": "pkmn.leafeon.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Leafeon.name"
+          "translate": "pkmn.leafeon.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Vivillon.name"
+          "translate": "pkmn.vivillon.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Vivillon.name"
+          "translate": "pkmn.vivillon.name"
         }
       ]
     }

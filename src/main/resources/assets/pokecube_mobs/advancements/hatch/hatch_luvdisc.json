@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Luvdisc.name"
+          "translate": "pkmn.luvdisc.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Luvdisc.name"
+          "translate": "pkmn.luvdisc.name"
         }
       ]
     }

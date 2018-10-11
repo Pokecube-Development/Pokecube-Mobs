@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Staravia.name"
+          "translate": "pkmn.staravia.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Staravia.name"
+          "translate": "pkmn.staravia.name"
         }
       ]
     }

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.Crobat.name"
+          "translate": "pkmn.crobat.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.Crobat.name"
+          "translate": "pkmn.crobat.name"
         }
       ]
     }

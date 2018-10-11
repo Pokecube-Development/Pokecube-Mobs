@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Shellder.name"
+          "translate": "pkmn.shellder.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Shellder.name"
+          "translate": "pkmn.shellder.name"
         }
       ]
     }

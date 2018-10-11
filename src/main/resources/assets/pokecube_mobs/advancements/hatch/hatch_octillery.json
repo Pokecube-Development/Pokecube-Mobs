@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.Octillery.name"
+          "translate": "pkmn.octillery.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.Octillery.name"
+          "translate": "pkmn.octillery.name"
         }
       ]
     }

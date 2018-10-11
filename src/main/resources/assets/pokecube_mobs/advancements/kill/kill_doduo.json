@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Doduo.name"
+          "translate": "pkmn.doduo.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Doduo.name"
+          "translate": "pkmn.doduo.name"
         }
       ]
     }

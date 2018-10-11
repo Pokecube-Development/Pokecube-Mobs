@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Larvitar.name"
+          "translate": "pkmn.larvitar.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Larvitar.name"
+          "translate": "pkmn.larvitar.name"
         }
       ]
     }

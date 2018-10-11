@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.Unown_A.name"
+          "translate": "pkmn.unown_a.name"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.Unown_A.name"
+          "translate": "pkmn.unown_a.name"
         }
       ]
     }
