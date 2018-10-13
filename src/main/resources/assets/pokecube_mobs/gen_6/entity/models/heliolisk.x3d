@@ -27,7 +27,7 @@
 				<Group DEF="group_ME_body">
 					<Shape>
 						<Appearance>
-							<ImageTexture DEF="IM_Helioptile_png"
+							<ImageTexture DEF="IM_Heliolisk_png"
 							              />
 						</Appearance>
 						<IndexedTriangleSet solid="false"
@@ -54,7 +54,7 @@
 					<Group DEF="group_ME_leg2">
 						<Shape>
 							<Appearance>
-								<ImageTexture USE="IM_Helioptile_png" />
+								<ImageTexture USE="IM_Heliolisk_png" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -80,7 +80,7 @@
 						<Group DEF="group_ME_leg2_1">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Helioptile_png" />
+									<ImageTexture USE="IM_Heliolisk_png" />
 								</Appearance>
 								<IndexedTriangleSet solid="false"
 								                    normalPerVertex="true"
@@ -94,7 +94,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="foot2_TRANSFORM"
-					           translation="0.000000 1.074376 -0.768956"
+					           translation="0.000000 1.074376 -0.768955"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -106,7 +106,7 @@
 							<Group DEF="group_ME_foot2">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Helioptile_png" />
+										<ImageTexture USE="IM_Heliolisk_png" />
 									</Appearance>
 									<IndexedTriangleSet solid="false"
 									                    normalPerVertex="true"
@@ -132,7 +132,7 @@
 								<Group DEF="group_ME_Cube_000">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -162,7 +162,7 @@
 					<Group DEF="group_ME_tail">
 						<Shape>
 							<Appearance>
-								<ImageTexture USE="IM_Helioptile_png" />
+								<ImageTexture USE="IM_Heliolisk_png" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -188,7 +188,7 @@
 						<Group DEF="group_ME_tail1">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Helioptile_png" />
+									<ImageTexture USE="IM_Heliolisk_png" />
 								</Appearance>
 								<IndexedTriangleSet solid="false"
 								                    normalPerVertex="true"
@@ -214,7 +214,7 @@
 							<Group DEF="group_ME_tail2">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Helioptile_png" />
+										<ImageTexture USE="IM_Heliolisk_png" />
 									</Appearance>
 									<IndexedTriangleSet solid="false"
 									                    normalPerVertex="true"
@@ -230,17 +230,17 @@
 						<Transform DEF="tail3_TRANSFORM"
 						           translation="0.000000 1.674350 0.000001"
 						           scale="1.000000 1.000000 1.000000"
-						           rotation="1.000000 0.000000 0.000000 0.000000"
+						           rotation="0.000000 0.000000 0.000000 0.000000"
 						           >
 							<Transform DEF="tail3_ifs_TRANSFORM"
-							           translation="0.000000 0.000000 0.000000"
+							           translation="0.000000 0.000000 -0.000000"
 							           scale="1.000000 1.000000 1.000000"
 							           rotation="1.000000 0.000000 0.000000 0.000000"
 							           >
 								<Group DEF="group_ME_tail3">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -254,9 +254,9 @@
 								</Group>
 							</Transform>
 							<Transform DEF="tail4_TRANSFORM"
-							           translation="0.000000 1.730968 0.000000"
+							           translation="0.000000 1.730968 -0.000000"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="1.000000 0.000000 0.000000 0.000000"
+							           rotation="-0.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="tail4_ifs_TRANSFORM"
 								           translation="0.000000 0.000000 0.000000"
@@ -266,7 +266,7 @@
 									<Group DEF="group_ME_tail4">
 										<Shape>
 											<Appearance>
-												<ImageTexture USE="IM_Helioptile_png" />
+												<ImageTexture USE="IM_Heliolisk_png" />
 											</Appearance>
 											<IndexedTriangleSet solid="false"
 											                    normalPerVertex="true"
@@ -280,7 +280,7 @@
 									</Group>
 								</Transform>
 								<Transform DEF="tail5_TRANSFORM"
-								           translation="0.000000 1.362488 0.000000"
+								           translation="0.000000 1.362487 0.000000"
 								           scale="1.000000 1.000000 1.000000"
 								           rotation="0.000000 0.000000 0.000000 0.000000"
 								           >
@@ -292,13 +292,13 @@
 										<Group DEF="group_ME_tail5">
 											<Shape>
 												<Appearance>
-													<ImageTexture USE="IM_Helioptile_png" />
+													<ImageTexture USE="IM_Heliolisk_png" />
 												</Appearance>
 												<IndexedTriangleSet solid="false"
 												                    normalPerVertex="true"
 												                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 												                    >
-													<Coordinate point="-0.250126 1.883802 0.193715 -0.250126 1.880777 -0.221165 -0.250126 -0.104049 -0.206692 -0.250126 -0.101024 0.208188 -0.250126 -0.101024 0.208188 -0.250126 -0.104049 -0.206692 0.250126 -0.104049 -0.206692 0.250126 -0.101024 0.208188 0.250126 -0.101024 0.208188 0.250126 -0.104049 -0.206692 0.250126 1.880777 -0.221165 0.250126 1.883802 0.193715 -0.250126 1.880777 -0.221165 -0.250126 1.883802 0.193715 0.250126 1.883802 0.193715 0.250126 1.880777 -0.221165 0.250126 1.883802 0.193715 0.250126 -0.101024 0.208188 0.250126 -0.104049 -0.206692 0.250126 1.880777 -0.221165 " />
+													<Coordinate point="-0.250126 1.883802 0.193715 -0.250126 1.880776 -0.221165 -0.250126 -0.104049 -0.206692 -0.250126 -0.101024 0.208188 -0.250126 -0.101024 0.208188 -0.250126 -0.104049 -0.206692 0.250126 -0.104049 -0.206692 0.250126 -0.101024 0.208188 0.250126 -0.101024 0.208188 0.250126 -0.104049 -0.206692 0.250126 1.880776 -0.221165 0.250126 1.883802 0.193715 -0.250126 1.880776 -0.221165 -0.250126 1.883802 0.193715 0.250126 1.883802 0.193715 0.250126 1.880776 -0.221165 0.250126 1.883802 0.193715 0.250126 -0.101024 0.208188 0.250126 -0.104049 -0.206692 0.250126 1.880776 -0.221165 " />
 													<Normal vector="-0.577349 0.581530 0.573107 -0.577349 0.573107 -0.581530 -0.577349 -0.581530 -0.573107 -0.577349 -0.573107 0.581530 -0.577349 -0.573107 0.581530 -0.577349 -0.581530 -0.573107 0.577349 -0.581530 -0.573107 0.577349 -0.573107 0.581530 0.577349 -0.573107 0.581530 0.577349 -0.581530 -0.573107 0.577349 0.573107 -0.581530 0.577349 0.581530 0.573107 -0.577349 0.573107 -0.581530 -0.577349 0.581530 0.573107 0.577349 0.581530 0.573107 0.577349 0.573107 -0.581530 0.577349 0.581530 0.573107 0.577349 -0.573107 0.581530 0.577349 -0.581530 -0.573107 0.577349 0.573107 -0.581530 " />
 													<TextureCoordinate point="0.0220 0.8173 0.1030 0.8173 0.1030 0.9276 0.0220 0.9276 0.0220 0.8173 0.1030 0.8173 0.1030 0.9276 0.0220 0.9276 0.0220 0.8173 0.1030 0.8173 0.1030 0.9276 0.0220 0.9276 0.1030 0.9276 0.0220 0.9276 0.0220 0.8173 0.1030 0.8173 0.1030 0.9276 0.1030 0.8173 0.0220 0.8173 0.0220 0.9276 " />
 												</IndexedTriangleSet>
@@ -324,7 +324,7 @@
 					<Group DEF="group_ME_leg1">
 						<Shape>
 							<Appearance>
-								<ImageTexture USE="IM_Helioptile_png" />
+								<ImageTexture USE="IM_Heliolisk_png" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -350,7 +350,7 @@
 						<Group DEF="group_ME_leg1_1">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Helioptile_png" />
+									<ImageTexture USE="IM_Heliolisk_png" />
 								</Appearance>
 								<IndexedTriangleSet solid="false"
 								                    normalPerVertex="true"
@@ -364,7 +364,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="foot1_TRANSFORM"
-					           translation="-0.000000 1.074376 -0.768956"
+					           translation="-0.000000 1.074376 -0.768955"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -376,7 +376,7 @@
 							<Group DEF="group_ME_foot1">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Helioptile_png" />
+										<ImageTexture USE="IM_Heliolisk_png" />
 									</Appearance>
 									<IndexedTriangleSet solid="false"
 									                    normalPerVertex="true"
@@ -402,7 +402,7 @@
 								<Group DEF="group_ME_Cube_018">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -432,7 +432,7 @@
 					<Group DEF="group_ME_body1">
 						<Shape>
 							<Appearance>
-								<ImageTexture USE="IM_Helioptile_png" />
+								<ImageTexture USE="IM_Heliolisk_png" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -458,7 +458,7 @@
 						<Group DEF="group_ME_arm2">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Helioptile_png" />
+									<ImageTexture USE="IM_Heliolisk_png" />
 								</Appearance>
 								<IndexedTriangleSet solid="false"
 								                    normalPerVertex="true"
@@ -472,7 +472,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="arm2_1_TRANSFORM"
-					           translation="-1.549287 0.000000 -0.000001"
+					           translation="-1.549287 0.000000 -0.000002"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -484,7 +484,7 @@
 							<Group DEF="group_ME_arm2_1">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Helioptile_png" />
+										<ImageTexture USE="IM_Heliolisk_png" />
 									</Appearance>
 									<IndexedTriangleSet solid="false"
 									                    normalPerVertex="true"
@@ -500,17 +500,17 @@
 						<Transform DEF="hand2_TRANSFORM"
 						           translation="-1.499609 -0.000001 0.000002"
 						           scale="1.000000 1.000000 1.000000"
-						           rotation="1.000000 0.000000 0.000000 0.000000"
+						           rotation="0.000000 0.000000 0.000000 0.000000"
 						           >
 							<Transform DEF="hand2_ifs_TRANSFORM"
-							           translation="0.000000 0.000000 0.000000"
+							           translation="-0.000000 0.000000 0.000000"
 							           scale="1.000000 1.000000 1.000000"
 							           rotation="1.000000 0.000000 0.000000 0.000000"
 							           >
 								<Group DEF="group_ME_hand2">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -563,7 +563,7 @@
 							<Group DEF="group_ME_neck2">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Helioptile_png" />
+										<ImageTexture USE="IM_Heliolisk_png" />
 									</Appearance>
 									<IndexedTriangleSet solid="false"
 									                    normalPerVertex="true"
@@ -589,7 +589,7 @@
 								<Group DEF="group_ME_head">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -603,19 +603,19 @@
 								</Group>
 							</Transform>
 							<Transform DEF="eye_001_TRANSFORM"
-							           translation="-0.868157 -0.711368 0.478782"
+							           translation="-0.868157 -0.711367 0.478782"
 							           scale="1.000000 1.000000 1.000000"
 							           rotation="1.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="eye_001_ifs_TRANSFORM"
-								           translation="0.000000 -0.000000 0.000000"
+								           translation="0.000000 0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
 								           rotation="1.000000 0.000000 0.000000 0.000000"
 								           >
 									<Group DEF="group_ME_eye_001">
 										<Shape>
 											<Appearance>
-												<ImageTexture USE="IM_Helioptile_png" />
+												<ImageTexture USE="IM_Heliolisk_png" />
 											</Appearance>
 											<IndexedTriangleSet solid="false"
 											                    normalPerVertex="true"
@@ -642,13 +642,13 @@
 									<Group DEF="group_ME_Cube_006">
 										<Shape>
 											<Appearance>
-												<ImageTexture USE="IM_Helioptile_png" />
+												<ImageTexture USE="IM_Heliolisk_png" />
 											</Appearance>
 											<IndexedTriangleSet solid="false"
 											                    normalPerVertex="true"
 											                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 											                    >
-												<Coordinate point="-0.817966 -0.713648 -0.073338 -0.817966 -0.752394 0.390009 -0.817966 0.106832 1.189024 -0.817966 0.182110 0.001569 -0.817966 0.182110 0.001569 -0.817966 0.106832 1.189024 0.817966 0.106832 1.189024 0.817966 0.182110 0.001569 0.817966 0.182110 0.001569 0.817966 0.106832 1.189024 0.817966 -0.752394 0.390009 0.817966 -0.713648 -0.073338 -0.817966 -0.752394 0.390009 -0.817966 -0.713648 -0.073338 0.817966 -0.713648 -0.073338 0.817966 -0.752394 0.390009 0.817966 -0.713648 -0.073338 0.817966 0.182110 0.001569 0.817966 0.106832 1.189024 0.817966 -0.752394 0.390009 " />
+												<Coordinate point="-0.817966 -0.713647 -0.073338 -0.817966 -0.752394 0.390009 -0.817966 0.106832 1.189024 -0.817966 0.182110 0.001569 -0.817966 0.182110 0.001569 -0.817966 0.106832 1.189024 0.817966 0.106832 1.189024 0.817966 0.182110 0.001569 0.817966 0.182110 0.001569 0.817966 0.106832 1.189024 0.817966 -0.752394 0.390009 0.817966 -0.713647 -0.073338 -0.817966 -0.752394 0.390009 -0.817966 -0.713647 -0.073338 0.817966 -0.713647 -0.073338 0.817966 -0.752394 0.390009 0.817966 -0.713647 -0.073338 0.817966 0.182110 0.001569 0.817966 0.106832 1.189024 0.817966 -0.752394 0.390009 " />
 												<Normal vector="-0.577349 -0.527207 -0.623432 -0.620655 -0.731254 0.282876 -0.549608 0.309244 0.776055 -0.578387 0.617542 -0.532975 -0.578387 0.617542 -0.532975 -0.549608 0.309244 0.776055 0.549608 0.309244 0.776055 0.578387 0.617542 -0.532975 0.578387 0.617542 -0.532975 0.549608 0.309244 0.776055 0.620655 -0.731254 0.282876 0.577349 -0.527207 -0.623432 -0.620655 -0.731254 0.282876 -0.577349 -0.527207 -0.623432 0.577349 -0.527207 -0.623432 0.620655 -0.731254 0.282876 0.577349 -0.527207 -0.623432 0.578387 0.617542 -0.532975 0.549608 0.309244 0.776055 0.620655 -0.731254 0.282876 " />
 												<TextureCoordinate point="0.0136 0.8349 0.0936 0.8349 0.0936 0.9610 0.0136 0.9610 0.0136 0.8349 0.0936 0.8349 0.0936 0.9610 0.0136 0.9610 0.0136 0.8349 0.0936 0.8349 0.0936 0.9610 0.0136 0.9610 0.0936 0.9610 0.0136 0.9610 0.0136 0.8349 0.0936 0.8349 0.0936 0.9610 0.0936 0.8349 0.0136 0.8349 0.0136 0.9610 " />
 											</IndexedTriangleSet>
@@ -657,19 +657,19 @@
 								</Transform>
 							</Transform>
 							<Transform DEF="mouth_TRANSFORM"
-							           translation="0.000000 -0.802337 0.055224"
+							           translation="0.000000 -0.802336 0.055224"
 							           scale="1.000000 1.000000 1.000000"
 							           rotation="1.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="mouth_ifs_TRANSFORM"
-								           translation="0.000000 -0.000000 0.000000"
+								           translation="0.000000 0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
 								           rotation="1.000000 0.000000 0.000000 0.000000"
 								           >
 									<Group DEF="group_ME_Cube_007">
 										<Shape>
 											<Appearance>
-												<ImageTexture USE="IM_Helioptile_png" />
+												<ImageTexture USE="IM_Heliolisk_png" />
 											</Appearance>
 											<IndexedTriangleSet solid="false"
 											                    normalPerVertex="true"
@@ -677,26 +677,26 @@
 											                    >
 												<Coordinate point="-0.604026 -0.979701 0.058030 -0.604026 -0.951486 0.482323 -0.604026 0.275675 0.400718 -0.604026 0.247460 -0.023575 -0.604026 0.247460 -0.023575 -0.604026 0.275675 0.400718 0.604026 0.275675 0.400718 0.604026 0.247460 -0.023575 0.604026 0.247460 -0.023575 0.604026 0.275675 0.400718 0.604026 -0.951486 0.482323 0.604026 -0.979701 0.058030 -0.604026 -0.951486 0.482323 -0.604026 -0.979701 0.058030 0.604026 -0.979701 0.058030 0.604026 -0.951486 0.482323 0.604026 -0.979701 0.058030 0.604026 0.247460 -0.023575 0.604026 0.275675 0.400718 0.604026 -0.951486 0.482323 " />
 												<Normal vector="-0.577349 -0.614368 -0.537767 -0.577349 -0.537767 0.614368 -0.577349 0.614368 0.537767 -0.577349 0.537767 -0.614368 -0.577349 0.537767 -0.614368 -0.577349 0.614368 0.537767 0.577349 0.614368 0.537767 0.577349 0.537767 -0.614368 0.577349 0.537767 -0.614368 0.577349 0.614368 0.537767 0.577349 -0.537767 0.614368 0.577349 -0.614368 -0.537767 -0.577349 -0.537767 0.614368 -0.577349 -0.614368 -0.537767 0.577349 -0.614368 -0.537767 0.577349 -0.537767 0.614368 0.577349 -0.614368 -0.537767 0.577349 0.537767 -0.614368 0.577349 0.614368 0.537767 0.577349 -0.537767 0.614368 " />
-												<TextureCoordinate point="0.0139 0.6264 0.0992 0.6264 0.0992 0.7613 0.0139 0.7613 0.0139 0.6264 0.0992 0.6264 0.0992 0.7613 0.0139 0.7613 0.0139 0.6264 0.0992 0.6264 0.0992 0.7613 0.0139 0.7613 0.0992 0.7613 0.0139 0.7613 0.0139 0.6264 0.0992 0.6264 0.0992 0.7613 0.0992 0.6264 0.0139 0.6264 0.0139 0.7613 " />
+												<TextureCoordinate point="0.0199 0.2514 0.1051 0.2514 0.1051 0.3863 0.0199 0.3863 0.0199 0.2514 0.1051 0.2514 0.1051 0.3863 0.0199 0.3863 0.0199 0.2514 0.1051 0.2514 0.1051 0.3863 0.0199 0.3863 0.1051 0.3863 0.0199 0.3863 0.0199 0.2514 0.1051 0.2514 0.1051 0.3863 0.1051 0.2514 0.0199 0.2514 0.0199 0.3863 " />
 											</IndexedTriangleSet>
 										</Shape>
 									</Group>
 								</Transform>
 							</Transform>
 							<Transform DEF="eye_TRANSFORM"
-							           translation="0.858026 -0.711368 0.478782"
+							           translation="0.858026 -0.711367 0.478782"
 							           scale="1.000000 1.000000 1.000000"
 							           rotation="1.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="eye_ifs_TRANSFORM"
-								           translation="0.000000 -0.000000 0.000000"
+								           translation="0.000000 0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
 								           rotation="1.000000 0.000000 0.000000 0.000000"
 								           >
 									<Group DEF="group_ME_eye">
 										<Shape>
 											<Appearance>
-												<ImageTexture USE="IM_Helioptile_png" />
+												<ImageTexture USE="IM_Heliolisk_png" />
 											</Appearance>
 											<IndexedTriangleSet solid="false"
 											                    normalPerVertex="true"
@@ -725,7 +725,7 @@
 							<Group DEF="group_ME_for">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Helioptile_png" />
+										<ImageTexture USE="IM_Heliolisk_png" />
 									</Appearance>
 									<IndexedTriangleSet solid="false"
 									                    normalPerVertex="true"
@@ -739,7 +739,7 @@
 							</Group>
 						</Transform>
 						<Transform DEF="spike_011_TRANSFORM"
-						           translation="0.056754 1.966729 -0.440708"
+						           translation="0.056754 1.966729 -0.440709"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="-0.000000 0.000000 0.000000 0.000000"
 						           >
@@ -751,7 +751,7 @@
 								<Group DEF="group_ME_spikr_011">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -766,7 +766,7 @@
 							</Transform>
 						</Transform>
 						<Transform DEF="spike_010_TRANSFORM"
-						           translation="-0.798862 1.966448 -0.441410"
+						           translation="-0.798862 1.966448 -0.441411"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="-0.000000 0.000000 0.000000 0.000000"
 						           >
@@ -778,7 +778,7 @@
 								<Group DEF="group_ME_spikr_010">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -805,7 +805,7 @@
 								<Group DEF="group_ME_spikr_009">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -832,15 +832,15 @@
 								<Group DEF="group_ME_spikr_008">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 "
 										                    >
-											<Coordinate point="0.278100 0.003425 0.005483 0.012873 -0.270451 -0.478544 -0.013120 -0.270471 -0.478526 -0.278097 0.002992 0.005871 " />
-											<Normal vector="-0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 " />
-											<TextureCoordinate point="0.0377 0.4371 0.1112 0.4971 0.1112 0.5029 0.0377 0.5629 " />
+											<Coordinate point="0.278100 0.003425 0.005483 -0.278097 0.002992 0.005871 -0.013120 -0.270471 -0.478526 0.012873 -0.270451 -0.478544 " />
+											<Normal vector="0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 " />
+											<TextureCoordinate point="0.0377 0.4371 0.0377 0.5629 0.1112 0.5029 0.1112 0.4971 " />
 										</IndexedTriangleSet>
 									</Shape>
 								</Group>
@@ -859,22 +859,22 @@
 								<Group DEF="group_ME_spikr_007">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 "
 										                    >
-											<Coordinate point="0.278100 0.003425 0.005483 0.012873 -0.270451 -0.478544 -0.013120 -0.270471 -0.478526 -0.278097 0.002992 0.005871 " />
-											<Normal vector="-0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 " />
-											<TextureCoordinate point="0.0377 0.4371 0.1112 0.4971 0.1112 0.5029 0.0377 0.5629 " />
+											<Coordinate point="0.278100 0.003425 0.005483 -0.278097 0.002992 0.005871 -0.013120 -0.270471 -0.478526 0.012873 -0.270451 -0.478544 " />
+											<Normal vector="0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 " />
+											<TextureCoordinate point="0.0377 0.4371 0.0377 0.5629 0.1112 0.5029 0.1112 0.4971 " />
 										</IndexedTriangleSet>
 									</Shape>
 								</Group>
 							</Transform>
 						</Transform>
 						<Transform DEF="spike_006_TRANSFORM"
-						           translation="0.056754 0.485903 -1.951871"
+						           translation="0.056754 0.485903 -1.951872"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="-0.000000 0.000000 0.000000 0.000000"
 						           >
@@ -886,22 +886,22 @@
 								<Group DEF="group_ME_spikr_006">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 "
 										                    >
-											<Coordinate point="0.278100 0.003425 0.005483 0.012873 -0.270451 -0.478544 -0.013120 -0.270471 -0.478526 -0.278097 0.002992 0.005871 " />
-											<Normal vector="-0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 -0.001007 0.870571 -0.492019 " />
-											<TextureCoordinate point="0.0377 0.4371 0.1112 0.4971 0.1112 0.5029 0.0377 0.5629 " />
+											<Coordinate point="0.278100 0.003425 0.005483 -0.278097 0.002992 0.005871 -0.013120 -0.270471 -0.478526 0.012873 -0.270451 -0.478544 " />
+											<Normal vector="0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 0.001007 -0.870571 0.492019 " />
+											<TextureCoordinate point="0.0377 0.4371 0.0377 0.5629 0.1112 0.5029 0.1112 0.4971 " />
 										</IndexedTriangleSet>
 									</Shape>
 								</Group>
 							</Transform>
 						</Transform>
 						<Transform DEF="spike_005_TRANSFORM"
-						           translation="-1.136477 1.141622 -1.266938"
+						           translation="-1.136477 1.141622 -1.266939"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="-0.000000 0.000000 0.000000 0.000000"
 						           >
@@ -913,15 +913,15 @@
 								<Group DEF="group_ME_spikr_005">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 "
 										                    >
-											<Coordinate point="0.006357 -0.195517 -0.197773 -0.535854 0.078475 -0.094954 -0.535854 0.096652 -0.076374 0.006357 0.193440 0.199806 " />
-											<Normal vector="0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 " />
-											<TextureCoordinate point="0.0377 0.4371 0.1112 0.4971 0.1112 0.5029 0.0377 0.5629 " />
+											<Coordinate point="0.006357 -0.195517 -0.197773 0.006357 0.193440 0.199806 -0.535854 0.096652 -0.076374 -0.535854 0.078475 -0.094954 " />
+											<Normal vector="-0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 " />
+											<TextureCoordinate point="0.0377 0.4371 0.0377 0.5629 0.1112 0.5029 0.1112 0.4971 " />
 										</IndexedTriangleSet>
 									</Shape>
 								</Group>
@@ -940,22 +940,22 @@
 								<Group DEF="group_ME_spikr_004">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 "
 										                    >
-											<Coordinate point="0.006357 -0.195517 -0.197773 -0.535854 0.078475 -0.094954 -0.535854 0.096652 -0.076374 0.006357 0.193440 0.199806 " />
-											<Normal vector="0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 " />
-											<TextureCoordinate point="0.0377 0.4371 0.1112 0.4971 0.1112 0.5029 0.0377 0.5629 " />
+											<Coordinate point="0.006357 -0.195517 -0.197773 0.006357 0.193440 0.199806 -0.535854 0.096652 -0.076374 -0.535854 0.078475 -0.094954 " />
+											<Normal vector="-0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 " />
+											<TextureCoordinate point="0.0377 0.4371 0.0377 0.5629 0.1112 0.5029 0.1112 0.4971 " />
 										</IndexedTriangleSet>
 									</Shape>
 								</Group>
 							</Transform>
 						</Transform>
 						<Transform DEF="spike_003_TRANSFORM"
-						           translation="-1.136477 0.691735 -1.726797"
+						           translation="-1.136477 0.691735 -1.726798"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="-0.000000 0.000000 0.000000 0.000000"
 						           >
@@ -967,22 +967,22 @@
 								<Group DEF="group_ME_spikr_003">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 "
 										                    >
-											<Coordinate point="0.006357 -0.195517 -0.197773 -0.535854 0.078475 -0.094954 -0.535854 0.096652 -0.076374 0.006357 0.193440 0.199806 " />
-											<Normal vector="0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 0.222846 0.696829 -0.681722 " />
-											<TextureCoordinate point="0.0377 0.4371 0.1112 0.4971 0.1112 0.5029 0.0377 0.5629 " />
+											<Coordinate point="0.006357 -0.195517 -0.197773 0.006357 0.193440 0.199806 -0.535854 0.096652 -0.076374 -0.535854 0.078475 -0.094954 " />
+											<Normal vector="-0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 -0.222846 -0.696829 0.681722 " />
+											<TextureCoordinate point="0.0377 0.4371 0.0377 0.5629 0.1112 0.5029 0.1112 0.4971 " />
 										</IndexedTriangleSet>
 									</Shape>
 								</Group>
 							</Transform>
 						</Transform>
 						<Transform DEF="spike_002_TRANSFORM"
-						           translation="1.133337 0.691735 -1.726797"
+						           translation="1.133337 0.691735 -1.726798"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="-0.000000 0.000000 0.000000 0.000000"
 						           >
@@ -994,7 +994,7 @@
 								<Group DEF="group_ME_spikr_002">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -1021,7 +1021,7 @@
 								<Group DEF="group_ME_spikr_001">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -1036,7 +1036,7 @@
 							</Transform>
 						</Transform>
 						<Transform DEF="spike_TRANSFORM"
-						           translation="1.133337 1.141622 -1.266938"
+						           translation="1.133337 1.141622 -1.266939"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="-0.000000 0.000000 0.000000 0.000000"
 						           >
@@ -1048,7 +1048,7 @@
 								<Group DEF="group_ME_spikr">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
@@ -1077,7 +1077,7 @@
 						<Group DEF="group_ME_arm1">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Helioptile_png" />
+									<ImageTexture USE="IM_Heliolisk_png" />
 								</Appearance>
 								<IndexedTriangleSet solid="false"
 								                    normalPerVertex="true"
@@ -1091,7 +1091,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="arm1_1_TRANSFORM"
-					           translation="1.549287 0.000000 -0.000001"
+					           translation="1.549287 0.000000 -0.000002"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="0.000000 0.000000 -0.000000 0.000000"
 					           >
@@ -1103,7 +1103,7 @@
 							<Group DEF="group_ME_arm1_1">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Helioptile_png" />
+										<ImageTexture USE="IM_Heliolisk_png" />
 									</Appearance>
 									<IndexedTriangleSet solid="false"
 									                    normalPerVertex="true"
@@ -1119,17 +1119,17 @@
 						<Transform DEF="hand1_TRANSFORM"
 						           translation="1.499609 -0.000001 0.000002"
 						           scale="1.000000 1.000000 1.000000"
-						           rotation="0.000000 -0.000000 0.000000 0.000000"
+						           rotation="0.000000 0.000000 0.000000 0.000000"
 						           >
 							<Transform DEF="hand1_ifs_TRANSFORM"
-							           translation="0.000000 -0.000000 0.000000"
+							           translation="0.000000 0.000000 0.000000"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="0.000000 -0.000000 0.000000 0.000000"
+							           rotation="1.000000 0.000000 0.000000 0.000000"
 							           >
 								<Group DEF="group_ME_hand1">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Helioptile_png" />
+											<ImageTexture USE="IM_Heliolisk_png" />
 										</Appearance>
 										<IndexedTriangleSet solid="false"
 										                    normalPerVertex="true"
