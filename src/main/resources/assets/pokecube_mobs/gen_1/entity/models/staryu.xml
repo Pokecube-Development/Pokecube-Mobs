@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
     <model name="">
-        <phase name="global" rotation="-1,0,0,0" offset="0,0,0.42" scale="0.60"/>
+        <phase name="global" rotation="-1,0,0,0" offset="0,0,0" scale="0.35"/>
+		<phase type="idle">
+			<part name="arm1">
+                <component name="1" startKey="0" length="10" rotOffset="0,0,-0.3," rotChange="0,0,0.5,"/>
+                <component name="2" startKey="10" length="10" rotChange="0,0,-0.5,"/>
+            </part>
+			
+			<part name="arm2">
+                <component name="1" startKey="0" length="10" rotOffset="0,0,0.3," rotChange="0,0,-0.5,"/>
+                <component name="2" startKey="10" length="10" rotChange="0,0,0.5,"/>
+            </part>
+				
+        </phase>
+		<phase type="walking">	
+			<part name="body">
+				<component name="1" startKey="0" length="20" rotOffset="10,0,0," rotChange="0,0,-360,"/>
+			</part>			
+        </phase>
+		
+		<phase type="swimming">	
+			<part name="body">
+				<component name="1" startKey="0" length="40" rotOffset="10,0,0," rotChange="0,0,-360,"/>
+			</part>		
+        </phase>
     </model>
 </ModelAnimator>

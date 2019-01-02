@@ -50,12 +50,12 @@ public class ShieldsDown extends Ability
             PokedexEntry core = getCoreEntry(mob);
             if (core != null && core != entry)
             {
-                mob.megaEvolve(core);
+                mob.setPokedexEntry(core);
             }
         }
         else if (entry != base)
         {
-            mob.megaEvolve(base);
+            mob.setPokedexEntry(base);
         }
     }
 

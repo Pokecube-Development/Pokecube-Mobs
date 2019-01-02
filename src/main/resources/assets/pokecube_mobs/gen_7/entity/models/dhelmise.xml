@@ -1,26 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator>
-    <model>
-        <phase name="global" rotation="0,1,0,0" offset="0.3,0,0" scale=".70"/>
-		<metadata head="anchor_head" headCap="-180,180" headCap1="-5,5" headAxis="2" headAxis2="0" headDir="1"/>
-		<phase type="idle">
-			<part name="base1">
-               <component name="1" rotOffset="0,0,0" rotChange="0,0,-30" length="8" startKey="0"/>
-               <component name="2" rotChange="0,0,30" length="8" startKey="10"/>
-            </part>
+    <model name="">
+        <phase name="global" rotation="0,1,0,0" offset="0,0,0" scale="0.5"/>
+		<phase type="sitting">
 			<part name="body">
-                <component name="1" rotChange="0,0,-360" length="120" startKey="0"/>
+                <component name="1" rotChange="0,0,-360" length="190" startKey="80"/>
             </part>
+				
+				<part name="point">
+					<component name="1" rotChange="0,0,-360" length="10" startKey="20"/>
+				</part>
+				
+				<part name="ch1">
+					<component name="1" rotOffset="-15,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch2">
+					<component name="1" rotOffset="-25,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch3">
+					<component name="1" rotOffset="30,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch4">
+					<component name="1" rotOffset="40,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch5">
+					<component name="1" rotOffset="45,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="anchor">
+					<component name="1" rotOffset="20,0,0" length="1" startKey="0"/>
+				</part>
 		</phase>
-		<phase type="walking">
+		
+		<phase type="idle">
+			<part name="base">
+				<component name="1" posChange="0,1,0" length="10" startKey="0"/>
+				<component name="2" posChange="0,-1,0" length="10" startKey="10"/>
+			</part>
+			
 			<part name="body">
-                <component name="1" rotChange="0,0,-360" length="120" startKey="0"/>
+                <component name="1" rotChange="0,0,-360" length="120" startKey="80"/>
             </part>
-			<part name="base1">
-			   <component name="1" startKey="0" length="1" rotOffset="10,0,0,"/>
-               <component name="1" rotOffset="0,0,0" rotChange="0,0,-30" length="10" startKey="0"/>
-               <component name="2" rotChange="0,0,30" length="10" startKey="10"/>
+				
+				<part name="point">
+					<component name="1" rotChange="0,0,-360" length="60" startKey="20"/>
+				</part>
+				
+				<part name="ch1">
+					<component name="1" posOffset="0,3.5,0" rotOffset="-180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch2">
+					<component name="1" rotOffset="180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch3">
+					<component name="1" rotOffset="-180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch4">
+					<component name="1" rotOffset="180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch5">
+					<component name="1" rotOffset="-180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="anchor">
+					<component name="1" rotOffset="180,0,0" length="15" rotChange="0,0,15," startKey="0"/>
+					<component name="2" startKey="10" length="15" rotChange="0,0,-35,"/>
+					<component name="3" startKey="15" length="15" rotChange="0,0,15,"/>
+					<component name="4" startKey="20" length="15" rotChange="0,0,5,"/>
+				</part>
+		</phase>
+		
+		<phase type="swimming">			
+			<part name="base">
+				<component name="1" rotOffset="30,0,0" posChange="0,1,0" length="10" startKey="0"/>
+				<component name="2" posChange="0,-1,0" length="10" startKey="10"/>
+			</part>
+			
+			<part name="body">
+                <component name="1" rotChange="0,0,-360" length="60" startKey="30"/>
             </part>
+				
+				<part name="point">
+					<component name="1" rotChange="0,0,-360" length="60" startKey="1"/>
+				</part>
+				
+				<part name="ch1">
+					<component name="1" posOffset="0,3.5,0" rotOffset="-180,0,0" length="15" rotChange="9,0,0," startKey="0"/>
+					<component name="2" startKey="10" length="15" rotChange="-9,0,0,"/>
+				</part>
+				<part name="ch2">
+					<component name="1" rotOffset="180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch3">
+					<component name="1" rotOffset="-180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch4">
+					<component name="1" rotOffset="180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="ch5">
+					<component name="1" rotOffset="-180,0,0" length="1" startKey="0"/>
+				</part>
+				<part name="anchor">
+					<component name="1" rotOffset="180,0,0" length="1" startKey="0"/>
+				</part>
 		</phase>
     </model>
 </ModelAnimator>

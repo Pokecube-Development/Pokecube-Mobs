@@ -4,7 +4,8 @@
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.17"/>
 		<metadata head="head" headCap="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
         <phase name="biWalk" leftLeg="foot1" rightLeg="foot2" leftArm="" rightArm="" duration="10" legAngle="45"/>
-		<phase type="idle">		
+		
+		<phase type="sitting">		
 			<part name="tail">
 				<component name="1" rotOffset="-20,0,0" rotChange="10,0,0" length="10" startKey="0"/>
 				<component name="2" rotChange="-3,0,0" length="10" startKey="10"/>
@@ -27,6 +28,22 @@
 				<component name="1" rotOffset="-70,0,20" posOffset="0,-3,-9" length="10" startKey="0"/>
 			</part>
 		</phase>
+		
+		<phase type="idle">		
+			<part name="tail">
+				<component name="1" rotOffset="-20,0,0" rotChange="10,0,0" length="10" startKey="0"/>
+				<component name="2" rotChange="-3,0,0" length="10" startKey="10"/>
+			</part>
+			<part name="arm1">
+				<component name="1" rotOffset="0,0,-50" rotChange="0,0,3" length="10" startKey="0"/>
+				<component name="2" rotChange="0,0,-3" length="10" startKey="10"/>
+			</part>
+			<part name="arm2">
+				<component name="1" rotOffset="0,0,50" rotChange="0,0,-3" length="10" startKey="0"/>
+				<component name="2" rotChange="0,0,3" length="10" startKey="10"/>
+			</part>
+		</phase>
+		
 		<phase type="walking">
 			<part name="body">
 				<component name="1" rotOffset="20,0,0" length="10" startKey="0"/>

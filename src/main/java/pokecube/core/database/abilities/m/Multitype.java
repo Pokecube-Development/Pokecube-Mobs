@@ -14,22 +14,22 @@ public class Multitype extends Ability
     public void onUpdate(IPokemob mob)
     {
         PokedexEntry entry = mob.getPokedexEntry();
-        if (!entry.getName().contains("Arceus")) return;
         ItemStack held = mob.getHeldItem();
         if (ItemBadge.isBadge(held))
         {
-            PokeType type = PokeType.values()[held.getItemDamage()];
-            if (type != PokeType.unknown)
+            ItemBadge badge = (ItemBadge) held.getItem();
+            PokeType type = badge.type;
+            PokedexEntry forme = Database.getEntry(entry.getBaseName() + type);
+            if (forme != null)
             {
-                mob.setPokedexEntry(Database.getEntry("arceus" + type));
+                mob.setPokedexEntry(forme);
                 return;
             }
         }
-        if (entry.getBaseForme() != null && entry.getBaseName().equals("Arceus"))
+        if (entry.getBaseForme() != null)
         {
             mob.setPokedexEntry(entry.getBaseForme());
             return;
         }
-
     }
 }

@@ -3,7 +3,8 @@
     <model>
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.85"/>
 		<phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg1_003" rightFront="leg3" duration="10"/>
-		<phase type="idle">
+		
+		<phase type="sitting">
 			<part name="base">
 				<component name="1" startKey="0" length="8" posOffset="0,48,0,"/>
 			</part>
@@ -20,6 +21,13 @@
 					<component name="1" startKey="0" length="8" rotOffset="-90,0,-90,"/>
 				</part>
 		</phase>
+		
+		<phase type="idle">
+			<part name="base">
+				<component name="1" startKey="0" length="8" posOffset="0,-10,0,"/>
+			</part>
+		</phase>
+		
 		<phase type="walking">
 		<part name="base">
 			<component name="1" startKey="0" length="8" posOffset="0,-10,0,"/>

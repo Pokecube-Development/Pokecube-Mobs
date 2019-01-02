@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
-    <model name="Camerupt Mega">
-		 <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="2.25"/>
-		 <metadata head="head" headCap="-20,20" headCap1="-20,20" headAxis="-1" headAxis2="0" headDir="-1"/>
-		 <phase name="quadWalk" leftHind="leg2_001" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="10"/>
+    <model name="">
+		 <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.5"/>
+		 <metadata head="head" headCap="-60,60" headCap1="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
+		 
+		 <phase name="quadWalk" leftHind="leg" rightHind="leg2" leftFront="leg4" rightFront="leg3" duration="10"/>
+		 
 		 <phase type="idle">
 			<part name="tail">
-                <component name="1" rotOffset="3,0,7" rotChange="0,0,-3" length="10" startKey="0"/>
-                <component name="2" rotChange="3,0,7" length="10" startKey="7"/>
+                <component name="1" rotOffset="3,0,0" rotChange="-7,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="-7,0,0" length="10" startKey="7"/>
             </part>
-        </phase>
+         </phase>
+		 <phase type="walking">
+			<part name="tail">
+                <component name="1" rotOffset="3,0,0" rotChange="-7,0,0" length="10" startKey="0"/>
+                <component name="2" rotChange="-7,0,0" length="10" startKey="7"/>
+            </part>
+         </phase>
     </model>
 </ModelAnimator>

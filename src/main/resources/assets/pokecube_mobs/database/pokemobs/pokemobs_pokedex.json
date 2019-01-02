@@ -61278,6 +61278,312 @@
         "evolutionMoves": "multiattack"
       }
     },
+	{
+      "name": "Silvally Bug",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Bug"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Dark",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Dark"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Dragon",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Dragon"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Electric",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Electric"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Fairy",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Fairy"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Fighting",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Fighting"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Fire",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Fire"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Flying",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Flying"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Ghost",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Ghost"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Grass",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Grass"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Ground",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Ground"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Ice",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Ice"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Poison",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Poison"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Psychic",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Psychic"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Rock",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Rock"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+    {
+      "name": "Silvally Steel",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Steel"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+	{
+      "name": "Silvally Fighting",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Fighting"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
+	{
+      "name": "Silvally Water",
+      "number": 773,
+	  "breed": false,
+      "stats": {
+        "types": {
+          "values": {
+            "type1": "Water"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Multitype"
+          }
+        }
+      }
+    },
     {
       "name": "Minior",
       "number": 774,
