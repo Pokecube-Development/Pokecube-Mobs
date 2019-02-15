@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator>
     <model>
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.20"/>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.14"/>
         <metadata head="neck" headCap="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
 		<phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" Angle="75" duration="6"/>
 		
