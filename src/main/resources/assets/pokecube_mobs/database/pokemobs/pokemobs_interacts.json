@@ -4125,9 +4125,14 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Probopass"
+            "name": "Probopass",
+            "location": {
+              "values": {
+                "types": "industrial"
+              }
+            }
           }
-        ],
+        ]
         "species": "Rock",
         "foodMat": "rock"
       }
@@ -9965,6 +9970,48 @@
           }
         ]
       }
+    },
+	{
+      "name": "Necrozma",
+      "stats": {
+		"formeItems": {
+          "values": {
+            "forme": "NNecrozma Ultra:Inether_star"
+          }
+        }
+	  }
+    },
+	{
+      "name": "Solgaleo",
+      "stats": {
+        "formeItems": {
+          "values": {
+            "forme": "NSolgaleo Dusk:Inether_star"
+          }
+        }
+      }
+    },
+	{
+      "name": "Lunala",
+      "stats": {       
+        "formeItems": {
+          "values": {
+            "forme": "NLunala Dawn:Inether_star"
+          }
+        },
+        "movementType": "flying"
+      }
+    },
+	{
+      "name": "Meltan",
+      "stats": {
+		"evolutions": [
+		  {
+			"name": "Melmetal",
+			"level": 32
+		  }
+	    ]
+	  }
     }
   ]
 }

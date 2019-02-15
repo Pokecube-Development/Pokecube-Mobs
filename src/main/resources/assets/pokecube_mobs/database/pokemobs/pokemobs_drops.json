@@ -4827,6 +4827,18 @@
     },
     {
       "name": "Zeraora"
-    }
+    },
+	{
+      "name": "Meltan",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_1"
+	  }
+	},
+	{
+      "name": "Melmetal",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_1"
+	  }
+	}
   ]
 }

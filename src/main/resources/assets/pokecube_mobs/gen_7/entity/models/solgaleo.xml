@@ -6,7 +6,8 @@
 		<phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="5"/>
 			<phase name="quadWalk" leftHind="leg2_2" rightHind="leg1_2" leftFront="leg4_2" rightFront="leg3_2" duration="10"/>
 				<phase name="snakeWalk" parts="tail1:tail2:tail3" angle="15" axis="1" length="20"/>
-		<phase type="idle">
+				
+		<phase type="sitting">
 			<part name="cint">
 				<component name="1" posOffset="0,50,0" length="10" startKey="0"/>
 				<component name="1" rotOffset="-30,0,0" length="10" startKey="0"/>
@@ -68,6 +69,22 @@
 							<component name="2" rotChange="3,0,0" length="10" startKey="10"/>
 						</part>
 		</phase>
+		
+		<phase type="idle">
+			<part name="tail1">
+					<component name="1" rotOffset="20,0,0" rotChange="18,0,0" length="10" startKey="0"/>
+					<component name="2" rotChange="-3,0,0" length="10" startKey="10"/>
+				</part>
+					<part name="tail2">
+						<component name="1" rotOffset="5,0,0" rotChange="3,0,0" length="10" startKey="0"/>
+						<component name="2" rotChange="3,0,0" length="10" startKey="10"/>
+					</part>
+						<part name="tail3">
+							<component name="1" rotOffset="15,0,0" rotChange="3,0,0" length="10" startKey="0"/>
+							<component name="2" rotChange="3,0,0" length="10" startKey="10"/>
+						</part>
+		</phase>
+		
 		<phase type="walking">
 			<part name="mouth">
 				<component name="1" startKey="0" length="8" rotOffset="-7,0,0," rotChange="-7,0,0,"/>
@@ -76,6 +93,6 @@
 		</phase>
 	</model>
 	 <details>
-        <RIDDENOFFSET>0.30</RIDDENOFFSET>
+        <RIDDENOFFSET>0.45:0,0.45,-.1:0,0.45,-.2</RIDDENOFFSET>
     </details>
 </ModelAnimator>
