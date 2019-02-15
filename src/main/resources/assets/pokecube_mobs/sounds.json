@@ -16778,9 +16778,51 @@
       }
     ]
   },
+  "mobs.solgaleodusk": {
+    "category": "hostile",
+    "subtitle": "pkmn.solgaleodusk.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/solgaleo",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/solgaleo",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/solgaleo",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
   "mobs.lunala": {
     "category": "hostile",
     "subtitle": "pkmn.lunala.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/lunala",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/lunala",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/lunala",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.lunaladawn": {
+    "category": "hostile",
+    "subtitle": "pkmn.lunaladawn.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/lunala",
@@ -16967,6 +17009,27 @@
       }
     ]
   },
+  "mobs.necrozmaultra": {
+    "category": "hostile",
+    "subtitle": "pkmn.necrozmaultra.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/necrozma",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/necrozma",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/necrozma",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
   "mobs.magearna": {
     "category": "hostile",
     "subtitle": "pkmn.magearna.name",
@@ -17096,6 +17159,48 @@
   "mobs.zeraora": {
     "category": "hostile",
     "subtitle": "pkmn.zeraora.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/rattata",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/rattata",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/rattata",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.meltan": {
+    "category": "hostile",
+    "subtitle": "pkmn.meltan.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/rattata",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/rattata",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/rattata",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.melmetal": {
+    "category": "hostile",
+    "subtitle": "pkmn.melmetal.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/rattata",

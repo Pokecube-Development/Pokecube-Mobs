@@ -62971,6 +62971,47 @@
         "evolutionMoves": "sunsteelstrike"
       }
     },
+	{
+      "name": "Solgaleo Dusk",
+      "number": 791,
+	  "legend": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "89",
+            "spatk": "113",
+            "def": "107",
+            "spd": "97",
+            "hp": "137",
+            "atk": "137"
+          }
+        },
+        "evs": {
+          "values": {
+            "atk": "3"
+          }
+        },
+        "sizes": {
+          "values": {
+            "width": "3.4",
+            "length": "3.4",
+            "height": "3.4"
+          }
+        },
+        "types": {
+          "values": {
+            "type2": "Steel",
+            "type1": "Psychic"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Full Metal Body"
+          }
+        },
+        "mass": 230.0
+      }
+    },
     {
       "name": "Lunala",
       "number": 792,
@@ -63040,6 +63081,48 @@
           "moves": "acrobatics, aerialace, airslash, blizzard, calmmind, chargebeam, confide, confuseray, confusion, cosmicpower, dazzlinggleam, defog, doubleteam, dreameater, facade, fly, focusblast, frustration, gigaimpact, heatwave, hiddenpower, hyperbeam, hypnosis, icebeam, icywind, lightscreen, magiccoat, magicroom, moonblast, moongeistbeam, moonlight, nightdaze, nightshade, phantomforce, protect, psychic, psychup, psyshock, reflect, rest, return, roar, roost, round, safeguard, shadowball, shadowclaw, shockwave, signalbeam, skyattack, skydrop, sleeptalk, snore, solarbeam, spite, splash, substitute, sunnyday, swagger, tailwind, telekinesis, teleport, thunder, thunderbolt, thunderwave, toxic, trick, trickroom, wideguard, willowisp, wonderroom, workup"
         },
         "evolutionMoves": "moongeistbeam"
+      }
+    },
+	{
+      "name": "Lunala Dawn",
+      "number": 792,
+      "legend": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "107",
+            "spatk": "137",
+            "def": "89",
+            "spd": "97",
+            "hp": "137",
+            "atk": "113"
+          }
+        },
+        "evs": {
+          "values": {
+            "spatk": "3"
+          }
+        },
+        "sizes": {
+          "values": {
+            "width": "4.0",
+            "length": "1.0",
+            "height": "4.0"
+          }
+        },
+        "types": {
+          "values": {
+            "type2": "Ghost",
+            "type1": "Psychic"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Shadow Shield"
+          }
+        },
+        "mass": 120.0,
+		"movementType": "flying"
       }
     },
     {
@@ -63595,6 +63678,47 @@
         }
       }
     },
+	{
+      "name": "Necrozma Ultra",
+      "number": 800,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "89",
+            "spatk": "127",
+            "def": "101",
+            "spd": "79",
+            "hp": "97",
+            "atk": "107"
+          }
+        },
+        "evs": {
+          "values": {
+            "spatk": "2",
+            "atk": "1"
+          }
+        },
+        "sizes": {
+          "values": {
+            "width": "2.4",
+            "length": "2.4",
+            "height": "2.4"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Psychic"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Prism Armor"
+          }
+        },
+        "mass": 350.0,
+		"movementType": "flying"
+      }
+    },
     {
       "name": "Magearna",
       "number": 801,
@@ -64048,6 +64172,144 @@
         "misc": {
           "moves": "acrobatics, aerialace, bounce, brickbreak, brutalswing, bulkup, calmmind, charge, closecombat, confide, discharge, doubleteam, drainpunch, dualchop, echoedvoice, electroweb, endeavor, facade, fakeout, falseswipe, firepunch, fling, focusblast, focuspunch, frustration, furyswipes, gigaimpact, grassknot, hiddenpower, honeclaws, irontail, knockoff, laserfocus, lowkick, lowsweep, outrage, protect, quickattack, quickguard, rest, return, round, scratch, shockwave, slash, sleeptalk, snarl, snatch, snore, spark, substitute, superpower, taunt, throatchop, thunder, thunderbolt, thunderpunch, thunderwave, toxic, voltswitch, wildcharge, workup"
         }
+      }
+    },
+	{
+      "name": "Meltan",
+      "number": 808,
+      "base": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "35",
+            "spatk": "55",
+            "def": "65",
+            "spd": "34",
+            "hp": "46",
+            "atk": "65"
+          }
+        },
+        "evs": {
+          "values": {
+            "atk": "1"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "0.2",
+            "width": "0.2",
+            "height": "0.2"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Steel"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Magnet Pull"
+          }
+        },
+        "mass": 8.0,
+        "captureRate": 3,
+        "baseExp": 135,
+        "baseFriendship": 35,
+        "expMode": "Slow",
+        "genderRatio": 255,
+        "logics": {
+          "values": {
+            "shoulder": "FALSE"
+          }
+        },
+        "hatedMaterials": "water"
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "headbutt,harden",
+            "9": "tailwhip",
+            "18": "thunderwave",
+            "27": "thundershock",
+            "36": "acidarmor",
+            "45": "flashcannon"
+          }
+        },
+        "misc": {
+          "moves": "flashcannon,rest,toxic,headbutt,protect,substitute,thunderwave,thunderbolt"
+        }
+      }
+    },
+	{
+      "name": "Melmetal",
+      "number": 809,
+      "base": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "65",
+            "spatk": "80",
+            "def": "143",
+            "spd": "34",
+            "hp": "135",
+            "atk": "143"
+          }
+        },
+        "evs": {
+          "values": {
+            "atk": "3"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "2.5",
+            "width": "2.5",
+            "height": "2.5"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Steel"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Iron Fist"
+          }
+        },
+        "mass": 800.0,
+        "captureRate": 3,
+        "baseExp": 270,
+        "baseFriendship": 35,
+        "expMode": "Slow",
+        "genderRatio": 255,
+        "logics": {
+          "values": {
+            "shoulder": "FALSE"
+          }
+        },
+        "hatedMaterials": "water"
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "thunderpunch,headbutt,harden,tailwhip,thunderwave",
+            "9": "tailwhip",
+            "18": "thunderwave",
+            "27": "thundershock",
+            "36": "acidarmor",
+            "45": "flashcannon",
+            "54": "megapunch",
+            "63": "protect",
+            "72": "doubleteam",
+            "81": "superpower",
+            "90": "hyperbeam"
+          }
+        },
+        "misc": {
+          "moves": "flashcannon,rockslide,rest,toxic,headbutt,protect,substitute,facade,selfdestruct,hyperbeam,icepunch,icebeam,earthquake,solarbeam,brickbreak,superpower,thunderwave,thunderpunch,thunder,thunderbolt"
+        },
+		"evolutionMoves": "thunderpunch"
       }
     }
   ]
