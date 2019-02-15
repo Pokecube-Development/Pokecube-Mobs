@@ -7304,6 +7304,19 @@
           }
         ]
       }
-    }
+    },
+	{
+      "name": "Meltan",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "industrial",
+              "rate": "0.05"
+            }
+          }
+        ]
+	  }
+	}
   ]
 }
