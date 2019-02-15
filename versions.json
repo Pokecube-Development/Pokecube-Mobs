@@ -1,0 +1,10 @@
+{
+  "homepage": "https://github.com/Pokecube-Development/Pokecube-Issues-and-Wiki",
+  "promos": {
+    "1.12.2-latest": "4.13.1",
+    "1.12.2-recommended": "4.13.1"
+  },
+  "1.12.2": {
+    "4.13.1": "Re-add this version thingy, Remodels some pokemobs, see github for more info."
+  }
+}

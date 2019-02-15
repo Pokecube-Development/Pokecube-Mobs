@@ -121,7 +121,7 @@ public class PokecubeMobs implements IMobProvider
     Map<PokedexEntry, Integer> genMap     = Maps.newHashMap();
     Set<PokedexEntry>          missingnos = Sets.newHashSet();
     public static final String MODID      = "pokecube_mobs";
-    public static final String UPDATEURL  = "https://gist.githubusercontent.com/Thutmose/4d7320c36696cd39b336/raw/mobs.json";
+    public static final String UPDATEURL  = "https://raw.githubusercontent.com/Pokecube-Development/Pokecube-Mobs/master/versions.json";
 
     public PokecubeMobs()
     {
