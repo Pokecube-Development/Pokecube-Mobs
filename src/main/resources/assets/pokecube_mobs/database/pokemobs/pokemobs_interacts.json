@@ -4132,9 +4132,8 @@
               }
             }
           }
-        ]
-        "species": "Rock",
-        "foodMat": "rock"
+        ],
+        "species": "Rock"
       }
     },
     {
