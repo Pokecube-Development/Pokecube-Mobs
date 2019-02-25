@@ -1,30 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
 	<model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.6"/>
-		<metadata head="head" headCap="-60,60" headCap1="-60,60" headAxis="1" headAxis2="0" headDir="-1"/>
-		<phase name="quadWalk" leftHind="leg4" rightHind="leg3" leftFront="leg1" rightFront="leg2" duration="10"/>
-        <phase type="tailup">
-            <part name="tail1">
-                <component name="1" rotOffset="20,0,0" length="1" startKey="0"/>
-            </part>
-            <part name="tail2">
-                <component name="1" rotOffset="35,0,0" length="1" startKey="0"/>
-            </part>
-            <part name="tail3">
-                <component name="1" rotOffset="40,0,0" length="1" startKey="0"/>
-            </part>
-            <part name="tail4">
-                <component name="1" rotOffset="40,0,0" length="1" startKey="0"/>
-            </part>
-        </phase>
-		<phase type = "idle">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.55"/>
+		<metadata head="head" headCap="-80,80" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="-1"/>
+     	<metadata head="neck1" headCap="-20,20" headCap1="-10,10" headAxis="2" headAxis2="0" headDir="-1"/>
+		
+		<phase name="quadWalk" leftHind="leg4:leg4_1" rightHind="leg3:leg3_1" leftFront="leg1:leg1_1" rightFront="leg2:leg2_1" duration="10"/>
+        
+		<phase name="snakeIdle" parts="tail:tail1:tail2:tail3:tail4" axis="0"/>
+		<phase name="snakeWalk" parts="tail:tail1:tail2:tail3:tail4" axis="0"/>
+		
+		<phase type = "sitting">
+			<part name="body">
+				<component name="1" posOffset="0,15,0" length="10" startKey="0"/>
+			</part>
+				<part name="leg1">
+					<component name="1" rotOffset="40,0,0" length="10" startKey="0"/>
+				</part>
+					<part name="leg1_1">
+						<component name="1" rotOffset="-120,0,0" length="10" startKey="0"/>
+					</part>
+						<part name="foot1">
+							<component name="1" rotOffset="80,0,0" length="10" startKey="0"/>
+						</part>
+				<part name="leg2">
+					<component name="1" rotOffset="40,0,0" length="10" startKey="0"/>
+				</part>
+					<part name="leg2_1">
+						<component name="1" rotOffset="-120,0,0" length="10" startKey="0"/>
+					</part>
+						<part name="foot2">
+							<component name="1" rotOffset="80,0,0" length="10" startKey="0"/>
+						</part>
+				<part name="leg4">
+					<component name="1" rotOffset="-40,0,0" length="10" startKey="0"/>
+				</part>
+					<part name="leg4_1">
+						<component name="1" rotOffset="90,0,0" length="10" startKey="0"/>
+					</part>
+						<part name="foot4">
+							<component name="1" rotOffset="80,0,0" length="10" startKey="0"/>
+						</part>
+				<part name="leg3">
+					<component name="1" rotOffset="-40,0,0" length="10" startKey="0"/>
+				</part>
+					<part name="leg3_1">
+						<component name="1" rotOffset="90,0,0" length="10" startKey="0"/>
+					</part>
+						<part name="foot3">
+							<component name="1" rotOffset="80,0,0" length="10" startKey="0"/>
+						</part>
+			
 			<part name="tail">
-                <component name="1" rotOffset="3,0,0" rotChange="-3,0,0" length="5" startKey="0"/>
-                <component name="2" rotChange="3,0,0" length="5" startKey="5"/>
+				<component name="1" rotOffset="-30,0,0" length="10" startKey="0"/>
+			</part>
+			<part name="tail1">
+				<component name="1" rotOffset="-10,0,0" length="10" startKey="0"/>
+			</part>
+			<part name="tail2">
+				<component name="1" rotOffset="10,0,0" length="10" startKey="0"/>
+			</part>
+			<part name="tail3">
+				<component name="1" rotOffset="30,10,0" length="10" startKey="0"/>
+			</part>
+			<part name="tail4">
+				<component name="1" rotOffset="0,20,0" length="10" startKey="0"/>
+			</part>
+		</phase>
+		
+		<phase type = "idle">
+			<part name="mouth">
+              <component name="1" rotChange="2,0,0" length="8" startKey="0"/>
+              <component name="2" rotChange="-2,0,0" length="8" startKey="10"/>
             </part>
 		</phase>
-		<merges merge="tailup->idle" />
-		<merges merge="idle->walking" />
+		<phase type = "walking">
+			<part name="mouth">
+              <component name="1" rotChange="2,0,0" length="8" startKey="0"/>
+              <component name="2" rotChange="-2,0,0" length="8" startKey="10"/>
+            </part>
+		</phase>
 	</model>
 </ModelAnimator>

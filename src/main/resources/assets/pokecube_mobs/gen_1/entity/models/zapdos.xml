@@ -13,15 +13,19 @@
             </part>
             <part name="wing2">
                <component name="1" rotOffset="10,-50,-40" length="1" startKey="0"/>
+            </part>          
+            <part name="tail">
+               <component name="1" rotOffset="7,0,0" rotChange="-8,0,0" length="10" startKey="0"/>
+               <component name="2" rotChange="8,0,0" length="10" startKey="10"/>
             </part>
-            
-            <part name="leg1">
-               <component name="1" rotOffset="25,0,0" length="10" startKey="0"/>
+        </phase>
+		<phase type="walking">            
+            <part name="wing1">
+               <component name="1" rotOffset="10,50,40" length="1" startKey="0"/>
             </part>
-            <part name="leg2">
-               <component name="1" rotOffset="25,0,0" length="10" startKey="0"/>
-            </part>
-            
+            <part name="wing2">
+               <component name="1" rotOffset="10,-50,-40" length="1" startKey="0"/>
+            </part>          
             <part name="tail">
                <component name="1" rotOffset="7,0,0" rotChange="-8,0,0" length="10" startKey="0"/>
                <component name="2" rotChange="8,0,0" length="10" startKey="10"/>
