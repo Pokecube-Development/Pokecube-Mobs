@@ -3,6 +3,26 @@
     <model>
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.15"/>
         <metadata head="head" headCap="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
-		<phase name="quadWalk" leftHind="leftleg1" rightHind="rightleg1" leftFront="leftarm1" rightFront="rightarm1" duration="10"/>
+		
+		<phase type="sitting">
+			<part name="body">
+				<component name="1" posOffset="0,-5,0" rotOffset="0,0,-80" length="10" startKey="0"/>
+			</part>
+		</phase>
+		
+		<phase type="idle">
+			<part name="body">
+                <component name="1" rotChange="0,0,5" length="10" startKey="0"/>
+                <component name="2" rotChange="0,0,-10" length="10" startKey="5"/>
+				<component name="3" rotChange="0,0,5" length="10" startKey="10"/>
+            </part>
+		</phase>
+		
+		<phase type="walking">
+			<part name="body">
+				<component name="1" posOffset="-10,-20,0" rotOffset="0,0,-90" length="10" startKey="0"/>
+                <component name="1" rotChange="0,360,0" length="20" startKey="0"/>
+            </part>
+		</phase>
     </model>
 </ModelAnimator>

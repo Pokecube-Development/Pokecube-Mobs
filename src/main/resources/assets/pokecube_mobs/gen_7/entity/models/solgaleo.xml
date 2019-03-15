@@ -5,7 +5,9 @@
         <metadata head="neck" headCap="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
 		<phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="5"/>
 			<phase name="quadWalk" leftHind="leg2_2" rightHind="leg1_2" leftFront="leg4_2" rightFront="leg3_2" duration="10"/>
-				<phase name="snakeWalk" parts="tail1:tail2:tail3" angle="15" axis="1" length="20"/>
+				
+				<phase name="snakeWalk" parts="tail1:tail2:tail3" angle="15" axis="1" length="40"/>
+				<phase name="snakeIdle" parts="tail1:tail2:tail3" angle="15" axis="0" length="45"/>
 				
 		<phase type="sitting">
 			<part name="cint">
@@ -71,18 +73,6 @@
 		</phase>
 		
 		<phase type="idle">
-			<part name="tail1">
-					<component name="1" rotOffset="20,0,0" rotChange="18,0,0" length="10" startKey="0"/>
-					<component name="2" rotChange="-3,0,0" length="10" startKey="10"/>
-				</part>
-					<part name="tail2">
-						<component name="1" rotOffset="5,0,0" rotChange="3,0,0" length="10" startKey="0"/>
-						<component name="2" rotChange="3,0,0" length="10" startKey="10"/>
-					</part>
-						<part name="tail3">
-							<component name="1" rotOffset="15,0,0" rotChange="3,0,0" length="10" startKey="0"/>
-							<component name="2" rotChange="3,0,0" length="10" startKey="10"/>
-						</part>
 		</phase>
 		
 		<phase type="walking">
