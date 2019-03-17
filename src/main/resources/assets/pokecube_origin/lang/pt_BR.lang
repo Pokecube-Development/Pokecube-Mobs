@@ -11,7 +11,7 @@ type.ghost=Fantasma
 type.steel=Aço
 type.fire=Fogo
 type.water=Água
-type.grass=Grama	
+type.grass=Grama
 type.electric=Elétrico
 type.psychic=Psíquico
 type.ice=Gelo
@@ -373,7 +373,7 @@ tile.pokemobNest.name=Ninho
 tile.repel.name=Repelente
 tile.pokemobSpawner.name=Pedra Geradora de Pokémob
 tile.pokemobSpawnerGrass.name=Grama Geradora de Pokémob
-tile.pokecube_table.name=Mesa de Poké Cubos
+tile.pokecube_table.name=Mesa de Starter
 tile.pc.next=Próximo
 tile.pc.previous=Anterior
 
@@ -422,25 +422,15 @@ item.ShieldonFossil.name=Fóssil Armadura (Armor Fossil)
 tile.fossilstone.name=Pedra Fóssil (Fossil Stone)
 
 item.megaring.name=Mega-Anel
-item.megastone.name=Megapedra
+item.megastone.name=Mega Pedra
 item.revive.name=Reviver
+item.mega_glasses.name=Mega Óculos
+item.mega_tiara.name=Mega Tiara
+item.mega_pendant.name=Mega Pingente
+item.mega_earring.name=Mega Brinco
+item.mega_ankletzinnia.name=Mega Tornozeleira do Dragão
 
 item.shiny_charm.name=Amuleto Brilhante
-
-item.absolmega.name=Absolita
-item.banettemega.name=Banettita
-item.blastoisemega.name=Blastoisinita
-item.charizardmega-x.name=Charizardita X
-item.charizardmega-y.name=Charizardita Y
-item.gallademega.name=Galladita
-item.gardevoirmega.name=Gardevoirita
-item.mewtwomega-x.name=Mewtwonita X
-item.mewtwomega-y.name=Mewtwonita Y
-item.sableyemega.name=Sablenita
-item.salamencemega.name=Salamencita
-item.sceptilemega.name=Sceptilita
-item.scizormega.name=Scizorita
-item.slowbromega.name=Slowbronita
 
 item.alphaorb.name=Esfera Alfa
 item.omegaorb.name=Esfera Ômega

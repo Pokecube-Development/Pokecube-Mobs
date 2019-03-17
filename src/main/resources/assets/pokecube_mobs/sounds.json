@@ -14174,6 +14174,27 @@
       }
     ]
   },
+  "mobs.floetteeternal": {
+    "category": "hostile",
+    "subtitle": "pkmn.floetteeternal.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/floetteeternal",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/floetteeternal",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/floetteeternal",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
   "mobs.florges": {
     "category": "hostile",
     "subtitle": "pkmn.florges.name",
@@ -15161,6 +15182,27 @@
       }
     ]
   },
+  "mobs.zygarde10": {
+    "category": "hostile",
+    "subtitle": "pkmn.zygarde10.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zygarde10",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/zygarde10",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/zygarde10",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
   "mobs.zygarde50": {
     "category": "hostile",
     "subtitle": "pkmn.zygarde50.name",
@@ -15177,6 +15219,27 @@
       },
       {
         "name": "pokecube_mobs:mobs/zygarde50",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.zygarde100": {
+    "category": "hostile",
+    "subtitle": "pkmn.zygarde100.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zygarde100",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/zygarde100",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/zygarde100",
         "volume": 1.0,
         "pitch": 1.0
       }
@@ -15224,22 +15287,43 @@
       }
     ]
   },
+  "mobs.hoopaunbound": {
+    "category": "hostile",
+    "subtitle": "pkmn.hoopaunbound.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/hoopaunbound",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/hoopaunbound",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/hoopaunbound",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
   "mobs.volcanion": {
     "category": "hostile",
     "subtitle": "pkmn.volcanion.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata",
+        "name": "pokecube_mobs:mobs/volcanion",
         "volume": 0.8,
         "pitch": 0.9
       },
       {
-        "name": "pokecube_mobs:mobs/rattata",
+        "name": "pokecube_mobs:mobs/volcanion",
         "volume": 0.9,
         "pitch": 0.95
       },
       {
-        "name": "pokecube_mobs:mobs/rattata",
+        "name": "pokecube_mobs:mobs/volcanion",
         "volume": 1.0,
         "pitch": 1.0
       }

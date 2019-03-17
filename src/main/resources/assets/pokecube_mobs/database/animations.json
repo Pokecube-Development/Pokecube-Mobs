@@ -1501,6 +1501,17 @@
         }
       ]
     },
+	{
+      "name": "doubleironbash",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d1:w1:l5:f(0.5-rand())*(0.6),(0.5-rand())*(0.6),(0.5-rand())*(0.6)",
+          "duration": "4",
+          "starttick": "0",
+          "applyAfter": "true"
+        }
+      ]
+    },
     {
       "name": "doublehit",
       "animations": [

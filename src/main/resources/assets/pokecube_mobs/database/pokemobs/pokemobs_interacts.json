@@ -4133,8 +4133,7 @@
             }
           }
         ],
-        "species": "Rock",
-        "foodMat": "rock"
+        "species": "Rock"
       }
     },
     {
@@ -10000,6 +9999,17 @@
           }
         },
         "movementType": "flying"
+      }
+    },
+	{
+      "name": "Poipole",
+      "stats": {
+		"evolutions": [
+          {
+            "name": "Naganadel",
+            "move": "dragonpulse"
+          }
+        ]
       }
     },
 	{

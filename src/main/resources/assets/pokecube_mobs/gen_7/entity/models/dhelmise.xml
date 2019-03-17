@@ -6,7 +6,9 @@
 			<part name="body">
                 <component name="1" rotChange="0,0,-360" length="190" startKey="80"/>
             </part>
-				
+			<part name="base">
+                <component name="1" posOffset="0,23,0" length="1" startKey="0"/>
+            </part>	
 				<part name="point">
 					<component name="1" rotChange="0,0,-360" length="10" startKey="20"/>
 				</part>

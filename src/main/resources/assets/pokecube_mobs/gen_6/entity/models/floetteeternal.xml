@@ -20,7 +20,7 @@
               <component name="2" rotChange="0,0,2" length="10" startKey="10"/>
             </part>
 				<part name="arm2_1">
-				  <component name="1" startKey="0" length="1" rotOffset="110,60,90,"/>
+				  <component name="1" startKey="0" length="1" rotOffset="0,60,90,"/>
 				</part>
 					<part name="hand1">
 						<component name="1" startKey="0" length="1" rotOffset="-20,-5,-10,"/>

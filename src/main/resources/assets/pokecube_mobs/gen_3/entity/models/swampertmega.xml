@@ -111,5 +111,45 @@
 				<component name="2" rotChange="-0.6,0,0" length="10" startKey="10"/>
 			</part>
 		</phase>
+		
+		<phase type="swimming">		
+			<part name="mouth">
+				<component name="1" rotOffset="6,0,0" rotChange="3,0,0" length="10" startKey="0"/>
+				<component name="2" rotChange="-3,0,0" length="10" startKey="10"/>
+			</part>
+			
+			<part name="arm1">
+				<component name="1" rotOffset="0,40,-40" rotChange="0,0,7" length="13" startKey="0"/>
+				<component name="2" rotChange="0,0,-7" length="13" startKey="10"/>
+			</part>
+				<part name="arm1_2">
+					<component name="1" rotOffset="0,0,-20" length="1" startKey="0"/>
+				</part>
+			
+			<part name="arm2">
+				<component name="1" rotOffset="0,-40,40" rotChange="0,0,-7" length="13" startKey="0"/>
+				<component name="2" rotChange="0,0,7" length="13" startKey="10"/>
+			</part>
+				<part name="arm2_2">
+					<component name="1" rotOffset="0,0,20" length="1" startKey="0"/>
+				</part>
+			
+			<part name="leg1">
+				<component name="1" rotOffset="60,0,20" rotChange="7,0,0" length="13" startKey="0"/>
+				<component name="2" rotChange="-7,0,0" length="13" startKey="10"/>
+			</part>
+			
+			<part name="leg2">
+				<component name="1" rotOffset="60,0,-20" rotChange="-7,0,0" length="13" startKey="0"/>
+				<component name="2" rotChange="7,0,0" length="13" startKey="10"/>
+			</part>
+			
+			<part name="body1">
+				<component name="1" rotOffset="40,0,0" length="10" startKey="0"/>
+			</part>
+				<part name="body2">
+					<component name="1" rotOffset="-10,0,0" length="10" startKey="0"/>
+				</part>
+		</phase>
     </model>
 </ModelAnimator>
