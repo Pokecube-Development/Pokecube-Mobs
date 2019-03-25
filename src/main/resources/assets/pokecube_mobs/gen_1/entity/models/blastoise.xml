@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
     <model name="">
+<<<<<<< HEAD
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.4"/>
+=======
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.35"/>
+>>>>>>> upstream/master
 		
 		<metadata head="head" headCap="-10,10" headCap1="-15,10" headAxis="2" headAxis2="0" headDir="-1"/>
         <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" duration="10" legAngle="25"/>

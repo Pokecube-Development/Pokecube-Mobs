@@ -47020,7 +47020,8 @@
           "values": {
             "shoulder": "FALSE"
           }
-        }
+        },
+        "movementType": "water"
       },
       "moves": {
         "lvlupMoves": {
@@ -47108,7 +47109,8 @@
             "dive": "TRUE",
             "shoulder": "FALSE"
           }
-        }
+        },
+        "movementType": "water"
       },
       "moves": {
         "lvlupMoves": {
