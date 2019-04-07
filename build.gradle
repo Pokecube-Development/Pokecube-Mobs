@@ -58,16 +58,12 @@ minecraft {
     mappings = "${version_mappings}"
     useDepAts = false
     
-    replace "@VERSION", project.version_compile
-    replaceIn "PokecubeMod.java"
+    replace "@VERSION@", project.version_compile
+    replaceIn "Reference.java"
     replace "@MCVERSION", "${version_mcsupport}"
-    replaceIn "PokecubeMod.java"
+    replaceIn "Reference.java"
     replace "@MINVERSION", "[${version_min_support},)"
-    replaceIn "PokecubeMod.java"
-    replace "@FORGEVERSION", "[${version_forge},)"
-    replaceIn "PokecubeMod.java"
-    replace "@THUTCORE", "[${version_thutcore},)"
-    replaceIn "PokecubeMod.java"
+    replaceIn "Reference.java"
 }
 
 task deobfJar(type: Jar) {
