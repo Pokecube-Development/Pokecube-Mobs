@@ -103,6 +103,11 @@ public class PokecubeMobs implements IMobProvider
         @SubscribeEvent
         public void onPlayerJoin(TickEvent.PlayerTickEvent event)
         {
+            if (!"".equals(Loader.instance().activeModContainer().getMetadata().parent))
+            {
+                MinecraftForge.EVENT_BUS.unregister(this);
+                return;
+            }
             if (event.player.getEntityWorld().isRemote
                     && event.player == FMLClientHandler.instance().getClientPlayerEntity())
             {
