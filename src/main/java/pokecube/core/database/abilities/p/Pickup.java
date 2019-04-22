@@ -26,7 +26,7 @@ public class Pickup extends Ability
     public void onUpdate(IPokemob mob)
     {
         EntityLivingBase poke = mob.getEntity();
-        if (poke.ticksExisted % 200 == 0 && Math.random() < 0.1)
+        if (poke.ticksExisted % 200 == 0 && Math.random() < 0.05)
         {
             if (!CompatWrapper.isValid(mob.getHeldItem()))
             {
