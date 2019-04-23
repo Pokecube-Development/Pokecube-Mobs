@@ -382,6 +382,30 @@
         "species": "Rodent Leporidae"
       }
     },
+	{
+      "name": "PikachuGo",
+      "stats": {
+        "formeItems": {
+		  "values": {
+            "forme": "NPikachuCap:Ileather_chestplate",
+			"forme": "NPikachuHat:Ileather_helmet"
+		  }
+        }
+        "species": "Rodent Leporidae"
+      }
+    },
+	{
+      "name": "PikachuHat",
+      "stats": {
+        "species": "Rodent Leporidae"
+      }
+    },
+	{
+      "name": "PikachuCap",
+      "stats": {
+        "species": "Rodent Leporidae"
+      }
+    },
     {
       "name": "Raichu",
       "stats": {
@@ -2142,6 +2166,32 @@
         "species": "Fox"
       }
     },
+	
+	{
+      "name": "EeveeGo",
+      "stats": {
+        "formeItems": {
+		  "values": {
+            "forme": "NEeveeHat:Ileather_helmet",
+            "forme": "NEeveeGlass:Iglass"
+		  }
+        },
+        "species": "Fox"
+      }
+    },
+	{
+      "name": "EeveeHat",
+      "stats": {
+        "species": "Fox"
+      }
+    },
+	{
+      "name": "EeveeGlass",
+      "stats": {
+        "species": "Fox"
+      }
+    },
+	
     {
       "name": "Vaporeon",
       "stats": {

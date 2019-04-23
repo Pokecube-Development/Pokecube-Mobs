@@ -566,6 +566,69 @@
       }
     ]
   },
+  "mobs.pikachugo": {
+    "category": "hostile",
+    "subtitle": "pkmn.pikachugo.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.pikachucap": {
+    "category": "hostile",
+    "subtitle": "pkmn.pikachucap.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.pikachuhat": {
+    "category": "hostile",
+    "subtitle": "pkmn.pikachugo.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/pikachu",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
   "mobs.raichu": {
     "category": "hostile",
     "subtitle": "pkmn.raichu.name",
@@ -2814,6 +2877,69 @@
     ]
   },
   "mobs.eevee": {
+    "category": "hostile",
+    "subtitle": "pkmn.eevee.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.eeveego": {
+    "category": "hostile",
+    "subtitle": "pkmn.eeveego.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.eeveehat": {
+    "category": "hostile",
+    "subtitle": "pkmn.eevee.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 0.9,
+        "pitch": 0.95
+      },
+      {
+        "name": "pokecube_mobs:mobs/eevee",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "mobs.eeveeglass": {
     "category": "hostile",
     "subtitle": "pkmn.eevee.name",
     "sounds": [

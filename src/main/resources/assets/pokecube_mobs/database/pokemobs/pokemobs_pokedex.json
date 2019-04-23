@@ -2171,6 +2171,232 @@
         }
       }
     },
+	{
+      "name": "PikachuGo",
+      "number": 25,
+	  "base": false,
+	  "starter": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "75",
+            "def": "50",
+            "spd": "120",
+            "hp": "45",
+            "atk": "80"
+          }
+        },
+        "evs": {
+          "values": {
+            "spd": "2"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "0.4",
+            "width": "0.4",
+            "height": "0.4"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Electric"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Static",
+            "hidden": "Lightningrod"
+          }
+        },
+        "mass": 6.0,
+        "captureRate": 190,
+        "baseExp": 105,
+        "expMode": "Medium Fast",
+        "genderRatio": 127,
+        "logics": {},
+		"formeItems": {}
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "tailwhip,thundershock",
+            "5": "growl",
+            "7": "playnice",
+            "10": "quickattack",
+            "13": "electroball",
+            "18": "thunderwave",
+            "21": "feint",
+            "23": "doubleteam",
+            "26": "spark",
+            "29": "nuzzle",
+            "34": "discharge",
+            "37": "slam",
+            "42": "thunderbolt",
+            "45": "agility",
+            "50": "wildcharge",
+            "53": "lightscreen",
+            "58": "thunder"
+          }
+        },
+        "misc": {
+          "moves": "zippyzap, splishysplash, floatyfall, pikapapow, agility, attract, bestow, bodyslam, brickbreak, captivate, celebrate, chargebeam, charm, confide, counter, covet, curse, defensecurl, detect, dig, discharge, doubleedge, doubleteam, drainingkiss, dynamicpunch, echoedvoice, electricterrain, electroball, electroweb, endeavor, facade, feint, flash, fling, fly, flyingpress, focuspunch, frustration, grassknot, growl, happyhour, headbutt, heartstamp, helpinghand, hiddenpower, holdhands, iciclecrash, irontail, knockoff, laserfocus, lightscreen, magnetrise, megakick, megapunch, meteormash, mimic, mudslap, nastyplot, naturalgift, nuzzle, payday, playnice, protect, quickattack, rage, raindance, reflect, rest, return, rocksmash, rollout, round, secretpower, seismictoss, shockwave, signalbeam, skullbash, slam, sleeptalk, snore, spark, strength, submission, substitute, surf, swagger, sweetkiss, swift, tailwhip, takedown, teeterdance, thunder, thunderbolt, thunderpunch, thundershock, thunderwave, toxic, voltswitch, volttackle, wildcharge, zapcannon"
+        }
+      }
+    },
+	{
+      "name": "PikachuCap",
+      "number": 25,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "75",
+            "def": "50",
+            "spd": "120",
+            "hp": "45",
+            "atk": "80"
+          }
+        },
+        "evs": {
+          "values": {
+            "spd": "2"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "0.4",
+            "width": "0.4",
+            "height": "0.4"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Electric"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Static",
+            "hidden": "Lightningrod"
+          }
+        },
+        "mass": 6.0,
+        "captureRate": 190,
+        "baseExp": 105,
+        "expMode": "Medium Fast",
+        "genderRatio": 127,
+        "logics": {
+          "values": {
+			"dye": "TRUE#white#white",
+            "shoulder": "TRUE"
+          }
+        }
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "tailwhip,thundershock",
+            "5": "growl",
+            "7": "playnice",
+            "10": "quickattack",
+            "13": "electroball",
+            "18": "thunderwave",
+            "21": "feint",
+            "23": "doubleteam",
+            "26": "spark",
+            "29": "nuzzle",
+            "34": "discharge",
+            "37": "slam",
+            "42": "thunderbolt",
+            "45": "agility",
+            "50": "wildcharge",
+            "53": "lightscreen",
+            "58": "thunder"
+          }
+        },
+        "misc": {
+          "moves": "zippyzap, splishysplash, floatyfall, pikapapow, agility, attract, bestow, bodyslam, brickbreak, captivate, celebrate, chargebeam, charm, confide, counter, covet, curse, defensecurl, detect, dig, discharge, doubleedge, doubleteam, drainingkiss, dynamicpunch, echoedvoice, electricterrain, electroball, electroweb, endeavor, facade, feint, flash, fling, fly, flyingpress, focuspunch, frustration, grassknot, growl, happyhour, headbutt, heartstamp, helpinghand, hiddenpower, holdhands, iciclecrash, irontail, knockoff, laserfocus, lightscreen, magnetrise, megakick, megapunch, meteormash, mimic, mudslap, nastyplot, naturalgift, nuzzle, payday, playnice, protect, quickattack, rage, raindance, reflect, rest, return, rocksmash, rollout, round, secretpower, seismictoss, shockwave, signalbeam, skullbash, slam, sleeptalk, snore, spark, strength, submission, substitute, surf, swagger, sweetkiss, swift, tailwhip, takedown, teeterdance, thunder, thunderbolt, thunderpunch, thundershock, thunderwave, toxic, voltswitch, volttackle, wildcharge, zapcannon"
+        }
+      }
+    },
+	{
+      "name": "PikachuHat",
+      "number": 25,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "75",
+            "def": "50",
+            "spd": "120",
+            "hp": "45",
+            "atk": "80"
+          }
+        },
+        "evs": {
+          "values": {
+            "spd": "2"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "0.4",
+            "width": "0.4",
+            "height": "0.4"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Electric"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Static",
+            "hidden": "Lightningrod"
+          }
+        },
+        "mass": 6.0,
+        "captureRate": 190,
+        "baseExp": 105,
+        "expMode": "Medium Fast",
+        "genderRatio": 127,
+        "logics": {
+          "values": {
+			"dye": "TRUE#white#white",
+            "shoulder": "TRUE"
+          }
+        }
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "tailwhip,thundershock",
+            "5": "growl",
+            "7": "playnice",
+            "10": "quickattack",
+            "13": "electroball",
+            "18": "thunderwave",
+            "21": "feint",
+            "23": "doubleteam",
+            "26": "spark",
+            "29": "nuzzle",
+            "34": "discharge",
+            "37": "slam",
+            "42": "thunderbolt",
+            "45": "agility",
+            "50": "wildcharge",
+            "53": "lightscreen",
+            "58": "thunder"
+          }
+        },
+        "misc": {
+          "moves": "zippyzap, splishysplash, floatyfall, pikapapow, agility, attract, bestow, bodyslam, brickbreak, captivate, celebrate, chargebeam, charm, confide, counter, covet, curse, defensecurl, detect, dig, discharge, doubleedge, doubleteam, drainingkiss, dynamicpunch, echoedvoice, electricterrain, electroball, electroweb, endeavor, facade, feint, flash, fling, fly, flyingpress, focuspunch, frustration, grassknot, growl, happyhour, headbutt, heartstamp, helpinghand, hiddenpower, holdhands, iciclecrash, irontail, knockoff, laserfocus, lightscreen, magnetrise, megakick, megapunch, meteormash, mimic, mudslap, nastyplot, naturalgift, nuzzle, payday, playnice, protect, quickattack, rage, raindance, reflect, rest, return, rocksmash, rollout, round, secretpower, seismictoss, shockwave, signalbeam, skullbash, slam, sleeptalk, snore, spark, strength, submission, substitute, surf, swagger, sweetkiss, swift, tailwhip, takedown, teeterdance, thunder, thunderbolt, thunderpunch, thundershock, thunderwave, toxic, voltswitch, volttackle, wildcharge, zapcannon"
+        }
+      }
+    },
     {
       "name": "Raichu",
       "number": 26,
@@ -11109,6 +11335,216 @@
         }
       }
     },
+	
+	{
+      "name": "EeveeGo",
+      "number": 133,
+      "base": false,
+	  "starter": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "85",
+            "spatk": "65",
+            "def": "70",
+            "spd": "75",
+            "hp": "65",
+            "atk": "75"
+          }
+        },
+        "evs": {
+          "values": {
+            "spdef": "1"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "0.3",
+            "width": "0.3",
+            "height": "0.3"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Normal"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Run Away, Adaptability",
+            "hidden": "Anticipation"
+          }
+        },
+        "mass": 6.5,
+        "captureRate": 45,
+        "baseExp": 65,
+        "expMode": "Medium Fast",
+        "genderRatio": 30,
+        "logics": {
+          "values": {
+            "shoulder": "TRUE"
+          }
+        }
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "growl,tackle",
+            "3": "tailwhip",
+            "6": "quickattack",
+            "10": "doublekick",
+            "14": "sandattack",
+            "17": "bite",
+            "21": "swift",
+            "24": "takedown",
+            "28": "doubleedge",
+            "31": "helpinghand"
+          }
+        },
+        "misc": {
+          "moves": "bouncybubble,buzzybuzz, slizzlyslide, glitzyglow, baddybad, sappyseed, freezyfrost, sparklyswirl, veeveevolley, headbutt, helpinghand, rest, protect, substitute, reflect, dig, facade, irontail, toxic, shadowball, payday"
+        }
+      }
+    },
+	{
+      "name": "EeveeHat",
+      "number": 133,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "85",
+            "spatk": "65",
+            "def": "70",
+            "spd": "75",
+            "hp": "65",
+            "atk": "75"
+          }
+        },
+        "evs": {
+          "values": {
+            "spdef": "1"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "0.3",
+            "width": "0.3",
+            "height": "0.3"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Normal"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Run Away, Adaptability",
+            "hidden": "Anticipation"
+          }
+        },
+        "mass": 6.5,
+        "captureRate": 45,
+        "baseExp": 65,
+        "expMode": "Medium Fast",
+        "genderRatio": 30,
+        "logics": {
+          "values": {
+            "dye": "TRUE#white#white",
+            "shoulder": "TRUE"
+          }
+        }
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "growl,tackle",
+            "3": "tailwhip",
+            "6": "quickattack",
+            "10": "doublekick",
+            "14": "sandattack",
+            "17": "bite",
+            "21": "swift",
+            "24": "takedown",
+            "28": "doubleedge",
+            "31": "helpinghand"
+          }
+        },
+        "misc": {
+          "moves": "bouncybubble,buzzybuzz, slizzlyslide, glitzyglow, baddybad, sappyseed, freezyfrost, sparklyswirl, veeveevolley, headbutt, helpinghand, rest, protect, substitute, reflect, dig, facade, irontail, toxic, shadowball, payday"
+        }
+      }
+	},
+	{
+      "name": "EeveeGlass",
+      "number": 133,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "85",
+            "spatk": "65",
+            "def": "70",
+            "spd": "75",
+            "hp": "65",
+            "atk": "75"
+          }
+        },
+        "evs": {
+          "values": {
+            "spdef": "1"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "0.3",
+            "width": "0.3",
+            "height": "0.3"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Normal"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Run Away, Adaptability",
+            "hidden": "Anticipation"
+          }
+        },
+        "mass": 6.5,
+        "captureRate": 45,
+        "baseExp": 65,
+        "expMode": "Medium Fast",
+        "genderRatio": 30,
+        "logics": {
+          "values": {
+            "dye": "TRUE#white#white",
+            "shoulder": "TRUE"
+          }
+        }
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "1": "growl,tackle",
+            "3": "tailwhip",
+            "6": "quickattack",
+            "10": "doublekick",
+            "14": "sandattack",
+            "17": "bite",
+            "21": "swift",
+            "24": "takedown",
+            "28": "doubleedge",
+            "31": "helpinghand"
+          }
+        },
+        "misc": {
+          "moves": "bouncybubble,buzzybuzz, slizzlyslide, glitzyglow, baddybad, sappyseed, freezyfrost, sparklyswirl, veeveevolley, headbutt, helpinghand, rest, protect, substitute, reflect, dig, facade, irontail, toxic, shadowball, payday"
+        }
+      }
+	},
+	
     {
       "name": "Vaporeon",
       "number": 134,
@@ -57289,7 +57725,8 @@
         "mass": 490.0,
         "captureRate": 3,
         "baseFriendship": 100,
-        "expMode": "Slow"
+        "expMode": "Slow",
+		"movementType": "flying"
       },
       "moves": {
         "lvlupMoves": {
