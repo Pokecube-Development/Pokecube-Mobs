@@ -12,7 +12,7 @@ import thut.core.client.render.model.IExtendedModelPart;
  * other wrappers, but only need the renderAll method. */
 public interface IFakeExtendedPart extends IExtendedModelPart
 {
-    int[] RGAB = new int[] { 255, 255, 255, 255 };
+    int[] RGAB = new int[] { 255, 255, 255, 255, 255 };
 
     @Override
     default void addChild(IExtendedModelPart child)

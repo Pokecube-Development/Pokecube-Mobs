@@ -3,6 +3,33 @@
     <model name="">
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.35"/>
         <metadata head="Head" headCap="-60,60" headCap1="-10,60" headAxis="1" headAxis2="0" headDir="1"/>
+        
+        <worn id="__HAT__" parent="Head" offset="0,0.0,-0.225" scale="0.85" angles="0,180,0"/>
+        
+        <worn id="__EAR_left__" parent="Head" offset="-0.18,0.0,-.20" scale="0.5" angles="-70,0,-90"/>
+        
+        <worn id="__EAR_right__" parent="Head" offset="0.18,0.0,-.20" scale="0.5" angles="-70,0,90"/>
+        
+        <worn id="__EYE__" parent="Head" offset="0,0.05,-0.275" scale="1" angles="0,180,0"/>
+        
+        <worn id="__WRIST_right__" parent="rightArm" offset="0.18,-0.0,0.15" scale="0.5" angles="50,45,30"/>
+        
+        <worn id="__WRIST_left__" parent="leftArm" offset="-0.18,-0.0,0.15" scale="0.5" angles="50,-45,-30"/>
+        
+        <worn id="__FINGER_right__" parent="tail8" offset="0.085,0.2,0.13" scale="0.5" angles="90,-20,0"/>
+        
+        <worn id="__FINGER_left__" parent="tail8" offset="0.0485,0.1,0.095" scale="0.5" angles="90,-20,0"/>
+        
+        <worn id="__NECK__" parent="body" offset="0,-0.175,-0.325" scale=".5" angles="-10,180,0"/>
+        
+        <worn id="__ANKLE_right__" parent="rightThigh" offset="0.0,0.0325,0.0" scale="0.8" angles="-10,180,0"/>
+        
+        <worn id="__ANKLE_left__" parent="leftThigh" offset="0.0,0.0325,0.0" scale="0.8" angles="-10,180,0"/>
+        
+        <worn id="__WAIST__" parent="body" offset="0,-0.1,-0.35" scale="0.65,0.65,1.1" angles="-15,180,0"/>
+        
+        <worn id="__BACK__" parent="body" offset="0,-0.1,-0.35" scale="0.65,0.65,0.65" angles="-15,180,0"/>
+        
         <phase name="snakeIdle" parts="tail0:tail1:tail2:tail3:tail4:tail5:tail6:tail7:tail8" angle="20" axis="2" length="30"/>
         <phase type="sitting">
             <part name="tail0">
