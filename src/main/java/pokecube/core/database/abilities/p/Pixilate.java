@@ -14,6 +14,7 @@ public class Pixilate extends Ability
         if (move.attackType == PokeType.getType("normal") && mob == move.attacker)
         {
             move.attackType = PokeType.getType("fairy");
+            move.PWR *= 1.2;
         }
     }
 }
