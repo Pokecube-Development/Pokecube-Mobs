@@ -219,6 +219,8 @@ public class PokecubeMobs implements IMobProvider
         ItemGenerator.fossilVariants.add("anorith");
         ItemGenerator.fossilVariants.add("cranidos");
         ItemGenerator.fossilVariants.add("shieldon");
+        ItemGenerator.fossilVariants.add("archen");
+        ItemGenerator.fossilVariants.add("tirtouga");
         ItemGenerator.fossilVariants.add("tyrunt");
         ItemGenerator.fossilVariants.add("amaura");
 
