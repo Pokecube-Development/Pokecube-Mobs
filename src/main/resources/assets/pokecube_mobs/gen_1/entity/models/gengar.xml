@@ -4,6 +4,10 @@
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.5"/>
         <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" duration="10" legAngle="35"/>
 		
+		<worn id="__HAT__" parent="body" offset="0,2.1,0" scale="1.8" angles="-90,0,0"/>
+        
+        <worn id="__EYE__" parent="body" offset="0,1.55,0.05" scale="3.4,3,3" angles="-90,0,0"/>
+		
 		<phase type="idle">
 			<part name="arm1">
                <component name="1" rotOffset="0,0,-50" rotChange="0,0,-0.8" length="10" startKey="0"/>

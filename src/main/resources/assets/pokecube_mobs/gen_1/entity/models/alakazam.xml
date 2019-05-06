@@ -3,6 +3,9 @@
     <model name="">
         <phase name="global" rotation="0,180,0,180" offset="0,0,0" scale="0.4"/>
         <metadata head="head" headCap="-60,60" headCap1="-10,60" headAxis="1" headAxis2="2" headDir="1"/>
+        
+        <worn id="__EYE__" parent="head" offset="0.38,0,-0.1" scale="1" angles="0,180,90"/>
+		
 		<phase type="idle">
 		    <part name="arm1">
                 <component name="1" rotOffset="5,0,0" rotChange="5,0,0" length="10" startKey="0"/>
