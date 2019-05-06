@@ -20,8 +20,12 @@ import thut.lib.CompatWrapper;
 
 public class Pickup extends Ability
 {
-    public static ResourceLocation lootTable;
+    public static ResourceLocation lootTable = new ResourceLocation("pokecube", "abilities/pickup");
+    public static boolean          useLootTable = true;
 
+    // Pickup.useLootTable = config.getBoolean("usePickupTable",
+    // Configuration.CATEGORY_GENERAL, true,
+    // "whether pickup uses the built in default loot table.");
     @Override
     public void onUpdate(IPokemob mob)
     {
@@ -30,7 +34,7 @@ public class Pickup extends Ability
         {
             if (!CompatWrapper.isValid(mob.getHeldItem()))
             {
-                if (lootTable != null)
+                if (lootTable != null && useLootTable)
                 {
                     LootTable loottable = mob.getEntity().getEntityWorld().getLootTableManager()
                             .getLootTableFromLocation(lootTable);
@@ -40,12 +44,18 @@ public class Pickup extends Ability
                     {
                         lootcontext$builder.withPlayer((EntityPlayer) mob.getPokemonOwner());
                     }
-                    for (ItemStack itemstack : loottable.generateLootForPools(mob.getEntity().getRNG(),
-                            lootcontext$builder.build()))
+                    List<ItemStack> list = loottable.generateLootForPools(mob.getEntity().getRNG(),
+                            lootcontext$builder.build());
+                    if (!list.isEmpty()) Collections.shuffle(list);
+                    for (ItemStack itemstack : list)
                     {
                         if (CompatWrapper.isValid(itemstack))
                         {
-                            mob.setHeldItem(itemstack.copy());
+                            ItemStack stack = itemstack.copy();
+                            if (stack.getItem().getRegistryName().equals(new ResourceLocation("pokecube", "candy")))
+                                PokecubeItems.makeStackValid(stack);
+                            mob.setHeldItem(stack);
+                            return;
                         }
                     }
                 }
@@ -54,7 +64,7 @@ public class Pickup extends Ability
                     List<?> items = new ArrayList<Object>(PokecubeItems.heldItems);
                     Collections.shuffle(items);
                     ItemStack item = (ItemStack) items.get(0);
-                    //No TMs in pickup, as they are unmapped
+                    // No TMs in pickup, as they are unmapped
                     if (CompatWrapper.isValid(item) && !(item.getItem() instanceof ItemTM))
                         mob.setHeldItem(item.copy());
                 }
