@@ -14,6 +14,7 @@ public class Refrigerate extends Ability
         if (move.attackType == PokeType.getType("normal") && mob == move.attacker)
         {
             move.attackType = PokeType.getType("ice");
+            move.PWR *= 1.2;
         }
     }
 }

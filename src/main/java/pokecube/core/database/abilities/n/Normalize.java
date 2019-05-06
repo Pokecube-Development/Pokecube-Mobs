@@ -11,9 +11,10 @@ public class Normalize extends Ability
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
         if (!move.pre) return;
-        if (mob == move.attacker)
+        if (move.attackType != PokeType.getType("normal") && mob == move.attacker)
         {
             move.attackType = PokeType.getType("normal");
+            move.PWR *= 1.2;
         }
     }
 }

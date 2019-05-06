@@ -14,6 +14,7 @@ public class Aerilate extends Ability
         if (move.attackType == PokeType.getType("normal") && mob == move.attacker)
         {
             move.attackType = PokeType.getType("flying");
+            move.PWR *= 1.2;
         }
     }
 }

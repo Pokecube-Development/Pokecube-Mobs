@@ -34,7 +34,7 @@ public class MagmaArmor extends Ability
     {
         IPokemob attacker = move.attacker;
         if (attacker == mob || !move.pre || attacker == move.attacked) return;
-        if (move.statusChange == IMoveConstants.STATUS_FRZ) move.statusChange = IMoveConstants.STATUS_FRZ;
+        if (move.statusChange == IMoveConstants.STATUS_FRZ) move.statusChange = IMoveConstants.STATUS_NON;
     }
 
     @Override
