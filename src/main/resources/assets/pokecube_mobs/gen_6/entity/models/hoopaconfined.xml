@@ -4,6 +4,25 @@
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.23"/>
 		<metadata head="head" headCap="-60,60" headCap1="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
 		<phase type="idle">
+			<part name="hair">
+              <component name="1" rotChange="4,0,0" length="8" startKey="0"/>
+               <component name="2" rotChange="-4,0,0" length="8" startKey="10"/>
+            </part>
+			
+			<part name="tail">
+              <component name="1" rotChange="4,0,0" length="8" startKey="0"/>
+               <component name="2" rotChange="-4,0,0" length="8" startKey="10"/>
+            </part>
+			
+			<part name="anel1">
+              <component name="1" rotChange="0,0,3" length="8" startKey="0"/>
+               <component name="2" rotChange="0,0,-3" length="8" startKey="10"/>
+            </part>
+			<part name="anel2">
+              <component name="1" rotChange="0,0,-3" length="8" startKey="0"/>
+               <component name="2" rotChange="0,0,3" length="8" startKey="10"/>
+            </part>
+			
 			<part name="arm1">
               <component name="1" rotOffset="0,0,-20" posChange="0,3,0" length="8" startKey="0"/>
                <component name="2" posChange="0,-3,0" length="8" startKey="10"/>
@@ -14,6 +33,29 @@
             </part>
         </phase>
 		<phase type="flying">
+			<part name="body">
+              <component name="1" rotOffset="30,0,0" length="8" startKey="0"/>
+            </part>
+			
+			<part name="hair">
+              <component name="1" rotChange="4,0,0" length="8" startKey="0"/>
+               <component name="2" rotChange="-4,0,0" length="8" startKey="10"/>
+            </part>
+			
+			<part name="tail">
+              <component name="1" rotChange="4,0,0" length="8" startKey="0"/>
+               <component name="2" rotChange="-4,0,0" length="8" startKey="10"/>
+            </part>
+			
+			<part name="anel1">
+              <component name="1" rotChange="0,0,3" length="8" startKey="0"/>
+               <component name="2" rotChange="0,0,-3" length="8" startKey="10"/>
+            </part>
+			<part name="anel2">
+              <component name="1" rotChange="0,0,-3" length="8" startKey="0"/>
+               <component name="2" rotChange="0,0,3" length="8" startKey="10"/>
+            </part>
+			
 			<part name="arm1">
               <component name="1" rotOffset="0,35,-20" posChange="0,2,0" length="8" startKey="0"/>
                <component name="2" posChange="0,-2,0" length="8" startKey="10"/>

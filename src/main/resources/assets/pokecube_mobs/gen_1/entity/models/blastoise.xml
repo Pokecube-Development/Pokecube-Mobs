@@ -3,6 +3,10 @@
     <model name="">
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.35"/>
 		
+		<worn id="__HAT__" parent="head" offset="0,0.85,0" scale="1.8" angles="-90,0,0"/>
+        
+        <worn id="__EYE__" parent="head" offset="0,0.58,0.14" scale="1.9,1.8,1.8" angles="-90,0,0"/>
+		
 		<metadata head="head" headCap="-10,10" headCap1="-15,10" headAxis="2" headAxis2="0" headDir="-1"/>
         <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" duration="10" legAngle="25"/>
 		
