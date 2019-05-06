@@ -7,12 +7,12 @@
                 {
                     "type": "item",
                     "name": "pokecube:berry_oran",
-                    "weight": 60
+                    "weight": 45
                 },
                 {
                     "type": "item",
                     "name": "pokecube:revive",
-                    "weight": 30
+                    "weight": 45
                 },
                 {
                     "type": "item",
@@ -58,6 +58,36 @@
                     "type": "item",
                     "name": "pokecube:greatcube",
                     "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "pokecube:vitamin_carbos",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "pokecube:vitamin_zinc",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "pokecube:vitamin_protein",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "pokecube:vitamin_calcium",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "pokecube:vitamin_hpup",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "pokecube:vitamin_iron",
+                    "weight": 10
                 },
                 {
                     "type": "item",
