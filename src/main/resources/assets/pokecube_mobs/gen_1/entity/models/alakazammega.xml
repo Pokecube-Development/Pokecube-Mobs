@@ -3,6 +3,8 @@
     <model name="">
         <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.3"/>
 		<metadata head="head" headCap="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
+        
+        <worn id="__EYE__" parent="head" offset="0,-0.04,0.4" scale="2,1.5,1" angles="-90,0,0"/>
 		
 		<phase type="sitting">
             <part name="arm1">

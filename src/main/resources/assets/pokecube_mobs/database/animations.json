@@ -473,6 +473,41 @@
         }
       ]
     },
+	{
+      "name": "baddybad",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:clight_blue:d0.15:w2:rtrue:l15:f(0.5-rand())*(3.2),1.6,(0.5-rand())*(3.2)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "cartFunc:pmisc:clight_blue:d0.15:w2:rtrue:l15:f(0.5-rand())*(3.2),(0.5-rand())*(3.2),1.6",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "cartFunc:pmisc:clight_blue:d0.15:w2:rtrue:l15:f(0.5-rand())*(3.2),(0.5-rand())*(3.2),-1.6",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "cartFunc:pmisc:clight_blue:d0.15:w2:rtrue:l15:f1.6,(0.5-rand())*(3.2),(0.5-rand())*(3.2)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "cartFunc:pmisc:clight_blue:d0.15:w2:rtrue:l15:f-1.6,(0.5-rand())*(3.2),(0.5-rand())*(3.2)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "banefulbunker"
     },
@@ -749,6 +784,17 @@
         }
       ]
     },
+	{
+      "name": "bouncybubble",
+      "animations": [
+        {
+          "preset": "flow:pbubble:w0.5:l10",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "bravebird",
       "animations": [
@@ -892,6 +938,23 @@
     },
     {
       "name": "burnup"
+    },
+	{
+      "name": "buzzybuzz",
+	  "animations": [
+        {
+          "preset": "cylFunc:pmisc:l3:f(z^1.5-z)*2,z*4",
+          "duration": "3",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "powder:pmisc:d0.05:l4:fz*1.5,z*1.5",
+          "duration": "1",
+          "starttick": "4",
+          "applyAfter": "false"
+        }
+      ]
     },
     {
       "name": "calmmind",
@@ -2265,6 +2328,17 @@
         }
       ]
     },
+	{
+      "name": "floatyfall",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "flareblitz",
       "animations": [
@@ -2472,6 +2546,17 @@
     {
       "name": "freezedry",
       "animations": [
+        {
+          "preset": "flow",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
+	{
+      "name": "freezyfrost",
+		"animations": [
         {
           "preset": "flow",
           "duration": "5",
@@ -2747,6 +2832,29 @@
     },
     {
       "name": "glare"
+    },
+	{
+      "name": "glitzyglow",
+	  "animations": [
+        {
+          "preset": "sphFunc:pwitchMagic:d0.5:w5:l25:atrue:frand()*0.5,(0.5-rand()),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "4",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "cartFunc:pmisc:d1:w0.6:l7:atrue:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.4:w3:l10:atrue:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "true"
+        }
+      ]
     },
     {
       "name": "grassknot",
@@ -4692,6 +4800,17 @@
         }
       ]
     },
+	{
+      "name": "pikapapow",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "playnice"
     },
@@ -5738,6 +5857,17 @@
         }
       ]
     },
+	{
+      "name": "sappyseed",
+      "animations": [
+        {
+          "preset": "pont",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "savagespinout"
     },
@@ -6197,6 +6327,23 @@
     {
       "name": "sinisterarrowraid"
     },
+	{
+      "name": "sizzlyslide",
+	  "animations": [
+        {
+          "preset": "flow:pflame:d10:w3:l5",
+          "duration": "4",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "cartFunc:pflame:d0.05:w1:l40:f(0.5-rand())*(3.2),(0.5-rand())*(3.2),(0.5-rand())*(3.2)",
+          "duration": "1",
+          "starttick": "4",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "sketch",
       "animations": [
@@ -6654,6 +6801,17 @@
         }
       ]
     },
+	{
+      "name": "sparklyswirl",
+      "animations": [
+        {
+          "preset": "flow",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "spectralthief",
       "animations": [
@@ -6724,6 +6882,23 @@
         },
         {
           "preset": "cartFunc:pleaf:d0.3:rtrue:l10:f(0.5-rand())*(3.2),(0.5-rand())*(3.2),(0.5-rand())*(3.2)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
+	{
+      "name": "splishysplash",
+      "animations": [
+        {
+          "preset": "flow:pdroplet:d75:w5:l15",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "flow:psplash:d50:w3.5:l15",
           "duration": "5",
           "starttick": "0",
           "applyAfter": "false"
@@ -7727,6 +7902,17 @@
     {
       "name": "vcreate"
     },
+	{
+      "name": "veeveevolley",
+	  "animations": [
+        {
+          "preset": "cartFunc:pcrit:d1:w1:l2:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0",
+          "applyAfter": "false"
+        }
+      ]
+    },
     {
       "name": "venomdrench"
     },
@@ -8158,6 +8344,23 @@
           "preset": "cartFunc:pmisc:d1:w2.5:l2:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "5",
+          "applyAfter": "false"
+        }
+      ]
+    },
+	{
+      "name": "zingzap",
+      "animations": [
+        {
+          "preset": "thunder",
+          "duration": "2",
+          "starttick": "3",
+          "applyAfter": "false"
+        },
+        {
+          "preset": "pons:pmisc",
+          "duration": "3",
+          "starttick": "0",
           "applyAfter": "false"
         }
       ]
