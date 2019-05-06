@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "pokecube:berry_oran",
+                    "name": "pokecube_mobs:berry_oran",
                     "weight": 45
                 },
                 {
@@ -16,37 +16,37 @@
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_aspear",
+                    "name": "pokecube_mobs:berry_aspear",
                     "weight": 30
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_cheri",
+                    "name": "pokecube_mobs:berry_cheri",
                     "weight": 30
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_chesto",
+                    "name": "pokecube_mobs:berry_chesto",
                     "weight": 30
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_pecha",
+                    "name": "pokecube_mobs:berry_pecha",
                     "weight": 30
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_persim",
+                    "name": "pokecube_mobs:berry_persim",
                     "weight": 30
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_rawst",
+                    "name": "pokecube_mobs:berry_rawst",
                     "weight": 30
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_sitrus",
+                    "name": "pokecube_mobs:berry_sitrus",
                     "weight": 20
                 },
                 {
@@ -96,7 +96,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "pokecube:berry_lum",
+                    "name": "pokecube_mobs:berry_lum",
                     "weight": 10
                 },
                 {

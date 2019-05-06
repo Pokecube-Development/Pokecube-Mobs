@@ -3,6 +3,7 @@ package pokecube.core.database.abilities.p;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,7 +21,7 @@ import thut.lib.CompatWrapper;
 
 public class Pickup extends Ability
 {
-    public static ResourceLocation lootTable = new ResourceLocation("pokecube", "abilities/pickup");
+    public static ResourceLocation lootTable    = new ResourceLocation("pokecube", "abilities/pickup");
     public static boolean          useLootTable = true;
 
     // Pickup.useLootTable = config.getBoolean("usePickupTable",
@@ -44,8 +45,7 @@ public class Pickup extends Ability
                     {
                         lootcontext$builder.withPlayer((EntityPlayer) mob.getPokemonOwner());
                     }
-                    List<ItemStack> list = loottable.generateLootForPools(mob.getEntity().getRNG(),
-                            lootcontext$builder.build());
+                    List<ItemStack> list = loottable.generateLootForPools(new Random(), lootcontext$builder.build());
                     if (!list.isEmpty()) Collections.shuffle(list);
                     for (ItemStack itemstack : list)
                     {
