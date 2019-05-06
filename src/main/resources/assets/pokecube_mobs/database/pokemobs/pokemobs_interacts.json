@@ -6958,7 +6958,7 @@
         "evolutions": [
           {
             "name": "Simisear",
-            "item_preset": "leafstone"
+            "item_preset": "firestone"
           }
         ],
         "species": "Monkey",
@@ -6978,7 +6978,7 @@
         "evolutions": [
           {
             "name": "Simipour",
-            "item_preset": "leafstone"
+            "item_preset": "waterstone"
           }
         ],
         "species": "Monkey"
