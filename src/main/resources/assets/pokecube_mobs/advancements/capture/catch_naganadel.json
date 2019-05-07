@@ -29,5 +29,5 @@
       }
     }
   },
-  "parent": "pokecube_mobs:capture/get_first_pokemob"
+  "parent": "pokecube_mobs:capture/catch_poipole"
 }

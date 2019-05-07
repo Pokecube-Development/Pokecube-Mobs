@@ -5,6 +5,10 @@
         <metadata head="head" headAxis="2" headAxis2="0" headDir="-1"/>
         <phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="10"/>
 		
+		<worn id="__HAT__" parent="head" offset="0,0.45,0" scale="1.8" angles="-90,0,0"/>
+        
+        <worn id="__EYE__" parent="head" offset="0,0.1,0.58" scale="1.5,1.5,1.5" angles="-90,0,0"/>
+		
 		<phase type="idle">         
 		    <part name="mouth">
 				<component name="1" startKey="0" length="10" rotOffset="4,0,0," rotChange="-4,0,0,"/>
