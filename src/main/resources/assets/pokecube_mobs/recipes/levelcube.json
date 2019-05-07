@@ -1,0 +1,28 @@
+{
+  "type": "minecrat:crafting_shaped",
+  "group": "pokecube",
+  "pattern": [
+    "RBR",
+    "PRP",
+    "CCC"
+  ],
+  "key": {
+    "P": {
+      "item": "pokecube:premiercube"
+    },
+    "B": {
+      "item": "minecraft:brick"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "minecraft:coal",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "pokecube:levelcube",
+    "count": 2
+  }
+}
