@@ -243,6 +243,8 @@ public class PokecubeMobs implements IMobProvider
         config.load();
         String var = config.getString("pickuploottable", Configuration.CATEGORY_GENERAL, "",
                 "If Set, this is the loot table that pickup will use.");
+        Pickup.useLootTable = config.getBoolean("usePickupTable", Configuration.CATEGORY_GENERAL, true,
+                "whether pickup uses the built in default loot table.");
         if (!var.isEmpty())
         {
             Pickup.lootTable = new ResourceLocation(var);
