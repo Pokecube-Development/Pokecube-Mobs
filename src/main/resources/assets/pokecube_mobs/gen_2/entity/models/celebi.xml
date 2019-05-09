@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
-   <model name="">
-<phase name="global" rotation="1,0,0,0" offset="0,0,0" scale=".5" headAxis="1" headCap="-50,50"/>
-   </model>
+   <model>
+        <phase name="global" rotation="0,1,0,0" offset="0,0,0" scale="0.3"/>
+        <metadata head="head" headCap="-90,90" headDir="-1"/>
+        <phase name="snakeIdle" parts="Tail_base:Tail_pt1:Tail_pt2" angle="5" axis="3" length="500"/>
+        <phase type="idle">
+            <part name="body">
+                <component name="1" startKey="0" length="2" posChange="0.0,10.0,0.0,"/>
+                <component name="2" startKey="2" length="6" posChange="0.0,-20.0,0.0,"/>
+                <component name="3" startKey="8" length="2" posChange="0.0,10.0,0.0,"/>
+            </part>
+            <part name="ant">
+                <component name="1" rotChange="15.0,0.0,0.0," length="3" startKey="0"/>
+                <component name="1" rotChange="-15.0,0.0,0.0," length="8" startKey="0"/>
+            </part>
+            <part name="arm1">
+                <component name="1" rotChange="0.0,0.0,10.0," length="20" startKey="0"/>
+                <component name="2" rotChange="0.0,0.0,-20.0," length="5" startKey="10"/>
+                <component name="2" rotChange="0.0,0.0,10.0," length="20" startKey="0"/>
+            </part>
+            <part name="arm2">
+                <component name="1" rotChange="0.0,0.0,-10.0," length="20" startKey="0"/>
+                <component name="2" rotChange="0.0,0.0,20.0," length="5" startKey="10"/>
+                <component name="2" rotChange="0.0,0.0,-10.0," length="20" startKey="0"/>
+            </part>
+            <part name="wing1">
+                <component name="1" rotChange="0,0,0" length="1" startKey="0"/>
+                <component name="2" rotChange="0,55,0" length="1" startKey="1"/>
+            </part>
+            <part name="wing2">
+                <component name="1" rotChange="0,0,0" length="1" startKey="0"/>
+                <component name="2" rotChange="0,-55,0" length="1" startKey="1"/>
+            </part>
+            <part name="leg1">
+                <component name="1" rotChange="18.0,0.0,0.0," length="3" startKey="0"/>
+                <component name="1" rotChange="-18.0,0.0,0.0," length="8" startKey="0"/>
+            </part>
+            <part name="leg2">
+                <component name="1" rotChange="18.0,0.0,0.0," length="3" startKey="0"/>
+                <component name="1" rotChange="-18.0,0.0,0.0," length="8" startKey="0"/>
+            </part>
+        </phase>
+        <merges merge="idle->flying" />
+        <phase name="snakeWalk" parts="Tail_base:Tail_pt1:Tail_pt2" angle="5" axis="2" length="100"/>
+        <phase type="flying">
+            <part name="body">
+                <component name="1" rotChange="60,0,0" length="1" startKey="0"/> 
+                <component name="2" rotChange="60,0,0" length="500" startKey="1"/> 
+            </part> 
+            <part name="head">
+                <component name="1" posChange="0,-1,1" rotChange="-50,0,0" length="1" startKey="0"/>
+                <component name="2" posChange="0,-1,1" rotChange="-50,0,0" length="500" startKey="1"/>     
+            </part>
+            <part name="leg1">
+                <component name="1" rotChange="21,10,5" length="1000" startKey="0"/>
+            </part>
+            <part name="leg2">
+                <component name="1" rotChange="21,10,5" length="1000" startKey="0"/>
+            </part>
+            <part name="wing1">
+                <component name="1" rotOffset="20,0,-20" rotChange="20,-55,-20" length="1" startKey="0"/>
+                <component name="2" rotChange="20,0,-20" length="1" startKey="2"/>
+            </part>
+            <part name="wing2">
+                <component name="1" rotOffset="20,0,20" rotChange="20,55,20" length="1" startKey="0"/>
+                <component name="2" rotChange="20,0,20" length="1" startKey="2"/>
+            </part>            
+        </phase>
+	</model>
 </ModelAnimator>
+

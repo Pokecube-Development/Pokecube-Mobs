@@ -2,7 +2,28 @@
 <ModelAnimator version="0.1">
     <model name="">
         <phase name="global" rotation="1,0,0,0" offset="0,0.775,0" scale="1.0"/>
-        <metadata head="head" headCap="-60,60"/>
+        <metadata head="head" headCap="-60,60" headDir="-1"/>
         <phase name="quadWalk" leftHind="leftleg1" rightHind="rightleg1" leftFront="leftarm" rightFront="rightarm" duration="10"/>
+        <phase type="idle">
+            <part name="body">
+                <component name="1" posOffset="0.0,0.0,0.0" length="5" startKey="0"/>
+            </part>
+            <part name="rightarm">
+                <component name="1" posOffset="0,0,0" posChange="0,0,0" length="5" startKey="0"/>
+                <component name="2" posChange="0,0,0" length="5" startKey="10"/>>
+            </part>
+            <part name="leftarm">
+                <component name="1" posOffset="0,0,0" posChange="0,0,0" length="5" startKey="0"/>
+                <component name="2" posChange="0,0,0" length="5" startKey="10"/>
+            </part>
+            <part name="leftleg1">
+                <component name="1" posOffset="0,0,0" posChange="0,0,0" length="5" startKey="0"/>
+                <component name="2" posChange="0,0,0" length="5" startKey="10"/>
+            </part>
+            <part name="rightleg1">
+                <component name="1" posOffset="0,0,0" posChange="0,0,0" length="5" startKey="0"/>
+                <component name="2" posChange="0,0,0" length="5" startKey="10"/>
+            </part>
+        </phase>
     </model>
 </ModelAnimator>
