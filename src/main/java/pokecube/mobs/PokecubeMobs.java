@@ -558,7 +558,8 @@ public class PokecubeMobs implements IMobProvider
             public void onPostCapture(Post evt)
             {
                 IPokemob mob = evt.caught;
-                evt.pokecube.entityDropItem(PokecubeManager.pokemobToItem(mob), 1.0F);
+                if (mob != null) evt.pokecube.entityDropItem(PokecubeManager.pokemobToItem(mob), 1.0F);
+                else evt.pokecube.entityDropItem(evt.filledCube, 1.0F);
                 evt.setCanceled(true);
             }
 
