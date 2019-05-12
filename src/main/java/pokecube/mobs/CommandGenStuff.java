@@ -52,6 +52,7 @@ public class CommandGenStuff extends CommandBase
         sender.sendMessage(new TextComponentString("Starting File Output"));
         for (PokedexEntry e : Database.getSortedFormes())
         {
+            if (e == Database.missingno) continue;
             registerAchievements(e);
         }
         sender.sendMessage(new TextComponentString("Advancements Done"));
