@@ -8,6 +8,57 @@
 		<phase name="snakeIdle" parts="tail:tail1:tail2:tail3" axis="0"/>
 		<phase name="snakeWalk" parts="tail:tail1:tail2:tail3" axis="0"/>
 		
+		<phase type="sitting">
+			<part name="cint">
+				<component name="1" startKey="0" length="1" rotOffset="-20,0,0," posOffset="0,60,0,"/>
+			</part>
+			
+			<part name="tail">
+				<component name="1" startKey="0" length="1" rotOffset="20,0,0,"/>
+			</part>
+				<part name="tail1">
+					<component name="1" startKey="0" length="1" rotOffset="0,-30,0,"/>
+				</part>
+					<part name="tail2">
+						<component name="1" startKey="0" length="1" rotOffset="0,-40,0,"/>
+					</part>
+						<part name="tail3">
+							<component name="1" startKey="0" length="1" rotOffset="0,-40,0,"/>
+						</part>
+
+			<part name="body">
+				<component name="1" startKey="0" length="1" rotOffset="30,0,0,"/>
+			</part>
+			
+            <part name="arm2">
+				<component name="1" startKey="0" length="1" rotOffset="-20,0,50,"/>
+			</part>
+				<part name="arm2_1">
+					<component name="1" startKey="0" length="1" rotOffset="0,150,-40,"/>
+				</part>
+			
+			 <part name="arm1">
+				<component name="1" startKey="0" length="1" rotOffset="0,-10,-50,"/>
+			</part>
+				<part name="arm1_1">
+					<component name="1" startKey="0" length="1" rotOffset="0,-65,0,"/>
+				</part>
+					
+			<part name="leg1">
+				<component name="1" startKey="0" length="1" rotOffset="-70,0,0,"/>
+			</part>
+			<part name="leg2">
+				<component name="1" startKey="0" length="1" rotOffset="-110,0,0,"/>
+			</part>
+				<part name="leg2_1">
+					<component name="1" startKey="0" length="1" rotOffset="70,0,0,"/>
+				</part>
+					<part name="foot2">
+						<component name="1" startKey="0" length="1" rotOffset="50,0,0,"/>
+					</part>
+			
+        </phase>
+		
 		<phase type="idle">
 			<part name="body">
 				<component name="1" startKey="0" length="1" rotOffset="10,0,0,"/>

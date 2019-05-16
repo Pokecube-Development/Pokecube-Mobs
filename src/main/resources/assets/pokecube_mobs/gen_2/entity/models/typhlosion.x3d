@@ -68,7 +68,7 @@
 					</Group>
 				</Transform>
 				<Transform DEF="Cube_001_TRANSFORM"
-				           translation="-0.000000 -0.178215 -0.872921"
+				           translation="-0.000000 -0.178215 -0.872920"
 				           scale="1.000000 1.000000 1.000000"
 				           rotation="0.000000 0.000000 -0.000000 0.000000"
 				           >
@@ -99,7 +99,7 @@
 					           rotation="0.000000 -0.000000 0.000000 0.000000"
 					           >
 						<Transform DEF="Cube_038_ifs_TRANSFORM"
-						           translation="0.000000 -0.000000 -0.000000"
+						           translation="0.000000 -0.000000 0.000000"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="1.000000 0.000000 0.000000 0.000000"
 						           >
@@ -464,7 +464,7 @@
 								                    normalPerVertex="true"
 								                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 								                    >
-									<Coordinate point="-0.286890 -0.552556 -0.326091 -0.286890 -0.577964 0.031987 -0.286890 0.567657 0.113278 -0.286890 0.593065 -0.244800 -0.286890 0.593065 -0.244800 -0.286890 0.567657 0.113278 0.286890 0.567657 0.113278 0.286890 0.593065 -0.244801 0.286890 0.593065 -0.244801 0.286890 0.567657 0.113278 0.286890 -0.577964 0.031987 0.286890 -0.552556 -0.326091 -0.286890 -0.577964 0.031987 -0.286890 -0.552556 -0.326091 0.286890 -0.552556 -0.326091 0.286890 -0.577964 0.031987 0.286890 -0.552556 -0.326091 0.286890 0.593065 -0.244801 0.286890 0.567657 0.113278 0.286890 -0.577964 0.031987 " />
+									<Coordinate point="-0.286890 -0.552556 -0.326091 -0.286890 -0.577964 0.031988 -0.286890 0.567657 0.113278 -0.286890 0.593065 -0.244800 -0.286890 0.593065 -0.244800 -0.286890 0.567657 0.113278 0.286890 0.567657 0.113278 0.286890 0.593065 -0.244801 0.286890 0.593065 -0.244801 0.286890 0.567657 0.113278 0.286890 -0.577964 0.031987 0.286890 -0.552556 -0.326091 -0.286890 -0.577964 0.031988 -0.286890 -0.552556 -0.326091 0.286890 -0.552556 -0.326091 0.286890 -0.577964 0.031987 0.286890 -0.552556 -0.326091 0.286890 0.593065 -0.244801 0.286890 0.567657 0.113278 0.286890 -0.577964 0.031987 " />
 									<Normal vector="-0.577349 -0.535020 -0.616749 -0.577349 -0.616749 0.535020 -0.577349 0.535020 0.616749 -0.577349 0.616749 -0.535020 -0.577349 0.616749 -0.535020 -0.577349 0.535020 0.616749 0.577349 0.535020 0.616749 0.577349 0.616749 -0.535020 0.577349 0.616749 -0.535020 0.577349 0.535020 0.616749 0.577349 -0.616749 0.535020 0.577349 -0.535020 -0.616749 -0.577349 -0.616749 0.535020 -0.577349 -0.535020 -0.616749 0.577349 -0.535020 -0.616749 0.577349 -0.616749 0.535020 0.577349 -0.535020 -0.616749 0.577349 0.616749 -0.535020 0.577349 0.535020 0.616749 0.577349 -0.616749 0.535020 " />
 									<TextureCoordinate point="0.0289 0.6323 0.1207 0.6323 0.1207 0.7241 0.0289 0.7241 0.0289 0.6323 0.1207 0.6323 0.1207 0.7241 0.0289 0.7241 0.0289 0.6323 0.1207 0.6323 0.1207 0.7241 0.0289 0.7241 0.1207 0.7241 0.0289 0.7241 0.0289 0.6323 0.1207 0.6323 0.1207 0.7241 0.1207 0.6323 0.0289 0.6323 0.0289 0.7241 " />
 								</IndexedTriangleSet>
@@ -498,7 +498,7 @@
 							</Group>
 						</Transform>
 						<Transform DEF="Cube_018_TRANSFORM"
-						           translation="0.000272 -0.117147 -0.192530"
+						           translation="0.000271 -0.117147 -0.192530"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="0.000000 -0.000000 0.000000 0.000000"
 						           >
@@ -526,12 +526,12 @@
 							<Transform DEF="Cube_022_TRANSFORM"
 							           translation="-0.190093 -0.712135 -0.155430"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="1.000000 0.000000 0.000000 0.000000"
+							           rotation="-0.000000 -0.000000 -0.000000 0.000000"
 							           >
 								<Transform DEF="Cube_022_ifs_TRANSFORM"
 								           translation="0.000000 0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
-								           rotation="1.000000 0.000000 0.000000 0.000000"
+								           rotation="0.000000 0.000000 0.000000 0.000000"
 								           >
 									<Group DEF="group_ME_Cube_023">
 										<Shape>
@@ -553,12 +553,12 @@
 							<Transform DEF="Cube_021_TRANSFORM"
 							           translation="0.193811 -0.712135 -0.155430"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="1.000000 0.000000 0.000000 0.000000"
+							           rotation="-0.000000 -0.000000 -0.000000 0.000000"
 							           >
 								<Transform DEF="Cube_021_ifs_TRANSFORM"
 								           translation="0.000000 0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
-								           rotation="1.000000 0.000000 0.000000 0.000000"
+								           rotation="0.000000 0.000000 0.000000 0.000000"
 								           >
 									<Group DEF="group_ME_Cube_022">
 										<Shape>
@@ -580,12 +580,12 @@
 							<Transform DEF="Cube_020_TRANSFORM"
 							           translation="0.000000 -0.712135 -0.155430"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="1.000000 0.000000 0.000000 0.000000"
+							           rotation="-0.000000 -0.000000 -0.000000 0.000000"
 							           >
 								<Transform DEF="Cube_020_ifs_TRANSFORM"
 								           translation="0.000000 0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
-								           rotation="1.000000 0.000000 0.000000 0.000000"
+								           rotation="0.000000 0.000000 0.000000 0.000000"
 								           >
 									<Group DEF="group_ME_Cube_021">
 										<Shape>
@@ -673,9 +673,16 @@
 							<Group DEF="group_ME_flame">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Typhlosion_png" />
+										<Material DEF="MA_Flame"
+										          diffuseColor="0.800 0.800 0.800"
+										          specularColor="0.401 0.401 0.401"
+										          emissiveColor="0.640 0.640 0.640"
+										          ambientIntensity="0.333"
+										          shininess="0.098"
+										          transparency="0.0"
+										          />
 									</Appearance>
-									<IndexedTriangleSet solid="false"
+									<IndexedTriangleSet solid="true"
 									                    normalPerVertex="true"
 									                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 									                    >
@@ -699,9 +706,9 @@
 								<Group DEF="group_ME_Cube_115">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -726,9 +733,9 @@
 								<Group DEF="group_ME_Cube_114">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -753,9 +760,9 @@
 								<Group DEF="group_ME_Cube_113">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -780,9 +787,9 @@
 								<Group DEF="group_ME_Cube_112">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -807,9 +814,9 @@
 								<Group DEF="group_ME_Cube_111">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -834,9 +841,9 @@
 								<Group DEF="group_ME_Cube_110">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -861,9 +868,9 @@
 								<Group DEF="group_ME_Cube_109">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -888,9 +895,9 @@
 								<Group DEF="group_ME_Cube_108">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -915,9 +922,9 @@
 								<Group DEF="group_ME_Cube_107">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -942,9 +949,9 @@
 								<Group DEF="group_ME_Cube_024">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -969,9 +976,9 @@
 								<Group DEF="group_ME_Cube_106">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -996,9 +1003,9 @@
 								<Group DEF="group_ME_Cube_105">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1023,9 +1030,9 @@
 								<Group DEF="group_ME_Cube_104">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1050,9 +1057,9 @@
 								<Group DEF="group_ME_Cube_103">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1077,9 +1084,9 @@
 								<Group DEF="group_ME_Cube_102">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1104,9 +1111,9 @@
 								<Group DEF="group_ME_Cube_101">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1131,9 +1138,9 @@
 								<Group DEF="group_ME_Cube_100">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1158,9 +1165,9 @@
 								<Group DEF="group_ME_Cube_099">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1185,9 +1192,9 @@
 								<Group DEF="group_ME_Cube_098">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1212,9 +1219,9 @@
 								<Group DEF="group_ME_Cube_097">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Typhlosion_png" />
+											<Material USE="MA_Flame" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -1307,7 +1314,7 @@
 								</Transform>
 							</Transform>
 							<Transform DEF="Cube_016_TRANSFORM"
-							           translation="-0.896461 -0.013897 0.138343"
+							           translation="-0.896461 -0.013897 0.138342"
 							           scale="1.000000 1.000000 1.000000"
 							           rotation="0.000000 0.000000 0.000000 0.000000"
 							           >
@@ -1660,7 +1667,7 @@
 							<Transform DEF="Cube_015_TRANSFORM"
 							           translation="0.896463 -0.129680 -0.129993"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="0.000000 -0.000000 0.000000 0.000000"
+							           rotation="0.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="Cube_015_ifs_TRANSFORM"
 								           translation="0.000000 0.000000 0.000000"
@@ -1687,7 +1694,7 @@
 							<Transform DEF="Cube_014_TRANSFORM"
 							           translation="0.896463 -0.129680 0.106902"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="0.000000 -0.000000 0.000000 0.000000"
+							           rotation="0.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="Cube_014_ifs_TRANSFORM"
 								           translation="0.000000 0.000000 0.000000"
@@ -1712,12 +1719,12 @@
 								</Transform>
 							</Transform>
 							<Transform DEF="Cube_013_TRANSFORM"
-							           translation="0.896463 -0.013898 0.138349"
+							           translation="0.896463 -0.013898 0.138350"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="0.000000 -0.000000 0.000000 0.000000"
+							           rotation="0.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="Cube_013_ifs_TRANSFORM"
-								           translation="0.000000 0.000000 0.000000"
+								           translation="0.000000 -0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
 								           rotation="1.000000 0.000000 0.000000 0.000000"
 								           >
@@ -1741,10 +1748,10 @@
 							<Transform DEF="Cube_012_TRANSFORM"
 							           translation="0.896463 0.105926 0.113759"
 							           scale="1.000000 1.000000 1.000000"
-							           rotation="0.000000 -0.000000 0.000000 0.000000"
+							           rotation="0.000000 0.000000 0.000000 0.000000"
 							           >
 								<Transform DEF="Cube_012_ifs_TRANSFORM"
-								           translation="0.000000 0.000000 0.000000"
+								           translation="0.000000 -0.000000 0.000000"
 								           scale="1.000000 1.000000 1.000000"
 								           rotation="1.000000 0.000000 0.000000 0.000000"
 								           >
