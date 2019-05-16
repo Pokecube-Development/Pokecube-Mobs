@@ -337,7 +337,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="arm2_1_TRANSFORM"
-					           translation="-1.008939 0.000000 -0.010475"
+					           translation="-1.008939 0.000000 -0.010476"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -472,7 +472,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="arm1_1_TRANSFORM"
-					           translation="1.008939 0.000000 -0.010475"
+					           translation="1.008939 0.000000 -0.010476"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="0.000000 -0.000000 0.000000 0.000000"
 					           >
@@ -700,9 +700,16 @@
 							<Group DEF="group_ME_Cube_002">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Beedrill_Mega_png" />
+										<Material DEF="MA_Eye"
+										          diffuseColor="0.800 0.800 0.800"
+										          specularColor="0.401 0.401 0.401"
+										          emissiveColor="0.200 0.200 0.200"
+										          ambientIntensity="0.333"
+										          shininess="0.098"
+										          transparency="0.0"
+										          />
 									</Appearance>
-									<IndexedTriangleSet solid="false"
+									<IndexedTriangleSet solid="true"
 									                    normalPerVertex="true"
 									                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 17 18 16 18 19 20 21 14 20 14 3 22 23 24 22 24 25 26 27 28 26 28 29 0 13 30 0 30 31 32 33 34 32 34 35 36 17 24 36 24 37 38 33 28 38 28 39 40 41 42 40 42 43 44 45 46 44 46 47 48 49 50 48 50 51 40 52 53 40 53 54 55 56 57 55 57 47 58 59 60 58 60 7 61 62 63 61 63 43 4 64 65 4 65 66 67 68 69 67 69 70 71 52 63 71 63 72 "
 									                    >
@@ -726,9 +733,9 @@
 								<Group DEF="group_ME_Cube_004">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beedrill_Mega_png" />
+											<Material USE="MA_Eye" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -754,9 +761,9 @@
 							<Group DEF="group_ME_Cube_013">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Beedrill_Mega_png" />
+										<Material USE="MA_Eye" />
 									</Appearance>
-									<IndexedTriangleSet solid="false"
+									<IndexedTriangleSet solid="true"
 									                    normalPerVertex="true"
 									                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 17 18 16 18 19 20 1 12 20 12 21 22 23 24 22 24 25 26 27 28 26 28 29 30 13 0 30 0 31 32 33 34 32 34 35 36 37 24 36 24 19 38 39 28 38 28 35 40 41 42 40 42 43 44 45 46 44 46 47 48 49 50 48 50 51 40 52 53 40 53 54 55 45 56 55 56 57 58 5 59 58 59 60 61 41 62 61 62 63 4 64 65 4 65 66 67 68 69 67 69 70 71 72 62 71 62 54 "
 									                    >
@@ -780,9 +787,9 @@
 								<Group DEF="group_ME_Cube_014">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beedrill_Mega_png" />
+											<Material USE="MA_Eye" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >

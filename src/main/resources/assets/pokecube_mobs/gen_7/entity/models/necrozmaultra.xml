@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator>
     <model>
-        <phase name="global" rotation="1,0,0,0" offset="0,0,-1" scale="0.25"/>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,-0.4" scale="0.25"/>
 		<metadata head="neck" headCap="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
 		<phase name="snakeIdle" parts="tail:tail1:tail2:tail3:tail4:tail5:tail6:tail7:tail8" angle="15" axis="0" length="20"/>
 			<phase name="snakeWalk" parts="tail:tail1:tail2:tail3:tail4:tail5:tail6:tail7:tail8" angle="15" axis="1" length="20"/>

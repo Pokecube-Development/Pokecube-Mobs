@@ -392,7 +392,7 @@
 						<Transform DEF="gem_005_TRANSFORM"
 						           translation="-1.176151 0.000000 0.142376"
 						           scale="1.000000 1.000000 1.000000"
-						           rotation="1.000000 0.000000 0.000000 0.000000"
+						           rotation="0.000000 0.000000 0.000000 0.000000"
 						           >
 							<Transform DEF="gem_005_ifs_TRANSFORM"
 							           translation="0.000000 0.000000 0.000000"
@@ -402,9 +402,16 @@
 								<Group DEF="group_ME_Cube_013">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beheeyem_png" />
+											<Material DEF="MA_Light"
+											          diffuseColor="0.800 0.800 0.800"
+											          specularColor="0.401 0.401 0.401"
+											          emissiveColor="0.600 0.600 0.600"
+											          ambientIntensity="0.333"
+											          shininess="0.098"
+											          transparency="0.0"
+											          />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -419,7 +426,7 @@
 						<Transform DEF="Cube_000_TRANSFORM"
 						           translation="-0.216600 0.000000 0.000001"
 						           scale="1.000000 1.000000 1.000000"
-						           rotation="1.000000 0.000000 0.000000 0.000000"
+						           rotation="0.000000 0.000000 0.000000 0.000000"
 						           >
 							<Transform DEF="Cube_000_ifs_TRANSFORM"
 							           translation="0.000000 0.000000 0.000000"
@@ -446,7 +453,7 @@
 						<Transform DEF="gem_004_TRANSFORM"
 						           translation="-1.176151 -0.168331 -0.125971"
 						           scale="1.000000 1.000000 1.000000"
-						           rotation="1.000000 0.000000 0.000000 0.000000"
+						           rotation="0.000000 0.000000 0.000000 0.000000"
 						           >
 							<Transform DEF="gem_004_ifs_TRANSFORM"
 							           translation="0.000000 0.000000 0.000000"
@@ -456,9 +463,9 @@
 								<Group DEF="group_ME_Cube_009">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beheeyem_png" />
+											<Material USE="MA_Light" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -473,7 +480,7 @@
 						<Transform DEF="gem_003_TRANSFORM"
 						           translation="-1.176151 0.165042 -0.125971"
 						           scale="1.000000 1.000000 1.000000"
-						           rotation="1.000000 0.000000 0.000000 0.000000"
+						           rotation="0.000000 0.000000 0.000000 0.000000"
 						           >
 							<Transform DEF="gem_003_ifs_TRANSFORM"
 							           translation="0.000000 0.000000 0.000000"
@@ -483,9 +490,9 @@
 								<Group DEF="group_ME_Cube_003">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beheeyem_png" />
+											<Material USE="MA_Light" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 4 13 16 4 16 17 18 19 14 18 14 7 "
 										                    >
@@ -645,9 +652,9 @@
 								<Group DEF="group_ME_Cube_001">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beheeyem_png" />
+											<Material USE="MA_Light" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -672,9 +679,9 @@
 								<Group DEF="group_ME_Cube_000">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beheeyem_png" />
+											<Material USE="MA_Light" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >
@@ -726,9 +733,9 @@
 								<Group DEF="group_ME_Cube_012">
 									<Shape>
 										<Appearance>
-											<ImageTexture USE="IM_Beheeyem_png" />
+											<Material USE="MA_Light" />
 										</Appearance>
-										<IndexedTriangleSet solid="false"
+										<IndexedTriangleSet solid="true"
 										                    normalPerVertex="true"
 										                    index="0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 13 4 16 4 17 18 5 12 18 12 19 "
 										                    >

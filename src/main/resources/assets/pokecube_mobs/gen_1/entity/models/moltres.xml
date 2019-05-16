@@ -9,25 +9,19 @@
         <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" duration="6" legAngle="25"/>
         
         <phase type="idle">            
-            <part name="wing1_1">
+            <part name="wing1">
                <component name="1" rotOffset="20,30,-80" length="10" startKey="0"/>
             </part>
-                <part name="wing1_2">
-                    <component name="1" rotOffset="0,0,-170" length="10" startKey="0"/>
-                </part>
-                    <part name="wing1_3">
-                        <component name="1" rotOffset="0,0,170" length="10" startKey="0"/>
-                    </part>
-            
-            <part name="wing2_1">
-               <component name="1" rotOffset="20,-30,80" length="10" startKey="0"/>
-            </part>
-                <part name="wing2_2">
+                <part name="wing1_1">
                     <component name="1" rotOffset="0,0,170" length="10" startKey="0"/>
                 </part>
-                    <part name="wing2_3">
-                        <component name="1" rotOffset="0,0,-170" length="10" startKey="0"/>
-                    </part>
+            
+            <part name="wing2">
+               <component name="1" rotOffset="20,-30,80" length="10" startKey="0"/>
+            </part>
+                <part name="wing2_1">
+                    <component name="1" rotOffset="0,0,-170" length="10" startKey="0"/>
+                </part>
             
             <part name="leg1">
                <component name="1" rotOffset="0,0,0" length="10" startKey="0"/>
@@ -53,58 +47,48 @@
                <component name="1" rotOffset="8,0,0" rotChange="5,0,0" length="3" startKey="0"/>
                <component name="2" rotChange="-5,0,0" length="3" startKey="7"/>
             </part>
-            
-            <part name="wing1_1">
+            <part name="mouth">
+               <component name="1" rotOffset="4,0,0" rotChange="2,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="-2,0,0" length="5" startKey="10"/>
+            </part>
+			
+            <part name="wing1">
                <component name="1" rotOffset="0,0,5" rotChange="0,0,-10" length="5" startKey="0"/>
                <component name="2" rotChange="0,0,10" length="5" startKey="10"/>
             </part>
-                <part name="wing1_2">
+                <part name="wing1_1">
                     <component name="1" rotOffset="0,0,8" rotChange="0,0,-8" length="8" startKey="0"/>
                     <component name="2" rotChange="0,0,8" length="8" startKey="10"/>
                 </part>
-                    <part name="wing1_3">
-                        <component name="1" rotOffset="0,0,-5" rotChange="0,0,10" length="5" startKey="0"/>
-                        <component name="2" rotChange="0,0,-10" length="5" startKey="10"/>
-                    </part>
             
-            <part name="wing2_1">
+            <part name="wing2">
                <component name="1" rotOffset="0,0,-5" rotChange="0,0,10" length="5" startKey="0"/>
                <component name="2" rotChange="0,0,-10" length="5" startKey="10"/>
             </part>
-                <part name="wing2_2">
+                <part name="wing2_1">
                     <component name="1" rotOffset="0,0,-8" rotChange="0,0,8" length="8" startKey="0"/>
                     <component name="2" rotChange="0,0,-8" length="8" startKey="10"/>
                 </part>
-                    <part name="wing2_3">
-                        <component name="1" rotOffset="0,0,5" rotChange="0,0,-10" length="5" startKey="0"/>
-                        <component name="2" rotChange="0,0,10" length="5" startKey="10"/>
-                    </part>
                     
             <part name="leg1">
                <component name="1" rotOffset="35,0,0" length="10" startKey="0"/>
             </part>
-                <part name="leg1_1">
-                    <component name="1" rotOffset="65,0,0" length="10" startKey="0"/>
-                </part>
-                    <part name="leg1_2">
-                        <component name="1" rotOffset="-95,0,0" length="10" startKey="0"/>
-                    </part>
-                        <part name="foot1">
-                            <component name="1" rotOffset="45,0,0" length="10" startKey="0"/>
-                        </part>
+				<part name="leg1_2">
+				   <component name="1" rotOffset="-125,0,0" length="10" startKey="0"/>
+				</part>
+					<part name="foot1">
+					   <component name="1" rotOffset="65,0,0" length="10" startKey="0"/>
+					</part>
                 
             <part name="leg2">
                <component name="1" rotOffset="35,0,0" length="10" startKey="0"/>
             </part>
-                <part name="leg2_1">
-                    <component name="1" rotOffset="65,0,0" length="10" startKey="0"/>
-                </part>
-                    <part name="leg2_2">
-                        <component name="1" rotOffset="-95,0,0" length="10" startKey="0"/>
-                    </part>
-                        <part name="foot2">
-                            <component name="1" rotOffset="45,0,0" length="10" startKey="0"/>
-                        </part>
+				<part name="leg2_2">
+				   <component name="1" rotOffset="-125,0,0" length="10" startKey="0"/>
+				</part>
+					<part name="foot2">
+					   <component name="1" rotOffset="65,0,0" length="10" startKey="0"/>
+					</part>
             
             <part name="tail">
                <component name="1" rotOffset="7,0,0" rotChange="-8,0,0" length="10" startKey="0"/>

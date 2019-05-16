@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
     <model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="1.0" headAxis="1" headCap="-50,50"/>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.6"/>
         <phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="10"/>
-    </model>
+		<metadata head="neck" headCap="-80,80" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="-1"/>
+
+		<phase name="snakeIdle" parts="tail:tail1:tail2" axis="1"/>
+		<phase name="snakeWalk" parts="tail:tail1:tail2" axis="0"/>
+		
+		<phase type="idle">			
+			<part name="mouth">
+              <component name="1" rotOffset="0,0,0" rotChange="1,0,0" length="8" startKey="0"/>
+              <component name="2" rotChange="-1,0,0" length="8" startKey="10"/>
+            </part>
+				
+			<part name="tree">
+			   <component name="1" rotChange="0,0,2" length="10" startKey="0"/>
+			   <component name="2" rotChange="0,0,-4" length="10" startKey="10"/>
+			   <component name="3" rotChange="0,0,2" length="10" startKey="20"/>
+			</part>
+        </phase>
+		
+		<phase type="walking">			
+			<part name="mouth">
+              <component name="1" rotOffset="0,0,0" rotChange="1,0,0" length="8" startKey="0"/>
+              <component name="2" rotChange="-1,0,0" length="8" startKey="10"/>
+            </part>
+				
+			<part name="tree">
+			   <component name="1" rotChange="0,0,2" length="10" startKey="0"/>
+			   <component name="2" rotChange="0,0,-4" length="10" startKey="10"/>
+			   <component name="3" rotChange="0,0,2" length="10" startKey="20"/>
+			</part>
+        </phase>
+	</model>
 </ModelAnimator>
