@@ -2,8 +2,8 @@ package pokecube.core.moves.implementations.attacks.special;
 
 import net.minecraft.util.DamageSource;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.MovesUtils;
 import pokecube.core.moves.templates.Move_Basic;
 import pokecube.core.utils.PokeType;

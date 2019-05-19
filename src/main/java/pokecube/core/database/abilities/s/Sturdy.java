@@ -3,7 +3,7 @@ package pokecube.core.database.abilities.s;
 import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 
 public class Sturdy extends Ability
 {

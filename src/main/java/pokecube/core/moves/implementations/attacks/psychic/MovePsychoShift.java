@@ -2,8 +2,8 @@ package pokecube.core.moves.implementations.attacks.psychic;
 
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Basic;
 
 public class MovePsychoShift extends Move_Basic

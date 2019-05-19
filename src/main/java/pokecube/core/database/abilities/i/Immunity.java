@@ -3,7 +3,7 @@ package pokecube.core.database.abilities.i;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 
 public class Immunity extends Ability
 {

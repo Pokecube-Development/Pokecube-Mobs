@@ -4,8 +4,8 @@ import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.database.abilities.AbilityManager;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 
 public class Trace extends Ability
 {

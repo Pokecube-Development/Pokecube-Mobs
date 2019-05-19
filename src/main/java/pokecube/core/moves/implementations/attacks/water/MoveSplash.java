@@ -2,8 +2,8 @@ package pokecube.core.moves.implementations.attacks.water;
 
 import net.minecraft.util.text.ITextComponent;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Basic;
 import thut.core.common.commands.CommandTools;
 

@@ -2,7 +2,7 @@ package pokecube.core.database.abilities.r;
 
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.utils.PokeType;
 
 public class Refrigerate extends Ability

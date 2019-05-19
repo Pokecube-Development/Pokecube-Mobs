@@ -5,8 +5,8 @@ import java.util.List;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.Move_Base;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.items.pokemobeggs.EntityPokemobEgg;
 import thut.api.maths.Vector3;
 

@@ -2,10 +2,10 @@ package pokecube.core.moves.implementations.attacks.special;
 
 import net.minecraft.entity.EntityLiving;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.interfaces.pokemob.ai.CombatStates;
 import pokecube.core.interfaces.pokemob.ai.GeneralStates;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Basic;
 
 public class MoveWhirlwind extends Move_Basic

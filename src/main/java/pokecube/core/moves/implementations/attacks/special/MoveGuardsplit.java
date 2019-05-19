@@ -1,9 +1,9 @@
 package pokecube.core.moves.implementations.attacks.special;
 
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.IPokemob.Stats;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.implementations.attacks.special.MovePowersplit.Modifier;
 import pokecube.core.moves.templates.Move_Basic;
 import pokecube.core.network.pokemobs.PacketSyncModifier;

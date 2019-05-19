@@ -2,7 +2,7 @@ package pokecube.core.moves.implementations.attacks.rock;
 
 import net.minecraft.entity.Entity;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Basic;
 
 public class MoveRollout extends Move_Basic

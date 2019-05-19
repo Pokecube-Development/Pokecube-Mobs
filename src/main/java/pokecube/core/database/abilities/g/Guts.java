@@ -2,8 +2,8 @@ package pokecube.core.database.abilities.g;
 
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.IPokemob.Stats;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 
 public class Guts extends Ability
 {

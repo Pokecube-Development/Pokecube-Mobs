@@ -2,7 +2,7 @@ package pokecube.core.moves.implementations.attacks.bug;
 
 import net.minecraft.entity.Entity;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Basic;
 
 public class MoveFurycutter extends Move_Basic

@@ -1,10 +1,11 @@
 package pokecube.core.moves.implementations.attacks.special;
 
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.IStatsModifiers;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.IPokemob.Stats;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
+import pokecube.core.interfaces.pokemob.stats.IStatsModifiers;
+import pokecube.core.interfaces.pokemob.stats.StatModifiers;
 import pokecube.core.moves.templates.Move_Basic;
 import pokecube.core.network.pokemobs.PacketSyncModifier;
 
@@ -58,7 +59,7 @@ public class MovePowersplit extends Move_Basic
 
     static
     {
-        IPokemob.StatModifiers.registerModifier("powersplit", Modifier.class);
+        StatModifiers.registerModifier("powersplit", Modifier.class);
     }
 
     public MovePowersplit()

@@ -2,8 +2,8 @@ package pokecube.core.database.abilities.r;
 
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.moves.MovePacket;
 
 public class Rivalry extends Ability
 {
