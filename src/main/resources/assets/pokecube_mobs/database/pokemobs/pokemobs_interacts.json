@@ -9973,11 +9973,12 @@
 	{
       "name": "Necrozma",
       "stats": {
-		"formeItems": {
-          "values": {
-            "forme": "NNecrozma Ultra:Inether_star"
+        "megaRules": [
+          {
+            "name": "Necrozma Ultra",
+            "item_preset": "nether_star"
           }
-        }
+        ]
 	  }
     },
 	{
