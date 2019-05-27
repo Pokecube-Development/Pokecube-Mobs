@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator version="0.1">
-    <model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.3" headAxis="1" headCap="-50,50"/>
-        <phase name="biWalk" leftLeg="Left_Foot" rightLeg="Right_Foot" leftArm="left_Hand" rightArm="Right_Hand" duration="10" legAngle="45" armAngle="50"/>
-        <metadata head="_" />
-    </model>
+ <model name="">
+  <phase headAxis="1" headCap="-50,50" name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.3"/>
+  <phase armAngle="50" duration="10" leftArm="left_Hand" leftLeg="Left_Foot" legAngle="45" name="biWalk" rightArm="Right_Hand" rightLeg="Right_Foot"/>
+  <metadata head="_"/>
+ </model>
 </ModelAnimator>

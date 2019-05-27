@@ -62977,6 +62977,7 @@
       "name": "Solgaleo Dusk",
       "number": 791,
 	  "legend": true,
+      "breed": false,
       "stats": {
         "stats": {
           "values": {
@@ -63089,6 +63090,7 @@
       "name": "Lunala Dawn",
       "number": 792,
       "legend": true,
+      "breed": false,
       "stats": {
         "stats": {
           "values": {

@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator>
-    <model>
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.8"/>
-        <metadata headCap="-60,60" headAxis="1" headAxis2="0" headDir="1" head="head"/>
-        <phase name="biWalk" leftLeg="leftleg" rightLeg="rightleg" leftArm="leftarm" rightArm="rightarm" duration="10" legAngle="45" armAngle="20"/>
-        <customTex default="charmeleon">
-            <animation part="Flame" trigger="time" diffs="1,1,2,2,3,3,4,4"/>
-            <part name="Body" tex="charmeleon1"/>
-        </customTex> 
-    </model>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.8"/>
+  <metadata head="head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <phase armAngle="20" duration="10" leftArm="leftarm" leftLeg="leftleg" legAngle="45" name="biWalk" rightArm="rightarm" rightLeg="rightleg"/>
+  <customTex default="charmeleon">
+   <animation diffs="1,1,2,2,3,3,4,4" part="Flame" trigger="time"/>
+   <part name="Body" tex="charmeleon1"/>
+  </customTex>
+ </model>
 </ModelAnimator>

@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator version="0.1">
-    <model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.3"/>
-        <metadata head="head" headCap="-60,60" headAxis="1" headAxis2="2" headDir="1"/>
-        <customTex default="vivillonhighplains">
-            <forme name="Vivillon Sun" tex="vivillonsun"/>
-            <forme name="Vivillon Ocean" tex="vivillonocean"/>
-            <forme name="Vivillon Elegant" tex="vivillonelegant"/>
-            <forme name="Vivillon Hell" tex="vivillonhell"/>
-            <forme name="Vivillon End" tex="vivillonend"/>
-            <forme name="Vivillon Highplains" tex="vivillonhighplains"/>
-            <forme name="Vivillon IcySnow" tex="vivillonicysnow"/>
-            <forme name="Vivillon Modern" tex="vivillonmodern"/>
-            <forme name="Vivillon Monsoon" tex="vivillonmonsoon"/>
-            <forme name="Vivillon Polar" tex="vivillonpolar"/>
-            <forme name="Vivillon Sandstorm" tex="vivillonsandstorm"/>
-        </customTex> 
-    </model>
-    <Pokemon name="Vivillon" number="666" base="true"/>
-    <Pokemon name="Vivillon Sun" number="666"/>
-    <Pokemon name="Vivillon Ocean" number="666"/>
-    <Pokemon name="Vivillon Elegant" number="666"/>
-    <Pokemon name="Vivillon Hell" number="666"/>
-    <Pokemon name="Vivillon End" number="666"/>
-    <Pokemon name="Vivillon Highplains" number="666"/>
-    <Pokemon name="Vivillon IcySnow" number="666"/>
-    <Pokemon name="Vivillon Modern" number="666"/>
-    <Pokemon name="Vivillon Monsoon" number="666"/>
-    <Pokemon name="Vivillon Polar" number="666"/>
-    <Pokemon name="Vivillon Sandstorm" number="666"/>
+ <model name="">
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.3"/>
+  <metadata head="head" headAxis="1" headAxis2="2" headCap="-60,60" headDir="1"/>
+  <customTex default="vivillonhighplains">
+   <forme name="Vivillon Sun" tex="vivillonsun"/>
+   <forme name="Vivillon Ocean" tex="vivillonocean"/>
+   <forme name="Vivillon Elegant" tex="vivillonelegant"/>
+   <forme name="Vivillon Hell" tex="vivillonhell"/>
+   <forme name="Vivillon End" tex="vivillonend"/>
+   <forme name="Vivillon Highplains" tex="vivillonhighplains"/>
+   <forme name="Vivillon IcySnow" tex="vivillonicysnow"/>
+   <forme name="Vivillon Modern" tex="vivillonmodern"/>
+   <forme name="Vivillon Monsoon" tex="vivillonmonsoon"/>
+   <forme name="Vivillon Polar" tex="vivillonpolar"/>
+   <forme name="Vivillon Sandstorm" tex="vivillonsandstorm"/>
+  </customTex>
+ </model>
+ <Pokemon base="true" name="Vivillon" number="666"/>
+ <Pokemon name="Vivillon Sun" number="666"/>
+ <Pokemon name="Vivillon Ocean" number="666"/>
+ <Pokemon name="Vivillon Elegant" number="666"/>
+ <Pokemon name="Vivillon Hell" number="666"/>
+ <Pokemon name="Vivillon End" number="666"/>
+ <Pokemon name="Vivillon Highplains" number="666"/>
+ <Pokemon name="Vivillon IcySnow" number="666"/>
+ <Pokemon name="Vivillon Modern" number="666"/>
+ <Pokemon name="Vivillon Monsoon" number="666"/>
+ <Pokemon name="Vivillon Polar" number="666"/>
+ <Pokemon name="Vivillon Sandstorm" number="666"/>
 </ModelAnimator>

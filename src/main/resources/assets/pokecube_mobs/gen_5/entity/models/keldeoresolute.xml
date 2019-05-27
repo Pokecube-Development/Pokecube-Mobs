@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator version="0.1">
-    <model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="1.3" headAxis="1" headCap="-50,50"/>
-        <phase name="quadWalk" leftHind="BLeftLeg1" rightHind="BRightLeg1" leftFront="FLeftLeg1" rightFront="FRightLeg1" duration="10"/>
-    </model>
-    <details>
-        <RIDDENOFFSET>0.5</RIDDENOFFSET>
-    </details>
+ <model name="">
+  <phase headAxis="1" headCap="-50,50" name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.3"/>
+  <phase duration="10" leftFront="FLeftLeg1" leftHind="BLeftLeg1" name="quadWalk" rightFront="FRightLeg1" rightHind="BRightLeg1"/>
+ </model>
+ <details>
+  <RIDDENOFFSET>
+   0.5
+  </RIDDENOFFSET>
+ </details>
 </ModelAnimator>
