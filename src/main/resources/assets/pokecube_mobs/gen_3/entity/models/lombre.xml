@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
- <model name="">
-  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.23"/>
-  <metadata head="head" headAxis="2" headAxis2="0" headCap="-60,60" headDir="-1"/>
-  <phase duration="10" leftArm="" leftLeg="leg1" legAngle="45" name="biWalk" rightArm="" rightLeg="leg2"/>
-  <phase armAngle="15" duration="10" leftArm="arm1" leftLeg="" name="biWalk" rightArm="arm2" rightLeg=""/>
- </model>
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.23"/>
+		<metadata head="head" headCap="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
+        <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="arm1" rightArm="arm2" duration="10" armAngle="15" legAngle="45"/>
+		
+		<customTex default="lombre">
+            <part name="Head" tex="lombrehead"/>
+            <animation part="Head" trigger="random:0.005:25" diffs="0.365,0"/>
+        </customTex>
+		
+	</model>
 </ModelAnimator>

@@ -1,52 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
- <model>
-  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.6"/>
-  <metadata head="head" headAxis="2" headAxis2="-1" headCap="-60,60" headCap1="-60,60" headDir="-1"/>
-  <phase axis="2" name="snakeIdle" parts="arm1:arm1_1:arm1_2"/>
-  <phase axis="2" name="snakeIdle" parts="arm2:arm2_1:arm2_2"/>
-  <phase angle="13" axis="0" name="snakeIdle" parts="f1:f1_1:f1_2:f1_3"/>
-  <phase angle="20" axis="0" name="snakeIdle" parts="f2:f2_1:f2_2:f2_3"/>
-  <phase angle="30" axis="0" name="snakeIdle" parts="f3:f3_1:f3_2:f3_3"/>
-  <phase angle="36" axis="0" name="snakeIdle" parts="f4:f4_1:f4_2:f4_3"/>
-  <phase angle="25" axis="0" name="snakeIdle" parts="f5:f5_1:f5_2:f5_3"/>
-  <phase angle="38" axis="0" name="snakeIdle" parts="f6:f6_1:f6_2:f6_3"/>
-  <phase axis="2" name="snakeWalk" parts="arm1:arm1_1:arm1_2"/>
-  <phase axis="2" name="snakeWalk" parts="arm2:arm2_1:arm2_2"/>
-  <phase angle="13" axis="0" name="snakeWalk" parts="f1:f1_1:f1_2:f1_3"/>
-  <phase angle="10" axis="0" name="snakeWalk" parts="f2:f2_1:f2_2:f2_3"/>
-  <phase angle="10" axis="0" name="snakeWalk" parts="f3:f3_1:f3_2:f3_3"/>
-  <phase angle="16" axis="0" name="snakeWalk" parts="f4:f4_1:f4_2:f4_3"/>
-  <phase angle="15" axis="0" name="snakeWalk" parts="f5:f5_1:f5_2:f5_3"/>
-  <phase angle="18" axis="0" name="snakeWalk" parts="f6:f6_1:f6_2:f6_3"/>
-  <phase type="idle">
-   <part name="mouth">
-    <component length="20" name="2" rotChange="0,0,0" startKey="0"/>
-    <component length="20" name="3" rotChange="40,0,0" startKey="80"/>
-    <component length="20" name="4" rotChange="-40,0,0" startKey="40"/>
-   </part>
-   <part name="arm1">
-    <component length="8" name="1" rotOffset="0,0,-30" startKey="0"/>
-   </part>
-   <part name="arm2">
-    <component length="8" name="1" rotOffset="0,0,30" startKey="0"/>
-   </part>
-  </phase>
-  <phase type="walking">
-   <part name="body">
-    <component length="8" name="1" rotOffset="35,0,0" startKey="0"/>
-   </part>
-   <part name="mouth">
-    <component length="20" name="2" rotChange="0,0,0" startKey="0"/>
-    <component length="20" name="3" rotChange="40,0,0" startKey="80"/>
-    <component length="20" name="4" rotChange="-40,0,0" startKey="40"/>
-   </part>
-   <part name="arm1">
-    <component length="8" name="1" rotOffset="0,0,-30" startKey="0"/>
-   </part>
-   <part name="arm2">
-    <component length="8" name="1" rotOffset="0,0,30" startKey="0"/>
-   </part>
-  </phase>
- </model>
+	<model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.6"/>
+        <metadata head="head" headCap="-60,60" headCap1="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
+		 
+		 <phase name="snakeIdle" parts="arm1:arm1_1:arm1_2" axis="2"/>
+		 <phase name="snakeIdle" parts="arm2:arm2_1:arm2_2" axis="2"/>
+		 
+		 <phase name="snakeIdle" parts="f1:f1_1:f1_2:f1_3" axis="0" angle="13"/>
+		 <phase name="snakeIdle" parts="f2:f2_1:f2_2:f2_3" axis="0" angle="20"/>
+		 <phase name="snakeIdle" parts="f3:f3_1:f3_2:f3_3" axis="0" angle="30"/>
+		 <phase name="snakeIdle" parts="f4:f4_1:f4_2:f4_3" axis="0" angle="36"/>
+		 <phase name="snakeIdle" parts="f5:f5_1:f5_2:f5_3" axis="0" angle="25"/>
+		 <phase name="snakeIdle" parts="f6:f6_1:f6_2:f6_3" axis="0" angle="38"/>
+		 
+		 <phase name="snakeWalk" parts="arm1:arm1_1:arm1_2" axis="2"/>
+		 <phase name="snakeWalk" parts="arm2:arm2_1:arm2_2" axis="2"/>
+		 
+		 <phase name="snakeWalk" parts="f1:f1_1:f1_2:f1_3" axis="0" angle="13"/>
+		 <phase name="snakeWalk" parts="f2:f2_1:f2_2:f2_3" axis="0" angle="10"/>
+		 <phase name="snakeWalk" parts="f3:f3_1:f3_2:f3_3" axis="0" angle="10"/>
+		 <phase name="snakeWalk" parts="f4:f4_1:f4_2:f4_3" axis="0" angle="16"/>
+		 <phase name="snakeWalk" parts="f5:f5_1:f5_2:f5_3" axis="0" angle="15"/>
+		 <phase name="snakeWalk" parts="f6:f6_1:f6_2:f6_3" axis="0" angle="18"/>
+		 
+		 <customTex default="carnivine">
+            <part name="Head" tex="carnivinehead"/>
+            <animation part="Head" trigger="random:0.005:25" diffs="0,0.5"/>
+        </customTex>
+		 
+		 <phase type="idle">
+            <part name="mouth">
+                <component name="2" rotChange="0,0,0" length="20" startKey="0"/>
+				<component name="3" rotChange="40,0,0" length="20" startKey="80"/>
+				<component name="4" rotChange="-40,0,0" length="20" startKey="40"/>
+            </part>
+			
+			<part name="head">
+              <component name="1" rotOffset="10,0,0" length="8" startKey="0"/>
+            </part>
+			
+			<part name="arm1">
+              <component name="1" rotOffset="0,0,-30" length="8" startKey="0"/>
+            </part>
+			<part name="arm2">
+              <component name="1" rotOffset="0,0,30" length="8" startKey="0"/>
+            </part>
+		 </phase>
+		 
+		 <phase type="walking">
+			<part name="body">
+              <component name="1" rotOffset="35,0,0" length="8" startKey="0"/>
+            </part>
+			
+            <part name="mouth">
+                <component name="2" rotChange="0,0,0" length="20" startKey="0"/>
+				<component name="3" rotChange="40,0,0" length="20" startKey="80"/>
+				<component name="4" rotChange="-40,0,0" length="20" startKey="40"/>
+            </part>
+			
+			<part name="arm1">
+              <component name="1" rotOffset="0,0,-30" length="8" startKey="0"/>
+            </part>
+			<part name="arm2">
+              <component name="1" rotOffset="0,0,30" length="8" startKey="0"/>
+            </part>
+		 </phase>
+	</model>
 </ModelAnimator>
+
+

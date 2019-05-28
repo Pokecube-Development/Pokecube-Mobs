@@ -364,7 +364,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="Cube_012_TRANSFORM"
-					           translation="0.063584 -0.060272 -0.000000"
+					           translation="0.063584 -0.060272 -0.000001"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -431,9 +431,16 @@
 						<Group DEF="group_ME_Plane_001">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Marshadow_png" />
+									<Material DEF="MA_Head"
+									          diffuseColor="0.800 0.800 0.800"
+									          specularColor="0.401 0.401 0.401"
+									          emissiveColor="0.000 0.000 0.000"
+									          ambientIntensity="0.333"
+									          shininess="0.098"
+									          transparency="0.0"
+									          />
 								</Appearance>
-								<IndexedTriangleSet solid="false"
+								<IndexedTriangleSet solid="true"
 								                    normalPerVertex="true"
 								                    index="0 1 2 0 2 3 "
 								                    >
@@ -458,9 +465,9 @@
 						<Group DEF="group_ME_Plane">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Marshadow_png" />
+									<Material USE="MA_Head" />
 								</Appearance>
-								<IndexedTriangleSet solid="false"
+								<IndexedTriangleSet solid="true"
 								                    normalPerVertex="true"
 								                    index="0 1 2 0 2 3 "
 								                    >
@@ -526,7 +533,7 @@
 						</Transform>
 					</Transform>
 					<Transform DEF="Cube_021_TRANSFORM"
-					           translation="-0.063584 -0.060272 -0.000000"
+					           translation="-0.063584 -0.060272 -0.000001"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -660,7 +667,7 @@
 							</Group>
 						</Transform>
 						<Transform DEF="Cube_019_TRANSFORM"
-						           translation="0.000000 0.278622 -0.068321"
+						           translation="0.000000 0.278622 -0.068322"
 						           scale="1.000000 1.000000 1.000000"
 						           rotation="1.000000 0.000000 0.000000 0.000000"
 						           >

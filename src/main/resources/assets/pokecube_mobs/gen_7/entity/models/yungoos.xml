@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator>
- <model>
-  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.1"/>
-  <metadata head="head" headAxis="2" headAxis2="0" headCap="-60,60" headCap1="-50,50" headDir="1"/>
-  <phase duration="10" leftFront="leg4" leftHind="leg2" name="quadWalk" rightFront="leg3" rightHind="leg1"/>
- </model>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.1"/>
+        <metadata head="head" headCap="-60,60" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="1"/>
+        <phase name="quadWalk" leftHind="leg2" rightHind="leg1" leftFront="leg4" rightFront="leg3" duration="10"/>
+		
+		<customTex default="yungoos">
+            <part name="Head" tex="yungooshead"/>
+            <animation part="Head" trigger="random:0.005:25" diffs="0,0.44"/>
+        </customTex>
+		
+	</model>
 </ModelAnimator>

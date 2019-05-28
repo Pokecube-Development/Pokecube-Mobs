@@ -1,34 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator>
- <model>
-  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.15"/>
-  <metadata head="head" headAxis="2" headAxis2="0" headCap="-180,180" headCap1="-50,50" headDir="-1"/>
-  <phase duration="10" leftArm="" leftLeg="leg1" legAngle="50" name="biWalk" rightArm="" rightLeg="leg2"/>
-  <phase type="idle">
-   <part name="tail">
-    <component length="5" name="1" rotChange="20,0,0" rotOffset="20,0,0" startKey="0"/>
-    <component length="5" name="2" rotChange="-20,0,0" startKey="10"/>
-   </part>
-  </phase>
-  <phase type="flying">
-   <part name="fly1">
-    <component length="5" name="1" rotChange="0,-30,30" rotOffset="0,-30,30" startKey="0"/>
-    <component length="5" name="2" rotChange="0,30,-30" startKey="10"/>
-   </part>
-   <part name="fly2">
-    <component length="5" name="1" rotChange="0,30,-30" rotOffset="0,30,-30" startKey="0"/>
-    <component length="5" name="2" rotChange="0,-30,30" startKey="10"/>
-   </part>
-   <part name="tail">
-    <component length="5" name="1" rotChange="20,0,0" rotOffset="20,0,0" startKey="0"/>
-    <component length="5" name="2" rotChange="-20,0,0" startKey="10"/>
-   </part>
-   <part name="leg1">
-    <component length="1" name="1" rotOffset="-25,0,0," startKey="0"/>
-   </part>
-   <part name="leg2">
-    <component length="1" name="1" rotOffset="-25,0,0," startKey="0"/>
-   </part>
-  </phase>
- </model>
+    <model>
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.15"/>
+        <metadata head="head" headCap="-180,180" headCap1="-50,50" headAxis="2" headAxis2="0" headDir="-1"/>
+        <phase name="biWalk" leftLeg="leg1" rightLeg="leg2" leftArm="" rightArm="" duration="10" legAngle="50"/>
+		
+		<customTex default="pikipek">
+            <part name="Head" tex="pikipekhead"/>
+            <animation part="Head" trigger="random:0.005:25" diffs="0,0.4"/>
+        </customTex>
+		
+		<phase type="idle">
+			<part name="tail">
+               <component name="1" rotOffset="20,0,0" rotChange="20,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="-20,0,0" length="5" startKey="10"/>
+            </part>
+		</phase>
+		
+		<phase type ="flying">
+			<part name="fly1">
+               <component name="1" rotOffset="0,-30,30" rotChange="0,-30,30" length="5" startKey="0"/>
+               <component name="2" rotChange="0,30,-30" length="5" startKey="10"/>
+            </part>
+            <part name="fly2">
+               <component name="1" rotOffset="0,30,-30" rotChange="0,30,-30" length="5" startKey="0"/>
+               <component name="2" rotChange="0,-30,30" length="5" startKey="10"/>
+            </part>
+			<part name="tail">
+               <component name="1" rotOffset="20,0,0" rotChange="20,0,0" length="5" startKey="0"/>
+               <component name="2" rotChange="-20,0,0" length="5" startKey="10"/>
+            </part>
+			<part name="leg1">
+                <component name="1" startKey="0" length="1" rotOffset="-25,0,0,"/>
+            </part>
+			<part name="leg2">
+                <component name="1" startKey="0" length="1" rotOffset="-25,0,0,"/>
+			</part>
+		</phase>
+    </model>
 </ModelAnimator>
