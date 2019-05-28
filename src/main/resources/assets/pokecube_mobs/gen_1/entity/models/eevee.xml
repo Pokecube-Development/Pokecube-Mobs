@@ -4,7 +4,6 @@
   <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.28"/>
   <metadata head="head" headAxis="2" headAxis2="0" headCap="-70,70" headCap1="-60,60" headDir="-1"/>
   <phase angle="40" duration="10" frontAngle="40" leftFront="leg3" leftHind="leg1" name="quadWalk" rightFront="leg4" rightHind="leg2"/>
-  <phase female="F" male="M" name="textures"/>
   <phase axis="0" name="snakeIdle" parts="tail:tail1:tail2"/>
   <phase axis="0" name="snakeWalk" parts="tail:tail1:tail2"/>
   <worn angles="-110,0,0" id="__HAT__" offset="0,0.25,0.1" parent="head" scale="0.83"/>
@@ -13,6 +12,13 @@
   <worn angles="-90,0,0" id="__EYE__" offset="0,0.25,0.1" parent="head" scale="0.8"/>
   <worn angles="-10,180,0" id="__NECK__" offset="0,-0.175,-0.325" parent="body1" scale=".5"/>
   <worn angles="-10,0,0" id="__BACK__" offset="0,0.17,0.22" parent="body1" scale="0.65,0.65,0.65"/>
+  <phase female="f" male="m" name="textures"/>
+  <customTex default="eevee">
+   <part name="Head" tex="eeveehead"/>
+   <animation diffs="0,0.48" part="Head" trigger="random:0.005:25"/>
+   <part name="Mouth" tex="eeveehead"/>
+   <animation diffs="0,0.2" part="Mouth" trigger="random:0.005:25"/>
+  </customTex>
   <phase type="sitting">
    <part name="body">
     <component length="1" name="1" posOffset="0,6,0" rotOffset="-40,0,0" startKey="0"/>

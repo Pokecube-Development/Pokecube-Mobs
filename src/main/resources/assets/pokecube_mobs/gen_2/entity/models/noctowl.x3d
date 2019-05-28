@@ -593,9 +593,16 @@
 						<Group DEF="group_ME_head1">
 							<Shape>
 								<Appearance>
-									<ImageTexture USE="IM_Noctowl_png" />
+									<Material DEF="MA_Head"
+									          diffuseColor="0.800 0.800 0.800"
+									          specularColor="0.401 0.401 0.401"
+									          emissiveColor="0.000 0.000 0.000"
+									          ambientIntensity="0.333"
+									          shininess="0.098"
+									          transparency="0.0"
+									          />
 								</Appearance>
-								<IndexedTriangleSet solid="false"
+								<IndexedTriangleSet solid="true"
 								                    normalPerVertex="true"
 								                    index="0 1 2 0 2 3 "
 								                    >
@@ -850,7 +857,7 @@
 						</Group>
 					</Transform>
 					<Transform DEF="Cube_016_TRANSFORM"
-					           translation="0.136994 -0.004111 0.000000"
+					           translation="0.136994 -0.004111 0.000001"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -877,7 +884,7 @@
 						</Transform>
 					</Transform>
 					<Transform DEF="Cube_017_TRANSFORM"
-					           translation="0.327158 -0.006069 0.000000"
+					           translation="0.327158 -0.006069 0.000001"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -904,7 +911,7 @@
 						</Transform>
 					</Transform>
 					<Transform DEF="Cube_018_TRANSFORM"
-					           translation="0.596860 -0.027227 0.000000"
+					           translation="0.596860 -0.027227 0.000001"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -931,7 +938,7 @@
 						</Transform>
 					</Transform>
 					<Transform DEF="Cube_019_TRANSFORM"
-					           translation="0.869028 -0.027227 0.000000"
+					           translation="0.869028 -0.027227 0.000001"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
@@ -958,7 +965,7 @@
 						</Transform>
 					</Transform>
 					<Transform DEF="Cube_020_TRANSFORM"
-					           translation="0.928960 0.014094 0.000000"
+					           translation="0.928960 0.014094 0.000001"
 					           scale="1.000000 1.000000 1.000000"
 					           rotation="1.000000 0.000000 0.000000 0.000000"
 					           >
