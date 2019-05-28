@@ -7,6 +7,15 @@
   <worn angles="-90,0,0" id="__EYE__" offset="0,0.55,0" parent="head" scale="2"/>
   <worn angles="0,90,0" id="__EAR_left__" offset="0.65,0.65,-0.3" parent="head" scale="2"/>
   <worn angles="0,90,0" id="__EAR_right__" offset="-0.65,0.65,-0.3" parent="head" scale="2"/>
+  <worn id="__NECK__" parent="body" offset="0,1.4,0.12" scale="1.5" angles="-110,0,0"/>
+  <worn id="__WRIST_right__" parent="arm2_1" offset="-1,0.01,0.1" scale="1.5" angles="90,90,0"/>
+  <worn id="__WRIST_left__" parent="arm1_1" offset="1,0.01,0.1" scale="1.5" angles="90,90,0"/>
+  <worn id="__FINGER_right__" parent="arm2_1" offset="-1.75,-0.04,-0.03" scale="0.7" angles="90,90,0"/>
+  <worn id="__FINGER_left__" parent="arm1_1" offset="1.75,-0.04,-0.03" scale="0.7" angles="90,90,0"/>
+  <worn id="__ANKLE_right__" parent="leg2_1" offset="0.0,-0.75,-0.05" scale="1" angles="-90,0,0"/>
+  <worn id="__ANKLE_left__" parent="leg1_1" offset="0.0,-0.75,-0.05" scale="1" angles="-90,0,0"/>
+  <worn id="__WAIST__" parent="body" offset="0,-1.17,0" scale="1.3,2,2" angles="-90,180,0"/>
+  <worn id="__BACK__" parent="body" offset="0,1.25,-0.10" scale="1.55,1.55,1.55" angles="-90,0,0"/>
   <phase duration="10" leftArm="leg1_2" leftLeg="leg1" legAngle="15" name="biWalk" rightArm="leg2_1" rightLeg="leg2"/>
   <customTex default="gardevoir">
    <part name="Head" tex="gardevoirhead"/>
