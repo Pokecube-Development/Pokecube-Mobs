@@ -1,48 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator>
-   <model>
-	<phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.43" headAxis="1" headCap="-50,50"/>
-	
-		<customTex default="pelipper">
-            <part name="Head" tex="pelipperhead"/>
-            <animation part="Head" trigger="random:0.005:25" diffs="0.47,0"/>
-        </customTex>
-	
-		<phase type="idle">
-			<part name="wing1">
-				<component name="1" startKey="0" length="1" rotOffset="10.0,120.0,110.0,"/>
-			</part>
-			<part name="wing1_1">
-				<component name="1" startKey="0" length="1" rotOffset="0.0,5.0,170.0,"/>
-			</part>
-			<part name="wing2">
-				<component name="1" startKey="0" length="1" rotOffset="10.0,-120.0,-110.0,"/>
-			</part>
-			<part name="wing2_1">
-				<component name="1" startKey="0" length="1" rotOffset="0.0,-5.0,-170.0,"/>
-			</part>
-		</phase>
-		<phase type="flying">
-		<part name="wing1">
-			<component name="1" rotOffset="0,0,0" rotChange="0,0,30" length="9" startKey="0"/>
-		   <component name="2" rotChange="0,0,-30" length="9" startKey="10"/>
-		</part>
-		<part name="wing1_1">
-			<component name="1" rotOffset="0,0,0" rotChange="0,0,-25" length="5" startKey="0"/>
-		   <component name="2" rotChange="0,0,25" length="5" startKey="10"/>
-		</part>
-		<part name="wing2">
-			<component name="1" rotOffset="0,0,0" rotChange="0,0,-30" length="9" startKey="0"/>
-		   <component name="2" rotChange="0,0,30" length="9" startKey="10"/>
-		</part>
-		<part name="wing2_1">
-			<component name="1" rotOffset="0,0,0" rotChange="0,0,25" length="5" startKey="0"/>
-		   <component name="2" rotChange="0,0,-25" length="5" startKey="10"/>
-		</part>
-		<part name="beak">
-			<component name="1" rotOffset="0,0,0" rotChange="-5,0,0" length="5" startKey="0"/>
-		   <component name="2" rotChange="5,0,0" length="5" startKey="10"/>
-		</part>
-	</phase>
-   </model>
+ <model>
+  <phase headAxis="1" headCap="-50,50" name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.43"/>
+  <customTex default="pelipper">
+   <part name="Head" tex="pelipperhead"/>
+   <animation diffs="0.47,0" part="Head" trigger="random:0.005:25"/>
+  </customTex>
+  <phase type="idle">
+   <part name="wing1">
+    <component length="1" name="1" rotOffset="10.0,120.0,110.0," startKey="0"/>
+   </part>
+   <part name="wing1_1">
+    <component length="1" name="1" rotOffset="0.0,5.0,170.0," startKey="0"/>
+   </part>
+   <part name="wing2">
+    <component length="1" name="1" rotOffset="10.0,-120.0,-110.0," startKey="0"/>
+   </part>
+   <part name="wing2_1">
+    <component length="1" name="1" rotOffset="0.0,-5.0,-170.0," startKey="0"/>
+   </part>
+  </phase>
+  <phase type="flying">
+   <part name="wing1">
+    <component length="9" name="1" rotChange="0,0,30" rotOffset="0,0,0" startKey="0"/>
+    <component length="9" name="2" rotChange="0,0,-30" startKey="10"/>
+   </part>
+   <part name="wing1_1">
+    <component length="5" name="1" rotChange="0,0,-25" rotOffset="0,0,0" startKey="0"/>
+    <component length="5" name="2" rotChange="0,0,25" startKey="10"/>
+   </part>
+   <part name="wing2">
+    <component length="9" name="1" rotChange="0,0,-30" rotOffset="0,0,0" startKey="0"/>
+    <component length="9" name="2" rotChange="0,0,30" startKey="10"/>
+   </part>
+   <part name="wing2_1">
+    <component length="5" name="1" rotChange="0,0,25" rotOffset="0,0,0" startKey="0"/>
+    <component length="5" name="2" rotChange="0,0,-25" startKey="10"/>
+   </part>
+   <part name="beak">
+    <component length="5" name="1" rotChange="-5,0,0" rotOffset="0,0,0" startKey="0"/>
+    <component length="5" name="2" rotChange="5,0,0" startKey="10"/>
+   </part>
+  </phase>
+ </model>
 </ModelAnimator>

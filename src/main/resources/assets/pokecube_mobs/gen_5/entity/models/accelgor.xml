@@ -1,44 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator version="0.1">
-	<model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.28"/>
-		<metadata head="head" headCap="-60,60" headCap1="-60,60" headAxis="2" headAxis2="0" headDir="-1"/>
-		
-		<customTex default="accelgor">
-            <part name="Head" tex="accelgorhead"/>
-            <animation part="Head" trigger="random:0.005:25" diffs="0,0.33"/>
-            <animation part="Head" trigger="sleeping" diffs="0,0.50"/>
-        </customTex>
-		
-		<phase type = "idle">
-			<part name="tail">
-                <component name="1" rotOffset="3,0,0" rotChange="-3,0,0" length="5" startKey="0"/>
-                <component name="2" rotChange="3,0,0" length="5" startKey="5"/>
-            </part>
-			<part name="f1">
-                <component name="1" rotOffset="-23,-12,0" rotChange="4,0,0" length="8" startKey="0"/>
-                <component name="2" rotChange="-4,0,0" length="8" startKey="10"/>
-            </part>
-			<part name="f2">
-                <component name="1" rotOffset="-23,12,0" rotChange="4,0,0" length="8" startKey="0"/>
-                <component name="2" rotChange="-4,0,0" length="8" startKey="10"/>
-            </part>
-		</phase>
-		<phase type = "walking">
-			<part name="tail">
-                <component name="1" rotOffset="3,0,0" rotChange="-3,0,0" length="5" startKey="0"/>
-                <component name="2" rotChange="3,0,0" length="5" startKey="5"/>
-            </part>
-			<part name="f1">
-                <component name="1" rotOffset="-8,-8,0" rotChange="4,0,0" length="8" startKey="0"/>
-                <component name="2" rotChange="-4,0,0" length="8" startKey="10"/>
-            </part>
-			<part name="f2">
-                <component name="1" rotOffset="-8,8,0" rotChange="-4,0,0" length="8" startKey="0"/>
-                <component name="2" rotChange="4,0,0" length="8" startKey="10"/>
-            </part>
-		</phase>
-	</model>
+ <model name="">
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.28"/>
+  <metadata head="head" headAxis="2" headAxis2="0" headCap="-60,60" headCap1="-60,60" headDir="-1"/>
+  <customTex default="accelgor">
+   <part name="Head" tex="accelgorhead"/>
+   <animation diffs="0,0.33" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.50" part="Head" trigger="sleeping"/>
+  </customTex>
+  <phase type="idle">
+   <part name="tail">
+    <component length="5" name="1" rotChange="-3,0,0" rotOffset="3,0,0" startKey="0"/>
+    <component length="5" name="2" rotChange="3,0,0" startKey="5"/>
+   </part>
+   <part name="f1">
+    <component length="8" name="1" rotChange="4,0,0" rotOffset="-23,-12,0" startKey="0"/>
+    <component length="8" name="2" rotChange="-4,0,0" startKey="10"/>
+   </part>
+   <part name="f2">
+    <component length="8" name="1" rotChange="4,0,0" rotOffset="-23,12,0" startKey="0"/>
+    <component length="8" name="2" rotChange="-4,0,0" startKey="10"/>
+   </part>
+  </phase>
+  <phase type="walking">
+   <part name="tail">
+    <component length="5" name="1" rotChange="-3,0,0" rotOffset="3,0,0" startKey="0"/>
+    <component length="5" name="2" rotChange="3,0,0" startKey="5"/>
+   </part>
+   <part name="f1">
+    <component length="8" name="1" rotChange="4,0,0" rotOffset="-8,-8,0" startKey="0"/>
+    <component length="8" name="2" rotChange="-4,0,0" startKey="10"/>
+   </part>
+   <part name="f2">
+    <component length="8" name="1" rotChange="-4,0,0" rotOffset="-8,8,0" startKey="0"/>
+    <component length="8" name="2" rotChange="4,0,0" startKey="10"/>
+   </part>
+  </phase>
+ </model>
 </ModelAnimator>
-
-

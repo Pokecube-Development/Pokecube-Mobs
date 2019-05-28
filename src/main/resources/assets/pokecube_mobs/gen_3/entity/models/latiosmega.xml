@@ -1,58 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator version="0.1">
-    <model name="">
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.5"/>
-        <metadata head="head" headCap="-20,20" headAxis="2" headAxis2="0" headDir="-1"/>
-		
-		<customTex default="latiosmega">
-            <part name="Head" tex="latiosmegahead"/>
-            <animation part="Head" trigger="random:0.005:25" diffs="-0.5,0"/>
-        </customTex>
-		
-		<phase type="idle">			
-			<part name="arm1">
-              <component name="1" rotOffset="0,0,15" length="8" startKey="0"/>
-            </part>
-				<part name="arm1_1">
-				  <component name="1" rotOffset="-120,0,15" length="8" startKey="0"/>
-				</part>
-			
-			<part name="arm1_001">
-              <component name="1" rotOffset="0,0,-15" length="8" startKey="0"/>
-            </part>
-				<part name="arm1_1_001">
-				  <component name="1" rotOffset="-120,0,-15" length="8" startKey="0"/>
-				</part>
-			
-			<part name="tail">
-              <component name="1" rotChange="3,0,0" length="8" startKey="0"/>
-              <component name="2" rotChange="-6,0,0" length="8" startKey="5"/>
-			  <component name="3" rotChange="3,0,0" length="8" startKey="10"/>
-            </part>
-        </phase>
-		
-		<phase type="flying">			
-			<part name="arm1">
-              <component name="1" rotChange="0,0,2" length="10" startKey="0"/>
-              <component name="2" rotChange="0,0,-4" length="10" startKey="5"/>
-			  <component name="3" rotChange="0,0,2" length="10" startKey="10"/>
-            </part>
-			
-			<part name="arm1_001">
-              <component name="1" rotChange="0,0,-2" length="10" startKey="0"/>
-              <component name="2" rotChange="0,0,4" length="10" startKey="5"/>
-			  <component name="3" rotChange="0,0,-2" length="10" startKey="10"/>
-            </part>
-
-			<part name="tail">
-              <component name="1" rotChange="3,0,0" length="8" startKey="0"/>
-              <component name="2" rotChange="-6,0,0" length="8" startKey="5"/>
-			  <component name="3" rotChange="3,0,0" length="8" startKey="10"/>
-            </part>
-        </phase>
-		
-	</model>
-    <details>
-        <RIDDENOFFSET>0.7</RIDDENOFFSET>
-    </details>
+ <model name="">
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.5"/>
+  <metadata head="head" headAxis="2" headAxis2="0" headCap="-20,20" headDir="-1"/>
+  <customTex default="latiosmega">
+   <part name="Head" tex="latiosmegahead"/>
+   <animation diffs="-0.5,0" part="Head" trigger="random:0.005:25"/>
+  </customTex>
+  <phase type="idle">
+   <part name="arm1">
+    <component length="8" name="1" rotOffset="0,0,15" startKey="0"/>
+   </part>
+   <part name="arm1_1">
+    <component length="8" name="1" rotOffset="-120,0,15" startKey="0"/>
+   </part>
+   <part name="arm1_001">
+    <component length="8" name="1" rotOffset="0,0,-15" startKey="0"/>
+   </part>
+   <part name="arm1_1_001">
+    <component length="8" name="1" rotOffset="-120,0,-15" startKey="0"/>
+   </part>
+   <part name="tail">
+    <component length="8" name="1" rotChange="3,0,0" startKey="0"/>
+    <component length="8" name="2" rotChange="-6,0,0" startKey="5"/>
+    <component length="8" name="3" rotChange="3,0,0" startKey="10"/>
+   </part>
+  </phase>
+  <phase type="flying">
+   <part name="arm1">
+    <component length="10" name="1" rotChange="0,0,2" startKey="0"/>
+    <component length="10" name="2" rotChange="0,0,-4" startKey="5"/>
+    <component length="10" name="3" rotChange="0,0,2" startKey="10"/>
+   </part>
+   <part name="arm1_001">
+    <component length="10" name="1" rotChange="0,0,-2" startKey="0"/>
+    <component length="10" name="2" rotChange="0,0,4" startKey="5"/>
+    <component length="10" name="3" rotChange="0,0,-2" startKey="10"/>
+   </part>
+   <part name="tail">
+    <component length="8" name="1" rotChange="3,0,0" startKey="0"/>
+    <component length="8" name="2" rotChange="-6,0,0" startKey="5"/>
+    <component length="8" name="3" rotChange="3,0,0" startKey="10"/>
+   </part>
+  </phase>
+ </model>
+ <details>
+  <RIDDENOFFSET>
+   0.7
+  </RIDDENOFFSET>
+ </details>
 </ModelAnimator>

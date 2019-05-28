@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator>
-    <model>
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="1.0"/>
-        <metadata headCap="-60,60" headAxis="1" headAxis2="0" headDir="1" head=""/>
-		
-		<customTex default="sharpedomega">
-            <part name="Head" tex="sharpedomegahead"/>
-            <animation part="Head" trigger="random:0.005:25" diffs="0,0.445"/>
-        </customTex>
-		
-    </model>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <customTex default="sharpedomega">
+   <part name="Head" tex="sharpedomegahead"/>
+   <animation diffs="0,0.445" part="Head" trigger="random:0.005:25"/>
+  </customTex>
+ </model>
 </ModelAnimator>
