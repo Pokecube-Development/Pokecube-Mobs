@@ -3,6 +3,19 @@
  <model name="">
   <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.28"/>
   <metadata head="head" headAxis="2" headAxis2="0" headCap="-80,80" headDir="-1"/>
+  <worn id="__HAT__" parent="head" offset="0,0.8,0.1" scale="1.8,1.5,1.5" angles="-90,0,0"/>
+  <worn id="__EYE__" parent="head" offset="0,0.72,0.05" scale="1.8" angles="-90,0,0"/>
+  <worn id="__EAR_left__" parent="head" offset="-0.4,1.9,0.008" scale="1" angles="0,-90,-20"/>
+  <worn id="__EAR_right__" parent="head" offset="0.4,1.9,0.008" scale="1" angles="0,90,20"/>
+  <worn id="__WRIST_right__" parent="arm2_1" offset="-0.45,-0.15,-0.0" scale="2" angles="180,90,0"/>
+  <worn id="__WRIST_left__" parent="arm1_1" offset="0.55,-0.15,-0.0" scale="2" angles="180,90,0"/>
+  <worn id="__FINGER_right__" parent="arm2_1" offset="-1.1,-0.15,-0." scale="2" angles="0,90,190"/>
+  <worn id="__FINGER_left__" parent="arm1_1" offset="1.1,-0.15,-0." scale="2" angles="0,90,170"/>
+  <worn id="__NECK__" parent="neck" offset="0,0,0.05" scale="2.6" angles="-90,0,0"/>
+  <worn id="__ANKLE_right__" parent="leg2" offset="-0.2,-2.4,0.1" scale="2" angles="-90,7,0"/>
+  <worn id="__ANKLE_left__" parent="leg1" offset="0.2,-2.4,0.1" scale="2" angles="-90,-10,0"/>
+  <worn id="__WAIST__" parent="body" offset="0,-1,0" scale="1.5,2.1,2.5" angles="-90,180,0"/>
+  <worn id="__BACK__" parent="neck" offset="0,-0.2,-0.1" scale="2,2,2" angles="-90,0,0"/>
   <phase duration="10" leftArm="" leftLeg="leg1:leg1_1" legAngle="25" name="biWalk" rightArm="" rightLeg="leg2:leg2_1"/>
   <phase axis="0" length="50" name="snakeIdle" parts="p1:p1_1:p1_2:p1_3"/>
   <phase axis="0" length="50" name="snakeIdle" parts="p2:p2_1:p2_2:p2_3"/>
