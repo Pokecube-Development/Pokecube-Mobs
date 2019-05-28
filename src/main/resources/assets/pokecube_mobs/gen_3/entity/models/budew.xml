@@ -1,78 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator>
-    <model>
-        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.7"/>
-        <metadata head="head" headCap="-60,60" headDir="-1"/>
-        <customTex default="budew">
-            <part name="head" tex="budewhead"/>
-            <animation part="head" trigger="random:0.005:20" diffs="0,0.31"/>
-            <animation part="head" trigger="sleeping" diffs="0.0,0.64"/>
-        </customTex>
-        <phase name="quadWalk" leftHind="leftfoot" rightHind="rightfoot" leftFront="leftarm" rightFront="rightarm" duration="10"/>
-        <phase type="sitting">
-            <part name="head">
-                <component name="1" startKey="0" length="10" posOffset="0.0,1.0,0.0,"/>
-            </part>
-            <part name="rightvinebase">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,-3.0,"/>
-            </part>
-            <part name="leftvinebase">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,-3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,3.0,"/>
-            </part>
-            <part name="rightvine">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,5.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,-5.0,"/>
-            </part>
-            <part name="leftvine">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,-5.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,5.0,"/>
-            </part>
-            <part name="rightvinetip">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,-3.0,"/>
-            </part>
-            <part name="leftvinetip">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,-3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,3.0,"/>
-            </part>
-            <part name="leftfoot">
-                <component name="1" startKey="0" length="10" posOffset="0.0,2.0,7.0" rotOffset="-90.0,-5.0,-5.0,"/>
-            </part>
-            <part name="rightfoot">
-                <component name="1" startKey="0" length="10" posOffset="0.0,2.0,7.0" rotOffset="-90.0,5.0,5.0,"/>
-            </part>
-            <part name="Tail_base">
-                <component name="1" startKey="0" length="2" rotOffset="30.0,0.0,0.0" rotChange="-50.0,0.0,0.0,"/>
-                <component name="2" startKey="5" length="5" rotChange="50.0,0.0,0.0,"/>
-            </part>
-        </phase>
-        <phase type="idle">
-        <part name="rightvinebase">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,-3.0,"/>
-            </part>
-            <part name="leftvinebase">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,-3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,3.0,"/>
-            </part>
-            <part name="rightvine">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,5.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,-5.0,"/>
-            </part>
-            <part name="leftvine">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,-5.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,5.0,"/>
-            </part>
-            <part name="rightvinetip">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,-3.0,"/>
-            </part>
-            <part name="leftvinetip">
-                <component name="1" startKey="0" length="6" rotChange="0.0,0.0,-3.0,"/>
-                <component name="2" startKey="10" length="6" rotChange="0.0,0.0,3.0,"/>
-            </part>
-        </phase>
-    </model>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.7"/>
+  <metadata head="head" headCap="-60,60" headDir="-1"/>
+  <customTex default="budew">
+   <part name="head" tex="budewhead"/>
+   <animation diffs="0,0.31" part="head" trigger="random:0.005:20"/>
+   <animation diffs="0.0,0.64" part="head" trigger="sleeping"/>
+  </customTex>
+  <phase duration="10" leftFront="leftarm" leftHind="leftfoot" name="quadWalk" rightFront="rightarm" rightHind="rightfoot"/>
+  <phase type="sitting">
+   <part name="head">
+    <component length="10" name="1" posOffset="0.0,1.0,0.0," startKey="0"/>
+   </part>
+   <part name="rightvinebase">
+    <component length="6" name="1" rotChange="0.0,0.0,3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,-3.0," startKey="10"/>
+   </part>
+   <part name="leftvinebase">
+    <component length="6" name="1" rotChange="0.0,0.0,-3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,3.0," startKey="10"/>
+   </part>
+   <part name="rightvine">
+    <component length="6" name="1" rotChange="0.0,0.0,5.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,-5.0," startKey="10"/>
+   </part>
+   <part name="leftvine">
+    <component length="6" name="1" rotChange="0.0,0.0,-5.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,5.0," startKey="10"/>
+   </part>
+   <part name="rightvinetip">
+    <component length="6" name="1" rotChange="0.0,0.0,3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,-3.0," startKey="10"/>
+   </part>
+   <part name="leftvinetip">
+    <component length="6" name="1" rotChange="0.0,0.0,-3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,3.0," startKey="10"/>
+   </part>
+   <part name="leftfoot">
+    <component length="10" name="1" posOffset="0.0,2.0,7.0" rotOffset="-90.0,-5.0,-5.0," startKey="0"/>
+   </part>
+   <part name="rightfoot">
+    <component length="10" name="1" posOffset="0.0,2.0,7.0" rotOffset="-90.0,5.0,5.0," startKey="0"/>
+   </part>
+   <part name="Tail_base">
+    <component length="2" name="1" rotChange="-50.0,0.0,0.0," rotOffset="30.0,0.0,0.0" startKey="0"/>
+    <component length="5" name="2" rotChange="50.0,0.0,0.0," startKey="5"/>
+   </part>
+  </phase>
+  <phase type="idle">
+   <part name="rightvinebase">
+    <component length="6" name="1" rotChange="0.0,0.0,3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,-3.0," startKey="10"/>
+   </part>
+   <part name="leftvinebase">
+    <component length="6" name="1" rotChange="0.0,0.0,-3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,3.0," startKey="10"/>
+   </part>
+   <part name="rightvine">
+    <component length="6" name="1" rotChange="0.0,0.0,5.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,-5.0," startKey="10"/>
+   </part>
+   <part name="leftvine">
+    <component length="6" name="1" rotChange="0.0,0.0,-5.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,5.0," startKey="10"/>
+   </part>
+   <part name="rightvinetip">
+    <component length="6" name="1" rotChange="0.0,0.0,3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,-3.0," startKey="10"/>
+   </part>
+   <part name="leftvinetip">
+    <component length="6" name="1" rotChange="0.0,0.0,-3.0," startKey="0"/>
+    <component length="6" name="2" rotChange="0.0,0.0,3.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
 </ModelAnimator>
