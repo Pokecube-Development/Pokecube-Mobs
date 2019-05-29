@@ -3,6 +3,16 @@
  <model>
   <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
   <metadata head="Neck3" headAxis="1" headAxis2="0" headCap="-80,80" headCap1="-80,80" headDir="1"/>
+  
+  <worn angles="200,0,180" id="__HAT__" offset="0,-0.15,-0.22" parent="Head1" scale="0.85"/>
+  <worn angles="185,0,180" id="__EYE__" offset="0,-0.25,-0.115" parent="Head2" scale="1"/>
+  <worn angles="-90,0,180" id="__NECK__" offset="0,-0.486,0.13" parent="Body1" scale="1.5"/>
+  <worn angles="-90,0,180" id="__BACK__" offset="0,-0.5,-0.2" parent="Body1" scale="1"/>
+  <worn angles="0,270,90" id="__FINGER_right__" offset="-0.11,-0.45,0" parent="RightArm2" scale="1"/>
+  <worn angles="180,270,90" id="__FINGER_left__" offset="0.11,-0.45,0" parent="LeftArm2" scale="1"/>
+  <worn angles="0,270,90" id="__WRIST_right__" offset="-0.05,-0.35,0" parent="RightArm2" scale="0.6"/>
+  <worn angles="180,270,90" id="__WRIST_left__" offset="0.05,-0.35,0" parent="LeftArm2" scale="0.6"/>
+  
   <phase axis="0" name="snakeWalk" parts="Body2:Body3:Body4:Body5:Body6:Body7:Body8:Body9:Body10:Body11"/>
   <phase axis="0" name="snakeFly" parts="Body2:Body3:Body4:Body5:Body6:Body7:Body8:Body9:Body10:Body11"/>
   <phase type="sitting">
