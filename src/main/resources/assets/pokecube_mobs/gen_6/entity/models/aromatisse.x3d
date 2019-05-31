@@ -592,15 +592,22 @@
 							<Group DEF="group_ME_eye2">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Aromatisse_png" />
+										<Material DEF="MA_Head"
+										          diffuseColor="0.800 0.800 0.800"
+										          specularColor="0.401 0.401 0.401"
+										          emissiveColor="0.000 0.000 0.000"
+										          ambientIntensity="0.333"
+										          shininess="0.098"
+										          transparency="0.0"
+										          />
 									</Appearance>
-									<IndexedTriangleSet solid="false"
+									<IndexedTriangleSet solid="true"
 									                    normalPerVertex="true"
 									                    index="0 1 2 0 2 3 "
 									                    >
 										<Coordinate point="0.010774 0.000000 -0.280119 0.010774 -0.000000 0.280119 -0.516795 -0.000000 0.280119 -0.516795 0.000000 -0.280119 " />
 										<Normal vector="0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 " />
-										<TextureCoordinate point="0.3889 0.1854 0.3889 0.9753 0.8094 0.9753 0.8094 0.1854 " />
+										<TextureCoordinate point="0.0627 0.1854 0.0627 0.9753 0.4832 0.9753 0.4832 0.1854 " />
 									</IndexedTriangleSet>
 								</Shape>
 							</Group>
@@ -754,15 +761,15 @@
 							<Group DEF="group_ME_eye1">
 								<Shape>
 									<Appearance>
-										<ImageTexture USE="IM_Aromatisse_png" />
+										<Material USE="MA_Head" />
 									</Appearance>
-									<IndexedTriangleSet solid="false"
+									<IndexedTriangleSet solid="true"
 									                    normalPerVertex="true"
 									                    index="0 1 2 0 2 3 "
 									                    >
 										<Coordinate point="-0.010774 0.000000 -0.280119 0.516795 0.000000 -0.280119 0.516795 -0.000000 0.280119 -0.010774 -0.000000 0.280119 " />
 										<Normal vector="0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 " />
-										<TextureCoordinate point="0.3889 0.1854 0.8094 0.1854 0.8094 0.9753 0.3889 0.9753 " />
+										<TextureCoordinate point="0.0646 0.1854 0.4851 0.1854 0.4851 0.9753 0.0646 0.9753 " />
 									</IndexedTriangleSet>
 								</Shape>
 							</Group>
