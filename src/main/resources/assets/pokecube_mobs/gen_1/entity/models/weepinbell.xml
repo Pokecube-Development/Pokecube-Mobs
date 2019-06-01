@@ -1,6 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ModelAnimator version="0.1">
- <model name="">
-  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.425"/>
- </model>
+    <model name="">
+        <phase name="global" rotation="1,0,0,0" offset="0,0,0" scale="0.55"/>
+		
+		<customTex default="weepinbell">
+            <part name="Head" tex="weepinbellhead"/>
+            <animation part="Head" trigger="random:0.005:20" diffs="0.53,0"/>			
+        </customTex>
+		
+		<phase type="idle">
+			<part name="arm1">
+                <component name="1" rotOffset="0,0,15" rotChange="0,0,-4" length="10" startKey="0"/>
+                <component name="2" rotChange="0,0,4" length="10" startKey="10"/>
+            </part>
+
+			<part name="arm2">
+                <component name="1" rotOffset="0,0,-15" rotChange="0,0,4" length="10" startKey="0"/>
+                <component name="2" rotChange="0,0,-4" length="10" startKey="10"/>
+            </part>	
+		</phase>
+		<phase type="walking">
+			<part name="arm1">
+                <component name="1" rotOffset="20,0,15" rotChange="0,0,-10" length="10" startKey="0"/>
+                <component name="2" rotChange="0,0,9" length="10" startKey="10"/>
+            </part>
+
+			<part name="arm2">
+                <component name="1" rotOffset="20,0,-15" rotChange="0,0,10" length="10" startKey="0"/>
+                <component name="2" rotChange="0,0,-9" length="10" startKey="10"/>
+            </part>	
+		</phase>
+    </model>
 </ModelAnimator>
