@@ -3,10 +3,9 @@
  <model>
   <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.28"/>
   <customTex default="silvally">
-   <part name="Head" tex="silvallyh"/>
+   <part name="Head" tex="silvallyhead"/>
    <animation diffs="0,0.35" part="Head" trigger="random:0.005:20"/>
    <forme name="Silvally" tex="silvally"/>
-   <forme name="Silvally Bug" tex="silvallybug"/>
    <forme name="Silvally Dark" tex="silvallydark"/>
    <forme name="Silvally Dragon" tex="silvallydragon"/>
    <forme name="Silvally Electric" tex="silvallyelectric"/>

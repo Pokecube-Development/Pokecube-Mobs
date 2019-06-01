@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator version="0.1">
  <model name="">
-  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.30"/>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.25"/>
   <metadata head="Head" headAxis="2" headAxis2="0" headCap="-30,30" headCap1="-30,30" headDir="-1"/>
   <customTex default="magmortar">
    <part name="Head" tex="magmortarhead"/>
@@ -12,10 +12,6 @@
   </customTex>
   <phase armAngle="20" duration="10" leftArm="Leftarm" leftLeg="thighL" legAngle="15" name="biWalk" rightArm="Rightarm" rightLeg="thighR"/>
   <phase type="idle">
-   <part name="Body">
-    <component length="10" name="1" posChange="0.0,3.0,0.0," startKey="0"/>
-    <component length="10" name="2" posChange="0.0,-3.0,0.0," startKey="10"/>
-   </part>
    <part name="Jaw">
     <component length="10" name="1" posChange="0.0,2.0,0.0," posOffset="0.0,-1.8,0.0," startKey="0"/>
     <component length="10" name="2" posChange="0.0,-2.0,0.0," startKey="10"/>
@@ -47,10 +43,6 @@
    <part name="ArmQuilR2">
     <component length="10" name="1" posOffset="0.0,0.0,0.0" rotChange="0.0,-20.0,0.0," rotOffset="0.0,0.0,0.0" startKey="0"/>
     <component length="10" name="2" rotChange="0.0,20.0,0.0," startKey="10"/>
-   </part>
-   <part name="Head">
-    <component length="10" name="1" posChange="0.0,1.0,0.0," startKey="0"/>
-    <component length="10" name="2" posChange="0.0,-1.0,0.0," startKey="10"/>
    </part>
    <part name="Rightarm">
     <component length="10" name="1" posOffset="0.0,0.0,0.0" rotChange="5.0,0.0,-5.0," rotOffset="0.0,0.0,0.0" startKey="0"/>

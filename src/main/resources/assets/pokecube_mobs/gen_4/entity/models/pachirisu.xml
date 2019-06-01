@@ -39,17 +39,9 @@
     <component length="10" name="1" posOffset="0.0,0.0,0.0," rotChange="20.0,0.0,0.0," rotOffset="-20.0,-0.0,-0.0," startKey="0"/>
     <component length="10" name="2" rotChange="-20.0,0.0,0.0," startKey="10"/>
    </part>
-   <part name="Torso">
-    <component length="10" name="1" posChange="0.0,0.5,0.0," posOffset="0.0,0.0,0.0," startKey="0"/>
-    <component length="10" name="2" posChange="0.0,-0.5,0.0," startKey="10"/>
-   </part>
    <part name="Ear">
     <component length="10" name="1" posOffset="0.0,0.0,0.0," rotChange="-10.0,0.0,0.0," startKey="0"/>
     <component length="10" name="2" rotChange="10.0,0.0,0.0," startKey="10"/>
-   </part>
-   <part name="Head">
-    <component length="10" name="1" posChange="0.0,1.0,0.0," startKey="0"/>
-    <component length="10" name="2" posChange="0.0,-1.0,0.0," startKey="10"/>
    </part>
    <part name="Rightarm">
     <component length="10" name="1" posOffset="0.0,0.0,0.0" rotChange="5.0,0.0,-4.0," rotOffset="0.0,0.0,0.0" startKey="0"/>
