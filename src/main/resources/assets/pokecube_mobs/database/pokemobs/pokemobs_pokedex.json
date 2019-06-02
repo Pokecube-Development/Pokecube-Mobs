@@ -63688,10 +63688,10 @@
       "stats": {
         "stats": {
           "values": {
-            "spdef": "89",
-            "spatk": "127",
-            "def": "101",
-            "spd": "79",
+            "spdef": "97",
+            "spatk": "167",
+            "def": "97",
+            "spd": "129",
             "hp": "97",
             "atk": "107"
           }
@@ -63706,12 +63706,13 @@
           "values": {
             "width": "2.4",
             "length": "2.4",
-            "height": "2.4"
+            "height": "7.5"
           }
         },
         "types": {
           "values": {
-            "type1": "Psychic"
+            "type1": "Psychic",
+			"type2": "Dragon"
           }
         },
         "abilities": {
@@ -63719,7 +63720,7 @@
             "normal": "Prism Armor"
           }
         },
-        "mass": 350.0,
+        "mass": 230.0,
 		"movementType": "flying"
       }
     },
@@ -63762,7 +63763,7 @@
           }
         },
         "mass": 80.5,
-        "captureRate": 3,
+		"captureRate": 3,
         "baseFriendship": 0,
         "expMode": "Slow"
       },
