@@ -11,7 +11,7 @@
   <phase axis1="1" name="snakeWalk" parts="tail:tail1:tail2"/>
   <customTex default="incineroar">
    <part name="Head" tex="incineroarhead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="neck">

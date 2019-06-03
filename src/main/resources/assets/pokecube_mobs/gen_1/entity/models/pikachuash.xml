@@ -6,7 +6,7 @@
   <phase duration="5" leftArm="" leftLeg="leg1" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="pikachuash">
    <part name="Head" tex="pikachueye"/>
-   <animation diffs="0.23,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.23,0" part="Head" trigger="random:0.005:1"/>
    <animation diffs="0.43,0" part="Head" trigger="sleeping"/>
   </customTex>
   <phase type="idle">

@@ -6,7 +6,7 @@
   <phase duration="6" leftArm="" leftLeg="foot1" legAngle="25" name="biWalk" rightArm="" rightLeg="foot1_001"/>
   <customTex default="garbodor">
    <part name="Head" tex="garbodorhead"/>
-   <animation diffs="0.29,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.29,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="arm1">

@@ -6,7 +6,7 @@
   <metadata head="_"/>
   <customTex default="geodudealola">
    <part name="Head" tex="geodudealolahead"/>
-   <animation diffs="0.172,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.172,0" part="Head" trigger="random:0.005:1"/>
    <animation diffs="0.32,0" part="Head" trigger="sleeping"/>
   </customTex>
  </model>

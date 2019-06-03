@@ -6,7 +6,7 @@
   <metadata head="neck2" headAxis="2" headAxis2="0" headCap="-50,50" headCap1="-35,35" headDir="-1"/>
   <customTex default="talonflame">
    <part name="Head" tex="talonflamehead"/>
-   <animation diffs="0,0.35" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.35" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase duration="10" leftArm="leg1_1" leftLeg="leg1" legAngle="15" name="biWalk" rightArm="leg2_1" rightLeg="leg2"/>
   <phase type="idle">

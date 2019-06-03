@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="leg1_1" leftLeg="leg1" legAngle="16" name="biWalk" rightArm="leg2_1" rightLeg="leg2"/>
   <customTex default="braviary">
    <part name="Head" tex="braviaryhead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="wing1">

@@ -8,9 +8,9 @@
   <phase axis="0" name="snakeWalk" parts="tail:tail1:tail2:tail3"/>
   <customTex default="zeraora">
    <part name="Head" tex="zeraorahead"/>
-   <animation diffs="0.41,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.41,0" part="Head" trigger="random:0.005:1"/>
    <part name="Mouth" tex="zeraorahead"/>
-   <animation diffs="0.31,0" part="Mouth" trigger="random:0.005:25"/>
+   <animation diffs="0.31,0" part="Mouth" trigger="random:0.005:1"/>
   </customTex>
   <phase type="sitting">
    <part name="cint">

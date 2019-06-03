@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="" leftLeg="leg1" legAngle="25" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="swampertmega">
    <part name="Head" tex="swampertmegahead"/>
-   <animation diffs="0,0.38" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.38" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="sitting">
    <part name="mouth">

@@ -9,7 +9,7 @@
   <phase name="snakeWalk" parts="tail1:tail2:tail3:tail4"/>
   <customTex default="steelix">
    <part name="Head" tex="steelixhead"/>
-   <animation diffs="0.5,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.5,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="neck1">

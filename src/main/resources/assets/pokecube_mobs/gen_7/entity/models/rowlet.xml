@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="" leftLeg="foot" legAngle="50" name="biWalk" rightArm="" rightLeg="foot1"/>
   <customTex default="rowlet">
    <part name="Head" tex="rowlethead"/>
-   <animation diffs="0,0.3" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.3" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
   </phase>

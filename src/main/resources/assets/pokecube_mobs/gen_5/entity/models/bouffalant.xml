@@ -6,7 +6,7 @@
   <phase duration="10" leftFront="leg3" leftHind="leg1" name="quadWalk" rightFront="leg4" rightHind="leg2"/>
   <customTex default="bouffalant">
    <part name="Head" tex="bouffalanthead"/>
-   <animation diffs="0.44,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.44,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="tail">

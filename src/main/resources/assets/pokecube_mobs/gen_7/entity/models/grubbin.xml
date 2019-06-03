@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="" leftLeg="leg1:leg5:leg3" legAngle="10" name="biWalk" rightArm="" rightLeg="leg4:leg2:leg6"/>
   <customTex default="grubbin">
    <part name="Head" tex="grubbinhead"/>
-   <animation diffs="-0.35,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="-0.35,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="p1">

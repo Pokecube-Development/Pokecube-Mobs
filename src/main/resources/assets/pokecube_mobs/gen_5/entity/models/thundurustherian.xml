@@ -8,7 +8,7 @@
   <phase duration="6" leftArm="" leftLeg="leg1:leg1_1" legAngle="25" name="biWalk" rightArm="" rightLeg="leg2:leg2_1"/>
   <customTex default="thundurustherian">
    <part name="Head" tex="thundurushead"/>
-   <animation diffs="0,0.3" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.3" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="tail">

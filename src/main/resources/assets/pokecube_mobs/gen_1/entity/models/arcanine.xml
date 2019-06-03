@@ -6,7 +6,7 @@
   <phase duration="10" leftFront="leg4" leftHind="leg1" name="quadWalk" rightFront="leg3" rightHind="leg2"/>
   <customTex default="arcanine">
    <part name="Head" tex="arcaninehead"/>
-   <animation diffs="0,0.25" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.25" part="Head" trigger="random:0.005:1"/>
    <animation diffs="0,0.50" part="Head" trigger="sleeping"/>
   </customTex>
   <phase type="idle">

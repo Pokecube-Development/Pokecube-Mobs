@@ -8,7 +8,7 @@
   <phase duration="10" leftFront="leg4" leftHind="leg2" name="quadWalk" rightFront="leg3" rightHind="leg1"/>
   <customTex default="virizion">
    <part name="Head" tex="virizionhead"/>
-   <animation diffs="0.3,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.3,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
  </model>
 </ModelAnimator>

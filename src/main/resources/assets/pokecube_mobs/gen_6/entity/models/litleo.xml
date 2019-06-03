@@ -6,7 +6,7 @@
   <phase duration="10" leftFront="leg3" leftHind="leg2" name="quadWalk" rightFront="leg4" rightHind="leg1"/>
   <customTex default="litleo">
    <part name="Head" tex="litleohead"/>
-   <animation diffs="0.33,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.33,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="tail">

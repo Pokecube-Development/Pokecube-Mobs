@@ -6,7 +6,7 @@
   <phase duration="6" leftArm="" leftLeg="leg1" legAngle="25" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="tyrantrum">
    <part name="Head" tex="tyrantrumhead"/>
-   <animation diffs="0,0.45" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.45" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase axis="0" name="snakeIdle" parts="tail:tail1:tail2:tail3"/>
   <phase axis="1" name="snakeWalk" parts="tail:tail1:tail2:tail3"/>

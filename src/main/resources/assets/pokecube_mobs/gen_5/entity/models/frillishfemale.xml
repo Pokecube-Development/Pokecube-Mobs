@@ -5,7 +5,7 @@
   <metadata head="head" headAxis="2" headAxis2="0" headCap="-80,80" headCap1="-50,50" headDir="-1"/>
   <customTex default="frillishfemale">
    <part name="Head" tex="frillishfhead"/>
-   <animation diffs="0.4,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.4,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="body">

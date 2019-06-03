@@ -6,7 +6,7 @@
   <phase armAngle="20" duration="10" leftArm="arm1" leftLeg="foot1" legAngle="15" name="biWalk" rightArm="arm2" rightLeg="foot2"/>
   <customTex default="snover">
    <part name="Head" tex="snoverhead"/>
-   <animation diffs="0,0.27" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.27" part="Head" trigger="random:0.005:1"/>
   </customTex>
  </model>
 </ModelAnimator>

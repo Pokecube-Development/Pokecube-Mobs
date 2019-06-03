@@ -7,7 +7,7 @@
   <phase angle="15" axis="1" length="20" name="snakeWalk" parts="tail1:tail2:tail3:tail4:tail5"/>
   <customTex default="guzzlord">
    <part name="Head" tex="guzzlordhead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="body2">

@@ -6,7 +6,7 @@
   <phase duration="10" leftFront="leg1" leftHind="leg4" name="quadWalk" rightFront="leg2" rightHind="leg3"/>
   <customTex default="lycanroc">
    <part name="Head" tex="lycanrochead"/>
-   <animation diffs="0.5,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.5,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="tail">

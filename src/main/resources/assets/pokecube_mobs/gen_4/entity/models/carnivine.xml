@@ -21,7 +21,7 @@
   <phase angle="18" axis="0" name="snakeWalk" parts="f6:f6_1:f6_2:f6_3"/>
   <customTex default="carnivine">
    <part name="Head" tex="carnivinehead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="mouth">

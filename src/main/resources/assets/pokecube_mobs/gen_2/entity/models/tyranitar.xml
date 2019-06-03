@@ -10,7 +10,7 @@
   <worn angles="-90,0,0" id="__WAIST__" offset="0,1.9,0" parent="body1" scale="6,6,8.5"/>
   <customTex default="tyranitar">
    <part name="Head" tex="tyranitarhead"/>
-   <animation diffs="0,0.175" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.175" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase angle="15" axis="1" length="20" name="snakeWalk" parts="tail:tail1:tail2:tail3"/>
   <phase type="idle">

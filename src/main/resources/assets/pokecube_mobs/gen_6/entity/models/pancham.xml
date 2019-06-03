@@ -6,7 +6,7 @@
   <phase duration="10" leftFront="arm1" leftHind="leg" name="quadWalk" rightFront="arm" rightHind="leg1"/>
   <customTex default="pancham">
    <part name="Head" tex="panchamhead"/>
-   <animation diffs="0.405,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.405,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="arm">

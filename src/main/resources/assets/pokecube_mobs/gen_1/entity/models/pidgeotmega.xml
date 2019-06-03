@@ -10,7 +10,7 @@
   <phase duration="6" leftArm="" leftLeg="leg1" legAngle="25" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="pidgeotmega">
    <part name="Head" tex="pidgeotmegahead"/>
-   <animation diffs="0,0.39" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.39" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="tail">

@@ -7,7 +7,7 @@
   <worn angles="-90,0,0" id="__EYE__" offset="0,1.55,0.05" parent="body" scale="3.4,3,3"/>
   <customTex default="gengar">
    <part name="Head" tex="gengarhead"/>
-   <animation diffs="0.5,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.5,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="arm1">

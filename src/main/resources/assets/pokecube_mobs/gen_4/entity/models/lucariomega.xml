@@ -27,7 +27,7 @@
   <phase axis="0" length="55" name="snakeWalk" parts="p4:p4_1:p4_2"/>
   <customTex default="lucariomega">
    <part name="Head" tex="lucariomegahead"/>
-   <animation diffs="0,0.265" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.265" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="arm2">

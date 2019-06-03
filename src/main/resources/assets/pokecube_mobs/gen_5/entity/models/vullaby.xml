@@ -6,7 +6,7 @@
   <phase duration="6" leftArm="arm2" leftLeg="leg1" legAngle="25" name="biWalk" rightArm="arm1" rightLeg="leg2"/>
   <customTex default="vullaby">
    <part name="Head" tex="vullabyhead"/>
-   <animation diffs="0.39,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.39,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="wing1">

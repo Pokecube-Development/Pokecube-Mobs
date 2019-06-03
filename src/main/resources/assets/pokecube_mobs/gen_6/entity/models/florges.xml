@@ -5,7 +5,7 @@
   <metadata dye="pom1:pom2:*(flower)(.*)#red-purple,yellow-white,blue-light_blue,orange-pink" head="head" headAxis="2" headAxis2="0" headCap="-60,60" headCap1="-60,60" headDir="-1"/>
   <customTex default="florges">
    <part name="Head" tex="florgeshead"/>
-   <animation diffs="0,0.37" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.37" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="body1">

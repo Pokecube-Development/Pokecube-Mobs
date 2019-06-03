@@ -5,7 +5,7 @@
   <metadata head="head" headAxis="2" headAxis2="0" headCap="-60,60" headDir="-1"/>
   <customTex default="venomoth">
    <part name="Head" tex="venomothhead"/>
-   <animation diffs="0,0.39" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.39" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="but">

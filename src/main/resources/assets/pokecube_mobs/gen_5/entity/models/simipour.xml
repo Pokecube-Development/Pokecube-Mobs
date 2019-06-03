@@ -7,7 +7,7 @@
   <phase angle="15" axis="0" length="20" name="snakeWalk" parts="tail:tail1:tail2:tail3:tail4"/>
   <customTex default="simipour">
    <part name="Head" tex="simipourhead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="orl1">

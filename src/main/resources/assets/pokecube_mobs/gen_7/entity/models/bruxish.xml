@@ -4,7 +4,7 @@
   <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.29"/>
   <customTex default="bruxish">
    <part name="Head" tex="bruxishhead"/>
-   <animation diffs="0,0.375" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.375" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="body">

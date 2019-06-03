@@ -6,7 +6,7 @@
   <phase armAngle="15" duration="10" leftArm="arm1" leftLeg="leg1" legAngle="45" name="biWalk" rightArm="arm2" rightLeg="leg2"/>
   <customTex default="lombre">
    <part name="Head" tex="lombrehead"/>
-   <animation diffs="0.365,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.365,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
  </model>
 </ModelAnimator>

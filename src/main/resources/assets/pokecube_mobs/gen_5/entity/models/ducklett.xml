@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="" leftLeg="leg1" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="ducklett">
    <part name="Head" tex="duckletthead"/>
-   <animation diffs="0.4,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.4,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="mouth">

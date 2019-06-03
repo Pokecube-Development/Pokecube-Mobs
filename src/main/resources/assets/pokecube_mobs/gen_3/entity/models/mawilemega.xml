@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="arm1" leftLeg="leg1" name="biWalk" rightArm="arm2" rightLeg="leg2"/>
   <customTex default="mawilemega">
    <part name="Head" tex="mawilemegahead"/>
-   <animation diffs="0,0.45" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.45" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="p1">

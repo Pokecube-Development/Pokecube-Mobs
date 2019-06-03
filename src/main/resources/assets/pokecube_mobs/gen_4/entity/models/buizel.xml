@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="" leftLeg="leg1" legAngle="45" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="buizel">
    <part name="Head" tex="buizelhead"/>
-   <animation diffs="0.455,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.455,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="arm1">

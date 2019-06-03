@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="" leftLeg="leg1" legAngle="20" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="politoed">
    <part name="Head" tex="politoedhead"/>
-   <animation diffs="0,0.445" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.445" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="p1">

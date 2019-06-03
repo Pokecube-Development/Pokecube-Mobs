@@ -10,7 +10,7 @@
   <phase axis="0" name="snakeFly" parts="tail:tail1:tail2:tail3:tail4:tail5"/>
   <customTex default="dialga">
    <part name="Head" tex="dialgahead"/>
-   <animation diffs="0.348,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.348,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="mouth">

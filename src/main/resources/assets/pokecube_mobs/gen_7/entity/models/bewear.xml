@@ -13,7 +13,7 @@
   <worn angles="-90,0,0" id="__BACK__" offset="0,2,-0.5" parent="body" scale="2,2,2"/>
   <customTex default="bewear">
    <part name="Head" tex="bewearhead"/>
-   <animation diffs="0,0.4" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.4" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="tail1">

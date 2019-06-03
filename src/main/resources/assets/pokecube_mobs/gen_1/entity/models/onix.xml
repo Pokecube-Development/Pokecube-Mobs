@@ -6,7 +6,7 @@
   <phase axis="1" name="snakeWalk" parts="tail:tail1:tail2:tail3:tail4:tail5:tail6:tail7"/>
   <customTex default="onix">
    <part name="Head" tex="onixhead"/>
-   <animation diffs="0,0.45" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.45" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="body">

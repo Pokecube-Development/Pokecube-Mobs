@@ -8,7 +8,7 @@
   <worn angles="-90,0,0" id="__EYE__" offset="0,0.1,0.58" parent="head" scale="1.5,1.5,1.5"/>
   <customTex default="venusaurmega">
    <part name="Head" tex="venusaurmegahead"/>
-   <animation diffs="0,0.55" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.55" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="cock1">

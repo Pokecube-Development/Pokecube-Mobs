@@ -6,7 +6,7 @@
   <phase duration="5" leftArm="arm1" leftLeg="foot1" name="biWalk" rightArm="arm2" rightLeg="foot2"/>
   <customTex default="cinccino">
    <part name="Head" tex="cinccinohead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="body">

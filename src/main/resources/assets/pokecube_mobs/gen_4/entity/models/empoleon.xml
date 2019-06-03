@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="" leftLeg="leg1" name="biWalk" rightArm="" rightLeg="leg2"/>
   <customTex default="empoleon">
    <part name="Head" tex="empoleonhead"/>
-   <animation diffs="-0.36,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="-0.36,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="mouth">

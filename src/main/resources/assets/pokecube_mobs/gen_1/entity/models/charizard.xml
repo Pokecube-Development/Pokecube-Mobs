@@ -20,7 +20,7 @@
   <phase axis="0" name="snakeFly" parts="tail1:tail2:tail3:tail4:tail5:tail6:tail7:tail8"/>
   <customTex default="charizard">
    <part name="Head" tex="charizardhead"/>
-   <animation diffs="0,0.48" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.48" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="sitting">
    <part name="wing1">

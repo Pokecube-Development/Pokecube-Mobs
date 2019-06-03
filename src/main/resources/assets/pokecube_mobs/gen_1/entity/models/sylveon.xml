@@ -6,7 +6,7 @@
   <phase angle="40" duration="10" frontAngle="40" leftFront="leg3" leftHind="leg1" name="quadWalk" rightFront="leg4" rightHind="leg2"/>
   <customTex default="sylveon">
    <part name="Head" tex="sylveonhead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="sitting">
    <part name="body">

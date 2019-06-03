@@ -6,7 +6,7 @@
   <phase duration="10" leftArm="arm1" leftLeg="leg2" legAngle="20" name="biWalk" rightArm="arm2" rightLeg="leg1"/>
   <customTex default="larvitar">
    <part name="Head" tex="larvitarhead"/>
-   <animation diffs="-0.365,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="-0.365,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="arm1">

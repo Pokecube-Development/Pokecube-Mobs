@@ -6,7 +6,7 @@
   <phase armAngle="20" duration="10" leftArm="arm2" leftLeg="leg1" legAngle="25" name="biWalk" rightArm="arm1" rightLeg="leg2"/>
   <customTex default="audinomega">
    <part name="Head" tex="audinomegahead"/>
-   <animation diffs="0.33,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.33,0" part="Head" trigger="random:0.005:1"/>
    <animation diffs="0.63,0" part="Head" trigger="sleeping"/>
   </customTex>
   <phase type="idle">

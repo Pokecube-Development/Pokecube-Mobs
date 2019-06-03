@@ -6,7 +6,7 @@
   <phase duration="10" leftFront="leg4" leftHind="leg" name="quadWalk" rightFront="leg3" rightHind="leg2"/>
   <customTex default="cameruptmega">
    <part name="Head" tex="cameruptmegahead"/>
-   <animation diffs="0.3,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.3,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="body">

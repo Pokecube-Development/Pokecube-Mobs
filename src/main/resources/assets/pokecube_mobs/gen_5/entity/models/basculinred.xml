@@ -4,7 +4,7 @@
   <phase name="global" offset="0,0,0.5" rotation="1,0,0,0" scale="0.60"/>
   <customTex default="basculinred">
    <part name="Head" tex="basculinrhead"/>
-   <animation diffs="0.4,0" part="Head" trigger="random:0.005:25"/>
+   <animation diffs="0.4,0" part="Head" trigger="random:0.005:1"/>
   </customTex>
   <phase type="idle">
    <part name="mouth">
