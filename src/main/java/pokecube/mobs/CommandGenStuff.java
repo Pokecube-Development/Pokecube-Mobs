@@ -59,7 +59,12 @@ public class CommandGenStuff extends CommandBase
         File dir = new File("./mods/pokecube/assets/pokecube_mobs/");
         if (!dir.exists()) dir.mkdirs();
         File file = new File(dir, "sounds.json");
-        String json = SoundJsonGenerator.generateSoundJson();
+        boolean small = false;
+        for (String s : args)
+        {
+            if (s.startsWith("s")) small = true;
+        }
+        String json = SoundJsonGenerator.generateSoundJson(small);
         try
         {
             FileWriter write = new FileWriter(file);
@@ -518,11 +523,12 @@ public class CommandGenStuff extends CommandBase
 
     public static class SoundJsonGenerator
     {
-        public static String generateSoundJson()
+        public static String generateSoundJson(boolean small)
         {
             JsonObject soundJson = new JsonObject();
             List<PokedexEntry> pokedexEntries = Database.getSortedFormes();
             Set<ResourceLocation> added = Sets.newHashSet();
+            int num = small ? 1 : 3;
             for (PokedexEntry entry : pokedexEntries)
             {
                 ResourceLocation event = entry.getSoundEvent().getSoundName();
@@ -548,12 +554,16 @@ public class CommandGenStuff extends CommandBase
                 soundEntry.addProperty("category", "hostile");
                 soundEntry.addProperty("subtitle", entry.getUnlocalizedName());
                 JsonArray sounds = new JsonArray();
-                for (int i = 0; i < 3; i++)
+
+                for (int i = 0; i < num; i++)
                 {
                     JsonObject sound = new JsonObject();
                     sound.addProperty("name", "pokecube_mobs:mobs/" + soundName);
-                    sound.addProperty("volume", (i == 0 ? 0.8 : i == 1 ? 0.9 : 1));
-                    sound.addProperty("pitch", (i == 0 ? 0.9 : i == 1 ? 0.95 : 1));
+                    if (!small)
+                    {
+                        sound.addProperty("volume", (i == 0 ? 0.8 : i == 1 ? 0.9 : 1));
+                        sound.addProperty("pitch", (i == 0 ? 0.9 : i == 1 ? 0.95 : 1));
+                    }
                     sounds.add(sound);
                 }
                 soundEntry.add("sounds", sounds);
