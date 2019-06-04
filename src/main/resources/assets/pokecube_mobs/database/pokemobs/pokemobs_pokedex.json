@@ -64183,6 +64183,7 @@
       "name": "Meltan",
       "number": 808,
       "base": true,
+	  "breed": false,
       "stats": {
         "stats": {
           "values": {
@@ -64248,6 +64249,7 @@
 	{
       "name": "Melmetal",
       "number": 809,
+	  "breed": false,
       "base": true,
       "stats": {
         "stats": {
