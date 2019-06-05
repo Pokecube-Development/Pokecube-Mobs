@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:fish:3",
+                    "name": "minecraft:fish",
                     "functions": [
                         {
                             "function": "set_count",
@@ -15,6 +15,10 @@
                                 "max": 2
                             }
                         },
+                        {
+                            "function":"set_data",
+                            "data":3
+                        }
                         {
                             "function": "looting_enchant",
                             "count": {
