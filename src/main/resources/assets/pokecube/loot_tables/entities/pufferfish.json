@@ -18,7 +18,7 @@
                         {
                             "function":"set_data",
                             "data":3
-                        }
+                        },
                         {
                             "function": "looting_enchant",
                             "count": {
