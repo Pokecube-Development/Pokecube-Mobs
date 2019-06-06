@@ -1462,7 +1462,7 @@
     {
       "name": "Qwilfish",
       "stats": {
-        "lootTable": "pokecube:entities/fish_1"
+        "lootTable": "pokecube:entities/pufferfish"
       }
     },
     {
