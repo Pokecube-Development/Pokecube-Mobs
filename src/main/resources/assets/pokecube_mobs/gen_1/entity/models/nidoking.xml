@@ -46,7 +46,7 @@
    <part name="arm1">
     <component length="15" name="1" rotChange="0,-20,0" rotOffset="10,-10,-40" startKey="0"/>
     <component length="15" name="2" rotChange="0,40,0" startKey="5"/>
-	<component length="15" name="3" rotChange="0,-20,0" startKey="10"/>
+    <component length="15" name="3" rotChange="0,-20,0" startKey="10"/>
    </part>
    <part name="arm1_1">
     <component length="1" name="1" rotOffset="0,-50,0," startKey="0"/>
@@ -54,7 +54,7 @@
    <part name="arm2">
     <component length="15" name="1" rotChange="0,-20,0" rotOffset="10,10,40" startKey="0"/>
     <component length="15" name="2" rotChange="0,40,0" startKey="5"/>
-	<component length="15" name="3" rotChange="0,-20,0" startKey="10"/>
+    <component length="15" name="3" rotChange="0,-20,0" startKey="10"/>
    </part>
    <part name="arm2_1">
     <component length="1" name="1" rotOffset="0,50,0," startKey="0"/>
