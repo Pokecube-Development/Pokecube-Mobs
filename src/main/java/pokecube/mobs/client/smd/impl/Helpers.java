@@ -30,7 +30,7 @@ public class Helpers
         }
     }
 
-    @SideOnly(Side.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     /** Gets an input stream for the given resourcelocation.
      * 
      * @param resloc
@@ -40,7 +40,7 @@ public class Helpers
         try
         {
             return new BufferedInputStream(
-                    Minecraft.getMinecraft().getResourceManager().getResource(resloc).getInputStream());
+                    Minecraft.getInstance().getResourceManager().getResource(resloc).getInputStream());
         }
         catch (IOException e)
         {

@@ -20,13 +20,13 @@ import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -35,7 +35,7 @@ import net.minecraftforge.fml.ModContainer;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.api.distmarker.Dist;
@@ -232,7 +232,7 @@ public class PokecubeMobs implements IMobProvider
     }
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
+    public void preInit(FMLCommonSetupEvent event)
     {
         Configuration config = PokecubeCore.instance.getPokecubeConfig(event);
         config.load();
@@ -245,7 +245,7 @@ public class PokecubeMobs implements IMobProvider
             Pickup.lootTable = new ResourceLocation(var);
         }
         config.save();
-        if (event.getSide() == Side.CLIENT)
+        if (event.getSide() == Dist.CLIENT)
         {
             new UpdateNotifier();
         }
@@ -272,7 +272,7 @@ public class PokecubeMobs implements IMobProvider
         event.registerServerCommand(new CommandGenStuff());
     }
 
-    @SideOnly(Side.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public void initModel(ModelWrapperEvent evt)
     {
@@ -573,8 +573,8 @@ public class PokecubeMobs implements IMobProvider
 
                     if (!tameSnag) evt.caught.setPokecube(evt.filledCube);
 
-                    cube.setEntityItemStack(PokecubeManager.pokemobToItem(evt.caught));
-                    PokecubeManager.setTilt(cube.getEntityItem(), cube.tilt);
+                    cube.setItemEntityStack(PokecubeManager.pokemobToItem(evt.caught));
+                    PokecubeManager.setTilt(cube.getItemEntity(), cube.tilt);
                     Vector3.getNewVector().set(evt.pokecube).moveEntity(cube);
                     evt.caught.getEntity().setDead();
                     cube.motionX = cube.motionZ = 0;
@@ -617,8 +617,8 @@ public class PokecubeMobs implements IMobProvider
                 cube.tilt = Tools.computeCatchRate(mob, rate);
                 cube.time = cube.tilt * 20;
                 evt.caught.setPokecube(evt.filledCube);
-                cube.setEntityItemStack(PokecubeManager.pokemobToItem(evt.caught));
-                PokecubeManager.setTilt(cube.getEntityItem(), cube.tilt);
+                cube.setItemEntityStack(PokecubeManager.pokemobToItem(evt.caught));
+                PokecubeManager.setTilt(cube.getItemEntity(), cube.tilt);
                 v.set(evt.pokecube).moveEntity(cube);
                 v.moveEntity(mob.getEntity());
                 evt.caught.getEntity().setDead();
@@ -645,21 +645,21 @@ public class PokecubeMobs implements IMobProvider
     public void makeShedinja(EvolveEvent.Post evt)
     {
         Entity owner;
-        if ((owner = evt.mob.getPokemonOwner()) instanceof EntityPlayer)
+        if ((owner = evt.mob.getPokemonOwner()) instanceof PlayerEntity)
         {
-            makeShedinja(evt.mob, (EntityPlayer) owner);
+            makeShedinja(evt.mob, (PlayerEntity) owner);
         }
     }
 
     @SubscribeEvent
     public void livingUpdate(LivingUpdateEvent evt)
     {
-        IPokemob shuckle = CapabilityPokemob.getPokemobFor(evt.getEntityLiving());
+        IPokemob shuckle = CapabilityPokemob.getPokemobFor(evt.getMobEntity());
         if (shuckle != null && shuckle.getPokedexNb() == 213)
         {
-            if (evt.getEntityLiving().getEntityWorld().isRemote) return;
+            if (evt.getMobEntity().getEntityWorld().isRemote) return;
 
-            ItemStack item = evt.getEntityLiving().getHeldItemMainhand();
+            ItemStack item = evt.getMobEntity().getHeldItemMainhand();
             if (!CompatWrapper.isValid(item)) return;
             Item itemId = item.getItem();
             boolean berry = item.isItemEqual(BerryManager.getBerryItem("oran"));
@@ -670,7 +670,7 @@ public class PokecubeMobs implements IMobProvider
                 {
                     String message = "A sweet smell is coming from "
                             + shuckle.getPokemonDisplayName().getFormattedText();
-                    ((EntityPlayer) shuckle.getPokemonOwner()).sendMessage(new TextComponentString(message));
+                    ((PlayerEntity) shuckle.getPokemonOwner()).sendMessage(new StringTextComponent(message));
                 }
                 shuckle.setHeldItem(new ItemStack(PokecubeItems.berryJuice));
                 return;
@@ -681,11 +681,11 @@ public class PokecubeMobs implements IMobProvider
                 ItemStack candy = PokecubeItems.makeCandyStack();
                 if (!CompatWrapper.isValid(candy)) return;
 
-                if (shuckle.getPokemonOwner() != null && shuckle.getPokemonOwner() instanceof EntityPlayer)
+                if (shuckle.getPokemonOwner() != null && shuckle.getPokemonOwner() instanceof PlayerEntity)
                 {
                     String message = "The smell coming from " + shuckle.getPokemonDisplayName().getFormattedText()
                             + " has changed";
-                    ((EntityPlayer) shuckle.getPokemonOwner()).sendMessage(new TextComponentString(message));
+                    ((PlayerEntity) shuckle.getPokemonOwner()).sendMessage(new StringTextComponent(message));
                 }
                 shuckle.setHeldItem(candy);
                 return;
@@ -706,7 +706,7 @@ public class PokecubeMobs implements IMobProvider
         }
     }
 
-    void makeShedinja(IPokemob evo, EntityPlayer player)
+    void makeShedinja(IPokemob evo, PlayerEntity player)
     {
         if (evo.getPokedexEntry() == Database.getEntry("ninjask"))
         {

@@ -4,7 +4,7 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLCommonSetupEvent;
 import pokecube.mobs.PokecubeMobs;
 import pokecube.mobs.Reference;
 
@@ -14,7 +14,7 @@ public class PokecubeOrigin
     public static final String MODID = "pokecube_origin";
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent e)
+    public void preInit(FMLCommonSetupEvent e)
     {
         doMetastuff();
     }

@@ -5,9 +5,9 @@ import java.util.List;
 import javax.xml.namespace.QName;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.projectile.EntityFishHook;
 import net.minecraft.util.math.AxisAlignedBB;
 import pokecube.core.PokecubeItems;
@@ -139,10 +139,10 @@ public class PokecubeHelper
 
     public double level(IPokemob mob)
     {
-        EntityLiving entity = mob.getEntity();
+        MobEntity entity = mob.getEntity();
         int level = mob.getLevel();
         int otherLevel = 0;
-        EntityLivingBase target = entity.getAttackTarget();
+        LivingEntity target = entity.getAttackTarget();
         IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
         if (targetMob == null || (otherLevel = targetMob.getLevel()) <= level) return 1;
         if (otherLevel <= 2 * level) return 2;
@@ -152,7 +152,7 @@ public class PokecubeHelper
 
     public double lure(IPokemob mob)
     {
-        EntityLiving entity = mob.getEntity();
+        MobEntity entity = mob.getEntity();
         if (mob.getPokedexEntry().swims())
         {// grow in 1.12
             AxisAlignedBB bb = Vector3.getNewVector().set(entity).addTo(0, entity.getEyeHeight(), 0).getAABB()
@@ -180,11 +180,11 @@ public class PokecubeHelper
 
     public double love(IPokemob mob)
     {
-        EntityLiving entity = mob.getEntity();
-        EntityLivingBase target = entity.getAttackTarget();
+        MobEntity entity = mob.getEntity();
+        LivingEntity target = entity.getAttackTarget();
         IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
-        if (targetMob == null || !(target instanceof EntityAnimal)) return 1;
-        if (mob.canMate((EntityAnimal) target)) return 8;
+        if (targetMob == null || !(target instanceof AnimalEntity)) return 1;
+        if (mob.canMate((AnimalEntity) target)) return 8;
         return 1;
     }
 

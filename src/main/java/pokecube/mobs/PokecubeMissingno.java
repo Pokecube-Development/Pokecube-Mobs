@@ -4,7 +4,7 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLCommonSetupEvent;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.interfaces.PokecubeMod;
 import pokecube.modelloader.CommonProxy;
@@ -26,7 +26,7 @@ public class PokecubeMissingno implements IMobProvider
      * 
      * @param evt */
     @EventHandler
-    public void preInit(FMLPreInitializationEvent evt)
+    public void preInit(FMLCommonSetupEvent evt)
     {
         doMetastuff();
     }

@@ -1,6 +1,6 @@
 package pokecube.core.database.abilities.a;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.Explosion;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,7 +28,7 @@ public class Aftermath extends Ability
             MinecraftForge.EVENT_BUS.post(evt);
             if (!evt.isCanceled())
             {
-                EntityLivingBase attacker = move.attacker.getEntity();
+                LivingEntity attacker = move.attacker.getEntity();
                 float hp = attacker.getHealth();
                 attacker.attackEntityFrom(DamageSource.MAGIC, hp / 4);
             }

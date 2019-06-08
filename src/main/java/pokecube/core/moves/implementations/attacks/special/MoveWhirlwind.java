@@ -1,6 +1,6 @@
 package pokecube.core.moves.implementations.attacks.special;
 
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.MobEntity;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.interfaces.pokemob.ai.CombatStates;
@@ -38,9 +38,9 @@ public class MoveWhirlwind extends Move_Basic
             attacked.setCombatState(CombatStates.ANGRY, false);
         }
         // ends the battle
-        if (packet.attacked instanceof EntityLiving)
+        if (packet.attacked instanceof MobEntity)
         {
-            ((EntityLiving) packet.attacked).setAttackTarget(null);
+            ((MobEntity) packet.attacked).setAttackTarget(null);
         }
         packet.attacker.setCombatState(CombatStates.ANGRY, false);
         packet.attacker.getEntity().setAttackTarget(null);

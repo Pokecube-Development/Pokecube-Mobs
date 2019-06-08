@@ -18,10 +18,10 @@ import com.google.gson.JsonPrimitive;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
-import net.minecraft.command.ICommandSender;
+import net.minecraft.command.ICommandSource;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.StringTextComponent;
 import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.handlers.ItemGenerator;
@@ -41,21 +41,21 @@ public class CommandGenStuff extends CommandBase
     }
 
     @Override
-    public String getUsage(ICommandSender sender)
+    public String getUsage(ICommandSource sender)
     {
         return "/pokemobsfiles";
     }
 
     @Override
-    public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException
+    public void execute(MinecraftServer server, ICommandSource sender, String[] args) throws CommandException
     {
-        sender.sendMessage(new TextComponentString("Starting File Output"));
+        sender.sendMessage(new StringTextComponent("Starting File Output"));
         for (PokedexEntry e : Database.getSortedFormes())
         {
             if (e == Database.missingno) continue;
             registerAchievements(e);
         }
-        sender.sendMessage(new TextComponentString("Advancements Done"));
+        sender.sendMessage(new StringTextComponent("Advancements Done"));
         File dir = new File("./mods/pokecube/assets/pokecube_mobs/");
         if (!dir.exists()) dir.mkdirs();
         File file = new File(dir, "sounds.json");
@@ -75,7 +75,7 @@ public class CommandGenStuff extends CommandBase
         {
             e.printStackTrace();
         }
-        sender.sendMessage(new TextComponentString("Sounds Done"));
+        sender.sendMessage(new StringTextComponent("Sounds Done"));
         generateBlockAndItemJsons();
 
         for (String s : ItemGenerator.barks.keySet())
@@ -229,7 +229,7 @@ public class CommandGenStuff extends CommandBase
             }
 
         }
-        sender.sendMessage(new TextComponentString("Finished File Output"));
+        sender.sendMessage(new StringTextComponent("Finished File Output"));
     }
 
     /** Comment these out to re-generate advancements. */
@@ -541,7 +541,7 @@ public class CommandGenStuff extends CommandBase
                         + event.getResourcePath().replaceFirst("mobs.", "sounds/mobs/") + ".ogg");
                 try
                 {
-                    Minecraft.getMinecraft().getResourceManager().getResource(test);
+                    Minecraft.getInstance().getResourceManager().getResource(test);
                 }
                 catch (Exception e)
                 {

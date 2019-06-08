@@ -1,7 +1,7 @@
 package pokecube.core.moves.implementations.attacks.special;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.MobEntity;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
@@ -22,9 +22,9 @@ public class Move_Teleport extends Move_Basic
         Entity target = attacker.getEntity().getAttackTarget();
         if (attacked == attacker.getEntity() && target != null) attacked = target;
         IPokemob attackedMob = CapabilityPokemob.getPokemobFor(attacked);
-        if (attacked instanceof EntityLiving)
+        if (attacked instanceof MobEntity)
         {
-            ((EntityLiving) attacked).setAttackTarget(null);
+            ((MobEntity) attacked).setAttackTarget(null);
         }
         else if (attackedMob != null)
         {

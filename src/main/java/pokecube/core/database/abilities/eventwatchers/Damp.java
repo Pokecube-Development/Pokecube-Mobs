@@ -1,6 +1,6 @@
 package pokecube.core.database.abilities.eventwatchers;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.ExplosionEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -34,14 +34,14 @@ public class Damp extends Ability
     @Override
     public void destroy()
     {
-        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) return;
+        if (FMLCommonHandler.instance().getEffectiveSide() == Dist.CLIENT) return;
         MinecraftForge.EVENT_BUS.unregister(this);
     }
 
     @Override
     public Ability init(Object... args)
     {
-        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) return this;
+        if (FMLCommonHandler.instance().getEffectiveSide() == Dist.CLIENT) return this;
         for (int i = 0; i < 2; i++)
             if (args != null && args.length > i)
             {
@@ -59,7 +59,7 @@ public class Damp extends Ability
     }
 
     @Override
-    public void onAgress(IPokemob mob, EntityLivingBase target)
+    public void onAgress(IPokemob mob, LivingEntity target)
     {
     }
 

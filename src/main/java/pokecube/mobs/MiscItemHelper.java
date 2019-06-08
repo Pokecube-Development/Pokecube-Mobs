@@ -1,11 +1,11 @@
 package pokecube.mobs;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumFacing;
+import net.minecraft.util.Direction;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.Capability;
@@ -40,7 +40,7 @@ public class MiscItemHelper
         VitaminEffect value = new VitaminEffect()
         {
             @Override
-            public ActionResult<ItemStack> onUse(IPokemob pokemob, ItemStack stack, EntityLivingBase user)
+            public ActionResult<ItemStack> onUse(IPokemob pokemob, ItemStack stack, LivingEntity user)
             {
                 return feedToPokemob(stack, pokemob.getEntity());
             }
@@ -123,13 +123,13 @@ public class MiscItemHelper
         }
 
         @Override
-        public boolean hasCapability(Capability<?> capability, EnumFacing facing)
+        public boolean hasCapability(Capability<?> capability, Direction facing)
         {
             return capability == IPokemobUseable.USABLEITEM_CAP;
         }
 
         @Override
-        public <T> T getCapability(Capability<T> capability, EnumFacing facing)
+        public <T> T getCapability(Capability<T> capability, Direction facing)
         {
             return hasCapability(capability, facing) ? IPokemobUseable.USABLEITEM_CAP.cast(this) : null;
         }

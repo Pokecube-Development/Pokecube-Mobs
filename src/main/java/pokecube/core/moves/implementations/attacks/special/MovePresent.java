@@ -3,7 +3,7 @@ package pokecube.core.moves.implementations.attacks.special;
 import java.util.Random;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Basic;
@@ -31,9 +31,9 @@ public class MovePresent extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        if (packet.PWR == 0 && packet.attacked instanceof EntityLivingBase)
+        if (packet.PWR == 0 && packet.attacked instanceof LivingEntity)
         {
-            EntityLivingBase toHeal = (EntityLivingBase) packet.attacked;
+            LivingEntity toHeal = (LivingEntity) packet.attacked;
             float health = Math.min(toHeal.getHealth() + 80, toHeal.getMaxHealth());
             toHeal.setHealth(health);
         }

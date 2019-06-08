@@ -62,15 +62,15 @@ public class ModelWrapperSpinda extends ModelWrapper
 
                     // Render the base layer of the head and ears
                     GlStateManager.pushMatrix();
-                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyhb : normalhb);
+                    Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny() ? shinyhb : normalhb);
                     part.renderOnly("Head");
                     GlStateManager.popMatrix();
                     GlStateManager.pushMatrix();
-                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
+                    Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
                     part.renderOnly("Left_ear");
                     GlStateManager.popMatrix();
                     GlStateManager.pushMatrix();
-                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
+                    Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
                     part.renderOnly("Right_ear");
                     GlStateManager.popMatrix();
 
@@ -84,7 +84,7 @@ public class ModelWrapperSpinda extends ModelWrapper
                         GL11.glLoadIdentity();
                         GL11.glTranslatef(dx, dy, 0.0F);
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-                        Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyh : normalh);
+                        Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny() ? shinyh : normalh);
                         part.renderOnly("Head");
                         GL11.glMatrixMode(GL11.GL_TEXTURE);
                         GL11.glLoadIdentity();
@@ -97,7 +97,7 @@ public class ModelWrapperSpinda extends ModelWrapper
                         dy = rand.nextFloat() / 2 + 0.5f;
                         GL11.glTranslatef(dx, dy, 0.0F);
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-                        Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinye : normale);
+                        Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny() ? shinye : normale);
                         part.renderOnly("Left_ear");
                         GL11.glMatrixMode(GL11.GL_TEXTURE);
                         GL11.glLoadIdentity();

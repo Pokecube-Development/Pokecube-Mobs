@@ -5,9 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.WorldServer;
@@ -29,7 +29,7 @@ public class Pickup extends Ability
     @Override
     public void onUpdate(IPokemob mob)
     {
-        EntityLivingBase poke = mob.getEntity();
+        LivingEntity poke = mob.getEntity();
         // Staying in one place, nothing to find.
         if (mob.getGeneralState(GeneralStates.STAYING)) return;
         // Only works if your pokemob is following you.
@@ -47,9 +47,9 @@ public class Pickup extends Ability
                     LootContext.Builder lootcontext$builder = (new LootContext.Builder(
                             (WorldServer) mob.getEntity().getEntityWorld())).withLootedEntity(mob.getEntity());
                     // Apply bonuses from the player
-                    if (mob.getPokemonOwner() instanceof EntityPlayerMP)
+                    if (mob.getPokemonOwner() instanceof ServerPlayerEntity)
                     {
-                        lootcontext$builder.withPlayer((EntityPlayer) mob.getPokemonOwner());
+                        lootcontext$builder.withPlayer((PlayerEntity) mob.getPokemonOwner());
                     }
                     // Generate the loot list.
                     List<ItemStack> list = loottable.generateLootForPools(new Random(), lootcontext$builder.build());

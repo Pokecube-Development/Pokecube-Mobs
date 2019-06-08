@@ -1,7 +1,7 @@
 package pokecube.mobs;
 
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
@@ -37,7 +37,7 @@ public class BerryHelper implements IMoveConstants
          * @param stack
          * @return something happened */
         @Override
-        public ActionResult<ItemStack> onUse(IPokemob pokemob, ItemStack stack, EntityLivingBase user)
+        public ActionResult<ItemStack> onUse(IPokemob pokemob, ItemStack stack, LivingEntity user)
         {
             return applyEffect(pokemob, user, stack);
         }
@@ -106,7 +106,7 @@ public class BerryHelper implements IMoveConstants
                                                             // move
     }
 
-    public static boolean berryEffect(IPokemob pokemob, EntityLivingBase user, ItemStack berry)
+    public static boolean berryEffect(IPokemob pokemob, LivingEntity user, ItemStack berry)
     {
 
         if (!(berry.getItem() instanceof ItemBerry)) return false;
@@ -192,11 +192,11 @@ public class BerryHelper implements IMoveConstants
             pokemob.healStatus();
             return true;
         }
-        EntityLivingBase entity = pokemob.getEntity();
+        LivingEntity entity = pokemob.getEntity();
         float HP = entity.getHealth();
         float HPmax = entity.getMaxHealth();
 
-        boolean apply = (berryId == 7 || berryId == 10 || berryId == 60) && user instanceof EntityPlayer && HP != HPmax
+        boolean apply = (berryId == 7 || berryId == 10 || berryId == 60) && user instanceof PlayerEntity && HP != HPmax
                 || HP < HPmax / 3;
         if (apply)
         {
@@ -214,7 +214,7 @@ public class BerryHelper implements IMoveConstants
         return false;
     }
 
-    public static ActionResult<ItemStack> applyEffect(IPokemob pokemob, EntityLivingBase user, ItemStack stack)
+    public static ActionResult<ItemStack> applyEffect(IPokemob pokemob, LivingEntity user, ItemStack stack)
     {
         boolean applied = berryEffect(pokemob, user, stack);
         if (stack.getItem() instanceof ItemBerry)
@@ -230,7 +230,7 @@ public class BerryHelper implements IMoveConstants
             }
         }
         boolean useStack = applied;
-        if (useStack && user instanceof EntityPlayer && ((EntityPlayer) user).capabilities.isCreativeMode)
+        if (useStack && user instanceof PlayerEntity && ((PlayerEntity) user).capabilities.isCreativeMode)
             useStack = false;
         if (useStack) stack.splitStack(1);
         return new ActionResult<ItemStack>(applied ? EnumActionResult.SUCCESS : EnumActionResult.FAIL, stack);

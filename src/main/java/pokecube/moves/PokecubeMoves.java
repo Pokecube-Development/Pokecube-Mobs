@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLCommonSetupEvent;
 import pokecube.core.PokecubeCore;
 import pokecube.core.blocks.healtable.ContainerHealTable;
 import pokecube.core.blocks.healtable.TileHealTable;
@@ -32,7 +32,7 @@ public class PokecubeMoves
     }
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent evt)
+    public void preInit(FMLCommonSetupEvent evt)
     {
         doMetastuff();
     }

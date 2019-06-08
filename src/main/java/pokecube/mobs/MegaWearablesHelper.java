@@ -7,7 +7,7 @@ import org.lwjgl.opengl.GL11;
 import com.mojang.blaze3d.platform.GlStateManager;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -31,23 +31,23 @@ public class MegaWearablesHelper
         WearablesCompat.renderers.put("tiara", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             X3dModel                 model;
 
             // Textures for each hat layer.
             private ResourceLocation keystone = new ResourceLocation(PokecubeCore.ID, "textures/worn/keystone.png");
             private ResourceLocation metal    = new ResourceLocation(PokecubeCore.ID, "textures/worn/megatiara_2.png");
 
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             @Override
-            public void renderWearable(EnumWearable slot, EntityLivingBase wearer, ItemStack stack, float partialTicks)
+            public void renderWearable(EnumWearable slot, LivingEntity wearer, ItemStack stack, float partialTicks)
             {
                 if (slot != EnumWearable.HAT) return;
                 if (model == null)
                 {
                     model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megatiara.x3d"));
                 }
-                Minecraft minecraft = Minecraft.getMinecraft();
+                Minecraft minecraft = Minecraft.getInstance();
                 GL11.glRotatef(90, 1, 0, 0);
                 GL11.glRotatef(180, 0, 0, 1);
                 float dx = -0.0f, dy = .235f, dz = 0.25f;
@@ -62,9 +62,9 @@ public class MegaWearablesHelper
                 GlStateManager.pushMatrix();
                 minecraft.renderEngine.bindTexture(metal);
                 EnumDyeColor ret = EnumDyeColor.BLUE;
-                if (stack.hasTagCompound() && stack.getTagCompound().hasKey("dyeColour"))
+                if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTagCompound().getInteger("dyeColour");
+                    int damage = stack.getTag().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -84,7 +84,7 @@ public class MegaWearablesHelper
         WearablesCompat.renderers.put("ankletzinnia", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             X3dModel                 model;
 
             // Textures for each hat layer.
@@ -93,7 +93,7 @@ public class MegaWearablesHelper
                     "textures/worn/megaankletzinnia_2.png");
 
             @Override
-            public void renderWearable(EnumWearable slot, EntityLivingBase wearer, ItemStack stack, float partialTicks)
+            public void renderWearable(EnumWearable slot, LivingEntity wearer, ItemStack stack, float partialTicks)
             {
                 if (slot != EnumWearable.ANKLE) return;
 
@@ -101,7 +101,7 @@ public class MegaWearablesHelper
                 {
                     model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megaankletzinnia.x3d"));
                 }
-                Minecraft minecraft = Minecraft.getMinecraft();
+                Minecraft minecraft = Minecraft.getInstance();
                 GlStateManager.pushMatrix();
                 GL11.glRotatef(90, 1, 0, 0);
                 GL11.glRotatef(180, 0, 0, 1);
@@ -121,9 +121,9 @@ public class MegaWearablesHelper
                 GL11.glTranslatef(dx, dy, dz);
                 minecraft.renderEngine.bindTexture(texture);
                 EnumDyeColor ret = EnumDyeColor.CYAN;
-                if (stack.hasTagCompound() && stack.getTagCompound().hasKey("dyeColour"))
+                if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTagCompound().getInteger("dyeColour");
+                    int damage = stack.getTag().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -141,7 +141,7 @@ public class MegaWearablesHelper
         WearablesCompat.renderers.put("pendant", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             X3dModel                 model;
 
             // Textures for each hat layer.
@@ -149,16 +149,16 @@ public class MegaWearablesHelper
             private ResourceLocation pendant  = new ResourceLocation(PokecubeCore.ID,
                     "textures/worn/megapendant_2.png");
 
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             @Override
-            public void renderWearable(EnumWearable slot, EntityLivingBase wearer, ItemStack stack, float partialTicks)
+            public void renderWearable(EnumWearable slot, LivingEntity wearer, ItemStack stack, float partialTicks)
             {
                 if (slot != EnumWearable.NECK) return;
                 if (model == null)
                 {
                     model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megapendant.x3d"));
                 }
-                Minecraft minecraft = Minecraft.getMinecraft();
+                Minecraft minecraft = Minecraft.getInstance();
                 GL11.glRotatef(90, 1, 0, 0);
                 GL11.glRotatef(180, 0, 0, 1);
                 float dx = -0.0f, dy = .0f, dz = 0.01f;
@@ -173,9 +173,9 @@ public class MegaWearablesHelper
                 GlStateManager.pushMatrix();
                 minecraft.renderEngine.bindTexture(pendant);
                 EnumDyeColor ret = EnumDyeColor.YELLOW;
-                if (stack.hasTagCompound() && stack.getTagCompound().hasKey("dyeColour"))
+                if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTagCompound().getInteger("dyeColour");
+                    int damage = stack.getTag().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -194,7 +194,7 @@ public class MegaWearablesHelper
         WearablesCompat.renderers.put("earring", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             X3dModel                 model;
 
             // Textures for each hat layer.
@@ -202,16 +202,16 @@ public class MegaWearablesHelper
             private ResourceLocation loop     = new ResourceLocation(PokecubeCore.ID,
                     "textures/worn/megaearring_2.png");
 
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             @Override
-            public void renderWearable(EnumWearable slot, EntityLivingBase wearer, ItemStack stack, float partialTicks)
+            public void renderWearable(EnumWearable slot, LivingEntity wearer, ItemStack stack, float partialTicks)
             {
                 if (slot != EnumWearable.EAR) return;
                 if (model == null)
                 {
                     model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megaearring.x3d"));
                 }
-                Minecraft minecraft = Minecraft.getMinecraft();
+                Minecraft minecraft = Minecraft.getInstance();
                 GL11.glRotatef(180, 0, 0, 1);
                 float dx = -0.0f, dy = .0f, dz = -0.3f;
                 GL11.glTranslatef(dx, dy, dz);
@@ -225,9 +225,9 @@ public class MegaWearablesHelper
                 GlStateManager.pushMatrix();
                 minecraft.renderEngine.bindTexture(loop);
                 EnumDyeColor ret = EnumDyeColor.YELLOW;
-                if (stack.hasTagCompound() && stack.getTagCompound().hasKey("dyeColour"))
+                if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTagCompound().getInteger("dyeColour");
+                    int damage = stack.getTag().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -246,7 +246,7 @@ public class MegaWearablesHelper
         WearablesCompat.renderers.put("glasses", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             X3dModel                 model;
 
             // Textures for each hat layer.
@@ -254,16 +254,16 @@ public class MegaWearablesHelper
             private ResourceLocation loop     = new ResourceLocation(PokecubeCore.ID,
                     "textures/worn/megaglasses_2.png");
 
-            @SideOnly(Side.CLIENT)
+            @OnlyIn(Dist.CLIENT)
             @Override
-            public void renderWearable(EnumWearable slot, EntityLivingBase wearer, ItemStack stack, float partialTicks)
+            public void renderWearable(EnumWearable slot, LivingEntity wearer, ItemStack stack, float partialTicks)
             {
                 if (slot != EnumWearable.EYE) return;
                 if (model == null)
                 {
                     model = new X3dModel(new ResourceLocation(PokecubeMod.ID, "models/worn/megaglasses.x3d"));
                 }
-                Minecraft minecraft = Minecraft.getMinecraft();
+                Minecraft minecraft = Minecraft.getInstance();
                 GL11.glRotatef(90, 1, 0, 0);
                 GL11.glRotatef(180, 0, 0, 1);
                 float dx = -0.0f, dy = .01f, dz = -0.25f;
@@ -278,9 +278,9 @@ public class MegaWearablesHelper
                 GlStateManager.pushMatrix();
                 minecraft.renderEngine.bindTexture(loop);
                 EnumDyeColor ret = EnumDyeColor.GRAY;
-                if (stack.hasTagCompound() && stack.getTagCompound().hasKey("dyeColour"))
+                if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTagCompound().getInteger("dyeColour");
+                    int damage = stack.getTag().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);

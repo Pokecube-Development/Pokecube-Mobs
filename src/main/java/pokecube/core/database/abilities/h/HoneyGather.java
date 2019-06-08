@@ -5,7 +5,7 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
 import thut.api.maths.Vector3;
@@ -36,7 +36,7 @@ public class HoneyGather extends Ability
         diff = Math.min(0.5, diff);
         if (Math.random() < 1 - diff) return;
 
-        EntityLivingBase entity = mob.getEntity();
+        LivingEntity entity = mob.getEntity();
         Vector3 here = Vector3.getNewVector().set(entity);
         Random rand = entity.getRNG();
 

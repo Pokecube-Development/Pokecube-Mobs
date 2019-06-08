@@ -1,6 +1,6 @@
 package pokecube.core.database.abilities.t;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.database.abilities.AbilityManager;
 import pokecube.core.interfaces.IPokemob;
@@ -12,7 +12,7 @@ public class Trace extends Ability
     Ability traced;
 
     @Override
-    public void onAgress(IPokemob mob, EntityLivingBase target)
+    public void onAgress(IPokemob mob, LivingEntity target)
     {
         IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
         if (traced != null) traced.onAgress(mob, target);
