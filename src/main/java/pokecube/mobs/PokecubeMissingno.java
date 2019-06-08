@@ -4,7 +4,7 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
-import net.minecraftforge.fml.common.event.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.interfaces.PokecubeMod;
 import pokecube.modelloader.CommonProxy;
