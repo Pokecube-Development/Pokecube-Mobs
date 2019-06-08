@@ -2,8 +2,6 @@ package pokecube.mobs.client.smd.impl;
 
 import java.util.ArrayList;
 
-import org.lwjgl.util.vector.Matrix4f;
-
 import com.google.common.collect.Lists;
 
 /** This is a section of an animation, it specifics a particular set of

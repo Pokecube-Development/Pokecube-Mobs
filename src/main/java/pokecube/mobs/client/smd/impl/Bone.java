@@ -5,8 +5,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.lwjgl.util.vector.Matrix4f;
-
 /** Bone, has associated Vertices for stretching. */
 public class Bone
 {

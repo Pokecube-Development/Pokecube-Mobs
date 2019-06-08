@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.lwjgl.opengl.GL11;
-import org.lwjgl.util.vector.Matrix4f;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;

@@ -1,8 +1,5 @@
 package pokecube.mobs.client.smd.impl;
 
-import org.lwjgl.util.vector.Matrix4f;
-import org.lwjgl.util.vector.Vector4f;
-
 import thut.core.client.render.model.Vertex;
 
 /** This is a Vertex which has a mutable position. It is for used in objects
