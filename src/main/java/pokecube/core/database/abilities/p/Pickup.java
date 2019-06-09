@@ -10,7 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.WorldServer;
+import net.minecraft.world.ServerWorld;
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.storage.loot.LootTable;
 import pokecube.core.PokecubeItems;
@@ -45,7 +45,7 @@ public class Pickup extends Ability
                     LootTable loottable = mob.getEntity().getEntityWorld().getLootTableManager()
                             .getLootTableFromLocation(lootTable);
                     LootContext.Builder lootcontext$builder = (new LootContext.Builder(
-                            (WorldServer) mob.getEntity().getEntityWorld())).withLootedEntity(mob.getEntity());
+                            (ServerWorld) mob.getEntity().getEntityWorld())).withLootedEntity(mob.getEntity());
                     // Apply bonuses from the player
                     if (mob.getPokemonOwner() instanceof ServerPlayerEntity)
                     {

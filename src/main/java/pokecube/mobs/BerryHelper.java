@@ -4,7 +4,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.ActionResultType;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.HappinessType;
@@ -233,6 +233,6 @@ public class BerryHelper implements IMoveConstants
         if (useStack && user instanceof PlayerEntity && ((PlayerEntity) user).capabilities.isCreativeMode)
             useStack = false;
         if (useStack) stack.splitStack(1);
-        return new ActionResult<ItemStack>(applied ? EnumActionResult.SUCCESS : EnumActionResult.FAIL, stack);
+        return new ActionResult<ItemStack>(applied ? ActionResultType.SUCCESS : ActionResultType.FAIL, stack);
     }
 }

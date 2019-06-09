@@ -5,7 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Direction;
-import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.Capability;
@@ -62,35 +62,35 @@ public class MiscItemHelper
             if (Tools.isStack(stack, "hpup"))
             {
                 pokemob.addEVs(new byte[] { 10, 0, 0, 0, 0, 0 });
-                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+                return new ActionResult<ItemStack>(ActionResultType.SUCCESS, stack);
             }
             if (Tools.isStack(stack, "protein"))
             {
                 pokemob.addEVs(new byte[] { 0, 10, 0, 0, 0, 0 });
-                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+                return new ActionResult<ItemStack>(ActionResultType.SUCCESS, stack);
             }
             if (Tools.isStack(stack, "iron"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 10, 0, 0, 0 });
-                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+                return new ActionResult<ItemStack>(ActionResultType.SUCCESS, stack);
             }
             if (Tools.isStack(stack, "calcium"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 10, 0, 0 });
-                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+                return new ActionResult<ItemStack>(ActionResultType.SUCCESS, stack);
             }
             if (Tools.isStack(stack, "zinc"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 0, 10, 0 });
-                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+                return new ActionResult<ItemStack>(ActionResultType.SUCCESS, stack);
             }
             if (Tools.isStack(stack, "carbos"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 0, 0, 10 });
-                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+                return new ActionResult<ItemStack>(ActionResultType.SUCCESS, stack);
             }
         }
-        return new ActionResult<ItemStack>(EnumActionResult.FAIL, stack);
+        return new ActionResult<ItemStack>(ActionResultType.FAIL, stack);
     }
 
     public static class CharcoalEffect implements IPokemobUseable, ICapabilityProvider
@@ -116,10 +116,10 @@ public class MiscItemHelper
                 if (moveuse.getMove().getType(pokemob) == FIRE)
                 {
                     moveuse.PWR *= 1.2;
-                    return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+                    return new ActionResult<ItemStack>(ActionResultType.SUCCESS, stack);
                 }
             }
-            return new ActionResult<ItemStack>(EnumActionResult.FAIL, stack);
+            return new ActionResult<ItemStack>(ActionResultType.FAIL, stack);
         }
 
         @Override
