@@ -4,7 +4,7 @@ import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
-import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
@@ -43,7 +43,7 @@ public class HoneyGather extends Ability
         here.set(entity).addTo(range * (rand.nextDouble() - 0.5), Math.min(10, range) * (rand.nextDouble() - 0.5),
                 range * (rand.nextDouble() - 0.5));
 
-        IBlockState state = here.getBlockState(entity.getEntityWorld());
+        BlockState state = here.getBlockState(entity.getEntityWorld());
         Block block = state.getBlock();
         if (block instanceof IGrowable)
         {

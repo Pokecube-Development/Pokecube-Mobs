@@ -64,7 +64,7 @@ public class MegaWearablesHelper
                 EnumDyeColor ret = EnumDyeColor.BLUE;
                 if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTag().getInteger("dyeColour");
+                    int damage = stack.getTag().getInt("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -123,7 +123,7 @@ public class MegaWearablesHelper
                 EnumDyeColor ret = EnumDyeColor.CYAN;
                 if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTag().getInteger("dyeColour");
+                    int damage = stack.getTag().getInt("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -175,7 +175,7 @@ public class MegaWearablesHelper
                 EnumDyeColor ret = EnumDyeColor.YELLOW;
                 if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTag().getInteger("dyeColour");
+                    int damage = stack.getTag().getInt("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -227,7 +227,7 @@ public class MegaWearablesHelper
                 EnumDyeColor ret = EnumDyeColor.YELLOW;
                 if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTag().getInteger("dyeColour");
+                    int damage = stack.getTag().getInt("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
@@ -280,7 +280,7 @@ public class MegaWearablesHelper
                 EnumDyeColor ret = EnumDyeColor.GRAY;
                 if (stack.hasTag() && stack.getTag().hasKey("dyeColour"))
                 {
-                    int damage = stack.getTag().getInteger("dyeColour");
+                    int damage = stack.getTag().getInt("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
                 Color colour = new Color(ret.getColorValue() + 0xFF000000);
