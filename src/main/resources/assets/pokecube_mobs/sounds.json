@@ -5273,63 +5273,9 @@
       }
     ]
   },
-  "mobs.deerlingsummer": {
-    "category": "hostile",
-    "subtitle": "pkmn.deerlingsummer.name",
-    "sounds": [
-      {
-        "name": "pokecube_mobs:mobs/deerling"
-      }
-    ]
-  },
-  "mobs.deerlingwinter": {
-    "category": "hostile",
-    "subtitle": "pkmn.deerlingwinter.name",
-    "sounds": [
-      {
-        "name": "pokecube_mobs:mobs/deerling"
-      }
-    ]
-  },
-  "mobs.deerlingautumn": {
-    "category": "hostile",
-    "subtitle": "pkmn.deerlingautumn.name",
-    "sounds": [
-      {
-        "name": "pokecube_mobs:mobs/deerling"
-      }
-    ]
-  },
   "mobs.sawsbuck": {
     "category": "hostile",
     "subtitle": "pkmn.sawsbuck.name",
-    "sounds": [
-      {
-        "name": "pokecube_mobs:mobs/sawsbuck"
-      }
-    ]
-  },
-  "mobs.sawsbucksummer": {
-    "category": "hostile",
-    "subtitle": "pkmn.sawsbucksummer.name",
-    "sounds": [
-      {
-        "name": "pokecube_mobs:mobs/sawsbuck"
-      }
-    ]
-  },
-  "mobs.sawsbuckautumn": {
-    "category": "hostile",
-    "subtitle": "pkmn.sawsbuckautumn.name",
-    "sounds": [
-      {
-        "name": "pokecube_mobs:mobs/sawsbuck"
-      }
-    ]
-  },
-  "mobs.sawsbuckwinter": {
-    "category": "hostile",
-    "subtitle": "pkmn.sawsbuckwinter.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/sawsbuck"

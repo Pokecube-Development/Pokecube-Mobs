@@ -5625,45 +5625,6 @@
         ]
       }
     },
-	{
-      "name": "Deerling Summer",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "plains",
-              "rate": "0.1"
-            }
-          }
-        ]
-      }
-    },
-	{
-      "name": "Deerling Winter",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "snowy",
-              "rate": "0.1"
-            }
-          }
-        ]
-      }
-    },
-	{
-      "name": "Deerling Autumn",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "flower",
-              "rate": "0.1"
-            }
-          }
-        ]
-      }
-    },
     {
       "name": "Emolga",
       "stats": {
