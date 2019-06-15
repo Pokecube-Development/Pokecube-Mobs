@@ -4,6 +4,14 @@
   <phase name="global" offset="0,0.3,0" rotation="1,0,0,0" scale="0.25"/>
   <metadata head="neck" headAxis="2" headAxis2="0" headCap="-60,60" headDir="-1"/>
   <phase type="idle">
+   <part name="arm1">
+    <component length="8" name="1" rotChange="0,3,0," rotOffset="-7,0,0," startKey="0"/>
+    <component length="8" name="2" rotChange="0,-3,0," startKey="10"/>
+   </part>
+   <part name="arm2">
+    <component length="8" name="1" rotChange="0,-3,0," rotOffset="-7,0,0," startKey="0"/>
+    <component length="8" name="2" rotChange="0,3,0," startKey="10"/>
+   </part>
    <part name="tail1">
     <component length="10" name="1" rotChange="10,0,0" rotOffset="-20,0,0" startKey="0"/>
     <component length="10" name="2" rotChange="-3,0,0" startKey="10"/>
@@ -28,6 +36,14 @@
   <phase type="walking">
    <part name="body">
     <component length="10" name="1" rotOffset="40,0,0" startKey="0"/>
+   </part>
+   <part name="arm1">
+    <component length="8" name="1" rotChange="0,3,0," rotOffset="20,0,0," startKey="0"/>
+    <component length="8" name="2" rotChange="0,-3,0," startKey="10"/>
+   </part>
+   <part name="arm2">
+    <component length="8" name="1" rotChange="0,-3,0," rotOffset="20,0,0," startKey="0"/>
+    <component length="8" name="2" rotChange="0,3,0," startKey="10"/>
    </part>
    <part name="body1">
     <component length="10" name="1" rotOffset="20,0,0" startKey="0"/>
@@ -65,6 +81,14 @@
    </part>
    <part name="body2">
     <component length="10" name="1" rotOffset="10,0,0" startKey="0"/>
+   </part>
+   <part name="arm1">
+    <component length="8" name="1" rotChange="0,3,0," rotOffset="20,0,0," startKey="0"/>
+    <component length="8" name="2" rotChange="0,-3,0," startKey="10"/>
+   </part>
+   <part name="arm2">
+    <component length="8" name="1" rotChange="0,-3,0," rotOffset="20,0,0," startKey="0"/>
+    <component length="8" name="2" rotChange="0,3,0," startKey="10"/>
    </part>
    <part name="tail1">
     <component length="10" name="1" rotChange="10,0,0" rotOffset="0,0,0" startKey="0"/>
