@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Wooly_mane,Right_legChild,HeadChild,Left_legChild" head="Head,Head,Head,head,head,Head_Vert_1,head,Head,Head,Head,shape2,Head,Head,Neck,Head,Head,Head,Head,Head,neck(head),head,Head,Shield,Head,Shield,Head,Head,Nose,head,Head,Head,Neck(head),Head1,head,head,Head1,Head,head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Right_Shroom,Left_Shroom" trans="Esmerald_22,Esmerald_21,Esmerald_2,Esmerald_1,Esmerald_12,Esmerald_11"/>
+  <phase type="walking">
+   <part name="Right_rear_leg_base">
+    <component length="10" name="1" rotChange="85.0,15.0,-50.0," rotOffset="35.0,-18.0,21.0," startKey="0"/>
+    <component length="10" name="2" rotChange="-85.0,-15.0,50.0," startKey="10"/>
+   </part>
+   <part name="Left_rear_leg_base">
+    <component length="10" name="1" rotChange="-62.0,21.0,-62.0," rotOffset="-27.0,-44.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="62.0,-21.0,62.0," startKey="10"/>
+   </part>
+   <part name="Left_front_leg_base">
+    <component length="10" name="1" rotChange="-15.0,-11.0,-5.0," rotOffset="-26.999998635856926,-8.00000166452395,-11.0000009131805," startKey="0"/>
+    <component length="10" name="2" rotChange="15.0,11.0,5.0," startKey="10"/>
+   </part>
+   <part name="Right_front_leg_base">
+    <component length="10" name="1" rotChange="15.0,-11.0,-5.0," rotOffset="-18.000001364143074,3.0000016645239427,9.131805001061366E-7," startKey="0"/>
+    <component length="10" name="2" rotChange="-15.0,11.0,4.999999999999993," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

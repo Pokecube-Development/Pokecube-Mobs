@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <phase type="flying">
+   <part name="Right_lower_wing">
+    <component length="10" name="1" rotChange="0.0,0.0,60.0," rotOffset="-0.0,30.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-60.0," startKey="10"/>
+   </part>
+   <part name="Left_main_wing">
+    <component length="10" name="1" rotChange="0.0,0.0,130.0," rotOffset="-0.0,80.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-130.0," startKey="10"/>
+   </part>
+   <part name="Right_main_wing">
+    <component length="10" name="1" rotChange="0.0,0.0,-130.0," rotOffset="-0.0,-80.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,130.0," startKey="10"/>
+   </part>
+   <part name="Left_lower_wing">
+    <component length="10" name="1" rotChange="0.0,0.0,-60.0," rotOffset="-0.0,-30.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,60.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

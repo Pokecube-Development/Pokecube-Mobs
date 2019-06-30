@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Right_legChild,HeadChild,Wooly_mane,Left_legChild" head="Head,Head,head,head,head,Head,Head,Neck,Head,shape2,head,head,Head,Head,Head,Head,head,Head,head,neck(head),head,Head,Head,Head,Shield,head,head,Shield,Head,Mouth,Neck,head,head,Neck(head),Head,Head1,head,Head_dome,Head1,Head,Head_jelly,head,Head,Bottom_Head_Piece,Head,Head,Head,Head,Head,Head_Vert_1,Head,Head,Head,Head,Head,Neck,Neck,Head,Head,head,Head,Body,Head,Head,Head,Thorax,Nose,Head,head,Head,Head,Head,head,Head,head,head,Head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Left_Shroom,Right_Shroom" trans="Esmerald_22,Body 4,Esmerald_21,Esmerald_2,Top_Hat,Tail,Body 2,Body,Right_arm,Esmerald_12,Esmerald_11,Left_arm,Esmerald_1,Body 3,Hat,Body 1,Hat 1,Hat 2"/>
+  <phase type="openMask">
+   <part name="rightarm2">
+    <component length="1" name="ra0" rotOffset="-0.0,30.0,-0.0," startKey="0"/>
+    <component length="3" name="ra1" rotChange="0.0,0.0,30.0," startKey="10"/>
+   </part>
+   <part name="leftarm2">
+    <component length="1" name="la0" startKey="0"/>
+    <component length="3" name="la1" rotChange="0.0,0.0,-30.0," startKey="10"/>
+   </part>
+   <part name="rightmask1">
+    <component length="1" name="rm0" posOffset="3.5,0.0,0.0," startKey="0"/>
+    <component length="1" name="rm1" posChange="0.2,0.0,0.0," posOffset="-0.2,0.0,0.0," startKey="5"/>
+    <component length="3" name="rm2" posChange="-3.5,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="leftmask1">
+    <component length="1" name="lm0" posOffset="-3.5,0.0,0.0," startKey="0"/>
+    <component length="1" name="lm1" posChange="-0.2,0.0,0.0," posOffset="0.2,0.0,0.0," startKey="5"/>
+    <component length="3" name="lm2" posChange="3.5,0.0,0.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>
