@@ -12303,7 +12303,8 @@
             "fly": "true",
             "shoulder": "FALSE"
           }
-        }
+        },
+		"movementType": "flying"
       },
       "moves": {
         "lvlupMoves": {
@@ -46522,7 +46523,7 @@
     {
       "name": "Sawsbuck",
       "number": 586,
-      "base": true,
+	  "base": true,
       "stats": {
         "stats": {
           "values": {
@@ -57628,7 +57629,11 @@
         "captureRate": 45,
         "expMode": "Medium Slow",
         "genderRatio": 30,
-        "logics": {},
+        "logics": {
+          "values": {
+            "shoulder": "FALSE"
+          }
+        },
         "formeItems": {},
         "movementType": "flying"
       },
@@ -57842,7 +57847,11 @@
         "captureRate": 45,
         "expMode": "Medium Slow",
         "genderRatio": 30,
-        "logics": {},
+        "logics": {
+          "values": {
+            "shoulder": "FALSE"
+          }
+        },
         "formeItems": {}
       },
       "moves": {
@@ -58058,7 +58067,11 @@
         "captureRate": 45,
         "expMode": "Medium Slow",
         "genderRatio": 30,
-        "logics": {},
+        "logics": {
+          "values": {
+            "shoulder": "FALSE"
+          }
+        },
         "formeItems": {},
         "movementType": "water"
       },
