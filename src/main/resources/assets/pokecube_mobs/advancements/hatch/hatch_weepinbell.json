@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.weepinbell.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.weepinbell.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_weepinbell": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "weepinbell"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_bellsprout"
+}

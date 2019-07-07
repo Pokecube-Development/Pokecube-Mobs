@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.masquerain.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.masquerain.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_masquerain": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "masquerain"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_surskit"
+}

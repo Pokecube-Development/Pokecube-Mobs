@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.bronzong.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.bronzong.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_bronzong": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "bronzong"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_bronzor"
+}

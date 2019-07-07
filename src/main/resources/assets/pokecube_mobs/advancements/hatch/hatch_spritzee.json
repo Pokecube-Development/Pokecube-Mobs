@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.spritzee.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.spritzee.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_spritzee": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "spritzee"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

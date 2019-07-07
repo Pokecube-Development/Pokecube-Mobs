@@ -1,7 +1,7 @@
 package pokecube.core.moves.implementations.attacks.special;
 
-import pokecube.core.PokecubeCore;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Basic;
@@ -20,15 +20,20 @@ public class MoveDisable extends Move_Basic
         super.onAttack(packet);
         if (!(packet.canceled || packet.failed || packet.denied))
         {
-            final IPokemob target = CapabilityPokemob.getPokemobFor(packet.attacked);
+            IPokemob target = CapabilityPokemob.getPokemobFor(packet.attacked);
             if (target != null)
             {
-                final int index = packet.attacker.getEntity().getRNG().nextInt(4);
-                final int timer = packet.attacker.getEntity().getRNG().nextInt(7);
-                if (target.getDisableTimer(index) <= 0 && timer > 0) target.setDisableTimer(index, PokecubeCore
-                        .getConfig().attackCooldown * timer);
-                else // TODO failed message
+                int index = packet.attacker.getEntity().getRNG().nextInt(4);
+                int timer = packet.attacker.getEntity().getRNG().nextInt(7);
+                if (target.getDisableTimer(index) <= 0 && timer > 0)
+                {
+                    target.setDisableTimer(index, PokecubeMod.core.getConfig().attackCooldown * timer);
+                }
+                else
+                {
+                    // TODO failed message
                     return;
+                }
             }
         }
     }

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.goomy.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.goomy.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_goomy": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "goomy"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

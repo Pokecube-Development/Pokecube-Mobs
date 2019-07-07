@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.cloyster.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.cloyster.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_cloyster": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "cloyster"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_shellder"
+}

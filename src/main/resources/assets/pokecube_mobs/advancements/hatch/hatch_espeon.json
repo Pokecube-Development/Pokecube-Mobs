@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.espeon.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.espeon.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_espeon": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "espeon"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_eevee"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.wynaut.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.wynaut.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_wynaut": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "wynaut"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

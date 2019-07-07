@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.dodrio.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.dodrio.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_dodrio": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "dodrio"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_doduo"
+}

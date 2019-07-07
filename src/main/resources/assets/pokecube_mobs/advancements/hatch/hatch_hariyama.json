@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.hariyama.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.hariyama.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_hariyama": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "hariyama"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_makuhita"
+}

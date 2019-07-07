@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.walrein.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.walrein.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_walrein": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "walrein"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_sealeo"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.tentacruel.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.tentacruel.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_tentacruel": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "tentacruel"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_tentacool"
+}

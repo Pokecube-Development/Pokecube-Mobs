@@ -1,0 +1,386 @@
+{
+  "recipes": [
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "III,CBC,III",
+      "output": {
+        "values": {
+          "id": "pokecube:premiercube",
+          "n": "12"
+        }
+      },
+      "inputs": [
+        {
+          "key": "I",
+          "values": {
+            "id": "minecraft:iron_ingot"
+          }
+        },
+        {
+          "key": "B",
+          "values": {
+            "id": "minecraft:stone_button"
+          }
+        },
+        {
+          "key": "C",
+          "values": {
+            "d": "32767",
+            "id": "minecraft:coal"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": " T ,PPP,   ",
+      "output": {
+        "values": {
+          "id": "pokecube:snagcube",
+          "n": "3"
+        }
+      },
+      "inputs": [
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "T",
+          "values": {
+            "id": "minecraft:ghast_tear"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": " R ,PPP,   ",
+      "output": {
+        "values": {
+          "id": "pokecube:pokecube",
+          "n": "3"
+        }
+      },
+      "inputs": [
+        {
+          "key": "R",
+          "values": {
+            "id": "minecraft:redstone"
+          }
+        },
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "RLR,PPP,   ",
+      "output": {
+        "values": {
+          "id": "pokecube:greatcube",
+          "n": "3"
+        }
+      },
+      "inputs": [
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "R",
+          "values": {
+            "id": "minecraft:redstone"
+          }
+        },
+        {
+          "key": "L",
+          "values": {
+            "oreDict": "dyeBlue"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "GFG,PPP,   ",
+      "output": {
+        "values": {
+          "id": "pokecube:ultracube",
+          "n": "3"
+        }
+      },
+      "inputs": [
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "G",
+          "values": {
+            "id": "minecraft:gold_ingot"
+          }
+        },
+        {
+          "key": "F",
+          "values": {
+            "id": "minecraft:flint"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "CGC,GPG,CGC",
+      "output": {
+        "values": {
+          "id": "pokecube:duskcube",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "G",
+          "values": {
+            "oreDict": "dyeGreen"
+          }
+        },
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "C",
+          "values": {
+            "id": "minecraft:coal"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "CGC,GPG,CGC",
+      "output": {
+        "values": {
+          "id": "pokecube:quickcube",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "G",
+          "values": {
+            "oreDict": "dyeBlue"
+          }
+        },
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "C",
+          "values": {
+            "id": "minecraft:gold_ingot"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "CSC,CPC,QQQ",
+      "output": {
+        "values": {
+          "id": "pokecube:timercube",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "C",
+          "values": {
+            "id": "minecraft:coal"
+          }
+        },
+        {
+          "key": "S",
+          "values": {
+            "d": "1",
+            "id": "minecraft:sand"
+          }
+        },
+        {
+          "key": "Q",
+          "values": {
+            "oreDict": "gemQuartz"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SPS,SSS",
+      "output": {
+        "values": {
+          "id": "pokecube:netcube",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:string"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "GIG,IPI,GGG",
+      "output": {
+        "values": {
+          "id": "pokecube:nestcube",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "G",
+          "values": {
+            "d": "32767",
+            "id": "minecraft:tallgrass"
+          }
+        },
+        {
+          "key": "I",
+          "values": {
+            "d": "32767",
+            "id": "minecraft:gold_ingot"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "WWW,IPI,WWW",
+      "output": {
+        "values": {
+          "id": "pokecube:divecube",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "I",
+          "values": {
+            "oreDict": "dyeBlue"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:water_bucket"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "RRR,CPC,III",
+      "output": {
+        "values": {
+          "id": "pokecube:repeatcube",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "I",
+          "values": {
+            "id": "minecraft:iron_ingot"
+          }
+        },
+        {
+          "key": "R",
+          "values": {
+            "id": "minecraft:redstone"
+          }
+        },
+        {
+          "key": "P",
+          "values": {
+            "id": "pokecube:premiercube"
+          }
+        },
+        {
+          "key": "C",
+          "values": {
+            "id": "minecraft:coal"
+          }
+        }
+      ],
+      "values": {}
+    }
+  ]
+}

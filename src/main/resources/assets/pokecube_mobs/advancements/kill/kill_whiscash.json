@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.whiscash.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.whiscash.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_whiscash": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "whiscash"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_barboach"
+}

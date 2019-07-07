@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.diggersby.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.diggersby.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_diggersby": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "diggersby"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_bunnelby"
+}

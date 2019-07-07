@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.deerling.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.deerling.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_deerling": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "deerling"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

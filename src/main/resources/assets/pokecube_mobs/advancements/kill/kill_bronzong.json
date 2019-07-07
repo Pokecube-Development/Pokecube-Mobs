@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.bronzong.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.bronzong.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_bronzong": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "bronzong"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_bronzor"
+}

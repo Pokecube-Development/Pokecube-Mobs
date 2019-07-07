@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.fletchinder.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.fletchinder.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_fletchinder": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "fletchinder"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_fletchling"
+}

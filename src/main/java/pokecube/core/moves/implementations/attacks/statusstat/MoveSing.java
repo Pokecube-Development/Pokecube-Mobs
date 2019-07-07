@@ -15,6 +15,6 @@ public class MoveSing extends Move_Basic
     public void preAttack(MovePacket packet)
     {
         super.preAttack(packet);
-        this.soundUser = packet.attacker.getSound();
+        soundUser = packet.attacker.getSound();
     }
 }

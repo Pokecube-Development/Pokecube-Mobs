@@ -1,7 +1,6 @@
 package pokecube.core.moves.implementations.attacks.special;
 
 import net.minecraft.util.DamageSource;
-import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
@@ -24,23 +23,26 @@ public class MoveCurse extends Move_Basic
         if (packet.canceled || packet.failed) return;
         if (packet.attacker.isType(PokeType.getType("ghost")))
         {
-            final IPokemob target = CapabilityPokemob.getPokemobFor(packet.attacked);
+            IPokemob target = CapabilityPokemob.getPokemobFor(packet.attacked);
             boolean apply = true;
             if (target != null)
             {
                 apply = false;
-                if ((target.getChanges() & IMoveConstants.CHANGE_CURSE) == 0) apply = true;
+                if ((target.getChanges() & CHANGE_CURSE) == 0)
+                {
+                    apply = true;
+                }
             }
             if (apply)
             {
-                final MovePacket move = new MovePacket(packet.attacker, packet.attacked, this.getName(), PokeType
-                        .getType("ghost"), 0, 0, (byte) 0, IMoveConstants.CHANGE_CURSE, true);
+                MovePacket move = new MovePacket(packet.attacker, packet.attacked, getName(), PokeType.getType("ghost"),
+                        0, 0, (byte) 0, CHANGE_CURSE, true);
                 if (target != null) target.onMoveUse(move);
                 if (!move.canceled)
                 {
-                    MovesUtils.addChange(packet.attacked, packet.attacker, IMoveConstants.CHANGE_CURSE);
-                    packet.attacker.getEntity().attackEntityFrom(DamageSource.MAGIC, packet.attacker.getEntity()
-                            .getMaxHealth() / 2);
+                    MovesUtils.addChange(packet.attacked, packet.attacker, CHANGE_CURSE);
+                    packet.attacker.getEntity().attackEntityFrom(DamageSource.MAGIC,
+                            packet.attacker.getEntity().getMaxHealth() / 2);
                 }
             }
         }

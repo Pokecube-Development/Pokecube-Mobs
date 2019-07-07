@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.poliwrath.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.poliwrath.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_poliwrath": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "poliwrath"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_poliwhirl"
+}

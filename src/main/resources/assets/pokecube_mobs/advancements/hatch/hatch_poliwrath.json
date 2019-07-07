@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.poliwrath.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.poliwrath.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_poliwrath": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "poliwrath"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_poliwhirl"
+}

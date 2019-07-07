@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.victreebel.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.victreebel.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_victreebel": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "victreebel"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_weepinbell"
+}

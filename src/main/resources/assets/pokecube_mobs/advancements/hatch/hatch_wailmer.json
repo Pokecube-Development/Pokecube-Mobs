@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.wailmer.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.wailmer.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_wailmer": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "wailmer"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

@@ -13,22 +13,16 @@ public class MovePowersplit extends Move_Basic
 {
     public static class Modifier implements IStatsModifiers
     {
-        float[] modifiers = new float[Stats.values().length];
-
         public Modifier()
         {
         }
 
-        @Override
-        public float getModifier(Stats stat)
-        {
-            return this.modifiers[stat.ordinal()];
-        }
+        float[] modifiers = new float[Stats.values().length];
 
         @Override
-        public float getModifierRaw(Stats stat)
+        public boolean isFlat()
         {
-            return this.modifiers[stat.ordinal()];
+            return true;
         }
 
         @Override
@@ -38,21 +32,27 @@ public class MovePowersplit extends Move_Basic
         }
 
         @Override
-        public boolean isFlat()
+        public float getModifier(Stats stat)
         {
-            return true;
+            return modifiers[stat.ordinal()];
+        }
+
+        @Override
+        public float getModifierRaw(Stats stat)
+        {
+            return modifiers[stat.ordinal()];
+        }
+
+        @Override
+        public void setModifier(Stats stat, float value)
+        {
+            modifiers[stat.ordinal()] = value;
         }
 
         @Override
         public boolean persistant()
         {
             return false;
-        }
-
-        @Override
-        public void setModifier(Stats stat, float value)
-        {
-            this.modifiers[stat.ordinal()] = value;
         }
 
     }
@@ -72,23 +72,23 @@ public class MovePowersplit extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        final IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
+        IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
         if (attacked != null)
         {
-            final int spatk = packet.attacker.getStat(Stats.SPATTACK, true);
-            final int atk = packet.attacker.getStat(Stats.ATTACK, true);
+            int spatk = packet.attacker.getStat(Stats.SPATTACK, true);
+            int atk = packet.attacker.getStat(Stats.ATTACK, true);
 
-            final int spatk2 = attacked.getStat(Stats.SPATTACK, true);
-            final int atk2 = attacked.getStat(Stats.ATTACK, true);
+            int spatk2 = attacked.getStat(Stats.SPATTACK, true);
+            int atk2 = attacked.getStat(Stats.ATTACK, true);
 
-            final int averageAtk = (atk + atk2) / 2;
-            final int averageSpatk = (spatk + spatk2) / 2;
-            final Modifier mods = packet.attacker.getModifiers().getModifiers("powersplit", Modifier.class);
-            final Modifier mods2 = attacked.getModifiers().getModifiers("powersplit", Modifier.class);
+            int averageAtk = (atk + atk2) / 2;
+            int averageSpatk = (spatk + spatk2) / 2;
+            Modifier mods = packet.attacker.getModifiers().getModifiers("powersplit", Modifier.class);
+            Modifier mods2 = attacked.getModifiers().getModifiers("powersplit", Modifier.class);
 
             mods.setModifier(Stats.ATTACK, -atk + averageAtk);
             mods2.setModifier(Stats.ATTACK, -atk2 + averageAtk);
-
+            
             mods.setModifier(Stats.SPATTACK, -spatk + averageSpatk);
             mods2.setModifier(Stats.SPATTACK, -spatk2 + averageSpatk);
             PacketSyncModifier.sendUpdate("powersplit", packet.attacker);

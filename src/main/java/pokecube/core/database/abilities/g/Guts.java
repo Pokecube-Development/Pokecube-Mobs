@@ -10,6 +10,9 @@ public class Guts extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        if (mob == move.attacker && move.pre) move.statMults[Stats.ATTACK.ordinal()] = 1.5f;
+        if (mob == move.attacker && move.pre)
+        {
+            move.statMults[Stats.ATTACK.ordinal()] = 1.5f;
+        }
     }
 }

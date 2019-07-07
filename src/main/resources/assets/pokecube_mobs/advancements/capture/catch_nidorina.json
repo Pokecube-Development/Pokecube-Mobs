@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.nidorina.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.nidorina.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_nidorina": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "nidorina"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_nidoranf"
+}

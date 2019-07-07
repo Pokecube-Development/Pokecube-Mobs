@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.hitmonchan.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.hitmonchan.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_hitmonchan": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "hitmonchan"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_tyrogue"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.tsareena.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.tsareena.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_tsareena": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "tsareena"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_steenee"
+}

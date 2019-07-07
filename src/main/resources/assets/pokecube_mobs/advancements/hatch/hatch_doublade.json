@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.doublade.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.doublade.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_doublade": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "doublade"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_honedge"
+}

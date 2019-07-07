@@ -17,7 +17,9 @@ public class Rattled extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        if (mob == move.attacked && !move.pre && this.isCorrectType(move.attackType)) MovesUtils.handleStats2(mob, mob
-                .getEntity(), IMoveConstants.VIT, IMoveConstants.RAISE);
+        if (mob == move.attacked && !move.pre && isCorrectType(move.attackType))
+        {
+            MovesUtils.handleStats2(mob, mob.getEntity(), IMoveConstants.VIT, IMoveConstants.RAISE);
+        }
     }
 }

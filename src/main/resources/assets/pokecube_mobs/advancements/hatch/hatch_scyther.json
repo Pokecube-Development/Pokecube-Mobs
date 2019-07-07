@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.scyther.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.scyther.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_scyther": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "scyther"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

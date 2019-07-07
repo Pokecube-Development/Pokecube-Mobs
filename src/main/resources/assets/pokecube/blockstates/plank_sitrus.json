@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "pokecube:block/plank_sitrus" }
+        "normal": { "model": "pokecube:plank_sitrus" }
     }
 }

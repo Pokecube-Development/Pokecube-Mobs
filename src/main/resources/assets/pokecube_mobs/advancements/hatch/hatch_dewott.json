@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.dewott.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.dewott.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_dewott": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "dewott"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_oshawott"
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.sudowoodo.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.sudowoodo.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_sudowoodo": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "sudowoodo"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_bonsly"
+}

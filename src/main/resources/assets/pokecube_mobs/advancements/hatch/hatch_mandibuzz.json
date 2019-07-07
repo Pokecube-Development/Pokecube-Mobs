@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.mandibuzz.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.mandibuzz.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_mandibuzz": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "mandibuzz"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_vullaby"
+}

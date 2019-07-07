@@ -4,20 +4,19 @@ import java.util.Random;
 
 import org.lwjgl.opengl.GL11;
 
-import com.mojang.blaze3d.platform.GlStateManager;
-
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.MobEntity;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import thut.core.client.render.animation.ModelHolder;
 import thut.core.client.render.model.IExtendedModelPart;
 import thut.core.client.render.model.IModelRenderer;
-import thut.core.client.render.texturing.IRetexturableModel;
+import thut.core.client.render.model.IRetexturableModel;
 import thut.core.client.render.wrappers.ModelWrapper;
 
-public class ModelWrapperSpinda<T extends MobEntity> extends ModelWrapper<T>
+public class ModelWrapperSpinda extends ModelWrapper
 {
     private static final ResourceLocation normalh  = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaspotsh.png");
@@ -43,37 +42,34 @@ public class ModelWrapperSpinda<T extends MobEntity> extends ModelWrapper<T>
 
     /** Sets the models various rotation angles then renders the model. */
     @Override
-    public void render(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+    public void render(Entity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
             float headPitch, float scale)
     {
         GlStateManager.pushMatrix();
         GlStateManager.disableCull();
-        final IPokemob spinda = CapabilityPokemob.getPokemobFor(entityIn);
-        for (final String partName : this.imodel.getParts().keySet())
+        IPokemob spinda = CapabilityPokemob.getPokemobFor(entityIn);
+        for (String partName : imodel.getParts().keySet())
         {
-            final IExtendedModelPart part = this.imodel.getParts().get(partName);
+            IExtendedModelPart part = imodel.getParts().get(partName);
             if (part == null) continue;
             try
             {
                 if (part.getParent() == null)
                 {
-                    final Random rand = new Random(spinda.getRNGValue());
+                    Random rand = new Random(spinda.getRNGValue());
                     ((IRetexturableModel) part).setTexturer(null);
 
                     // Render the base layer of the head and ears
                     GlStateManager.pushMatrix();
-                    Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny()
-                            ? ModelWrapperSpinda.shinyhb : ModelWrapperSpinda.normalhb);
+                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyhb : normalhb);
                     part.renderOnly("Head");
                     GlStateManager.popMatrix();
                     GlStateManager.pushMatrix();
-                    Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny()
-                            ? ModelWrapperSpinda.shinyeb : ModelWrapperSpinda.normaleb);
+                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
                     part.renderOnly("Left_ear");
                     GlStateManager.popMatrix();
                     GlStateManager.pushMatrix();
-                    Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny()
-                            ? ModelWrapperSpinda.shinyeb : ModelWrapperSpinda.normaleb);
+                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
                     part.renderOnly("Right_ear");
                     GlStateManager.popMatrix();
 
@@ -87,8 +83,7 @@ public class ModelWrapperSpinda<T extends MobEntity> extends ModelWrapper<T>
                         GL11.glLoadIdentity();
                         GL11.glTranslatef(dx, dy, 0.0F);
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-                        Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny()
-                                ? ModelWrapperSpinda.shinyh : ModelWrapperSpinda.normalh);
+                        Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyh : normalh);
                         part.renderOnly("Head");
                         GL11.glMatrixMode(GL11.GL_TEXTURE);
                         GL11.glLoadIdentity();
@@ -101,8 +96,7 @@ public class ModelWrapperSpinda<T extends MobEntity> extends ModelWrapper<T>
                         dy = rand.nextFloat() / 2 + 0.5f;
                         GL11.glTranslatef(dx, dy, 0.0F);
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-                        Minecraft.getInstance().getTextureManager().bindTexture(spinda.isShiny()
-                                ? ModelWrapperSpinda.shinye : ModelWrapperSpinda.normale);
+                        Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinye : normale);
                         part.renderOnly("Left_ear");
                         GL11.glMatrixMode(GL11.GL_TEXTURE);
                         GL11.glLoadIdentity();
@@ -122,22 +116,22 @@ public class ModelWrapperSpinda<T extends MobEntity> extends ModelWrapper<T>
                         GlStateManager.popMatrix();
                     }
                     // Render the model normally.
-                    if (this.renderer.getTexturer() != null && part instanceof IRetexturableModel)
+                    if (renderer.getTexturer() != null && part instanceof IRetexturableModel)
                     {
-                        this.renderer.getTexturer().bindObject(entityIn);
-                        ((IRetexturableModel) part).setTexturer(this.renderer.getTexturer());
+                        renderer.getTexturer().bindObject(entityIn);
+                        ((IRetexturableModel) part).setTexturer(renderer.getTexturer());
                     }
                     GlStateManager.pushMatrix();
                     part.renderAll();
                     GlStateManager.popMatrix();
                 }
             }
-            catch (final Exception e)
+            catch (Exception e)
             {
                 e.printStackTrace();
             }
         }
-        GlStateManager.color4f(1, 1, 1, 1);
+        GlStateManager.color(1, 1, 1, 1);
         GlStateManager.enableCull();
         GlStateManager.popMatrix();
     }

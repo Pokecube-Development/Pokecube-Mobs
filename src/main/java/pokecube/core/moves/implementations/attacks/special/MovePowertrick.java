@@ -11,22 +11,16 @@ public class MovePowertrick extends Move_Basic
 {
     public static class Modifier implements IStatsModifiers
     {
-        float[] modifiers = new float[Stats.values().length];
-
         public Modifier()
         {
         }
 
-        @Override
-        public float getModifier(Stats stat)
-        {
-            return this.modifiers[stat.ordinal()];
-        }
+        float[] modifiers = new float[Stats.values().length];
 
         @Override
-        public float getModifierRaw(Stats stat)
+        public boolean isFlat()
         {
-            return this.modifiers[stat.ordinal()];
+            return true;
         }
 
         @Override
@@ -36,21 +30,27 @@ public class MovePowertrick extends Move_Basic
         }
 
         @Override
-        public boolean isFlat()
+        public float getModifier(Stats stat)
         {
-            return true;
+            return modifiers[stat.ordinal()];
+        }
+
+        @Override
+        public float getModifierRaw(Stats stat)
+        {
+            return modifiers[stat.ordinal()];
+        }
+
+        @Override
+        public void setModifier(Stats stat, float value)
+        {
+            modifiers[stat.ordinal()] = value;
         }
 
         @Override
         public boolean persistant()
         {
             return false;
-        }
-
-        @Override
-        public void setModifier(Stats stat, float value)
-        {
-            this.modifiers[stat.ordinal()] = value;
         }
 
     }
@@ -70,11 +70,11 @@ public class MovePowertrick extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        final Modifier mods = packet.attacker.getModifiers().getModifiers(this.name, Modifier.class);
-        final int def = packet.attacker.getStat(Stats.DEFENSE, true);
-        final int atk = packet.attacker.getStat(Stats.ATTACK, true);
-        final float modDef = mods.getModifierRaw(Stats.DEFENSE);
-        final float modAtk = mods.getModifierRaw(Stats.ATTACK);
+        Modifier mods = packet.attacker.getModifiers().getModifiers(name, Modifier.class);
+        int def = packet.attacker.getStat(Stats.DEFENSE, true);
+        int atk = packet.attacker.getStat(Stats.ATTACK, true);
+        float modDef = mods.getModifierRaw(Stats.DEFENSE);
+        float modAtk = mods.getModifierRaw(Stats.ATTACK);
         mods.setModifier(Stats.DEFENSE, modDef - def + atk);
         mods.setModifier(Stats.ATTACK, modAtk - atk + def);
         PacketSyncModifier.sendUpdate("powertrick", packet.attacker);

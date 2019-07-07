@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.palpitoad.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.palpitoad.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_palpitoad": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "palpitoad"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_tympole"
+}

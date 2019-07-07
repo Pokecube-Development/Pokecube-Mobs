@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.cacnea.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.cacnea.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_cacnea": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "cacnea"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

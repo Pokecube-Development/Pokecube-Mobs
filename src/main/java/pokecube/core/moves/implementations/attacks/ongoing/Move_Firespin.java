@@ -20,7 +20,7 @@ public class Move_Firespin extends Move_Ongoing
     @Override
     public void doOngoingEffect(IOngoingAffected mob, IOngoingEffect effect)
     {
-        final IPokemob pokemob = CapabilityPokemob.getPokemobFor(mob.getEntity());
+        IPokemob pokemob = CapabilityPokemob.getPokemobFor(mob.getEntity());
         if (pokemob != null && pokemob.isType(PokeType.getType("ghost"))) return;
         super.doOngoingEffect(mob, effect);
     }
@@ -28,7 +28,7 @@ public class Move_Firespin extends Move_Ongoing
     @Override
     public int getDuration()
     {
-        final Random r = new Random();
+        Random r = new Random();
         return 2 + r.nextInt(4);
     }
 

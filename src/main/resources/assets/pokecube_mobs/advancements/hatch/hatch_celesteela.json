@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.celesteela.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.celesteela.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_celesteela": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "celesteela"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

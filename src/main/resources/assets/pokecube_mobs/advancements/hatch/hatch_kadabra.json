@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.kadabra.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.kadabra.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_kadabra": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "kadabra"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_abra"
+}

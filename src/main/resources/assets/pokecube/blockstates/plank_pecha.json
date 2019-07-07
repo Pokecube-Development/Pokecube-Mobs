@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "pokecube:block/plank_pecha" }
+        "normal": { "model": "pokecube:plank_pecha" }
     }
 }

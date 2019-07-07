@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.vespiquen.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.vespiquen.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_vespiquen": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "vespiquen"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_combee"
+}

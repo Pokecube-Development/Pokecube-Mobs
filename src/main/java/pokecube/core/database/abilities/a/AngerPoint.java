@@ -11,7 +11,9 @@ public class AngerPoint extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        if (move.didCrit && mob == move.attacked) MovesUtils.handleStats2(mob, move.attacker.getEntity(),
-                IMoveConstants.ATTACK, IMoveConstants.RAISE);
+        if(move.didCrit && mob == move.attacked)
+        {
+            MovesUtils.handleStats2(mob, move.attacker.getEntity(), IMoveConstants.ATTACK, IMoveConstants.RAISE);
+        }
     }
 }

@@ -3,9 +3,9 @@ package pokecube.core.database.abilities.h;
 import java.util.Random;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.IGrowable;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
 import thut.api.maths.Vector3;
@@ -18,10 +18,13 @@ public class HoneyGather extends Ability
     public Ability init(Object... args)
     {
         for (int i = 0; i < 2; i++)
-            if (args != null && args.length > i) if (args[i] instanceof Integer)
+            if (args != null && args.length > i)
             {
-                this.range = (int) args[i];
-                return this;
+                if (args[i] instanceof Integer)
+                {
+                    range = (int) args[i];
+                    return this;
+                }
             }
         return this;
     }
@@ -29,29 +32,34 @@ public class HoneyGather extends Ability
     @Override
     public void onUpdate(IPokemob mob)
     {
-        double diff = 0.0002 * this.range * this.range;
+        double diff = (0.0002 * range * range);
         diff = Math.min(0.5, diff);
         if (Math.random() < 1 - diff) return;
 
-        final LivingEntity entity = mob.getEntity();
-        final Vector3 here = Vector3.getNewVector().set(entity);
-        final Random rand = entity.getRNG();
+        EntityLivingBase entity = mob.getEntity();
+        Vector3 here = Vector3.getNewVector().set(entity);
+        Random rand = entity.getRNG();
 
-        here.set(entity).addTo(this.range * (rand.nextDouble() - 0.5), Math.min(10, this.range) * (rand.nextDouble()
-                - 0.5), this.range * (rand.nextDouble() - 0.5));
+        here.set(entity).addTo(range * (rand.nextDouble() - 0.5), Math.min(10, range) * (rand.nextDouble() - 0.5),
+                range * (rand.nextDouble() - 0.5));
 
-        final BlockState state = here.getBlockState(entity.getEntityWorld());
-        final Block block = state.getBlock();
+        IBlockState state = here.getBlockState(entity.getEntityWorld());
+        Block block = state.getBlock();
         if (block instanceof IGrowable)
         {
-            final IGrowable growable = (IGrowable) block;
+            IGrowable growable = (IGrowable) block;
             if (growable.canGrow(entity.getEntityWorld(), here.getPos(), here.getBlockState(entity.getEntityWorld()),
-                    entity.getEntityWorld().isRemote)) if (!entity.getEntityWorld().isRemote) if (growable
-                            .canUseBonemeal(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(),
-                                    state))
+                    entity.getEntityWorld().isRemote))
             {
-                growable.grow(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(), state);
-                return;
+                if (!entity.getEntityWorld().isRemote)
+                {
+                    if (growable.canUseBonemeal(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(),
+                            state))
+                    {
+                        growable.grow(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(), state);
+                        return;
+                    }
+                }
             }
         }
     }

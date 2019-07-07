@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.salamence.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.salamence.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_salamence": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "salamence"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_shelgon"
+}

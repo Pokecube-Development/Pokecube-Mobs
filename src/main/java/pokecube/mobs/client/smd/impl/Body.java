@@ -15,19 +15,19 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
 import net.minecraft.util.ResourceLocation;
-import thut.core.client.render.animation.IAnimationChanger;
-import thut.core.client.render.texturing.IPartTexturer;
-import thut.core.client.render.texturing.IRetexturableModel;
-import thut.core.client.render.texturing.TextureCoordinate;
+import thut.core.client.render.model.IAnimationChanger;
+import thut.core.client.render.model.IPartTexturer;
+import thut.core.client.render.model.IRetexturableModel;
+import thut.core.client.render.model.TextureCoordinate;
 import thut.core.client.render.x3d.Material;
 
 /** Body, Made of Bones, Faces, and Materials. */
 public class Body implements IRetexturableModel
 {
-    public final Model              parent;
-    public ArrayList<Face>          faces = Lists.newArrayList();
-    public ArrayList<MutableVertex> verts = Lists.newArrayList();
-    public ArrayList<Bone>          bones = Lists.newArrayList();
+    public final Model                        parent;
+    public ArrayList<Face>                    faces        = Lists.newArrayList();
+    public ArrayList<MutableVertex>           verts        = Lists.newArrayList();
+    public ArrayList<Bone>                    bones        = Lists.newArrayList();
     // Used to idenfify which bones are the neck.
     public HashMap<String, Bone>              namesToBones = Maps.newHashMap();
     public HashMap<String, Material>          namesToMats;
@@ -38,32 +38,34 @@ public class Body implements IRetexturableModel
     public Bone                               root;
     IPartTexturer                             texturer;
     IAnimationChanger                         changer;
-    private final double[]                    uvShift      = { 0, 0 };
+    private double[]                          uvShift      = { 0, 0 };
 
     public Body(Body body, Model parent)
     {
         this.parent = parent;
         this.partOfGroup = body.partOfGroup;
-        for (final Face face : body.faces)
+        for (Face face : body.faces)
         {
-            final MutableVertex[] vertices = new MutableVertex[face.verts.length];
+            MutableVertex[] vertices = new MutableVertex[face.verts.length];
             for (int i = 0; i < vertices.length; i++)
             {
-                final MutableVertex d = new MutableVertex(face.verts[i]);
+                MutableVertex d = new MutableVertex(face.verts[i]);
                 Helpers.ensureFits(this.verts, d.ID);
                 this.verts.set(d.ID, d);
             }
         }
-        for (final Face face : body.faces)
+        for (Face face : body.faces)
+        {
             this.faces.add(new Face(face, this.verts));
+        }
         for (int i = 0; i < body.bones.size(); i++)
         {
-            final Bone b = body.bones.get(i);
+            Bone b = body.bones.get(i);
             this.bones.add(new Bone(b, null, this));
         }
         for (int i = 0; i < body.bones.size(); i++)
         {
-            final Bone b = body.bones.get(i);
+            Bone b = body.bones.get(i);
             b.copy.setChildren(b, this.bones);
         }
         this.root = body.root.copy;
@@ -74,37 +76,46 @@ public class Body implements IRetexturableModel
     {
         this.parent = parent;
         this.partOfGroup = false;
-        this.loadModel(resloc, null);
-        this.initBoneChildren();
-        this.determineRoot();
+        loadModel(resloc, null);
+        initBoneChildren();
+        determineRoot();
         parent.syncBones(this);
     }
 
     private void determineRoot()
     {
-        for (final Bone b : this.bones)
-            if (b.parent == null && !b.children.isEmpty())
+        for (Bone b : this.bones)
+        {
+            if ((b.parent == null) && (!b.children.isEmpty()))
             {
                 this.root = b;
                 break;
             }
-        if (this.root == null) for (final Bone b : this.bones)
-            if (!b.name.equals("blender_implicit"))
+        }
+        if (this.root == null)
+        {
+            for (Bone b : this.bones)
             {
-                this.root = b;
-                break;
+                if (!b.name.equals("blender_implicit"))
+                {
+                    this.root = b;
+                    break;
+                }
             }
+        }
     }
 
     public Bone getBone(int id)
     {
-        return id < this.bones.size() && id >= 0 ? this.bones.get(id) : null;
+        return id < bones.size() && id >= 0 ? bones.get(id) : null;
     }
 
     public Bone getBone(String name)
     {
-        for (final Bone b : this.bones)
-            if (b.name.equals(name)) return b;
+        for (Bone b : this.bones)
+        {
+            if (b.name.equals(name)) { return b; }
+        }
         return null;
     }
 
@@ -115,8 +126,10 @@ public class Body implements IRetexturableModel
 
     private MutableVertex getExisting(float x, float y, float z)
     {
-        for (final MutableVertex v : this.verts)
-            if (v.equals(x, y, z)) return v;
+        for (MutableVertex v : this.verts)
+        {
+            if (v.equals(x, y, z)) { return v; }
+        }
         return null;
     }
 
@@ -126,15 +139,20 @@ public class Body implements IRetexturableModel
         for (int i = 0; i < this.bones.size(); i++)
         {
             theBone = this.bones.get(i);
-            for (final Bone child : this.bones)
-                if (child.parent == theBone) theBone.addChild(child);
+            for (Bone child : this.bones)
+            {
+                if (child.parent == theBone)
+                {
+                    theBone.addChild(child);
+                }
+            }
         }
     }
 
     private void loadModel(ResourceLocation resloc, Body body) throws Exception
     {
-        final InputStream inputStream = Helpers.getStream(resloc);
-        final BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        InputStream inputStream = Helpers.getStream(resloc);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         String currentLine = null;
         int lineCount = -1;
         try
@@ -143,46 +161,52 @@ public class Body implements IRetexturableModel
             while ((currentLine = reader.readLine()) != null)
             {
                 lineCount += 1;
-                if (!currentLine.startsWith("version")) if (currentLine.startsWith("nodes"))
+                if (!currentLine.startsWith("version"))
                 {
-                    lineCount += 1;
-                    while (!(currentLine = reader.readLine()).startsWith("end"))
+                    if (currentLine.startsWith("nodes"))
                     {
                         lineCount += 1;
-                        this.parseBone(currentLine.trim(), lineCount, body);
-                    }
-                }
-                else if (currentLine.startsWith("skeleton"))
-                {
-                    lineCount += 1;
-                    reader.readLine();
-                    lineCount += 1;
-                    while (!(currentLine = reader.readLine()).startsWith("end"))
-                    {
-                        lineCount += 1;
-                        if (!this.partOfGroup) this.updateBone(currentLine.trim(), lineCount);
-                    }
-                }
-                else if (currentLine.startsWith("triangles"))
-                {
-                    lineCount += 1;
-                    while (!(currentLine = reader.readLine()).startsWith("end"))
-                    {
-                        final Material mat = this.parent.usesMaterials ? this.parseMaterial(currentLine) : null;
-                        final String[] params = new String[3];
-                        for (int i = 0; i < 3; i++)
+                        while (!(currentLine = reader.readLine()).startsWith("end"))
                         {
                             lineCount += 1;
-                            params[i] = reader.readLine().trim();
+                            parseBone(currentLine.trim(), lineCount, body);
                         }
-                        this.parseFace(params, lineCount, mat);
+                    }
+                    else if (currentLine.startsWith("skeleton"))
+                    {
+                        lineCount += 1;
+                        reader.readLine();
+                        lineCount += 1;
+                        while (!(currentLine = reader.readLine()).startsWith("end"))
+                        {
+                            lineCount += 1;
+                            if (!this.partOfGroup)
+                            {
+                                updateBone(currentLine.trim(), lineCount);
+                            }
+                        }
+                    }
+                    else if (currentLine.startsWith("triangles"))
+                    {
+                        lineCount += 1;
+                        while (!(currentLine = reader.readLine()).startsWith("end"))
+                        {
+                            Material mat = this.parent.usesMaterials ? parseMaterial(currentLine) : null;
+                            String[] params = new String[3];
+                            for (int i = 0; i < 3; i++)
+                            {
+                                lineCount += 1;
+                                params[i] = reader.readLine().trim();
+                            }
+                            parseFace(params, lineCount, mat);
+                        }
                     }
                 }
             }
         }
-        catch (final Exception e)
+        catch (Exception e)
         {
-            if (lineCount == -1) throw new Exception("there was a problem opening the model file : " + resloc, e);
+            if (lineCount == -1) { throw new Exception("there was a problem opening the model file : " + resloc, e); }
             throw new Exception("an error occurred reading the SMD file \"" + resloc + "\" on line #" + lineCount, e);
         }
         finally
@@ -193,14 +217,14 @@ public class Body implements IRetexturableModel
 
     private void parseBone(String line, int lineCount, Body body)
     {
-        final String[] params = line.split("\\s+");
-        final int id = Integer.parseInt(params[0]);
-        final String boneName = params[1].replaceAll("\"", "");
+        String[] params = line.split("\\s+");
+        int id = Integer.parseInt(params[0]);
+        String boneName = params[1].replaceAll("\"", "");
         Bone theBone = body != null ? body.getBone(boneName) : null;
         if (theBone == null)
         {
-            final int parentID = Integer.parseInt(params[2]);
-            final Bone parent = parentID >= 0 ? this.bones.get(parentID) : null;
+            int parentID = Integer.parseInt(params[2]);
+            Bone parent = parentID >= 0 ? this.bones.get(parentID) : null;
             theBone = new Bone(boneName, id, parent, this);
         }
         Helpers.ensureFits(this.bones, id);
@@ -209,23 +233,21 @@ public class Body implements IRetexturableModel
 
     private void parseFace(String[] params, int lineCount, Material mat)
     {
-        final MutableVertex[] faceVerts = new MutableVertex[3];
-        final TextureCoordinate[] uvs = new TextureCoordinate[3];
+        MutableVertex[] faceVerts = new MutableVertex[3];
+        TextureCoordinate[] uvs = new TextureCoordinate[3];
         for (int i = 0; i < 3; i++)
         {
-            final String[] values = params[i].split("\\s+");
-            /**
-             * The negative signs are for differences in default coordinate
-             * systems between minecraft and blender.
-             */
-            final float x = Float.parseFloat(values[1]);
-            final float y = -Float.parseFloat(values[2]);
-            final float z = -Float.parseFloat(values[3]);
-            final float xn = Float.parseFloat(values[4]);
-            final float yn = -Float.parseFloat(values[5]);
-            final float zn = -Float.parseFloat(values[6]);
+            String[] values = params[i].split("\\s+");
+            /** The negative signs are for differences in default coordinate
+             * systems between minecraft and blender. */
+            float x = Float.parseFloat(values[1]);
+            float y = -Float.parseFloat(values[2]);
+            float z = -Float.parseFloat(values[3]);
+            float xn = Float.parseFloat(values[4]);
+            float yn = -Float.parseFloat(values[5]);
+            float zn = -Float.parseFloat(values[6]);
 
-            final MutableVertex v = this.getExisting(x, y, z);
+            MutableVertex v = getExisting(x, y, z);
             if (v == null)
             {
                 faceVerts[i] = new MutableVertex(x, y, z, xn, yn, zn, this.nextVertexID);
@@ -233,37 +255,52 @@ public class Body implements IRetexturableModel
                 this.verts.set(this.nextVertexID, faceVerts[i]);
                 this.nextVertexID += 1;
             }
-            else faceVerts[i] = v;
+            else
+            {
+                faceVerts[i] = v;
+            }
             uvs[i] = new TextureCoordinate(Float.parseFloat(values[7]), 1.0F - Float.parseFloat(values[8]));
-            if (values.length > 10) this.weighBones(values, faceVerts[i]);
+            if (values.length > 10)
+            {
+                weighBones(values, faceVerts[i]);
+            }
         }
-        final Face face = new Face(faceVerts, uvs);
+        Face face = new Face(faceVerts, uvs);
         face.verts = faceVerts;
 
         face.uvs = uvs;
         this.faces.add(face);
         if (mat != null)
         {
-            if (this.matsToFaces == null) this.matsToFaces = Maps.newHashMap();
+            if (this.matsToFaces == null)
+            {
+                this.matsToFaces = Maps.newHashMap();
+            }
             ArrayList<Face> list = this.matsToFaces.get(mat);
-            if (list == null) this.matsToFaces.put(mat, list = Lists.newArrayList());
+            if (list == null)
+            {
+                this.matsToFaces.put(mat, list = Lists.newArrayList());
+            }
             list.add(face);
         }
     }
 
     public Material parseMaterial(String materialName) throws Exception
     {
-        if (!this.parent.usesMaterials) return null;
-        if (this.namesToMats == null) this.namesToMats = Maps.newHashMap();
+        if (!this.parent.usesMaterials) { return null; }
+        if (this.namesToMats == null)
+        {
+            this.namesToMats = Maps.newHashMap();
+        }
         Material result = this.namesToMats.get(materialName);
-        if (result != null) return result;
+        if (result != null) { return result; }
         try
         {
             result = new Material(materialName, materialName, new Vector3f(), new Vector3f(), new Vector3f(), 1, 1, 0);
             this.namesToMats.put(materialName, result);
             return result;
         }
-        catch (final Exception e)
+        catch (Exception e)
         {
             throw new Exception(e);
         }
@@ -272,37 +309,42 @@ public class Body implements IRetexturableModel
     public void render()
     {
         GL11.glPushMatrix();
-        final boolean smooth = this.texturer == null ? false : !this.texturer.isFlat(null);
+        boolean smooth = texturer == null ? false : !texturer.isFlat(null);
         if (!this.parent.usesMaterials)
         {
             GL11.glBegin(GL11.GL_TRIANGLES);
-            for (final Face f : this.faces)
+            for (Face f : this.faces)
+            {
                 f.addForRender(smooth);
+            }
             GL11.glEnd();
         }
-        else for (final Map.Entry<Material, ArrayList<Face>> entry : this.matsToFaces.entrySet())
+        else
         {
-            Material mat;
-            if ((mat = entry.getKey()) != null)
+            for (Map.Entry<Material, ArrayList<Face>> entry : this.matsToFaces.entrySet())
             {
-                final String tex = mat.name;
-                boolean textureShift = false;
-                if (this.texturer != null)
+                Material mat;
+                if ((mat = entry.getKey()) != null)
                 {
-                    this.texturer.applyTexture(tex);
-                    if (textureShift = this.texturer.shiftUVs(tex, this.uvShift))
+                    String tex = mat.name;
+                    boolean textureShift = false;
+                    if (texturer != null)
+                    {
+                        texturer.applyTexture(tex);
+                        if (textureShift = texturer.shiftUVs(tex, uvShift))
+                        {
+                            GL11.glMatrixMode(GL11.GL_TEXTURE);
+                            GL11.glTranslated(uvShift[0], uvShift[1], 0.0F);
+                            GL11.glMatrixMode(GL11.GL_MODELVIEW);
+                        }
+                    }
+                    render(entry, smooth);
+                    if (textureShift)
                     {
                         GL11.glMatrixMode(GL11.GL_TEXTURE);
-                        GL11.glTranslated(this.uvShift[0], this.uvShift[1], 0.0F);
+                        GL11.glLoadIdentity();
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
                     }
-                }
-                this.render(entry, smooth);
-                if (textureShift)
-                {
-                    GL11.glMatrixMode(GL11.GL_TEXTURE);
-                    GL11.glLoadIdentity();
-                    GL11.glMatrixMode(GL11.GL_MODELVIEW);
                 }
             }
         }
@@ -312,15 +354,19 @@ public class Body implements IRetexturableModel
     private void render(Map.Entry<Material, ArrayList<Face>> entry, boolean smooth)
     {
         GL11.glBegin(GL11.GL_TRIANGLES);
-        for (final Face face : entry.getValue())
+        for (Face face : entry.getValue())
+        {
             face.addForRender(smooth);
+        }
         GL11.glEnd();
     }
 
     public void resetVerts()
     {
-        for (final MutableVertex v : this.verts)
+        for (MutableVertex v : this.verts)
+        {
             v.reset();
+        }
     }
 
     public void setAnimation(Animation anim)
@@ -342,34 +388,34 @@ public class Body implements IRetexturableModel
 
     private void updateBone(String line, int lineCount)
     {
-        final String[] params = line.split("\\s+");
-        final int id = Integer.parseInt(params[0]);
+        String[] params = line.split("\\s+");
+        int id = Integer.parseInt(params[0]);
 
-        final float[] locRots = new float[6];
+        float[] locRots = new float[6];
         for (int i = 1; i < 7; i++)
-            locRots[i - 1] = Float.parseFloat(params[i]);
-        final Bone theBone = this.bones.get(id);
-        /**
-         * The negative signs are for differences in default coordinate systems
-         * between minecraft and blender.
-         */
+        {
+            locRots[(i - 1)] = Float.parseFloat(params[i]);
+        }
+        Bone theBone = this.bones.get(id);
+        /** The negative signs are for differences in default coordinate systems
+         * between minecraft and blender. */
         theBone.setRest(Helpers.makeMatrix(locRots[0], -locRots[1], -locRots[2], locRots[3], -locRots[4], -locRots[5]));
     }
 
     private void weighBones(String[] values, MutableVertex vert)
     {
-        final int links = Integer.parseInt(values[9]);
-        final float[] weights = new float[links];
+        int links = Integer.parseInt(values[9]);
+        float[] weights = new float[links];
         float sum = 0.0F;
         for (int i = 0; i < links; i++)
         {
-            weights[i] = Float.parseFloat(values[i * 2 + 11]);
+            weights[i] = Float.parseFloat(values[(i * 2 + 11)]);
             sum += weights[i];
         }
         for (int i = 0; i < links; i++)
         {
-            final int boneID = Integer.parseInt(values[i * 2 + 10]);
-            final float weight = weights[i] / sum;
+            int boneID = Integer.parseInt(values[(i * 2 + 10)]);
+            float weight = weights[i] / sum;
             this.bones.get(boneID).addVertex(vert, weight);
         }
     }

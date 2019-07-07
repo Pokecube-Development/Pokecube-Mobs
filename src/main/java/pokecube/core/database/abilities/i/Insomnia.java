@@ -10,7 +10,7 @@ public class Insomnia extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        final IPokemob attacker = move.attacker;
+        IPokemob attacker = move.attacker;
         if (attacker == mob || !move.pre || attacker == move.attacked) return;
         if (move.statusChange == IMoveConstants.STATUS_SLP) move.statusChange = IMoveConstants.STATUS_NON;
     }

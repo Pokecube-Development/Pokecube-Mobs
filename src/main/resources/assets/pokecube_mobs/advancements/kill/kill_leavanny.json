@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.leavanny.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.leavanny.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_leavanny": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "leavanny"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_swadloon"
+}

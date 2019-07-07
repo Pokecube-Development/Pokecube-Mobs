@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.musharna.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.musharna.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_musharna": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "musharna"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_munna"
+}

@@ -16,10 +16,10 @@ public class MoveLowkick extends Move_Basic
     @Override
     public int getPWR(IPokemob user, Entity target)
     {
-        final int pwr = 120;
-        final IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        int pwr = 120;
+        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
         if (targetMob == null) return pwr;
-        final double mass = targetMob.getWeight();
+        double mass = targetMob.getWeight();
         if (mass < 10) return 20;
         if (mass < 25) return 40;
         if (mass < 50) return 60;

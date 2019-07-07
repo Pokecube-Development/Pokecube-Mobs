@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.kabutops.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.kabutops.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_kabutops": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "kabutops"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_kabuto"
+}

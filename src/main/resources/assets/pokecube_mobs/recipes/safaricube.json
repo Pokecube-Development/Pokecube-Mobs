@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pokecube",
+  "pattern": [
+    "FBF",
+    "BPB",
+    "SSS"
+  ],
+  "key": {
+    "P": {
+      "item": "pokecube:premiercube"
+    },
+    "F": {
+      "item": "minecraft:double_plant",
+      "data": 0
+    },
+    "B": {
+      "item": "minecraft:tallgrass",
+      "data": 2
+    },
+    "S": {
+      "item": "minecraft:snowball"
+    }
+  },
+  "result": {
+    "item": "pokecube:safaricube",
+    "count": 1
+  }
+}

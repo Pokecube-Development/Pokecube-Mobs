@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.tapubulu.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.tapubulu.name"
+        }
+      ]
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "hatch_tapubulu": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "tapubulu"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

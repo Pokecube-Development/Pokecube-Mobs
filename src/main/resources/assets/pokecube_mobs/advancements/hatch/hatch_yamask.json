@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.yamask.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.yamask.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_yamask": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "yamask"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

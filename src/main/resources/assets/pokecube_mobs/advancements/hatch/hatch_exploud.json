@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.exploud.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.exploud.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_exploud": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "exploud"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_loudred"
+}

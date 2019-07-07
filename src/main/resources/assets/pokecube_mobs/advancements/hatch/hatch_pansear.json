@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.pansear.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.pansear.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_pansear": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "pansear"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

@@ -10,20 +10,22 @@ public class Competitive extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        if (!move.pre)
+        if(!move.pre)
         {
-
+            
         }
         else if (mob == move.attacked)
         {
             boolean effect = false;
-            for (final int element : move.attackedStatModification)
-                if (element < 0)
+            for (int i = 0; i < move.attackedStatModification.length; i++)
+            {
+                if(move.attackedStatModification[i]<0)
                 {
-                    effect = true;
+                    effect= true;
                     break;
                 }
-            if (effect)
+            }
+            if(effect)
             {
                 move.attackedStatModification = move.attackedStatModification.clone();
                 move.attackedStatModification[3] = IMoveConstants.RAISE;
@@ -32,13 +34,15 @@ public class Competitive extends Ability
         else if (mob == move.attacker)
         {
             boolean effect = false;
-            for (final int element : move.attackerStatModification)
-                if (element < 0)
+            for (int i = 0; i < move.attackerStatModification.length; i++)
+            {
+                if(move.attackerStatModification[i]<0)
                 {
-                    effect = true;
+                    effect= true;
                     break;
                 }
-            if (effect)
+            }
+            if(effect)
             {
                 move.attackerStatModification = move.attackerStatModification.clone();
                 move.attackerStatModification[3] = IMoveConstants.RAISE;

@@ -15,8 +15,8 @@ public class MoveInfestation extends Move_Ongoing
     @Override
     public void doOngoingEffect(IOngoingAffected mob, IOngoingEffect effect)
     {
-        final float thisMaxHP = mob.getEntity().getMaxHealth();
-        final int damage = Math.max(1, (int) (0.125 * thisMaxHP));
-        this.damageTarget(mob.getEntity(), null, damage);
+        float thisMaxHP = mob.getEntity().getMaxHealth();
+        int damage = Math.max(1, (int) (0.125 * thisMaxHP));
+        damageTarget(mob.getEntity(), null, damage);
     }
 }

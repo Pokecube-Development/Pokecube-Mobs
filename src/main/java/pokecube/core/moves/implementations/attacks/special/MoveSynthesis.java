@@ -17,12 +17,12 @@ public class MoveSynthesis extends Move_Basic
     @Override
     public float getSelfHealRatio(IPokemob user)
     {
-        final TerrainSegment terrain = TerrainManager.getInstance().getTerrainForEntity(user.getEntity());
-        final PokemobTerrainEffects effects = (PokemobTerrainEffects) terrain.geTerrainEffect("pokemobEffects");
-        if (effects.getEffect(PokemobTerrainEffects.EFFECT_WEATHER_RAIN) > 0 || effects.getEffect(
-                PokemobTerrainEffects.EFFECT_WEATHER_HAIL) > 0 || effects.getEffect(
-                        PokemobTerrainEffects.EFFECT_WEATHER_SAND) > 0) return 25f;
-        if (effects.getEffect(PokemobTerrainEffects.EFFECT_WEATHER_SUN) > 0) return 200 / 3f;
+        TerrainSegment terrain = TerrainManager.getInstance().getTerrainForEntity(user.getEntity());
+        PokemobTerrainEffects effects = (PokemobTerrainEffects) terrain.geTerrainEffect("pokemobEffects");
+        if (effects.getEffect(PokemobTerrainEffects.EFFECT_WEATHER_RAIN) > 0
+                || effects.getEffect(PokemobTerrainEffects.EFFECT_WEATHER_HAIL) > 0
+                || effects.getEffect(PokemobTerrainEffects.EFFECT_WEATHER_SAND) > 0) { return 25f; }
+        if (effects.getEffect(PokemobTerrainEffects.EFFECT_WEATHER_SUN) > 0) { return 200 / 3f; }
         return 50f;
     }
 

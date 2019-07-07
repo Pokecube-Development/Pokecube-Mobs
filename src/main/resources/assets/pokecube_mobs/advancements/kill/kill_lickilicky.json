@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.lickilicky.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.lickilicky.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_lickilicky": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "lickilicky"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_lickitung"
+}

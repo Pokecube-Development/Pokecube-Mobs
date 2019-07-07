@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.gardevoir.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.gardevoir.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_gardevoir": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "gardevoir"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_kirlia"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.krabby.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.krabby.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_krabby": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "krabby"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

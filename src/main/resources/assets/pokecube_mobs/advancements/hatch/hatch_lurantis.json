@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.lurantis.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.lurantis.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_lurantis": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "lurantis"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_fomantis"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.buneary.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.buneary.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_buneary": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "buneary"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

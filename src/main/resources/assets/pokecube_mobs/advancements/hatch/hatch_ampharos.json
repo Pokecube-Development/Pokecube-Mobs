@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.ampharos.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.ampharos.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_ampharos": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "ampharos"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_flaaffy"
+}

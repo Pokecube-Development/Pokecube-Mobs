@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.bunnelby.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.bunnelby.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_bunnelby": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "bunnelby"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

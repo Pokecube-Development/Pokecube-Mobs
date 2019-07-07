@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "pokecube:block/plank_nanab" }
+        "normal": { "model": "pokecube:plank_nanab" }
     }
 }

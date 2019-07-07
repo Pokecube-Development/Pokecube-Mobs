@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.drifblim.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.drifblim.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_drifblim": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "drifblim"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_drifloon"
+}

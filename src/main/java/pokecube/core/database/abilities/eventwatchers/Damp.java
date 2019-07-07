@@ -1,15 +1,16 @@
 package pokecube.core.database.abilities.eventwatchers;
 
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.ExplosionEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.templates.Move_Explode;
 import thut.api.maths.Vector3;
-import thut.core.common.ThutCore;
 
 public class Damp extends Ability
 {
@@ -19,40 +20,46 @@ public class Damp extends Ability
     @SubscribeEvent
     public void denyBoom(ExplosionEvent.Start boom)
     {
-        if (!this.mob.getEntity().isAlive()) this.destroy();
+        if (mob.getEntity().isDead) destroy();
         else
         {
-            final Vector3 boomLoc = Vector3.getNewVector().set(boom.getExplosion().getPosition());
-            if (boomLoc.distToEntity(this.mob.getEntity()) < this.range) boom.setCanceled(true);
+            Vector3 boomLoc = Vector3.getNewVector().set(boom.getExplosion().getPosition());
+            if (boomLoc.distToEntity(mob.getEntity()) < range)
+            {
+                boom.setCanceled(true);
+            }
         }
     }
 
     @Override
     public void destroy()
     {
-        if (ThutCore.proxy.isClientSide()) return;
+        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) return;
         MinecraftForge.EVENT_BUS.unregister(this);
     }
 
     @Override
     public Ability init(Object... args)
     {
-        if (ThutCore.proxy.isClientSide()) return this;
+        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT) return this;
         for (int i = 0; i < 2; i++)
             if (args != null && args.length > i)
             {
                 if (IPokemob.class.isInstance(args[i]))
                 {
                     MinecraftForge.EVENT_BUS.register(this);
-                    this.mob = IPokemob.class.cast(args[i]);
+                    mob = IPokemob.class.cast(args[i]);
                 }
-                if (args[i] instanceof Integer) this.range = (int) args[i];
+                if (args[i] instanceof Integer)
+                {
+                    range = (int) args[i];
+                }
             }
         return this;
     }
 
     @Override
-    public void onAgress(IPokemob mob, LivingEntity target)
+    public void onAgress(IPokemob mob, EntityLivingBase target)
     {
     }
 

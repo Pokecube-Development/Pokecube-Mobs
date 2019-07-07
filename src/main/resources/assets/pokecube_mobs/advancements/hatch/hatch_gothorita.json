@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.gothorita.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.gothorita.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_gothorita": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "gothorita"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_gothita"
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.tentacruel.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.tentacruel.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_tentacruel": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "tentacruel"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_tentacool"
+}

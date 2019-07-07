@@ -18,7 +18,7 @@ public class MoveMagnitude extends Move_AOE
     public int getPWR(IPokemob attacker, Entity attacked)
     {
         int PWR = 0;
-        final int rand = new Random().nextInt(20);
+        int rand = (new Random()).nextInt(20);
         if (rand == 0) PWR = 10;
         else if (rand <= 2) PWR = 30;
         else if (rand <= 6) PWR = 50;

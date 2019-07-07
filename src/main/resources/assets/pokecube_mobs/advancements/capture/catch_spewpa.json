@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.spewpa.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.spewpa.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_spewpa": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "spewpa"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_scatterbug"
+}

@@ -12,15 +12,13 @@ public class MoveJudgment extends Move_Basic
         super("judgment");
     }
 
-    /**
-     * Type getter
-     *
-     * @return the type of this move
-     */
+    /** Type getter
+     * 
+     * @return the type of this move */
     @Override
     public PokeType getType(IPokemob user)
     {
-        if (user == null) return this.move.type;
+        if (user == null) return move.type;
         return user.getType1();
     }
 

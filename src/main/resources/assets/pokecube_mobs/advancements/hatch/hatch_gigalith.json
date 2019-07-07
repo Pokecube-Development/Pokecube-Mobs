@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.gigalith.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.gigalith.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_gigalith": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "gigalith"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_boldore"
+}

@@ -1,0 +1,221 @@
+{
+  "recipes": [
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:stone"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:water_bucket"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "d": "1",
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:stone"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:torch"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "d": "2",
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:stone"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "d": "32767",
+            "id": "minecraft:sapling"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "d": "3",
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:stone"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:redstone"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "d": "8",
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:stone"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:obsidian"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "d": "9",
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:soul_sand"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:torch"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "d": "10",
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "d": "4",
+            "id": "minecraft:dye"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:torch"
+          }
+        }
+      ],
+      "values": {}
+    },
+    {
+      "shapeless": false,
+      "handler": "default",
+      "map": "SSS,SWS,SSS",
+      "output": {
+        "values": {
+          "d": "6",
+          "id": "pokecube:held",
+          "n": "1"
+        }
+      },
+      "inputs": [
+        {
+          "key": "S",
+          "values": {
+            "id": "minecraft:quartz"
+          }
+        },
+        {
+          "key": "W",
+          "values": {
+            "id": "minecraft:glowstone_dust"
+          }
+        }
+      ],
+      "values": {}
+    }
+  ]
+}

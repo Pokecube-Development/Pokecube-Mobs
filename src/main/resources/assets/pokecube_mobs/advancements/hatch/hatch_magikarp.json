@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.magikarp.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.magikarp.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_magikarp": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "magikarp"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

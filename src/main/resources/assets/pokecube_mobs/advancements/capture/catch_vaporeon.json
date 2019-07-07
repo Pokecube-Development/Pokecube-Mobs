@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.vaporeon.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.vaporeon.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_vaporeon": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "vaporeon"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_eevee"
+}

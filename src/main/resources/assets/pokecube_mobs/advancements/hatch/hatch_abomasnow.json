@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.abomasnow.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.abomasnow.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_abomasnow": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "abomasnow"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_snover"
+}

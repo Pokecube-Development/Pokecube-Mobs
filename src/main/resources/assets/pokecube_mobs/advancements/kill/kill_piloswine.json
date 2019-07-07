@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.kill",
+      "with": [
+        {
+          "translate": "pkmn.piloswine.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.kill.desc",
+      "with": [
+        {
+          "translate": "pkmn.piloswine.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "kill_piloswine": {
+      "trigger": "pokecube:kill",
+      "conditions": {
+        "lenient": true,
+        "entry": "piloswine"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:kill/kill_swinub"
+}

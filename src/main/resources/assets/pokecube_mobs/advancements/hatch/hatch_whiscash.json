@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.whiscash.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.whiscash.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_whiscash": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "whiscash"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_barboach"
+}

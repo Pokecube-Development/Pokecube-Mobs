@@ -21,19 +21,19 @@ public class MoveGuardsplit extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        final IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
+        IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
         if (attacked != null)
         {
-            final int spdef = packet.attacker.getStat(Stats.SPDEFENSE, true);
-            final int def = packet.attacker.getStat(Stats.DEFENSE, true);
+            int spdef = packet.attacker.getStat(Stats.SPDEFENSE, true);
+            int def = packet.attacker.getStat(Stats.DEFENSE, true);
 
-            final int spdef2 = attacked.getStat(Stats.SPDEFENSE, true);
-            final int def2 = attacked.getStat(Stats.DEFENSE, true);
+            int spdef2 = attacked.getStat(Stats.SPDEFENSE, true);
+            int def2 = attacked.getStat(Stats.DEFENSE, true);
 
-            final int averageDef = (def + def2) / 2;
-            final int averageSpdef = (spdef + spdef2) / 2;
-            final Modifier mods = packet.attacker.getModifiers().getModifiers("powersplit", Modifier.class);
-            final Modifier mods2 = attacked.getModifiers().getModifiers("powersplit", Modifier.class);
+            int averageDef = (def + def2) / 2;
+            int averageSpdef = (spdef + spdef2) / 2;
+            Modifier mods = packet.attacker.getModifiers().getModifiers("powersplit", Modifier.class);
+            Modifier mods2 = attacked.getModifiers().getModifiers("powersplit", Modifier.class);
 
             mods.setModifier(Stats.DEFENSE, -def + averageDef);
             mods2.setModifier(Stats.DEFENSE, -def2 + averageDef);

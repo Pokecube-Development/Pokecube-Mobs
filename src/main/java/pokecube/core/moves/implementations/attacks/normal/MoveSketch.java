@@ -4,7 +4,7 @@ import java.util.Set;
 
 import com.google.common.collect.Sets;
 
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.util.text.TextComponentTranslation;
 import pokecube.core.interfaces.Move_Base;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.MovesUtils;
@@ -16,7 +16,7 @@ public class MoveSketch extends Move_Basic
 
     static
     {
-        MoveSketch.unSketchables.add("chatter");
+        unSketchables.add("chatter");
     }
 
     public MoveSketch()
@@ -29,16 +29,18 @@ public class MoveSketch extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.attacker.getTransformedTo() != null) return;
-        final String lastHitBy = packet.attacker.getEntity().getEntityData().getString("lastMoveHitBy");
-        final Move_Base toSketch = MovesUtils.getMoveFromName(lastHitBy);
-        if (MoveSketch.unSketchables.contains(lastHitBy) || toSketch == null) return;
+        String lastHitBy = packet.attacker.getEntity().getEntityData().getString("lastMoveHitBy");
+        Move_Base toSketch = MovesUtils.getMoveFromName(lastHitBy);
+        if (unSketchables.contains(lastHitBy) || toSketch == null) return;
         for (int i = 0; i < packet.attacker.getMoves().length; i++)
-            if (packet.attacker.getMoves()[i] != null && packet.attacker.getMoves()[i].equals(this.name))
+        {
+            if (packet.attacker.getMoves()[i] != null && packet.attacker.getMoves()[i].equals(name))
             {
                 packet.attacker.setMove(i, toSketch.name);
-                packet.attacker.displayMessageToOwner(new TranslationTextComponent("pokemob.move.sketched",
-                        packet.attacker.getDisplayName(), MovesUtils.getMoveName(lastHitBy)));
+                packet.attacker.displayMessageToOwner(new TextComponentTranslation("pokemob.move.sketched",
+                        packet.attacker.getPokemonDisplayName(), MovesUtils.getMoveName(lastHitBy)));
                 return;
             }
+        }
     }
 }

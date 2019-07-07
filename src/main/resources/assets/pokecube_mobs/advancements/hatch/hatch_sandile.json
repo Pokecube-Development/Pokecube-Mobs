@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.sandile.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.sandile.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_sandile": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "sandile"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/root"
+}

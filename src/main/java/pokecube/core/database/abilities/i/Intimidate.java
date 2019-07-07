@@ -1,6 +1,6 @@
 package pokecube.core.database.abilities.i;
 
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
@@ -11,10 +11,12 @@ public class Intimidate extends Ability
 {
 
     @Override
-    public void onAgress(IPokemob mob, LivingEntity target)
+    public void onAgress(IPokemob mob, EntityLivingBase target)
     {
-        final IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
-        if (targetMob != null) MovesUtils.handleStats2(targetMob, mob.getOwner(), IMoveConstants.ATTACK,
-                IMoveConstants.FALL);
+        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        if (targetMob != null)
+        {
+            MovesUtils.handleStats2(targetMob, mob.getOwner(), IMoveConstants.ATTACK, IMoveConstants.FALL);
+        }
     }
 }

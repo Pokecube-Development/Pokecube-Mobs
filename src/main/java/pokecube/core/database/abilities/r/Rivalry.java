@@ -12,16 +12,22 @@ public class Rivalry extends Ability
     {
 
         if (!move.pre) return;
-        final IPokemob target = CapabilityPokemob.getPokemobFor(move.attacked);
-        if (mob == move.attacker && target != null)
+        IPokemob target = CapabilityPokemob.getPokemobFor(move.attacked);
+        if (mob == move.attacker && target!=null)
         {
-            final byte mobGender = mob.getSexe();
-            final byte targetGender = target.getSexe();
+            byte mobGender = mob.getSexe();
+            byte targetGender = target.getSexe();
             if (mobGender == IPokemob.SEXLEGENDARY || targetGender == IPokemob.SEXLEGENDARY
-                    || mobGender == IPokemob.NOSEXE || targetGender == IPokemob.NOSEXE) return;
+                    || mobGender == IPokemob.NOSEXE || targetGender == IPokemob.NOSEXE) { return; }
 
-            if (mobGender == targetGender) move.PWR *= 1.25;
-            else move.PWR *= 0.75;
+            if (mobGender == targetGender)
+            {
+                move.PWR *= 1.25;
+            }
+            else
+            {
+                move.PWR *= 0.75;
+            }
         }
     }
 }

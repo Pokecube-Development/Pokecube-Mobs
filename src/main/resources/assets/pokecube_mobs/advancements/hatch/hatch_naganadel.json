@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.naganadel.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.naganadel.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_naganadel": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "naganadel"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_poipole"
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.hatch",
+      "with": [
+        {
+          "translate": "pkmn.wartortle.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.hatch.desc",
+      "with": [
+        {
+          "translate": "pkmn.wartortle.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "hatch_wartortle": {
+      "trigger": "pokecube:hatch",
+      "conditions": {
+        "entry": "wartortle"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:hatch/hatch_squirtle"
+}

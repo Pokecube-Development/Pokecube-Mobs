@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.krokorok.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.krokorok.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_krokorok": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "krokorok"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_sandile"
+}

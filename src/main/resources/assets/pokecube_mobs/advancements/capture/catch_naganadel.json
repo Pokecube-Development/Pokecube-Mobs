@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokecube:pokecube"
+    },
+    "title": {
+      "translate": "achievement.pokecube.catch",
+      "with": [
+        {
+          "translate": "pkmn.naganadel.name"
+        }
+      ]
+    },
+    "description": {
+      "translate": "achievement.pokecube.catch.desc",
+      "with": [
+        {
+          "translate": "pkmn.naganadel.name"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "catch_naganadel": {
+      "trigger": "pokecube:catch",
+      "conditions": {
+        "lenient": true,
+        "entry": "naganadel"
+      }
+    }
+  },
+  "parent": "pokecube_mobs:capture/catch_poipole"
+}
