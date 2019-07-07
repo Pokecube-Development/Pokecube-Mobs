@@ -5,8 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
+import javax.vecmath.Matrix4f;
+
 import org.lwjgl.opengl.GL11;
-import org.lwjgl.util.vector.Matrix4f;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
@@ -16,15 +17,15 @@ import net.minecraft.util.ResourceLocation;
 import pokecube.mobs.client.smd.impl.Bone;
 import pokecube.mobs.client.smd.impl.Helpers;
 import pokecube.mobs.client.smd.impl.Model;
+import thut.core.client.render.animation.Animation;
 import thut.core.client.render.animation.CapabilityAnimation.IAnimationHolder;
-import thut.core.client.render.model.IAnimationChanger;
+import thut.core.client.render.animation.IAnimationChanger;
 import thut.core.client.render.model.IExtendedModelPart;
 import thut.core.client.render.model.IModel;
 import thut.core.client.render.model.IModelCustom;
 import thut.core.client.render.model.IModelRenderer;
-import thut.core.client.render.model.IPartTexturer;
-import thut.core.client.render.model.IRetexturableModel;
-import thut.core.client.render.tabula.components.Animation;
+import thut.core.client.render.texturing.IPartTexturer;
+import thut.core.client.render.texturing.IRetexturableModel;
 
 public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFakeExtendedPart
 {
@@ -33,13 +34,14 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
     private final Set<String>                         nullHeadSet  = Sets.newHashSet();
     private final Set<String>                         animations   = Sets.newHashSet();
     private final HeadInfo                            info         = new HeadInfo();
+    private boolean                                   valid        = false;
     Model                                             wrapped;
     IPartTexturer                                     texturer;
     IAnimationChanger                                 changer;
 
     public SMDModel()
     {
-        nullPartsMap.put(getName(), this);
+        this.nullPartsMap.put(this.getName(), this);
     }
 
     public SMDModel(ResourceLocation model)
@@ -47,11 +49,12 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
         this();
         try
         {
-            wrapped = new Model(model);
-            wrapped.usesMaterials = true;
-            animations.addAll(wrapped.anims.keySet());
+            this.wrapped = new Model(model);
+            this.wrapped.usesMaterials = true;
+            this.animations.addAll(this.wrapped.anims.keySet());
+            this.valid = true;
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
@@ -61,25 +64,25 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
     public void applyAnimation(Entity entity, IAnimationHolder animate, IModelRenderer<?> renderer, float partialTicks,
             float limbSwing)
     {
-        wrapped.setAnimation(renderer.getAnimation(entity));
+        this.wrapped.setAnimation(renderer.getAnimation(entity));
     }
 
     @Override
     public Set<String> getBuiltInAnimations()
     {
-        return animations;
+        return this.animations;
     }
 
     @Override
     public HeadInfo getHeadInfo()
     {
-        return info;
+        return this.info;
     }
 
     @Override
     public Set<String> getHeadParts()
     {
-        return nullHeadSet;
+        return this.nullHeadSet;
     }
 
     @Override
@@ -92,13 +95,13 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
     public HashMap<String, IExtendedModelPart> getParts()
     {
         // SMD Renders whole thing at once, so no part rendering.
-        return nullPartsMap;
+        return this.nullPartsMap;
     }
 
     @Override
     public HashMap<String, IExtendedModelPart> getSubParts()
     {
-        return subPartsMap;
+        return this.subPartsMap;
     }
 
     @Override
@@ -108,45 +111,50 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
     }
 
     @Override
+    public boolean isValid()
+    {
+        return this.valid;
+    }
+
+    @Override
     public void preProcessAnimations(Collection<List<Animation>> collection)
     {
-        // TODO Bake these animations somehow for the particular SMD model.
+        // TODO figure out animations for this.
     }
 
     public void render(IModelRenderer<?> renderer)
     {
-        if (wrapped != null)
+        if (this.wrapped != null)
         {
-            wrapped.body.setTexturer(texturer);
-            wrapped.body.setAnimationChanger(changer);
+            this.wrapped.body.setTexturer(this.texturer);
+            this.wrapped.body.setAnimationChanger(this.changer);
             // Scaling factor for model.
             GL11.glScaled(0.165, 0.165, 0.165);
             // Makes model face correct way.
             GL11.glRotated(180, 0, 1, 0);
 
             // only increment frame if a tick has passed.
-            if (wrapped.body.currentAnim != null && wrapped.body.currentAnim.frameCount() > 0)
-            {
-                wrapped.body.currentAnim.setCurrentFrame(info.currentTick % wrapped.body.currentAnim.frameCount());
-            }
+            if (this.wrapped.body.currentAnim != null && this.wrapped.body.currentAnim.frameCount() > 0)
+                this.wrapped.body.currentAnim.setCurrentFrame(this.info.currentTick % this.wrapped.body.currentAnim
+                        .frameCount());
             // Check head parts for rendering rotations of them.
-            for (String s : getHeadParts())
+            for (final String s : this.getHeadParts())
             {
-                Bone bone = wrapped.body.getBone(s);
+                final Bone bone = this.wrapped.body.getBone(s);
                 if (bone != null)
                 {
                     // Cap and convert pitch and yaw to radians.
-                    float yaw = Math.max(Math.min(info.headYaw, info.yawCapMax), info.yawCapMin);
-                    yaw = (float) Math.toRadians(yaw) * info.yawDirection;
-                    float pitch = Math.max(Math.min(info.headPitch, info.pitchCapMax), info.pitchCapMin);
-                    pitch = (float) Math.toRadians(pitch) * info.pitchDirection;
+                    float yaw = Math.max(Math.min(this.info.headYaw, this.info.yawCapMax), this.info.yawCapMin);
+                    yaw = (float) Math.toRadians(yaw) * this.info.yawDirection;
+                    float pitch = Math.max(Math.min(this.info.headPitch, this.info.pitchCapMax), this.info.pitchCapMin);
+                    pitch = (float) Math.toRadians(pitch) * this.info.pitchDirection;
 
                     // Head rotation matrix
                     Matrix4f headRot = new Matrix4f();
 
                     float xr = 0, yr = 0, zr = 0;
 
-                    switch (info.yawAxis)
+                    switch (this.info.yawAxis)
                     {
                     case 2:
                         zr = yaw;
@@ -166,7 +174,7 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
                     yr = 0;
                     zr = 0;
 
-                    switch (info.pitchAxis)
+                    switch (this.info.pitchAxis)
                     {
                     case 2:
                         zr = pitch;
@@ -183,36 +191,36 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
                     bone.applyTransform(headRot);
                 }
             }
-            wrapped.animate();
-            wrapped.renderAll();
+            this.wrapped.animate();
+            this.wrapped.renderAll();
         }
     }
 
     @Override
     public void renderAll(IModelRenderer<?> renderer)
     {
-        render(renderer);
+        this.render(renderer);
     }
 
     @Override
     public void renderAllExcept(IModelRenderer<?> renderer, String... excludedGroupNames)
     {
         // SMD Renders whole thing at once, so no part rendering.
-        render(renderer);
+        this.render(renderer);
     }
 
     @Override
     public void renderOnly(IModelRenderer<?> renderer, String... groupNames)
     {
         // SMD Renders whole thing at once, so no part rendering.
-        render(renderer);
+        this.render(renderer);
     }
 
     @Override
     public void renderPart(IModelRenderer<?> renderer, String partName)
     {
         // SMD Renders whole thing at once, so no part rendering.
-        render(renderer);
+        this.render(renderer);
     }
 
     @Override

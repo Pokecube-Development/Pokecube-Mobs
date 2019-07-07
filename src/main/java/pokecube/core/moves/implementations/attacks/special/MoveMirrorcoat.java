@@ -1,7 +1,7 @@
 package pokecube.core.moves.implementations.attacks.special;
 
-import net.minecraft.entity.EntityLivingBase;
-import pokecube.core.interfaces.PokecubeMod;
+import net.minecraft.entity.LivingEntity;
+import pokecube.core.PokecubeCore;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.PokemobDamageSource;
 import pokecube.core.moves.templates.Move_Basic;
@@ -19,25 +19,22 @@ public class MoveMirrorcoat extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        EntityLivingBase attacker = packet.attacker.getEntity();
+        final LivingEntity attacker = packet.attacker.getEntity();
         if (!packet.attacker.getMoveStats().biding)
         {
-            attacker.getEntityData().setLong("bideTime",
-                    attacker.getEntityWorld().getTotalWorldTime() + PokecubeMod.core.getConfig().attackCooldown);
+            attacker.getEntityData().putLong("bideTime", attacker.getEntityWorld().getGameTime() + PokecubeCore
+                    .getConfig().attackCooldown);
             packet.attacker.getMoveStats().biding = true;
             packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER = 0;
         }
-        else
+        else if (attacker.getEntityData().getLong("bideTime") < attacker.getEntityWorld().getGameTime())
         {
-            if (attacker.getEntityData().getLong("bideTime") < attacker.getEntityWorld().getTotalWorldTime())
-            {
-                attacker.getEntityData().removeTag("bideTime");
-                int damage = 2 * packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER;
-                packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER = 0;
-                if (packet.attacked != null)
-                    packet.attacked.attackEntityFrom(new PokemobDamageSource("mob", attacker, this), damage);
-                packet.attacker.getMoveStats().biding = false;
-            }
+            attacker.getEntityData().remove("bideTime");
+            final int damage = 2 * packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER;
+            packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER = 0;
+            if (packet.attacked != null) packet.attacked.attackEntityFrom(new PokemobDamageSource("mob", attacker,
+                    this), damage);
+            packet.attacker.getMoveStats().biding = false;
         }
     }
 }

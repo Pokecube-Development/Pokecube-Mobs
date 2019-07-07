@@ -14,25 +14,17 @@ public class EffectSpore extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        Move_Base attack = move.getMove();
+        final Move_Base attack = move.getMove();
 
-        IPokemob attacker = move.attacker;
-        if (attacker == mob || move.pre || attacker == move.attacked || attacker.isType(PokeType.getType("grass"))) return;
+        final IPokemob attacker = move.attacker;
+        if (attacker == mob || move.pre || attacker == move.attacked || attacker.isType(PokeType.getType("grass")))
+            return;
         if (move.hit && attack.getAttackCategory() == IMoveConstants.CATEGORY_CONTACT && Math.random() > 0.7)
         {
-            int num = new Random().nextInt(30);
-            if (num < 9)
-            {
-                move.attacker.setStatus(IMoveConstants.STATUS_PSN);
-            }
-            if (num < 19)
-            {
-                move.attacker.setStatus(IMoveConstants.STATUS_PAR);
-            }
-            else
-            {
-                move.attacker.setStatus(IMoveConstants.STATUS_SLP);
-            }
+            final int num = new Random().nextInt(30);
+            if (num < 9) move.attacker.setStatus(IMoveConstants.STATUS_PSN);
+            if (num < 19) move.attacker.setStatus(IMoveConstants.STATUS_PAR);
+            else move.attacker.setStatus(IMoveConstants.STATUS_SLP);
         }
     }
 }

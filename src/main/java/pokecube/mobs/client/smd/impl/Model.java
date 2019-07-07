@@ -12,12 +12,14 @@ import com.google.common.collect.Lists;
 
 import net.minecraft.util.ResourceLocation;
 
-/** Base model object, this contains the body, a list of the bones, and the
- * animations. */
+/**
+ * Base model object, this contains the body, a list of the bones, and the
+ * animations.
+ */
 public class Model
 {
     public Body                       body;
-    public HashMap<String, Animation> anims         = new HashMap<String, Animation>();
+    public HashMap<String, Animation> anims         = new HashMap<>();
     public Bone                       root;
     public ArrayList<Bone>            allBones;
     public Animation                  currentAnimation;
@@ -27,10 +29,10 @@ public class Model
     public Model(Model model)
     {
         this.body = new Body(model.body, this);
-        Iterator<Map.Entry<String, Animation>> iterator = model.anims.entrySet().iterator();
+        final Iterator<Map.Entry<String, Animation>> iterator = model.anims.entrySet().iterator();
         while (iterator.hasNext())
         {
-            Map.Entry<String, Animation> entry = iterator.next();
+            final Map.Entry<String, Animation> entry = iterator.next();
             this.anims.put(entry.getKey(), new Animation(entry.getValue(), this));
         }
         this.hasAnimations = model.hasAnimations;
@@ -40,33 +42,26 @@ public class Model
 
     public Model(ResourceLocation resource) throws Exception
     {
-        loadAnimationsAndModel(resource);
-        reformBones();
-        precalculateAnims();
+        this.load(resource);
+        this.reformBones();
+        this.precalculateAnims();
     }
 
     public void animate()
     {
-        resetVerts(this.body);
-        if (this.body.currentAnim == null)
-        {
-            setAnimation("idle");
-        }
+        this.resetVerts(this.body);
+        if (this.body.currentAnim == null) this.setAnimation("idle");
         this.root.prepareTransform();
-        for (Bone b : this.allBones)
-        {
+        for (final Bone b : this.allBones)
             b.applyTransform();
-        }
-        applyVertChange(this.body);
+        this.applyVertChange(this.body);
     }
 
     private void applyVertChange(Body body)
     {
-        if (body == null) { return; }
-        for (MutableVertex v : body.verts)
-        {
+        if (body == null) return;
+        for (final MutableVertex v : body.verts)
             v.apply();
-        }
     }
 
     public boolean hasAnimations()
@@ -74,37 +69,34 @@ public class Model
         return this.hasAnimations;
     }
 
-    private void loadAnimationsAndModel(ResourceLocation resloc) throws Exception
+    private void load(ResourceLocation resloc) throws Exception
     {
         try
         {
-            ResourceLocation modelPath = resloc;
+            final ResourceLocation modelPath = resloc;
             // Load the model.
             this.body = new Body(this, modelPath);
 
-            List<String> anims = Lists.newArrayList("idle", "walking", "flying", "sleeping", "swimming");
-            String resLoc = resloc.toString();
+            final List<String> anims = Lists.newArrayList("idle", "walking", "flying", "sleeping", "swimming");
+            final String resLoc = resloc.toString();
             // Check for valid animations, and load them in as well.
-            for (String s : anims)
+            for (final String s : anims)
             {
-                String anim = resLoc.endsWith("smd") ? resLoc.replace(".smd", "/" + s + ".smd")
+                final String anim = resLoc.endsWith("smd") ? resLoc.replace(".smd", "/" + s + ".smd")
                         : resLoc.replace(".SMD", "/" + s + ".smd");
-                ResourceLocation animation = new ResourceLocation(anim);
+                final ResourceLocation animation = new ResourceLocation(anim);
                 try
                 {
                     this.anims.put(s, new Animation(this, s, animation));
-                    if (s.equalsIgnoreCase("idle"))
-                    {
-                        this.currentAnimation = this.anims.get(s);
-                    }
+                    if (s.equalsIgnoreCase("idle")) this.currentAnimation = this.anims.get(s);
                 }
-                catch (Exception e)
+                catch (final Exception e)
                 {
                     // e.printStackTrace();
                 }
             }
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             throw e;
         }
@@ -112,19 +104,15 @@ public class Model
 
     private void precalculateAnims()
     {
-        for (Animation anim : this.anims.values())
-        {
+        for (final Animation anim : this.anims.values())
             anim.precalculateAnimation(this.body);
-        }
     }
 
     private void reformBones()
     {
         this.root.applyChildrenToRest();
-        for (Bone b : this.allBones)
-        {
+        for (final Bone b : this.allBones)
             b.invertRestMatrix();
-        }
     }
 
     public void renderAll()
@@ -136,24 +124,16 @@ public class Model
 
     private void resetVerts(Body body)
     {
-        if (body == null) { return; }
-        for (MutableVertex v : body.verts)
-        {
+        if (body == null) return;
+        for (final MutableVertex v : body.verts)
             v.reset();
-        }
     }
 
     public void setAnimation(String name)
     {
-        Animation old = this.currentAnimation;
-        if (this.anims.containsKey(name))
-        {
-            this.currentAnimation = this.anims.get(name);
-        }
-        else
-        {
-            this.currentAnimation = this.anims.get("idle");
-        }
+        final Animation old = this.currentAnimation;
+        if (this.anims.containsKey(name)) this.currentAnimation = this.anims.get(name);
+        else this.currentAnimation = this.anims.get("idle");
         this.body.setAnimation(this.currentAnimation);
         if (old != this.currentAnimation)
         {
@@ -163,9 +143,6 @@ public class Model
     void syncBones(Body body)
     {
         this.allBones = body.bones;
-        if (!body.partOfGroup)
-        {
-            this.root = body.root;
-        }
+        if (!body.partOfGroup) this.root = body.root;
     }
 }

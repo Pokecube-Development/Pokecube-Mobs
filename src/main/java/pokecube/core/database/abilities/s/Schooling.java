@@ -14,28 +14,25 @@ public class Schooling extends Ability
     @Override
     public void onUpdate(IPokemob mob)
     {
-        if (noTurn) return;
-        if (base == null)
+        if (Schooling.noTurn) return;
+        if (Schooling.base == null)
         {
-            base = Database.getEntry("Wishiwashi");
-            school = Database.getEntry("Wishiwashi School");
-            noTurn = base == null || school == null;
-            if (noTurn) return;
+            Schooling.base = Database.getEntry("Wishiwashi");
+            Schooling.school = Database.getEntry("Wishiwashi School");
+            Schooling.noTurn = Schooling.base == null || Schooling.school == null;
+            if (Schooling.noTurn) return;
         }
-        PokedexEntry mobs = mob.getPokedexEntry();
-        if (!(mobs == base || mobs == school)) return;
+        final PokedexEntry mobs = mob.getPokedexEntry();
+        if (!(mobs == Schooling.base || mobs == Schooling.school)) return;
         if (mob.getLevel() < 20)
         {
-            if (mobs == school) mob.setPokedexEntry(base);
+            if (mobs == Schooling.school) mob.setPokedexEntry(Schooling.base);
             return;
         }
         if (mob.getEntity().getHealth() > mob.getEntity().getMaxHealth() * 0.25)
         {
-            if (mobs == base) mob.setPokedexEntry(school);
+            if (mobs == Schooling.base) mob.setPokedexEntry(Schooling.school);
         }
-        else
-        {
-            if (mobs == school) mob.setPokedexEntry(base);
-        }
+        else if (mobs == Schooling.school) mob.setPokedexEntry(Schooling.base);
     }
 }

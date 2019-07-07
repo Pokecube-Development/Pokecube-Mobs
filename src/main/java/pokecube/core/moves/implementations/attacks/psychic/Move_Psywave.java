@@ -15,8 +15,8 @@ public class Move_Psywave extends Move_Basic
     @Override
     public int getPWR(IPokemob user, Entity target)
     {
-        int lvl = user.getLevel();
-        int pwr = (int) Math.max(1, lvl * (Math.random() + 0.5));
+        final int lvl = user.getLevel();
+        final int pwr = (int) Math.max(1, lvl * (Math.random() + 0.5));
 
         return pwr;
     }

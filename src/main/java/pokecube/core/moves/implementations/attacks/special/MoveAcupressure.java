@@ -2,6 +2,7 @@ package pokecube.core.moves.implementations.attacks.special;
 
 import java.util.Random;
 
+import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
 import pokecube.core.moves.MovesUtils;
 import pokecube.core.moves.templates.Move_Basic;
@@ -19,12 +20,12 @@ public class MoveAcupressure extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        Random r = new Random(packet.attacked.getEntityWorld().rand.nextLong());
+        final Random r = new Random(packet.attacked.getEntityWorld().rand.nextLong());
         int rand = r.nextInt(7);
         for (int i = 0; i < 8; i++)
         {
-            int stat = (rand);
-            if (MovesUtils.handleStats2(packet.attacker, packet.attacked, 1 << stat, SHARP)) { return; }
+            final int stat = rand;
+            if (MovesUtils.handleStats2(packet.attacker, packet.attacked, 1 << stat, IMoveConstants.SHARP)) return;
             rand = (rand + 1) % 7;
         }
         MovesUtils.displayEfficiencyMessages(packet.attacker, packet.attacked, -2, 0);

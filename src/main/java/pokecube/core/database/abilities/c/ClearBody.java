@@ -13,12 +13,7 @@ public class ClearBody extends Ability
         {
             move.attackerStatModification = move.attackerStatModification.clone();
             for (int i = 0; i < move.attackedStatModification.length; i++)
-            {
-                if(move.attackedStatModification[i]<0)
-                {
-                    move.attackedStatModification[i] = 0;
-                }
-            }
+                if (move.attackedStatModification[i] < 0) move.attackedStatModification[i] = 0;
         }
     }
 }
