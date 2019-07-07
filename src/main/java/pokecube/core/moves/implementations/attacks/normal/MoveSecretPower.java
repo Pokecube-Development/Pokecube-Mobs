@@ -13,18 +13,18 @@ public class MoveSecretPower extends Move_Basic
     }
 
     @Override
-    public void preAttack(MovePacket packet)
-    {
-        // TODO before super call, add in the needed stats/status/change effects
-        // based on terrain.
-        super.preAttack(packet);
-    }
-
-    @Override
     public IMoveAnimation getAnimation(IPokemob user)
     {
         // TODO make this return animations for the relevant attacks based on
         // location instead.
         return super.getAnimation();
+    }
+
+    @Override
+    public void preAttack(MovePacket packet)
+    {
+        // TODO before super call, add in the needed stats/status/change effects
+        // based on terrain.
+        super.preAttack(packet);
     }
 }

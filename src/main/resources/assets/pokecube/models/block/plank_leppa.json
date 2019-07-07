@@ -1,6 +1,6 @@
 {
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "pokecube:blocks/plank_leppa"
-   }
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "pokecube:block/plank_leppa"
+    }
 }

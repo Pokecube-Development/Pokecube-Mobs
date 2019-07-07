@@ -1,6 +1,6 @@
 package pokecube.core.database.abilities.i;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.DamageSource;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IMoveConstants;
@@ -14,8 +14,8 @@ public class IronBarbs extends Ability
     {
         if ((move.getMove().getAttackCategory() & IMoveConstants.CATEGORY_CONTACT) > 0)
         {
-            EntityLivingBase entity = move.attacker.getEntity();
-            float maxHp = entity.getMaxHealth();
+            final LivingEntity entity = move.attacker.getEntity();
+            final float maxHp = entity.getMaxHealth();
             // TODO message about recoil
             entity.attackEntityFrom(DamageSource.MAGIC, 0.125f * maxHp);
         }

@@ -15,12 +15,8 @@ public class MovePerishsong extends Move_Ongoing
     @Override
     public void doOngoingEffect(IOngoingAffected mob, IOngoingEffect effect)
     {
-        if (effect.getDuration() == 0)
-        {
-            damageTarget(mob.getEntity(),
-                    getOngoingDamage(mob.getEntity()).setDamageIsAbsolute().setDamageBypassesArmor(),
-                    Integer.MAX_VALUE);
-        }
+        if (effect.getDuration() == 0) this.damageTarget(mob.getEntity(), this.getOngoingDamage(mob.getEntity())
+                .setDamageIsAbsolute().setDamageBypassesArmor(), Integer.MAX_VALUE);
         else
         {
             // TODO perish counter here.

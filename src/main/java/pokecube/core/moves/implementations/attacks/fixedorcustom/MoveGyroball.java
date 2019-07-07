@@ -17,11 +17,11 @@ public class MoveGyroball extends Move_Basic
     @Override
     public int getPWR(IPokemob user, Entity target)
     {
-        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        final IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
         if (targetMob == null) return 50;
-        int targetSpeed = targetMob.getStat(Stats.VIT, true);
-        int userSpeed = user.getStat(Stats.VIT, true);
-        int pwr = 25 * targetSpeed / userSpeed;
+        final int targetSpeed = targetMob.getStat(Stats.VIT, true);
+        final int userSpeed = user.getStat(Stats.VIT, true);
+        final int pwr = 25 * targetSpeed / userSpeed;
         return pwr;
     }
 }

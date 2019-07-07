@@ -20,28 +20,21 @@ public class MovePsychoShift extends Move_Basic
         super.onAttack(packet);
         if (!(packet.canceled || packet.failed || packet.denied))
         {
-            if (packet.attacker.getStatus() == IMoveConstants.STATUS_NON)
-            {
-                // TODO send failed message.
+            if (packet.attacker.getStatus() == IMoveConstants.STATUS_NON) // TODO
+                                                                          // send
+                                                                          // failed
+                                                                          // message.
                 return;
-            }
-            IPokemob hit = CapabilityPokemob.getPokemobFor(packet.attacked);
+            final IPokemob hit = CapabilityPokemob.getPokemobFor(packet.attacked);
             if (hit != null)
             {
-                if (hit.getStatus() != IMoveConstants.STATUS_NON)
-                {
-                    // TODO send failed message.
+                if (hit.getStatus() != IMoveConstants.STATUS_NON) // TODO send
+                                                                  // failed
+                                                                  // message.
                     return;
-                }
-                if (hit.setStatus(packet.attacker.getStatus()))
-                {
-                    packet.attacker.healStatus();
-                }
-                else
-                {
-                    // TODO send failed message.
+                if (hit.setStatus(packet.attacker.getStatus())) packet.attacker.healStatus();
+                else // TODO send failed message.
                     return;
-                }
             }
         }
     }

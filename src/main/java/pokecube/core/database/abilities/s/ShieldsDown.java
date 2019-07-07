@@ -15,55 +15,44 @@ public class ShieldsDown extends Ability
 
     private static void initFormes()
     {
-        base = Database.getEntry(774);
-        if (base == null)
+        ShieldsDown.base = Database.getEntry(774);
+        if (ShieldsDown.base == null)
         {
-            noBase = true;
+            ShieldsDown.noBase = true;
             return;
         }
-        cores[0] = Database.getEntry("Blue Core Minior");
-        cores[1] = Database.getEntry("Green Core Minior");
-        cores[2] = Database.getEntry("Indigo Core Minior");
-        cores[3] = Database.getEntry("Orange Core Minior");
-        cores[4] = Database.getEntry("Red Core Minior");
-        cores[5] = Database.getEntry("Violet Core Minior");
-        cores[6] = Database.getEntry("Yellow Core Minior");
+        ShieldsDown.cores[0] = Database.getEntry("Blue Core Minior");
+        ShieldsDown.cores[1] = Database.getEntry("Green Core Minior");
+        ShieldsDown.cores[2] = Database.getEntry("Indigo Core Minior");
+        ShieldsDown.cores[3] = Database.getEntry("Orange Core Minior");
+        ShieldsDown.cores[4] = Database.getEntry("Red Core Minior");
+        ShieldsDown.cores[5] = Database.getEntry("Violet Core Minior");
+        ShieldsDown.cores[6] = Database.getEntry("Yellow Core Minior");
         for (int i = 0; i < 7; i++)
-        {
-            if (cores[i] == null) cores[i] = base;
-        }
+            if (ShieldsDown.cores[i] == null) ShieldsDown.cores[i] = ShieldsDown.base;
+    }
+
+    private PokedexEntry getCoreEntry(IPokemob mob)
+    {
+        final int num = mob.getRNGValue();
+        final Random rand = new Random(num);
+        final int index = rand.nextInt(ShieldsDown.cores.length);
+        return ShieldsDown.cores[index];
     }
 
     @Override
     public void onUpdate(IPokemob mob)
     {
-        if (noBase) return;
-        if (base == null)
-        {
-            initFormes();
-        }
-        PokedexEntry entry = mob.getPokedexEntry();
-        if (base == null || entry.getPokedexNb() != base.getPokedexNb()) return;
-        float ratio = mob.getEntity().getHealth() / mob.getEntity().getMaxHealth();
+        if (ShieldsDown.noBase) return;
+        if (ShieldsDown.base == null) ShieldsDown.initFormes();
+        final PokedexEntry entry = mob.getPokedexEntry();
+        if (ShieldsDown.base == null || entry.getPokedexNb() != ShieldsDown.base.getPokedexNb()) return;
+        final float ratio = mob.getEntity().getHealth() / mob.getEntity().getMaxHealth();
         if (ratio < 0.5)
         {
-            PokedexEntry core = getCoreEntry(mob);
-            if (core != null && core != entry)
-            {
-                mob.setPokedexEntry(core);
-            }
+            final PokedexEntry core = this.getCoreEntry(mob);
+            if (core != null && core != entry) mob.setPokedexEntry(core);
         }
-        else if (entry != base)
-        {
-            mob.setPokedexEntry(base);
-        }
-    }
-
-    private PokedexEntry getCoreEntry(IPokemob mob)
-    {
-        int num = mob.getRNGValue();
-        Random rand = new Random(num);
-        int index = rand.nextInt(cores.length);
-        return cores[index];
+        else if (entry != ShieldsDown.base) mob.setPokedexEntry(ShieldsDown.base);
     }
 }

@@ -17,12 +17,12 @@ public class MoveElectroball extends Move_Basic
     @Override
     public int getPWR(IPokemob user, Entity target)
     {
-        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        final IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
         if (targetMob == null) return 50;
-        int targetSpeed = targetMob.getStat(Stats.VIT, true);
-        int userSpeed = user.getStat(Stats.VIT, true);
+        final int targetSpeed = targetMob.getStat(Stats.VIT, true);
+        final int userSpeed = user.getStat(Stats.VIT, true);
         int pwr = 60;
-        double var = (double) targetSpeed / (double) userSpeed;
+        final double var = (double) targetSpeed / (double) userSpeed;
         if (var < 0.25) pwr = 150;
         else if (var < 0.33) pwr = 120;
         else if (var < 0.5) pwr = 80;

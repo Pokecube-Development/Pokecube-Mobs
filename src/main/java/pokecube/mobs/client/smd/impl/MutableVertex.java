@@ -1,24 +1,31 @@
 package pokecube.mobs.client.smd.impl;
 
-import org.lwjgl.util.vector.Matrix4f;
-import org.lwjgl.util.vector.Vector4f;
+import javax.vecmath.Matrix4f;
+import javax.vecmath.Vector4f;
 
 import thut.core.client.render.model.Vertex;
 
-/** This is a Vertex which has a mutable position. It is for used in objects
- * where the vertices for a face can be moved around during animation. */
+/**
+ * This is a Vertex which has a mutable position. It is for used in objects
+ * where the vertices for a face can be moved around during animation.
+ */
 public class MutableVertex extends Vertex
 {
     private final Vector4f defPos;
     public Vector4f        mutPos  = new Vector4f();
     private final Vector4f defNorm;
     public Vector4f        mutNorm = new Vector4f();
+
+    // Temproary vectors used in transforms.
+    final Vector4f posTemp  = new Vector4f();
+    final Vector4f normTemp = new Vector4f();
+
     // Normals
-    public float           xn;
-    public float           yn;
-    public float           zn;
+    public float xn;
+    public float yn;
+    public float zn;
     // Used for searching
-    public final int       ID;
+    public final int ID;
 
     public MutableVertex(float x, float y, float z, float xn, float yn, float zn, int ID)
     {
@@ -44,8 +51,10 @@ public class MutableVertex extends Vertex
         this.mutNorm = vertex.mutNorm;
     }
 
-    /** Sets the internal x,y,z and xn,yn,zn to the values in the mutable
-     * vectors. */
+    /**
+     * Sets the internal x,y,z and xn,yn,zn to the values in the mutable
+     * vectors.
+     */
     public void apply()
     {
         if (this.mutPos == null)
@@ -76,38 +85,34 @@ public class MutableVertex extends Vertex
 
     public boolean equals(float x, float y, float z)
     {
-        return (this.x == x) && (this.y == y) && (this.z == z);
+        return this.x == x && this.y == y && this.z == z;
     }
 
     protected void init()
     {
-        if (this.mutPos == null)
-        {
-            this.mutPos = new Vector4f();
-        }
-        if (this.mutNorm == null)
-        {
-            this.mutNorm = new Vector4f();
-        }
+        if (this.mutPos == null) this.mutPos = new Vector4f();
+        if (this.mutNorm == null) this.mutNorm = new Vector4f();
     }
 
-    /** Sets the mutable positions and normals based on the transform of the
+    /**
+     * Sets the mutable positions and normals based on the transform of the
      * given bone, scaled by the given weight.
-     * 
+     *
      * @param bone
-     * @param weight */
+     * @param weight
+     */
     public void mutateFromBone(Bone bone, float weight)
     {
-        Matrix4f transform = bone.transform;
+        final Matrix4f transform = bone.transform;
         if (transform != null)
         {
-            init();
-            Vector4f posTemp = Matrix4f.transform(transform, this.defPos, null);
-            Vector4f normTemp = Matrix4f.transform(transform, this.defNorm, null);
-            posTemp.scale(weight);
-            normTemp.scale(weight);
-            Vector4f.add(posTemp, this.mutPos, this.mutPos);
-            Vector4f.add(normTemp, this.mutNorm, this.mutNorm);
+            this.init();
+            transform.transform(this.defPos, this.posTemp);
+            transform.transform(this.defNorm, this.normTemp);
+            this.posTemp.scale(weight);
+            this.normTemp.scale(weight);
+            this.mutPos.add(this.posTemp, this.mutPos);
+            this.mutNorm.add(this.normTemp, this.mutNorm);
         }
     }
 

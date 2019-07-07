@@ -12,13 +12,15 @@ public class MoveMultiAttack extends Move_Basic
         super("multiattack");
     }
 
-    /** Type getter
-     * 
-     * @return the type of this move */
+    /**
+     * Type getter
+     *
+     * @return the type of this move
+     */
     @Override
     public PokeType getType(IPokemob user)
     {
-        if (user == null) return move.type;
+        if (user == null) return this.move.type;
         return user.getType1();
     }
 

@@ -1,6 +1,6 @@
 package pokecube.core.database.abilities.w;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.LivingEntity;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.pokemob.moves.MovePacket;
@@ -14,9 +14,9 @@ public class WaterAbsorb extends Ability
         if (mob == move.attacked && move.pre && move.attackType == PokeType.getType("water"))
         {
             move.canceled = true;
-            EntityLivingBase entity = mob.getEntity();
-            float hp = entity.getHealth();
-            float maxHp = entity.getMaxHealth();
+            final LivingEntity entity = mob.getEntity();
+            final float hp = entity.getHealth();
+            final float maxHp = entity.getMaxHealth();
             entity.setHealth(Math.min(hp + 0.25f * maxHp, maxHp));
         }
     }

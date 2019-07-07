@@ -12,16 +12,13 @@ public class WonderGuard extends Ability
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
 
-        Move_Base attack = move.getMove();
+        final Move_Base attack = move.getMove();
 
-        IPokemob attacker = move.attacker;
+        final IPokemob attacker = move.attacker;
 
         if (attacker == mob || !move.pre || attacker == move.attacked) return;
 
-        float eff = PokeType.getAttackEfficiency(attack.getType(move.attacker), mob.getType1(), mob.getType2());
-        if (eff <= 1 && attack.getPWR(attacker, mob.getEntity()) > 0)
-        {
-            move.canceled = true;
-        }
+        final float eff = PokeType.getAttackEfficiency(attack.getType(move.attacker), mob.getType1(), mob.getType2());
+        if (eff <= 1 && attack.getPWR(attacker, mob.getEntity()) > 0) move.canceled = true;
     }
 }
