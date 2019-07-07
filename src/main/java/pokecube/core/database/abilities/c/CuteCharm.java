@@ -12,7 +12,7 @@ public class CuteCharm extends Ability
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
         if (mob != move.attacked || move.pre || move.attacker == move.attacked) return;
-        Move_Base attack = move.getMove();
+        final Move_Base attack = move.getMove();
         if (attack == null || (attack.getAttackCategory() & IMoveConstants.CATEGORY_CONTACT) == 0) return;
         move.infatuateTarget = move.infatuateTarget || Math.random() > 0.7;
     }

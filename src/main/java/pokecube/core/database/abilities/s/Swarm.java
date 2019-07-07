@@ -15,11 +15,8 @@ public class Swarm extends Ability
     {
 
         if (!move.pre) return;
-        if (mob == move.attacker && move.attackType == PokeType.getType("bug")
-                && mob.getEntity().getHealth() < mob.getEntity().getMaxHealth() / 3)
-        {
-            move.PWR *= 1.5;
-        }
+        if (mob == move.attacker && move.attackType == PokeType.getType("bug") && mob.getEntity().getHealth() < mob
+                .getEntity().getMaxHealth() / 3) move.PWR *= 1.5;
     }
 
     @Override
@@ -27,9 +24,9 @@ public class Swarm extends Ability
     {
         if (mob.getEntity().ticksExisted % 20 == 0)
         {
-            if (!(mob.getPokemonOwner() instanceof ServerPlayerEntity)) return;
-            PokecubeCore.instance.spawner.doSpawnForPlayer((PlayerEntity) mob.getPokemonOwner(),
-                    mob.getPokemonOwner().getEntityWorld());
+            if (!(mob.getOwner() instanceof ServerPlayerEntity)) return;
+            PokecubeCore.spawner.doSpawnForPlayer((PlayerEntity) mob.getOwner(), mob.getOwner()
+                    .getEntityWorld());
         }
     }
 }

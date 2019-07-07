@@ -19,27 +19,21 @@ public class MoveRollout extends Move_Basic
     }
 
     @Override
-    public void onAttack(MovePacket packet)
+    public int getPWR(IPokemob attacker, Entity attacked)
     {
-        super.onAttack(packet);
-        if (packet.damageDealt == 0)
-        {
-            packet.attacker.getMoveStats().ROLLOUTCOUNTER = 0;
-        }
-        else packet.attacker.getMoveStats().ROLLOUTCOUNTER++;
+        final double defCurl = attacker.getMoveStats().DEFENSECURLCOUNTER > 0 ? 2 : 1;
+        double rollOut = attacker.getMoveStats().ROLLOUTCOUNTER;
+        if (rollOut > 4) rollOut = attacker.getMoveStats().ROLLOUTCOUNTER = 0;
+        rollOut = Math.max(0, rollOut);
+        return (int) (Math.pow(2, rollOut) * this.getPWR() * defCurl);
     }
 
     @Override
-    public int getPWR(IPokemob attacker, Entity attacked)
+    public void onAttack(MovePacket packet)
     {
-        double defCurl = attacker.getMoveStats().DEFENSECURLCOUNTER > 0 ? 2 : 1;
-        double rollOut = attacker.getMoveStats().ROLLOUTCOUNTER;
-        if (rollOut > 4)
-        {
-            rollOut = attacker.getMoveStats().ROLLOUTCOUNTER = 0;
-        }
-        rollOut = Math.max(0, rollOut);
-        return (int) (Math.pow(2, rollOut) * this.getPWR() * defCurl);
+        super.onAttack(packet);
+        if (packet.damageDealt == 0) packet.attacker.getMoveStats().ROLLOUTCOUNTER = 0;
+        else packet.attacker.getMoveStats().ROLLOUTCOUNTER++;
     }
 
 }

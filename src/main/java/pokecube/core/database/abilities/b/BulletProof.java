@@ -14,16 +14,11 @@ public class BulletProof extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        if (move.pre && mob == move.attacked)
-        {
-            for (String s : bullets)
+        if (move.pre && mob == move.attacked) for (final String s : BulletProof.bullets)
+            if (s.equalsIgnoreCase(move.attack))
             {
-                if (s.equalsIgnoreCase(move.attack))
-                {
-                    move.canceled = true;
-                    return;
-                }
+                move.canceled = true;
+                return;
             }
-        }
     }
 }

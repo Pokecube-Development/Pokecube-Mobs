@@ -1,7 +1,7 @@
 {
-   "parent": "block/cube_column",
-   "textures": {
-       "end": "pokecube:blocks/log_oran",
-       "side": "pokecube:blocks/bark_oran"
-   }
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "pokecube:block/log_oran",
+        "side": "pokecube:block/bark_oran"
+    }
 }

@@ -14,21 +14,18 @@ public class MoveFurycutter extends Move_Basic
     }
 
     @Override
-    public void onAttack(MovePacket packet)
+    public int getPWR(IPokemob attacker, Entity attacked)
     {
-        super.onAttack(packet);
-        if (packet.damageDealt == 0)
-        {
-            packet.attacker.getMoveStats().FURYCUTTERCOUNTER = 0;
-        }
-        else packet.attacker.getMoveStats().FURYCUTTERCOUNTER++;
+        final double rollOut = attacker.getMoveStats().FURYCUTTERCOUNTER;
+        final int PWR = (int) Math.max(this.getPWR(), Math.min(160, rollOut * 2 * this.getPWR()));
+        return PWR;
     }
 
     @Override
-    public int getPWR(IPokemob attacker, Entity attacked)
+    public void onAttack(MovePacket packet)
     {
-        double rollOut = attacker.getMoveStats().FURYCUTTERCOUNTER;
-        int PWR = (int) Math.max(this.getPWR(), Math.min(160, (rollOut * 2) * this.getPWR()));
-        return PWR;
+        super.onAttack(packet);
+        if (packet.damageDealt == 0) packet.attacker.getMoveStats().FURYCUTTERCOUNTER = 0;
+        else packet.attacker.getMoveStats().FURYCUTTERCOUNTER++;
     }
 }

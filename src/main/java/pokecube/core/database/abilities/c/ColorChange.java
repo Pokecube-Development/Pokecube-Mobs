@@ -9,9 +9,6 @@ public class ColorChange extends Ability
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        if (mob == move.attacked && !move.pre)
-        {
-            mob.setType1(move.attackType);
-        }
+        if (mob == move.attacked && !move.pre) mob.setType1(move.attackType);
     }
 }

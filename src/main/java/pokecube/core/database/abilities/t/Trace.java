@@ -14,36 +14,30 @@ public class Trace extends Ability
     @Override
     public void onAgress(IPokemob mob, LivingEntity target)
     {
-        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
-        if (traced != null) traced.onAgress(mob, target);
+        final IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        if (this.traced != null) this.traced.onAgress(mob, target);
         else if (targetMob != null)
         {
-            Ability ability = targetMob.getAbility();
-            if (ability != null)
-            {
-                traced = AbilityManager.makeAbility(ability.getClass(), mob);
-            }
+            final Ability ability = targetMob.getAbility();
+            if (ability != null) this.traced = AbilityManager.makeAbility(ability.getClass(), mob);
         }
     }
 
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
-        if (traced != null) traced.onMoveUse(mob, move);
+        if (this.traced != null) this.traced.onMoveUse(mob, move);
     }
 
     @Override
     public void onUpdate(IPokemob mob)
     {
-        if (traced != null && mob.getEntity().getAttackTarget() == null)
+        if (this.traced != null && mob.getEntity().getAttackTarget() == null)
         {
-            traced.destroy();
-            traced = null;
+            this.traced.destroy();
+            this.traced = null;
         }
-        else if (traced != null)
-        {
-            traced.onUpdate(mob);
-        }
+        else if (this.traced != null) this.traced.onUpdate(mob);
     }
 
 }

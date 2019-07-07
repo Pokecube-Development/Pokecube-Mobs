@@ -14,9 +14,9 @@ public class WaterAbsorb extends Ability
         if (mob == move.attacked && move.pre && move.attackType == PokeType.getType("water"))
         {
             move.canceled = true;
-            LivingEntity entity = mob.getEntity();
-            float hp = entity.getHealth();
-            float maxHp = entity.getMaxHealth();
+            final LivingEntity entity = mob.getEntity();
+            final float hp = entity.getHealth();
+            final float maxHp = entity.getMaxHealth();
             entity.setHealth(Math.min(hp + 0.25f * maxHp, maxHp));
         }
     }

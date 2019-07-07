@@ -12,10 +12,10 @@ public class Sturdy extends Ability
     {
         if (mob == move.attacked)
         {
-            LivingEntity target = mob.getEntity();
-            float hp = target.getHealth();
-            float maxHp = target.getMaxHealth();
-            if (hp == maxHp && damage >= hp) { return (int) (maxHp) - 1; }
+            final LivingEntity target = mob.getEntity();
+            final float hp = target.getHealth();
+            final float maxHp = target.getMaxHealth();
+            if (hp == maxHp && damage >= hp) return (int) maxHp - 1;
         }
         return damage;
     }

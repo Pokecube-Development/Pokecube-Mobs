@@ -1,8 +1,7 @@
 {
     "variants": {
-        "axis=y": { "model": "pokecube:log_nanab" },
-        "axis=z":  { "model": "pokecube:log_nanab","x": 90 },
-        "axis=x": { "model": "pokecube:log_nanab", "x": 90, "y": 90 },
-        "axis=none":  { "model": "pokecube:bark_nanab" }
+        "axis=y": { "model": "pokecube:block/log_nanab" },
+        "axis=z": { "model": "pokecube:block/log_nanab", "x": 90 },
+        "axis=x": { "model": "pokecube:block/log_nanab", "x": 90, "y": 90 }
     }
 }

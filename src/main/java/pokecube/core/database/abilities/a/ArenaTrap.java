@@ -14,9 +14,9 @@ public class ArenaTrap extends Ability
     {
         if (mob.getEntity().ticksExisted % 20 == 0)
         {
-            if (!(mob.getPokemonOwner() instanceof ServerPlayerEntity)) return;
-            PokecubeCore.instance.spawner.doSpawnForPlayer((PlayerEntity) mob.getPokemonOwner(),
-                    mob.getPokemonOwner().getEntityWorld());
+            if (!(mob.getOwner() instanceof ServerPlayerEntity)) return;
+            PokecubeCore.spawner.doSpawnForPlayer((PlayerEntity) mob.getOwner(), mob.getOwner()
+                    .getEntityWorld());
         }
     }
 }

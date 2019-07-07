@@ -17,19 +17,13 @@ public class Move_Teleport extends Move_Basic
     @Override
     public void postAttack(MovePacket packet)
     {
-        IPokemob attacker = packet.attacker;
+        final IPokemob attacker = packet.attacker;
         Entity attacked = packet.attacked;
-        Entity target = attacker.getEntity().getAttackTarget();
+        final Entity target = attacker.getEntity().getAttackTarget();
         if (attacked == attacker.getEntity() && target != null) attacked = target;
-        IPokemob attackedMob = CapabilityPokemob.getPokemobFor(attacked);
-        if (attacked instanceof MobEntity)
-        {
-            ((MobEntity) attacked).setAttackTarget(null);
-        }
-        else if (attackedMob != null)
-        {
-            attackedMob.getEntity().setAttackTarget(null);
-        }
+        final IPokemob attackedMob = CapabilityPokemob.getPokemobFor(attacked);
+        if (attacked instanceof MobEntity) ((MobEntity) attacked).setAttackTarget(null);
+        else if (attackedMob != null) attackedMob.getEntity().setAttackTarget(null);
         super.postAttack(packet);
     }
 }

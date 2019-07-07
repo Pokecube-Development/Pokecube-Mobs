@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "pokecube:plank_leppa" }
+        "": { "model": "pokecube:block/plank_leppa" }
     }
 }

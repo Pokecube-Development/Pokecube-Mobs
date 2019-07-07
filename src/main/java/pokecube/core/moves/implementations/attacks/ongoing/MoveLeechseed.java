@@ -18,15 +18,12 @@ public class MoveLeechseed extends Move_Ongoing
     @Override
     public void doOngoingEffect(IOngoingAffected mob, IOngoingEffect effect)
     {
-        LivingEntity living = mob.getEntity();
-        IPokemob pokemob = CapabilityPokemob.getPokemobFor(living);
+        final LivingEntity living = mob.getEntity();
+        final IPokemob pokemob = CapabilityPokemob.getPokemobFor(living);
         float factor = 0.0625f;
-        if (pokemob != null)
-        {
-            factor *= (pokemob.getMoveStats().TOXIC_COUNTER + 1);
-        }
-        float thisMaxHP = living.getMaxHealth();
-        float damage = damageTarget(living, null, Math.max(1, (int) (factor * thisMaxHP)));
+        if (pokemob != null) factor *= pokemob.getMoveStats().TOXIC_COUNTER + 1;
+        final float thisMaxHP = living.getMaxHealth();
+        final float damage = this.damageTarget(living, null, Math.max(1, (int) (factor * thisMaxHP)));
         LivingEntity target = living.getAttackingEntity();
         if (target == null) target = living.getRevengeTarget();
         if (target == null) target = living.getLastAttackedEntity();

@@ -13,9 +13,7 @@ public class Contrary extends Ability
         {
             move.attackedStatModification = move.attackedStatModification.clone();
             for (int i = 0; i < move.attackedStatModification.length; i++)
-            {
                 move.attackedStatModification[i] = -move.attackedStatModification[i];
-            }
         }
     }
 }

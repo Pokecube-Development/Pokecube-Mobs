@@ -20,14 +20,14 @@ public class MoveSplash extends Move_Basic
     {
         super.preAttack(packet);
         packet.denied = true;
-        IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
+        final IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
         if (attacked != null)
         {
-            ITextComponent text = CommandTools.makeTranslatedMessage("pokemob.move.doesnt.affect", "red",
-                    attacked.getPokemonDisplayName().getFormattedText());
+            ITextComponent text = CommandTools.makeTranslatedMessage("pokemob.move.doesnt.affect", "red", attacked
+                    .getDisplayName().getFormattedText());
             packet.attacker.displayMessageToOwner(text);
-            text = CommandTools.makeTranslatedMessage("pokemob.move.doesnt.affect", "green",
-                    attacked.getPokemonDisplayName().getFormattedText());
+            text = CommandTools.makeTranslatedMessage("pokemob.move.doesnt.affect", "green", attacked
+                    .getDisplayName().getFormattedText());
             attacked.displayMessageToOwner(text);
         }
     }
