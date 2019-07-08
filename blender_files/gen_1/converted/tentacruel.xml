@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" shearable="Right_Shroom,Left_Shroom"/>
+  <phase type="idle">
+   <part name="squidTentacles1">
+    <component length="40" name="1" rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,2.5044781608585254E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles12">
+    <component length="40" name="1" posOffset="0.0019238948822022373,0.0,0.0," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,-6.678608457377777E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles8">
+    <component length="40" name="1" posOffset="-0.0019238948822022373,0.0,0.0," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,-3.3393042286888885E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles7">
+    <component length="40" name="1" posOffset="0.0,0.0,-3.6739405577555036E-16," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,-2.5044781608585254E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles5">
+    <component length="40" name="1" posOffset="0.0,0.0,0.0019238948822022373," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,-8.348260571722221E-7,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles2">
+    <component length="40" name="1" posOffset="0.0019238948822022373,0.0,0.0," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,1.6696521143444443E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles3">
+    <component length="40" name="1" posOffset="0.0,0.0,0.0019238948822022373," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,8.348260571722221E-7,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles10">
+    <component length="40" name="1" posOffset="5.510910704284357E-16,0.0,0.0," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,-5.008956321717051E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles6">
+    <component length="40" name="1" posOffset="-0.0019238948822022373,0.0,0.0," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,-1.6696521143444443E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles11">
+    <component length="40" name="1" posOffset="0.0,0.0,-0.0019238948822022373," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,9.864067749276728E-7,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles9">
+    <component length="40" name="1" posOffset="0.0,0.0,-0.0019238948822022373," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,2.6560588821666897E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles4">
+    <component length="40" name="1" posOffset="-1.8369702788777518E-16,0.0,0.0," rotChange="20.0,0.0,0.0," rotOffset="12.50000062611954,-0.0,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-20.0,0.0,0.0," startKey="40"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

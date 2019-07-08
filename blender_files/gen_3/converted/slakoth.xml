@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Wooly_mane,Right_legChild,HeadChild,Left_legChild" head="Head,Head,head,head,head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Right_Shroom,Left_Shroom" trans="Esmerald_22,Esmerald_21,Esmerald_2,Esmerald_1,Esmerald_12,Esmerald_11"/>
+  <phase type="walking">
+   <part name="right_arm1">
+    <component length="10" name="RA1" rotChange="-20.43,0.0,-7.829999999999998," startKey="0"/>
+    <component length="2" name="RA2" rotChange="15.649999999999999,0.0,-7.82," startKey="10"/>
+    <component length="2" name="RA3" rotChange="4.780000000000001,0.0,15.649999999999999," startKey="25"/>
+   </part>
+   <part name="left_arm1">
+    <component length="10" name="LA4" rotOffset="4.78,-15.649999999999999,-0.0," startKey="0"/>
+    <component length="2" name="LA3" rotChange="4.78,0.0,-15.649999999999999," startKey="10"/>
+    <component length="10" name="LA1" rotChange="-20.43,0.0,7.829999999999998," startKey="15"/>
+    <component length="2" name="LA2" rotChange="15.649999999999999,0.0,7.82," startKey="25"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

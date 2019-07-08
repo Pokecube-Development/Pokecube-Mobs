@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" shearable="Right_Shroom,Left_Shroom"/>
+  <phase type="idle">
+   <part name="leftWing">
+    <component length="10" name="1" rotOffset="-0.0,70.0,-0.0," startKey="0"/>
+   </part>
+   <part name="rightWing">
+    <component length="10" name="1" rotOffset="-0.0,-70.0,-0.0," startKey="0"/>
+   </part>
+  </phase>
+  <phase type="flying">
+   <part name="leftWing">
+    <component length="10" name="1" rotChange="0.0,0.0,-90.0," rotOffset="-0.0,-45.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,90.0," startKey="10"/>
+   </part>
+   <part name="rightWing">
+    <component length="10" name="1" rotChange="0.0,0.0,90.0," rotOffset="-0.0,45.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-90.0," startKey="10"/>
+   </part>
+  </phase>
+  <phase type="walking">
+   <part name="leftLeg">
+    <component length="10" name="1" rotChange="90.0,0.0,0.0," rotOffset="45.0,-0.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="-90.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="rightLeg">
+    <component length="10" name="1" rotChange="-90.0,0.0,0.0," rotOffset="-45.0,-0.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="90.0,0.0,0.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

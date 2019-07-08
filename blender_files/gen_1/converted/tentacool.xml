@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" shearable="Right_Shroom,Left_Shroom"/>
+  <phase type="idle">
+   <part name="squidTentacles1">
+    <component length="40" name="1" rotChange="30.000000000000004,0.0,0.0," rotOffset="22.50000062611954,2.5044781608585254E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-30.0,0.0,0.0," startKey="40"/>
+   </part>
+   <part name="squidTentacles2">
+    <component length="40" name="1" posOffset="0.0,0.0,-6.123233998228043E-16," rotChange="30.0,0.0,0.0," rotOffset="22.50000062611954,-2.5044781608585254E-6,-0.0," startKey="0"/>
+    <component length="40" name="2" rotChange="-30.0,0.0,0.0," startKey="40"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

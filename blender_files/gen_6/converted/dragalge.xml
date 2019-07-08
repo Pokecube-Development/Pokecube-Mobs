@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Wooly_mane,Right_legChild,HeadChild,Left_legChild" head="Head,Head,Head,Head,Head,head,head,Head_Vert_1,head,Head,Head,Head,Neck,Head,Head,shape2,head,head,Head,Head,Head,Head,Neck,Head,Head,head,Head,Head,head,Head,head,Head,neck(head),head,Head,Head,Shield,Head,head,Head,head,Shield,Head,Mouth,Head,Neck,head,Thorax,Nose,head,Head,head,Head,Head,Neck(head),Head,Head,Head1,head,Head_dome,head,Head1,Head,Head_jelly,head,Head,Head,head,Bottom_Head_Piece,head,Head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Right_Shroom,Left_Shroom" trans="Esmerald_22,Esmerald_21,Esmerald_2,Esmerald_1,Esmerald_12,Esmerald_11"/>
+  <phase type="Walking">
+   <part name="Corps 6">
+    <component length="15" name="Queue 2 " posChange="0.0,0.0,1.0," posOffset="0.0,0.0,-1.0," rotChange="-73.04000000000002,0.0,0.0," rotOffset="-50.5,-0.0,-0.0," startKey="0"/>
+    <component length="15" name="Queue 2 *" rotChange="44.34,0.0,0.0," startKey="15"/>
+   </part>
+   <part name="Tête 1">
+    <component length="15" name="Tete " rotChange="28.69999999999999,0.0,0.0," rotOffset="19.439999999999998,-0.0,-0.0," startKey="0"/>
+    <component length="15" name="tete *" rotChange="-23.47999999999999,0.0,0.0," startKey="15"/>
+   </part>
+   <part name="Bras G">
+    <component length="15" name="Bras G 1" rotChange="-31.299999999999994,27.78,-21.17," rotOffset="-30.87,-0.0,-0.0," startKey="0"/>
+    <component length="15" name="Bras G 1 *" rotChange="31.3,-27.78,21.17," startKey="15"/>
+   </part>
+   <part name="Corps 5">
+    <component length="15" name="QUeue 1" rotChange="-54.00999999999999,0.0,0.0," startKey="0"/>
+    <component length="15" name="Queue 1 *" rotChange="54.00999999999999,0.0,0.0," startKey="15"/>
+   </part>
+   <part name="Bras G">
+    <component length="15" name="Bras D 1" rotChange="26.089999999999996,-23.47999999999999,-10.440000000000005," rotOffset="36.239999999999995,7.830000000000002,2.6000000000000227," startKey="0"/>
+    <component length="15" name="Bras D 1 *" rotChange="-26.09,23.47999999999999,10.439999999999998," startKey="15"/>
+   </part>
+   <part name="Queue">
+    <component length="15" name="Queue 3" rotChange="-46.0,0.0,0.0," rotOffset="-35.21,-0.0,-0.0," startKey="0"/>
+    <component length="15" name="Queue 3 *" rotChange="46.0,0.0,0.0," startKey="15"/>
+   </part>
+   <part name="Corps 1">
+    <component length="15" name="Corps" posChange="0.0,7.0,0.0," rotChange="-3.552713678800501E-15,0.0,0.0," rotOffset="-32.870000000000005,-0.0,-0.0," startKey="0"/>
+    <component length="15" name="Corps *" posChange="0.0,-7.0,0.0," startKey="15"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

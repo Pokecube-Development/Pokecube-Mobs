@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Wooly_mane,Right_legChild,HeadChild,Left_legChild" head="Head,Head,Head,Head,Head,Head,head,head,Head_Vert_1,head,Head,Head,Head,Neck,Head,Head,shape2,head,head,Head,Head,Head,Head,Neck,Head,Head,Neck,head,Head,Head,head,Head,head,Head,neck(head),Body,head,Head,Head,Head,Shield,Head,head,Head,head,Shield,Head,Mouth,Head,Neck,head,Thorax,Nose,head,Head,head,Head,Head,Neck(head),Head,Head,Head1,head,Head_dome,head,Head1,Head,Head_jelly,head,Head,Head,head,Bottom_Head_Piece,head,Head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Right_Shroom,Left_Shroom" trans="Left_arm,Esmerald_22,Body 4,Esmerald_21,Esmerald_2,Esmerald_1,Top_Hat,Tail,Body 2,Body 3,Hat,Body,Body 1,Right_arm,Hat 1,Esmerald_12,Hat 2,Esmerald_11"/>
+  <phase type="idle">
+   <part name="Arm Left">
+    <component length="8" name="Arm Left 1" rotChange="0.0,7.199999999999996,0.0," rotOffset="-0.0,-0.0,12.239999999999998," startKey="0"/>
+    <component length="8" name="Arm Left 2" rotChange="0.0,6.840000000000003,0.0," startKey="8"/>
+    <component length="8" name="Arm Left 3" rotChange="0.0,-6.839999999999996,0.0," startKey="16"/>
+    <component length="8" name="Arm Left 4" rotChange="0.0,-7.199999999999996,0.0," startKey="24"/>
+   </part>
+   <part name="Body">
+    <component length="8" name="Body 1" posChange="0.0,0.10000000000000142,0.0," posOffset="0.0,-0.10000000000000142,0.0," startKey="0"/>
+    <component length="8" name="Body 2" posChange="0.0,0.09999999999999964,0.0," startKey="8"/>
+    <component length="8" name="Body 3" posChange="0.0,-0.09999999999999964,0.0," startKey="16"/>
+    <component length="8" name="Body4" posChange="0.0,-0.10000000000000142,0.0," startKey="24"/>
+   </part>
+   <part name="Leg Left">
+    <component length="8" name="Leg Left 1" posChange="0.0,-0.09999999999999964,0.0," posOffset="0.0,0.10000000000000053,0.0," startKey="0"/>
+    <component length="8" name="Leg Left 2" posChange="0.0,-0.09999999999999964,0.0," startKey="8"/>
+    <component length="8" name="Leg Left 3" posChange="0.0,0.09999999999999964,0.0," startKey="16"/>
+    <component length="8" name="Leg Left 4" posChange="0.0,0.09999999999999964,0.0," startKey="24"/>
+   </part>
+   <part name="Tail M Left 1">
+    <component length="8" name="Tail M Left 1" rotChange="0.0,0.0,-6.119999999999997," rotOffset="-0.0,-17.279999999999998,-0.0," startKey="0"/>
+    <component length="8" name="Tail M Left 2" rotChange="0.0,0.0,-13.32," startKey="8"/>
+    <component length="8" name="Tail M Left 3" rotChange="0.0,0.0,13.32," startKey="16"/>
+    <component length="8" name="Tail M Left 4" rotChange="0.0,0.0,6.119999999999997," startKey="24"/>
+   </part>
+   <part name="Arm Right">
+    <component length="8" name="Arm Right 1" rotChange="0.0,-6.480000000000004,0.0," rotOffset="-0.0,-0.0,-10.080000000000002," startKey="0"/>
+    <component length="8" name="Arm Right 2" rotChange="0.0,-5.759999999999998,0.0," startKey="8"/>
+    <component length="8" name="Arm Right 3" rotChange="0.0,5.759999999999998,0.0," startKey="16"/>
+    <component length="8" name="Arm Right 4" rotChange="0.0,6.480000000000004,0.0," startKey="24"/>
+   </part>
+   <part name="Tail F Left">
+    <component length="8" name="Tail Left 1" rotChange="0.0,0.0,-7.560000000000002," rotOffset="-0.0,-10.440000000000005,-0.0," startKey="0"/>
+    <component length="8" name="Tail Left 2" rotChange="0.0,0.0,-6.479999999999997," startKey="8"/>
+    <component length="8" name="Tail Left 3" rotChange="0.0,0.0,6.479999999999997," startKey="16"/>
+    <component length="8" name="Tail Left 4" rotChange="0.0,0.0,7.560000000000002," startKey="24"/>
+   </part>
+   <part name="Tail F Right">
+    <component length="8" name="Tail Right 1" rotChange="0.0,0.0,-9.719999999999999," rotOffset="-0.0,-11.159999999999997,-0.0," startKey="0"/>
+    <component length="8" name="Tail Right 2" rotChange="0.0,0.0,-7.920000000000002," startKey="8"/>
+    <component length="8" name="Tail Right 3" rotChange="0.0,0.0,7.920000000000002," startKey="16"/>
+    <component length="8" name="Tail Right 4" rotChange="0.0,0.0,9.719999999999992," startKey="24"/>
+   </part>
+   <part name="Leg Right">
+    <component length="8" name="Leg Right 1" posChange="0.0,-0.10000000000000053,0.0," posOffset="0.0,0.10000000000000053,0.0," startKey="0"/>
+    <component length="8" name="Leg Right 2" posChange="0.0,-0.09999999999999964,0.0," startKey="8"/>
+    <component length="8" name="Leg Right 3" posChange="0.0,0.09999999999999964,0.0," startKey="16"/>
+    <component length="8" name="Leg Right 4" posChange="0.0,0.10000000000000053,0.0," startKey="24"/>
+   </part>
+   <part name="Tail M Right 1">
+    <component length="8" name="Tail M Right 1" rotChange="0.0,0.0,-12.600000000000001," rotOffset="-0.0,-16.560000000000002,-0.0," startKey="0"/>
+    <component length="8" name="Tail M Right 2" rotChange="0.0,0.0,-13.319999999999997," startKey="8"/>
+    <component length="8" name="Tail M Right 3" rotChange="0.0,0.0,13.319999999999997," startKey="16"/>
+    <component length="8" name="Tail M Right 4" rotChange="0.0,0.0,12.599999999999895," startKey="24"/>
+   </part>
+  </phase>
+  <phase type="sitting">
+   <part name="Arm Left">
+    <component length="10" name="Arm Left 1" rotChange="0.0,2.879999999999999,0.0," rotOffset="-0.0,-0.0,3.239999999999988," startKey="0"/>
+    <component length="10" name="Arm Left 2" rotChange="0.0,3.2399999999999984,0.0," startKey="10"/>
+    <component length="10" name="Arm Left 3" rotChange="0.0,-3.2400000000000055,0.0," startKey="20"/>
+    <component length="10" name="Arm Left 4" rotChange="0.0,-2.879999999999999,0.0," startKey="30"/>
+   </part>
+   <part name="Fur Body Left">
+    <component length="10" name="Fur 2" rotOffset="-0.0,-0.0,32.4," startKey="0"/>
+   </part>
+   <part name="Body">
+    <component length="10" name="Body  1" posChange="0.0,0.10000000000000142,0.0," posOffset="0.0,3.1999999999999993,0.0," startKey="0"/>
+    <component length="10" name="Body 2" posChange="0.0,0.09999999999999787,0.0," startKey="10"/>
+    <component length="10" name="Body 3" posChange="0.0,-0.09999999999999787,0.0," startKey="20"/>
+    <component length="10" name="Body 4" posChange="0.0,-0.10000000000000142,0.0," startKey="30"/>
+   </part>
+   <part name="Leg Left">
+    <component length="10" name="Leg Left 1" posChange="0.0,-0.10000000000000053,0.0," posOffset="0.09999999999999987,0.3000000000000007,-0.8," rotOffset="89.5,12.6,-0.0," startKey="0"/>
+    <component length="10" name="Leg Left 2" posChange="0.0,-0.09999999999999964,0.0," startKey="10"/>
+    <component length="10" name="Leg Left 3" posChange="0.0,0.09999999999999964,0.0," startKey="20"/>
+    <component length="10" name="Leg Left 4" posChange="0.0,0.10000000000000053,0.0," startKey="30"/>
+   </part>
+   <part name="Tail M Left 1">
+    <component length="10" name="Tail M 2" rotOffset="-26.64,-0.7199999999999953,-0.0," startKey="0"/>
+   </part>
+   <part name="Arm Right">
+    <component length="10" name="Arm Right 1" rotChange="0.0,-3.2399999999999984,0.0," rotOffset="-0.0,-0.0,-3.239999999999995," startKey="0"/>
+    <component length="10" name="Arm Right 2" rotChange="0.0,-2.879999999999999,0.0," startKey="10"/>
+    <component length="10" name="Arm Right 3" rotChange="0.0,2.879999999999999,0.0," startKey="20"/>
+    <component length="10" name="Arm Right 4" rotChange="0.0,3.2399999999999984,0.0," startKey="30"/>
+   </part>
+   <part name="Tail F Left">
+    <component length="10" name="Tail F 1" rotOffset="-0.0,-0.0,35.28," startKey="0"/>
+   </part>
+   <part name="Fur Body Right">
+    <component length="10" name="Fur 1" rotOffset="-0.0,-0.0,-29.880000000000003," startKey="0"/>
+   </part>
+   <part name="Tail F Right">
+    <component length="10" name="Tail F 2" rotOffset="-0.0,1.4210854715202004E-14,29.16," startKey="0"/>
+   </part>
+   <part name="Leg Right">
+    <component length="10" name="Leg Right 1" posChange="0.0,-0.10000000000000053,0.0," posOffset="-0.20000000000000007,0.3000000000000007,-0.7," rotOffset="89.69,-5.76,-0.0," startKey="0"/>
+    <component length="10" name="Leg Right 2" posChange="0.0,-0.09999999999999964,0.0," startKey="10"/>
+    <component length="10" name="Leg Right 3" posChange="0.0,0.09999999999999964,0.0," startKey="20"/>
+    <component length="10" name="Leg Right 4" posChange="0.0,0.10000000000000053,0.0," startKey="30"/>
+   </part>
+   <part name="Tail M Right 1">
+    <component length="10" name="Tail M 1" rotOffset="-25.560000000000002,1.1368683772161603E-13,-0.0," startKey="0"/>
+   </part>
+  </phase>
+  <phase type="walking">
+   <part name="Tail M Left 2">
+    <component length="6" name="Tail M Left 2.1" rotChange="0.0,-15.120000000000001,0.0," rotOffset="-0.0,-0.0,-28.44," startKey="0"/>
+    <component length="6" name="Tail M left 2.2" rotChange="0.0,-16.919999999999998,0.0," startKey="6"/>
+    <component length="6" name="Tail M left 2.3" rotChange="0.0,16.92,0.0," startKey="12"/>
+    <component length="6" name="Tail M left 2.4" rotChange="0.0,15.120000000000001,0.0," startKey="18"/>
+   </part>
+   <part name="Arm Left">
+    <component length="6" name="Arm Left 1" rotChange="45.36,0.0,0.0," rotOffset="52.2,-0.0,7.105427357601002E-15," startKey="0"/>
+    <component length="6" name="Arm Left 2" rotChange="61.98000000000003,0.0,0.0," startKey="6"/>
+    <component length="6" name="Arm Left 3" rotChange="-61.980000000000004,0.0,0.0," startKey="12"/>
+    <component length="6" name="Arm Left 4" rotChange="-45.36,0.0,0.0," startKey="18"/>
+   </part>
+   <part name="Leg Left">
+    <component length="6" name="Leg Left 1" rotChange="-52.2,0.0,0.0," rotOffset="-62.61,-0.0,-0.0," startKey="0"/>
+    <component length="6" name="Leg Left 2" rotChange="-62.27999999999999,0.0,0.0," startKey="6"/>
+    <component length="6" name="Leg Left 3" rotChange="62.28000000000003,0.0,0.0," startKey="12"/>
+    <component length="6" name="Leg Left 4" rotChange="52.2,0.0,0.0," startKey="18"/>
+   </part>
+   <part name="Tail F Left 2">
+    <component length="6" name="Tail F Left 2.1" rotChange="0.0,0.0,25.92," rotOffset="-0.0,30.6,-0.0," startKey="0"/>
+    <component length="6" name="Tail F Left 2.2" rotChange="0.0,0.0,20.16," startKey="6"/>
+    <component length="6" name="Tail F Left 2.3" rotChange="0.0,0.0,-20.160000000000007," startKey="12"/>
+    <component length="6" name="Tail F Left 2.4" rotChange="0.0,0.0,-25.91999999999999," startKey="18"/>
+   </part>
+   <part name="Tail F Left 3">
+    <component length="6" name="Tail F Left 3.1" rotChange="0.0,0.0,17.279999999999998," rotOffset="-0.0,30.24,-0.0," startKey="0"/>
+    <component length="6" name="Tail F Left 3.2" rotChange="0.0,0.0,21.239999999999988," startKey="6"/>
+    <component length="6" name="Tail F Left 3.3" rotChange="0.0,0.0,-21.23999999999999," startKey="12"/>
+    <component length="6" name="Tail F Left 3.4" rotChange="0.0,0.0,-17.28," startKey="18"/>
+   </part>
+   <part name="Tail M Left 1">
+    <component length="6" name="Tail M Left 1.1" rotChange="0.0,0.0,24.48000000000001," rotOffset="-0.0,50.040000000000006,-0.0," startKey="0"/>
+    <component length="6" name="Tail M Left 1.2" rotChange="0.0,0.0,37.80000000000002," startKey="6"/>
+    <component length="6" name="Tail M Left 1.3" rotChange="0.0,0.0,-37.79999999999999," startKey="12"/>
+    <component length="6" name="Tail M Left 1.4" rotChange="0.0,0.0,-24.479999999999997," startKey="18"/>
+   </part>
+   <part name="Arm Right">
+    <component length="6" name="Arm Right 1" rotChange="-38.52,0.0,0.0," rotOffset="-43.56,-0.0,3.552713678800501E-15," startKey="0"/>
+    <component length="6" name="Arm RIght 2" rotChange="-49.68000000000001,0.0,0.0," startKey="6"/>
+    <component length="6" name="Arm Right 3" rotChange="49.68,0.0,0.0," startKey="12"/>
+    <component length="6" name="Arm Right 4" rotChange="38.52,0.0,0.0," startKey="18"/>
+   </part>
+   <part name="Tail F Left">
+    <component length="6" name="Tail F Left 1.1" rotChange="0.0,0.0,18.0," rotOffset="-5.040000000000003,41.4,-0.0," startKey="0"/>
+    <component length="6" name="Tail F Left 1.2" rotChange="0.0,0.0,23.75999999999997," startKey="6"/>
+    <component length="6" name="Tail F Left 1.3" rotChange="0.0,0.0,-23.759999999999998," startKey="12"/>
+    <component length="6" name="Tail F Left 1.4" rotChange="0.0,0.0,-17.999999999999993," startKey="18"/>
+   </part>
+   <part name="Tail F Right">
+    <component length="6" name="Tail F right 1" rotChange="0.0,0.0,17.28," rotOffset="-0.0,46.44000000000001,-0.0," startKey="0"/>
+    <component length="6" name="Tail F right 2" rotChange="0.0,0.0,21.59999999999998," startKey="6"/>
+    <component length="6" name="Tail F Right 3" rotChange="0.0,0.0,-21.60000000000001," startKey="12"/>
+    <component length="6" name="Tail F Right 4" rotChange="0.0,0.0,-17.28," startKey="18"/>
+   </part>
+   <part name="Tail M Right 2">
+    <component length="6" name="Tail M Right 2.1" rotChange="0.0,-18.72,0.0," rotOffset="-0.0,-0.0,-25.2," startKey="0"/>
+    <component length="6" name="Tail M right 2.2" rotChange="0.0,-21.60000000000001,0.0," startKey="6"/>
+    <component length="6" name="Tail M Right 2.3" rotChange="0.0,21.600000000000005,0.0," startKey="12"/>
+    <component length="6" name="Tail M Right 2.4" rotChange="0.0,18.720000000000013,0.0," startKey="18"/>
+   </part>
+   <part name="Tail F Right 2">
+    <component length="6" name="Tail F RIght 2.1" rotChange="0.0,0.0,19.440000000000005," rotOffset="-0.0,34.2,-0.0," startKey="0"/>
+    <component length="6" name="Tail F Right 2.2" rotChange="0.0,0.0,27.36," startKey="6"/>
+    <component length="6" name="Tail F Right 2.3" rotChange="0.0,0.0,-27.36," startKey="12"/>
+    <component length="6" name="Tail F Right 2.4" rotChange="0.0,0.0,-19.440000000000005," startKey="18"/>
+   </part>
+   <part name="Leg Right">
+    <component length="6" name="Leg Right 1" rotChange="55.44,0.0,0.0," rotOffset="63.6,-0.0,-0.0," startKey="0"/>
+    <component length="6" name="Leg Right 2" rotChange="48.960000000000036,0.0,0.0," startKey="6"/>
+    <component length="6" name="Leg Right 3" rotChange="-48.959999999999994,0.0,0.0," startKey="12"/>
+    <component length="6" name="Leg Right 4" rotChange="-55.44000000000001,0.0,0.0," startKey="18"/>
+   </part>
+   <part name="Tail F Right 3">
+    <component length="6" name="Tail F Right 3.1" rotChange="0.0,0.0,19.439999999999998," rotOffset="-0.0,25.56,-0.0," startKey="0"/>
+    <component length="6" name="Tail F Right 3.2" rotChange="0.0,0.0,23.760000000000005," startKey="6"/>
+    <component length="6" name="Tail F Right 3.3" rotChange="0.0,0.0,-23.76," startKey="12"/>
+    <component length="6" name="Tail F Right 3.4" rotChange="0.0,0.0,-19.440000000000005," startKey="18"/>
+   </part>
+   <part name="Tail M Right 1">
+    <component length="6" name="Tail M Right 1.1" rotChange="0.0,0.0,27.72," rotOffset="-0.0,57.60000000000011,-0.0," startKey="0"/>
+    <component length="6" name="Tail M Right 1.2" rotChange="0.0,0.0,40.67999999999998," startKey="6"/>
+    <component length="6" name="Tail M Right 1.3" rotChange="0.0,0.0,-40.67999999999999," startKey="12"/>
+    <component length="6" name="Tail M 1.4" rotChange="0.0,0.0,-27.720000000000002," startKey="18"/>
+   </part>
+  </phase>
+  <phase type="sleeping">
+   <part name="Arm Left">
+    <component length="12" name="Arm Left 1" posOffset="0.7999999999999998,0.5,-1.0," rotOffset="105.80999999999997,-39.6,-5.759999999999991," startKey="0"/>
+   </part>
+   <part name="Body">
+    <component length="12" name="Body 1" posChange="0.10000000000000009,0.0,0.0," posOffset="-2.1,6.800000000000001,0.0," rotOffset="-0.0,-0.0,79.56," startKey="0"/>
+    <component length="12" name="Body 2" posChange="0.10000000000000009,0.0,0.0," startKey="12"/>
+    <component length="12" name="Body 3" posChange="-0.10000000000000009,0.0,0.0," startKey="24"/>
+    <component length="12" name="Body 4" posChange="-0.10000000000000009,0.0,0.0," startKey="36"/>
+   </part>
+   <part name="Leg Left">
+    <component length="12" name="Leg Left 1" posChange="0.0,-0.09999999999999964,0.0," rotOffset="29.519999999999957,-1.44,-17.64," startKey="0"/>
+    <component length="12" name="Leg Left 2" posChange="0.0,-0.09999999999999964,0.0," startKey="12"/>
+    <component length="12" name="Leg Left 3" posChange="0.0,0.09999999999999964,0.0," startKey="24"/>
+    <component length="12" name="Leg Left 4" posChange="0.0,0.09999999999999964,0.0," startKey="36"/>
+   </part>
+   <part name="Arm Right">
+    <component length="12" name="Arm Right 1" rotOffset="76.64,-0.0,-28.439999999999998," startKey="0"/>
+   </part>
+   <part name="Ear Right 1">
+    <component length="12" name="Ear Right 1" rotOffset="-0.0,-0.0,-29.159999999999997," startKey="0"/>
+   </part>
+   <part name="Leg Right">
+    <component length="12" name="Leg Right 1" posChange="0.0,-0.09999999999999964,0.0," rotOffset="30.959999999999972,-0.0,-0.0," startKey="0"/>
+    <component length="12" name="Leg Right 2" posChange="0.0,-0.09999999999999964,0.0," startKey="12"/>
+    <component length="12" name="Leg Right 3" posChange="0.0,0.09999999999999964,0.0," startKey="24"/>
+    <component length="12" name="Leg Right 4" posChange="0.0,0.09999999999999964,0.0," startKey="36"/>
+   </part>
+   <part name="Head">
+    <component length="12" name="Head 1" posChange="0.0,-0.1,0.0," rotOffset="-0.0,-16.56,-0.0," startKey="0"/>
+    <component length="12" name="Head 2" posChange="0.0,-0.1,0.0," startKey="12"/>
+    <component length="12" name="Head 3" posChange="0.0,0.1,0.0," startKey="24"/>
+    <component length="12" name="Head 4" posChange="0.0,0.1,0.0," startKey="36"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

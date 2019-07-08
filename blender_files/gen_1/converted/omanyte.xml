@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <phase type="idle">
+   <part name="Right_main_tentacle">
+    <component length="10" name="1" rotChange="-5.0,0.0,0.0," rotOffset="-6.999998752889077,9.00073690957015E-6,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="5.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="Right_front_tentacle">
+    <component length="10" name="1" rotChange="0.0,0.0,4.0," rotOffset="2.728286149888959E-6,1.9999973767081274,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-4.0," startKey="10"/>
+   </part>
+   <part name="Left_main_tentacle">
+    <component length="10" name="1" rotChange="-5.0,0.0,0.0," rotOffset="-6.999998752889077,-9.00073690957015E-6,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="5.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="Left_front_tentacle">
+    <component length="10" name="1" rotChange="0.0,0.0,-4.0," rotOffset="2.728286149888959E-6,-1.9999973767081274,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,4.0," startKey="10"/>
+   </part>
+  </phase>
+  <phase type="sitting">
+   <part name="Shell_base">
+    <component length="10" name="1" posOffset="0.0,3.0,-1.4," rotOffset="-24.0,-0.0,-0.0," startKey="0"/>
+   </part>
+   <part name="Flesh_core">
+    <component length="10" name="1" posOffset="0.0,-0.10000000000000142,0.8," rotOffset="4.000001676561825,-0.0,-0.0," startKey="0"/>
+   </part>
+   <part name="Right_main_tentacle">
+    <component length="10" name="1" rotOffset="-29.999998752889077,9.00073690957015E-6,-0.0," startKey="0"/>
+   </part>
+   <part name="Right_front_tentacle">
+    <component length="10" name="1" rotOffset="2.728286149888959E-6,-12.000002623291874,-0.0," startKey="0"/>
+   </part>
+   <part name="Left_main_tentacle">
+    <component length="10" name="1" rotOffset="-29.999998752889077,-9.00073690957015E-6,-0.0," startKey="0"/>
+   </part>
+   <part name="Left_front_tentacle">
+    <component length="10" name="1" rotOffset="2.728286149888959E-6,12.000002623291874,-0.0," startKey="0"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>
