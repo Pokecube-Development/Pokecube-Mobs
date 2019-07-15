@@ -23,7 +23,7 @@ public class Pickup extends Ability
     public static boolean          useLootTable = true;
 
     @Override
-    public void onUpdate(IPokemob mob)
+    public void onUpdate(final IPokemob mob)
     {
         final LivingEntity poke = mob.getEntity();
         // Staying in one place, nothing to find.
@@ -45,7 +45,7 @@ public class Pickup extends Ability
             if (mob.getOwner() instanceof ServerPlayerEntity) lootcontext$builder.withParameter(
                     LootParameters.KILLER_ENTITY, mob.getOwner());
             // Generate the loot list.
-            final List<ItemStack> list = loottable.generate(lootcontext$builder.build(loottable.func_216122_a()));
+            final List<ItemStack> list = loottable.generate(lootcontext$builder.build(loottable.getParameterSet()));
             // Shuffle the list.
             if (!list.isEmpty()) Collections.shuffle(list);
             for (final ItemStack itemstack : list)
