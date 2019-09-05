@@ -39,6 +39,6 @@
 "moves.sacredfire": {"category": "hostile","sounds": [{"name": "pokecube:moves/sacredfire","stream": false}]},
 "moves.ember": {"category": "hostile","sounds": [{"name": "pokecube:moves/ember","stream": false}]},
 "moves.hitdamage": {"category": "hostile","sounds": [{"name": "pokecube:moves/hitdamage","stream": false}]},
-"moves.hitnoteffective": {"category": "hostile","sounds": [{"name": "pokecube:moves/hitnoeffective","stream": false}]},
+"moves.hitnoteffective": {"category": "hostile","sounds": [{"name": "pokecube:moves/hitnoteffective","stream": false}]},
 "moves.hitsupereffective": {"category": "hostile","sounds": [{"name": "pokecube:moves/hitsupereffective","stream": false}]}
 }
