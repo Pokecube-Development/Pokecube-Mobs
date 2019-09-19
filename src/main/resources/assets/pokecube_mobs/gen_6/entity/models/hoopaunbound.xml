@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModelAnimator version="0.1">
  <model name="">
-  <phase name="global" offset="0,-0.3,0" rotation="1,0,0,0" scale="0.9"/>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="0.9"/>
   <metadata head="neck2" headAxis="2" headAxis2="0" headCap="-50,50" headCap1="-35,35" headDir="-1"/>
   <metadata head="neck1" headAxis="2" headAxis2="0" headCap="-35,35" headCap1="-15,15" headDir="-1"/>
   <phase axis="0" name="snakeIdle" parts="tail:tail1:tail2:tail3:tail4:tail5:tail6:tail7"/>
@@ -10,19 +10,9 @@
   <phase duration="10" leftArm="leg1_1" leftLeg="leg1" legAngle="25" name="biWalk" rightArm="leg2_1" rightLeg="leg2"/>
   <customTex default="hoopaunbound">
    <part name="Head" tex="hoopauhead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
   </customTex>
   <phase type="sitting">
-   <part name="anel">
-    <component length="20" name="1" posChange="-75,0,0" posOffset="0,-20,0" rotChange="0,360,0" startKey="0"/>
-    <component length="20" name="2" posChange="0,0,50" rotChange="0,360,0" startKey="8"/>
-    <component length="20" name="3" posChange="0,0,30" rotChange="0,360,0" startKey="13"/>
-    <component length="20" name="4" posChange="75,0,0" rotChange="0,360,0" startKey="18"/>
-    <component length="20" name="5" posChange="75,0,0" rotChange="0,360,0" startKey="24"/>
-    <component length="20" name="6" posChange="0,0,-50" rotChange="0,360,0" startKey="28"/>
-    <component length="20" name="7" posChange="0,0,-30" rotChange="0,360,0" startKey="32"/>
-    <component length="20" name="8" posChange="-75,0,0" rotChange="0,360,0" startKey="38"/>
-   </part>
    <part name="argol_body">
     <component length="10" name="1" posChange="0,1,0" startKey="0"/>
     <component length="10" name="2" posChange="0,-1,0" startKey="10"/>
@@ -32,7 +22,7 @@
     <component length="10" name="2" rotChange="-5,0,0" startKey="10"/>
    </part>
    <part name="mouth">
-    <component length="10" name="1" rotChange="5,0,0" rotOffset="-10,0,0" startKey="0"/>
+    <component length="10" name="1" rotChange="5,0,0" rotOffset="-20,0,0" startKey="0"/>
     <component length="10" name="2" rotChange="-5,0,0" startKey="10"/>
    </part>
    <part name="Hand_Base1">
@@ -93,18 +83,29 @@
    <part name="foot2">
     <component length="1" name="1" rotOffset="30,10,-20," startKey="0"/>
    </part>
+   <part name="tail">
+    <component length="1" name="1" rotOffset="0,20,0," startKey="0"/>
+   </part>
+   <part name="tail1">
+    <component length="1" name="1" rotOffset="0,30,0," startKey="0"/>
+   </part>
+   <part name="tail2">
+    <component length="1" name="1" rotOffset="0,30,0," startKey="0"/>
+   </part>
+   <part name="tail3">
+    <component length="1" name="1" rotOffset="0,30,0," startKey="0"/>
+   </part>
+   <part name="tail4">
+    <component length="1" name="1" rotOffset="0,30,0," startKey="0"/>
+   </part>
+   <part name="tail5">
+    <component length="1" name="1" rotOffset="0,30,0," startKey="0"/>
+   </part>
+   <part name="tail6">
+    <component length="1" name="1" rotOffset="0,30,0," startKey="0"/>
+   </part>
   </phase>
   <phase type="idle">
-   <part name="anel">
-    <component length="20" name="1" posChange="-75,0,0" posOffset="0,-20,0" rotChange="0,360,0" startKey="0"/>
-    <component length="20" name="2" posChange="0,0,50" rotChange="0,360,0" startKey="8"/>
-    <component length="20" name="3" posChange="0,0,30" rotChange="0,360,0" startKey="13"/>
-    <component length="20" name="4" posChange="75,0,0" rotChange="0,360,0" startKey="18"/>
-    <component length="20" name="5" posChange="75,0,0" rotChange="0,360,0" startKey="24"/>
-    <component length="20" name="6" posChange="0,0,-50" rotChange="0,360,0" startKey="28"/>
-    <component length="20" name="7" posChange="0,0,-30" rotChange="0,360,0" startKey="32"/>
-    <component length="20" name="8" posChange="-75,0,0" rotChange="0,360,0" startKey="38"/>
-   </part>
    <part name="argol_body">
     <component length="10" name="1" posChange="0,1,0" startKey="0"/>
     <component length="10" name="2" posChange="0,-1,0" startKey="10"/>
@@ -173,9 +174,6 @@
    </part>
   </phase>
   <phase type="walking">
-   <part name="anel">
-    <component length="60" name="1" posOffset="0,40,0" rotChange="0,360,0" startKey="0"/>
-   </part>
    <part name="center_hair">
     <component length="10" name="1" rotChange="5,0,0" rotOffset="-10,0,0" startKey="0"/>
     <component length="10" name="2" rotChange="-5,0,0" startKey="10"/>
@@ -228,9 +226,6 @@
    </part>
   </phase>
   <phase type="flying">
-   <part name="anel">
-    <component length="60" name="1" posOffset="0,40,0" rotChange="0,360,0" startKey="0"/>
-   </part>
    <part name="argol_body">
     <component length="10" name="1" posChange="0,1,0" startKey="0"/>
     <component length="10" name="2" posChange="0,-1,0" startKey="10"/>

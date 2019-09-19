@@ -9,7 +9,7 @@
   <worn angles="0,90,0" id="__EAR_right__" offset="-0.38,0.6,0" parent="head" scale="1"/>
   <customTex default="primarina">
    <part name="Head" tex="primarinahead"/>
-   <animation diffs="0,0.5" part="Head" trigger="random:0.005:1"/>
+   <animation diffs="0,0.5" part="Head" trigger="random:0.005:25"/>
   </customTex>
   <phase type="idle">
    <part name="hair1">
