@@ -25,11 +25,11 @@ public class MoveSketch extends Move_Basic
     }
 
     @Override
-    public void postAttack(MovePacket packet)
+    public void postAttack(final MovePacket packet)
     {
         super.postAttack(packet);
         if (packet.attacker.getTransformedTo() != null) return;
-        final String lastHitBy = packet.attacker.getEntity().getEntityData().getString("lastMoveHitBy");
+        final String lastHitBy = packet.attacker.getEntity().getPersistentData().getString("lastMoveHitBy");
         final Move_Base toSketch = MovesUtils.getMoveFromName(lastHitBy);
         if (MoveSketch.unSketchables.contains(lastHitBy) || toSketch == null) return;
         for (int i = 0; i < packet.attacker.getMoves().length; i++)

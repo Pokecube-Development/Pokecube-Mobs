@@ -15,21 +15,21 @@ public class MoveMirrorcoat extends Move_Basic
     }
 
     @Override
-    public void postAttack(MovePacket packet)
+    public void postAttack(final MovePacket packet)
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
         final LivingEntity attacker = packet.attacker.getEntity();
         if (!packet.attacker.getMoveStats().biding)
         {
-            attacker.getEntityData().putLong("bideTime", attacker.getEntityWorld().getGameTime() + PokecubeCore
+            attacker.getPersistentData().putLong("bideTime", attacker.getEntityWorld().getGameTime() + PokecubeCore
                     .getConfig().attackCooldown);
             packet.attacker.getMoveStats().biding = true;
             packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER = 0;
         }
-        else if (attacker.getEntityData().getLong("bideTime") < attacker.getEntityWorld().getGameTime())
+        else if (attacker.getPersistentData().getLong("bideTime") < attacker.getEntityWorld().getGameTime())
         {
-            attacker.getEntityData().remove("bideTime");
+            attacker.getPersistentData().remove("bideTime");
             final int damage = 2 * packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER;
             packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER = 0;
             if (packet.attacked != null) packet.attacked.attackEntityFrom(new PokemobDamageSource("mob", attacker,
