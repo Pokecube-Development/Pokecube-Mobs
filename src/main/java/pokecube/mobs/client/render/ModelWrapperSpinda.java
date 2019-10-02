@@ -7,7 +7,7 @@ import org.lwjgl.opengl.GL11;
 import com.mojang.blaze3d.platform.GlStateManager;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
@@ -17,7 +17,7 @@ import thut.core.client.render.model.IModelRenderer;
 import thut.core.client.render.texturing.IRetexturableModel;
 import thut.core.client.render.wrappers.ModelWrapper;
 
-public class ModelWrapperSpinda<T extends MobEntity> extends ModelWrapper<T>
+public class ModelWrapperSpinda<T extends Entity> extends ModelWrapper<T>
 {
     private static final ResourceLocation normalh  = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaspotsh.png");
@@ -36,15 +36,15 @@ public class ModelWrapperSpinda<T extends MobEntity> extends ModelWrapper<T>
     private static final ResourceLocation shinyeb  = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaearsbases.png");
 
-    public ModelWrapperSpinda(ModelHolder model, IModelRenderer<?> renderer)
+    public ModelWrapperSpinda(final ModelHolder model, final IModelRenderer<?> renderer)
     {
         super(model, renderer);
     }
 
     /** Sets the models various rotation angles then renders the model. */
     @Override
-    public void render(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
-            float headPitch, float scale)
+    public void render(final Entity entityIn, final float limbSwing, final float limbSwingAmount,
+            final float ageInTicks, final float netHeadYaw, final float headPitch, final float scale)
     {
         GlStateManager.pushMatrix();
         GlStateManager.disableCull();
