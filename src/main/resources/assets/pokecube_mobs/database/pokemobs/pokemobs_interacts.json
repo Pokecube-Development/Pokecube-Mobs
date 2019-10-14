@@ -5265,7 +5265,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -5285,7 +5285,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -5305,7 +5305,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -5325,7 +5325,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -8314,13 +8314,35 @@
     {
       "name": "Tornadus Incarnate",
       "stats": {
+        "species": "Cyclone",
+		"formeItems": {
+          "values": {
+            "forme": "NTornadus Therian:Irevealglass"
+          }
+        }
+      }
+    },
+	{
+      "name": "Tornadus Therian",
+      "stats": {
         "species": "Cyclone"
       }
     },
     {
       "name": "Thundurus Incarnate",
       "stats": {
-        "species": "BoltStrike"
+        "species": "BoltStrike",
+		"formeItems": {
+          "values": {
+            "forme": "NThundurus Therian:Irevealglass"
+          }
+        }
+      }
+    },
+	{
+      "name": "Thundurus Therian",
+      "stats": {
+        "species": "Cyclone"
       }
     },
     {
@@ -8338,11 +8360,42 @@
     {
       "name": "Landorus Incarnate",
       "stats": {
-        "species": "Abundant"
+        "species": "Abundant",
+		"formeItems": {
+          "values": {
+            "forme": "NLandorus Therian:Irevealglass"
+          }
+        }
+      }
+    },
+	{
+      "name": "Landorus Therian",
+      "stats": {
+        "species": "Cyclone"
       }
     },
     {
       "name": "Kyurem",
+      "stats": {
+        "species": "Boundary",
+		"formeItems": {
+          "values": {
+            "forme": "NKyurem Black:Idna_splicera"
+          },
+		  "values": {
+            "forme": "NKyurem White:Idna_splicerb"
+          }
+        }
+      }
+    },
+	{
+      "name": "Kyurem Black",
+      "stats": {
+        "species": "Boundary"
+      }
+    },
+	{
+      "name": "Kyurem White",
       "stats": {
         "species": "Boundary"
       }
@@ -8351,11 +8404,36 @@
       "name": "Keldeo",
       "stats": {
         "species": "Colt",
+        "foodMat": "grass",
+		"megaRules": [
+          {
+            "name": "Keldeo Resolute",
+            "move": "secretsword"
+          }
+        ]
+      }
+    },
+	{
+      "name": "Keldeo Resolute",
+      "stats": {
+        "species": "Colt",
         "foodMat": "grass"
       }
     },
     {
       "name": "Meloetta Aria",
+      "stats": {
+        "species": "Melody",
+		"megaRules": [
+          {
+            "name": "Meloetta Pirouette",
+            "move": "relicsong"
+          }
+        ]
+      }
+    },
+	{
+      "name": "Meloetta Pirouette",
       "stats": {
         "species": "Melody"
       }
@@ -9396,7 +9474,9 @@
             "level": 17
           }
         ]
-      }
+      },
+	  "species": "Bird",
+      "prey": "Insecta"
     },
     {
       "name": "Dartrix",
@@ -9406,7 +9486,9 @@
             "name": "Decidueye",
             "level": 34
           }
-        ]
+        ],
+		"species": "Bird",
+		"prey": "Insecta"
       }
     },
     {
@@ -9417,7 +9499,8 @@
             "name": "Torracat",
             "level": 17
           }
-        ]
+        ],
+		"species": "Cat"
       }
     },
     {
@@ -9428,7 +9511,8 @@
             "name": "Incineroar",
             "level": 34
           }
-        ]
+        ],
+		"species": "Cat"
       }
     },
     {
@@ -9439,7 +9523,8 @@
             "name": "Brionne",
             "level": 17
           }
-        ]
+        ],
+		"species": "Seal"
       }
     },
     {
@@ -9450,7 +9535,8 @@
             "name": "Primarina",
             "level": 34
           }
-        ]
+        ],
+		"species": "Seal"
       }
     },
     {
@@ -9461,7 +9547,8 @@
             "name": "Trumbeak",
             "level": 14
           }
-        ]
+        ],
+		"species": "Bird"
       }
     },
     {
@@ -9472,7 +9559,8 @@
             "name": "Toucannon",
             "level": 28
           }
-        ]
+        ],
+		"species": "Bird"
       }
     },
     {
@@ -9699,7 +9787,8 @@
             "name": "Mudsdale",
             "level": 30
           }
-        ]
+        ],
+		"species": "Horse"
       }
     },
     {
@@ -9727,7 +9816,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Horse"
       }
     },
     {
@@ -9784,7 +9874,8 @@
             "name": "Bewear",
             "level": 27
           }
-        ]
+        ],
+		"species": "Bear"
       }
     },
     {
@@ -9812,7 +9903,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Bear"
       }
     },
     {
@@ -9862,7 +9954,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Orangutan"
       }
     },
     {
@@ -9890,7 +9983,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Monkey"
       }
     },
     {
@@ -9984,7 +10078,8 @@
             "name": "Necrozma Ultra",
             "item_preset": "nether_star"
           }
-        ]
+        ],
+		"species": "Light"
 	  }
     },
 	{
@@ -9992,9 +10087,10 @@
       "stats": {
         "formeItems": {
           "values": {
-            "forme": "NSolgaleo Dusk:Inether_star"
+            "forme": "NSolgaleo Dusk:In_sun"
           }
-        }
+        },
+		"species": "Light"
       }
     },
 	{
@@ -10002,10 +10098,59 @@
       "stats": {       
         "formeItems": {
           "values": {
-            "forme": "NLunala Dawn:Inether_star"
+            "forme": "NLunala Dawn:In_moon"
           }
         },
-        "movementType": "flying"
+        "movementType": "flying",
+		"species": "Light"
+      }
+    },
+	{
+      "name": "Nihilego",
+      "stats": {
+        "species": "UB-01"
+      }
+    },
+	{
+      "name": "Buzzwole",
+      "stats": {
+        "species": "UB-02"
+      }
+    },
+	{
+      "name": "Pheromosa",
+      "stats": {
+        "species": "UB-02"
+      }
+    },
+	{
+      "name": "Xurkitree",
+      "stats": {
+        "species": "UB-03"
+      }
+    },
+	{
+      "name": "Celesteela",
+      "stats": {
+        "species": "UB-04"
+      }
+    },
+	{
+      "name": "Kartana",
+      "stats": {
+        "species": "UB-04"
+      }
+    },
+	{
+      "name": "Guzzlord",
+      "stats": {
+        "species": "UB-05"
+      }
+    },
+	{
+      "name": "Marshadow",
+      "stats": {
+        "species": "Shadow"
       }
     },
 	{
@@ -10016,7 +10161,32 @@
             "name": "Naganadel",
             "move": "dragonpulse"
           }
-        ]
+        ],
+		"species": "UB Adhesive"
+      }
+    },
+	{
+      "name": "Naganadel",
+      "stats": {
+		"species": "UB Stinger"
+      }
+    },
+	{
+      "name": "Stakataka",
+      "stats": {
+		"species": "UB Assembly"
+      }
+    },
+	{
+      "name": "Blacephalon",
+      "stats": {
+		"species": "UB Burst"
+      }
+    },
+	{
+      "name": "Zeraora",
+      "stats": {
+		"species": "Cat"
       }
     },
 	{
@@ -10027,7 +10197,8 @@
 			"name": "Melmetal",
 			"level": 32
 		  }
-	    ]
+	    ],
+		"species": "Steel"
 	  }
     }
   ]
