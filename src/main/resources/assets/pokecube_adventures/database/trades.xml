@@ -56,7 +56,7 @@
    <Sell id="pokecube_legends:zygardecube"/>
    <Buy id="minecraft:emerald" n="54"/>
   </Trade>
-  <Trade chance="0.2">
+  <Trade chance="0.1">
    <Sell id="pokecube_legends:grayorb"/>
    <Buy id="minecraft:emerald" n="34"/>
   </Trade>
@@ -75,14 +75,6 @@
   <Trade chance="0.4">
    <Sell id="pokecube_legends:rockcore"/>
    <Buy id="minecraft:emerald" n="54"/>
-  </Trade>
-  <Trade chance="0.2">
-   <Sell id="pokecube_legends:silver_wing"/>
-   <Buy id="minecraft:emerald_block" n="10"/>
-  </Trade>
-  <Trade chance="0.2">
-   <Sell id="pokecube_legends:rainbow_wing"/>
-   <Buy id="minecraft:emerald_block" n="10"/>
   </Trade>
   <Trade chance="0.2">
    <Sell id="pokecube_legends:griseousorb"/>
@@ -142,6 +134,10 @@
   </Trade>
   <Trade chance="0.2">
    <Sell id="pokecube_legends:lustrousorb"/>
+   <Buy id="minecraft:emerald" n="40"/>
+  </Trade>
+  <Trade chance="0.2">
+   <Sell id="pokecube_legends:regisorb"/>
    <Buy id="minecraft:emerald" n="40"/>
   </Trade>
   <Trade chance="1" custom="allMegas">

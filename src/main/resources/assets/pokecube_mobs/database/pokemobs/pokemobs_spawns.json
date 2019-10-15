@@ -2697,7 +2697,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "beach",
+              "types": "cold",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -2712,7 +2712,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "sky",
+              "types": "plains",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -2727,7 +2727,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "forest",
+              "types": "ruin",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6231,7 +6231,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "mountain",
+              "types": "swamp",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6246,7 +6246,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "mountain",
+              "types": "swamp",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6261,7 +6261,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "mountain",
+              "types": "swamp",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6276,22 +6276,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "forest",
-              "min": "1",
-              "rate": "0.0",
-              "max": "1"
-            }
-          }
-        ]
-      }
-    },
-	{
-      "name": "Tornadus Incarnate",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "mountain",
+              "types": "hills,mountain",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6832,7 +6817,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "forest",
+              "types": "spooky",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6857,7 +6842,7 @@
       }
     },
 	{
-      "name": "Zygarde 10",
+      "name": "Zygarde 10%",
       "stats": {
         "spawnRules": [
           {
@@ -7664,7 +7649,7 @@
       }
     },
 	{
-      "name": "Zeraoro",
+      "name": "Zeraora",
       "stats": {
         "spawnRules": [
           {
