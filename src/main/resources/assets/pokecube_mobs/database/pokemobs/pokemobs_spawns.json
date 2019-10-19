@@ -1466,7 +1466,7 @@
           {
             "values": {
               "types": "jungle,hills",
-              "rate": "0.001"
+              "rate": "0.003"
             }
           }
         ]
@@ -2607,7 +2607,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "plains",
+              "types": "forest",
               "min": "1",
               "rate": "0.01",
               "max": "1"
@@ -2615,9 +2615,9 @@
           },
           {
             "values": {
-              "types": "forest",
+              "types": "industrial",
               "min": "1",
-              "rate": "0.01",
+              "rate": "0.02",
               "max": "1"
             }
           }
@@ -2640,7 +2640,7 @@
             "values": {
               "types": "nether",
               "min": "1",
-              "rate": "0.01",
+              "rate": "0.02",
               "max": "1"
             }
           }
@@ -2653,7 +2653,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "plains",
+              "types": "lake",
               "min": "1",
               "rate": "0.01",
               "max": "1"
@@ -2663,7 +2663,7 @@
             "values": {
               "types": "snowy",
               "min": "1",
-              "rate": "0.01",
+              "rate": "0.02",
               "max": "1"
             }
           }
@@ -2697,9 +2697,9 @@
         "spawnRules": [
           {
             "values": {
-              "types": "beach",
+              "types": "cold",
               "min": "1",
-              "rate": "0.001",
+              "rate": "0.0",
               "max": "1"
             }
           }
@@ -2712,8 +2712,7 @@
         "spawnRules": [
           {
             "values": {
-              "typesBlacklist": "wet,cold,dry,hills,mountain,savanna",
-              "types": "forest",
+              "types": "plains",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -2728,8 +2727,7 @@
         "spawnRules": [
           {
             "values": {
-              "typesBlacklist": "cold,dry,savanna",
-              "types": "forest",
+              "types": "ruin",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -4088,7 +4086,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "ocean,cave",
+              "types": "ocean",
               "rate": "0.0"
             }
           }
@@ -4124,7 +4122,7 @@
             "values": {
               "types": "sky",
               "min": "1",
-              "rate": "0.0001",
+              "rate": "0.002",
               "max": "1"
             }
           }
@@ -4139,7 +4137,7 @@
             "values": {
               "types": "meteor",
               "min": "1",
-              "rate": "0.0001",
+              "rate": "0.002",
               "max": "1"
             }
           }
@@ -4154,7 +4152,7 @@
             "values": {
               "types": "meteor",
               "min": "1",
-              "rate": "0.0001",
+              "rate": "0.002",
               "max": "1"
             }
           }
@@ -4790,6 +4788,21 @@
         ]
       }
     },
+	{
+      "name": "Shaymin Land",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "flower",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
     {
       "name": "Uxie",
       "stats": {
@@ -4883,7 +4896,7 @@
             "values": {
               "types": "monument",
               "min": "1",
-              "rate": "0.01",
+              "rate": "0.02",
               "max": "1",
               "air": "false"
             }
@@ -4899,7 +4912,7 @@
             "values": {
               "types": "all",
               "min": "1",
-              "rate": "0.0001",
+              "rate": "0.002",
               "max": "1"
             }
           }
@@ -6062,6 +6075,276 @@
         ]
       }
     },
+	{
+      "name": "Dialga",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Palkia",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Giratina",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Arceus",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Victini",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "village",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Heatran",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "nether",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Regigigas",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "snowy",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Cobalion",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Terrakion",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "sandy",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Virizion",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "forest",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Tornadus Incarnate",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "swamp",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Thundurus Incarnate",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "swamp",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Landorus Incarnate",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "swamp",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Keldeo",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills,mountain",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Meloetta Aria",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "lake",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Zekrom",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Reshiram",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Kyurem",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "snowy",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
     {
       "name": "Chespin",
       "stats": {
@@ -6534,9 +6817,9 @@
         "spawnRules": [
           {
             "values": {
-              "types": "forest",
+              "types": "spooky",
               "min": "1",
-              "rate": "0.0001",
+              "rate": "0.0",
               "max": "1"
             }
           }
@@ -6549,9 +6832,24 @@
         "spawnRules": [
           {
             "values": {
+              "types": "sandy",
+              "min": "1",
+              "rate": "0.0",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Zygarde 10%",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
               "types": "forest",
               "min": "1",
-              "rate": "0.0001",
+              "rate": "0.002",
               "max": "1"
             }
           }
@@ -6566,7 +6864,52 @@
             "values": {
               "types": "cave",
               "min": "1",
-              "rate": "0.0001",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Hoopa Confined",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "ruin",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Volcanion",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "village",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Magearna",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "village",
+              "min": "1",
+              "rate": "0.002",
               "max": "1"
             }
           }
@@ -7290,13 +7633,253 @@
         ]
       }
     },
+	{
+      "name": "Marshadow",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Zeraora",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Tapu Koko",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "forest",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Tapu Lele",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "flower",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Tapu Fini",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "lake",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Tapu Bulu",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "mountain",
+              "min": "1",
+              "rate": "0.002",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
     {
+      "name": "Nihilego",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
       "name": "Buzzwole",
       "stats": {
         "spawnRules": [
           {
             "values": {
+              "types": "forest",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Pheromosa",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "sandy",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Xurkitree",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "industrial",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Celesteela",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "meteor",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Kartana",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
               "types": "plains",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Guzzlord",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "nether",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Necrozma",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Poipole",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Stakataka",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills",
+              "min": "1",
+              "rate": "0.01",
+              "max": "1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Blacephalon",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "village",
               "min": "1",
               "rate": "0.01",
               "max": "1"

@@ -57301,10 +57301,10 @@
             "15": "lightscreen",
             "29": "powersplit,guardsplit",
             "19": "psybeam",
-            "1": "hyperspacefury,trick,destinybond,allyswitch,confusion",
+            "1": "hyperspacehole,trick,destinybond,allyswitch,confusion",
             "6": "astonish",
             "50": "wonderroom,trickroom",
-            "85": "hyperspacefury",
+            "85": "hyperspacehole",
             "75": "psychic",
             "10": "magiccoat"
           }
@@ -57357,15 +57357,15 @@
         "lvlupMoves": {
           "values": {
             "55": "darkpulse",
-            "1": "hyperspacefurytrickdestinybondallyswitchconfusion",
+            "1": "hyperspacehole,trick,destinybond,allyswitch,confusion",
             "46": "knockoff",
             "25": "skillswap",
             "15": "lightscreen",
             "6": "astonish",
-            "29": "powersplitguardsplit",
+            "29": "powersplit,guardsplit",
             "19": "psybeam",
-            "50": "wonderroomtrickroom",
-            "85": "hyperspacefury",
+            "50": "wonderroom,trickroom",
+            "85": "hyperspacehole",
             "75": "psychic",
             "10": "magiccoat"
           }

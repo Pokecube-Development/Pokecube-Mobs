@@ -35,6 +35,15 @@
       }
     ]
   },
+  "mobs.venusaurmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.venusaurmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/venusaurmega"
+      }
+    ]
+  },
   "mobs.charmander": {
     "category": "hostile",
     "subtitle": "pkmn.charmander.name",
@@ -62,6 +71,24 @@
       }
     ]
   },
+  "mobs.charizardmegax": {
+    "category": "hostile",
+    "subtitle": "pkmn.charizardmegax.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/charizardmegax"
+      }
+    ]
+  },
+  "mobs.charizardmegay": {
+    "category": "hostile",
+    "subtitle": "pkmn.charizardmegay.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/charizardmegay"
+      }
+    ]
+  },
   "mobs.squirtle": {
     "category": "hostile",
     "subtitle": "pkmn.squirtle.name",
@@ -86,6 +113,15 @@
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/blastoise"
+      }
+    ]
+  },
+  "mobs.blastoisemega": {
+    "category": "hostile",
+    "subtitle": "pkmn.blastoisemega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/blastoisemega"
       }
     ]
   },
@@ -143,6 +179,15 @@
       }
     ]
   },
+  "mobs.beedrillmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.beedrillmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/beedrillmega"
+      }
+    ]
+  },
   "mobs.pidgey": {
     "category": "hostile",
     "subtitle": "pkmn.pidgey.name",
@@ -167,6 +212,15 @@
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/pidgeot"
+      }
+    ]
+  },
+  "mobs.pidgeotmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.pidgeotmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/pidgeotmega"
       }
     ]
   },
@@ -1043,6 +1097,15 @@
       }
     ]
   },
+  "mobs.kangaskhanmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.kangaskhanmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/kangaskhanmega"
+      }
+    ]
+  },
   "mobs.horsea": {
     "category": "hostile",
     "subtitle": "pkmn.horsea.name",
@@ -1178,6 +1241,15 @@
       }
     ]
   },
+  "mobs.gyaradosmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.gyaradosmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/gyaradosmega"
+      }
+    ]
+  },
   "mobs.lapras": {
     "category": "hostile",
     "subtitle": "pkmn.lapras.name",
@@ -1286,6 +1358,15 @@
       }
     ]
   },
+  "mobs.aerodactylmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.aerodactylmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/aerodactylmega"
+      }
+    ]
+  },
   "mobs.snorlax": {
     "category": "hostile",
     "subtitle": "pkmn.snorlax.name",
@@ -1355,6 +1436,24 @@
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/mewtwo"
+      }
+    ]
+  },
+  "mobs.mewtwomegax": {
+    "category": "hostile",
+    "subtitle": "pkmn.mewtwomegax.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/mewtwomegax"
+      }
+    ]
+  },
+  "mobs.mewtwomegay": {
+    "category": "hostile",
+    "subtitle": "pkmn.mewtwomegay.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/mewtwomegay"
       }
     ]
   },
@@ -2240,6 +2339,15 @@
       }
     ]
   },
+  "mobs.tyranitarmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.tyranitarmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/tyranitarmega"
+      }
+    ]
+  },
   "mobs.lugia": {
     "category": "hostile",
     "subtitle": "pkmn.lugia.name",
@@ -2294,6 +2402,15 @@
       }
     ]
   },
+  "mobs.sceptilemega": {
+    "category": "hostile",
+    "subtitle": "pkmn.sceptilemega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/sceptilemega"
+      }
+    ]
+  },
   "mobs.torchic": {
     "category": "hostile",
     "subtitle": "pkmn.torchic.name",
@@ -2321,6 +2438,15 @@
       }
     ]
   },
+  "mobs.blazikenmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.blazikenmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/blazikenmega"
+      }
+    ]
+  },
   "mobs.mudkip": {
     "category": "hostile",
     "subtitle": "pkmn.mudkip.name",
@@ -2345,6 +2471,15 @@
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/swampert"
+      }
+    ]
+  },
+  "mobs.swampertmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.swampertmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/swampertmega"
       }
     ]
   },
@@ -2543,6 +2678,15 @@
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/gardevoir"
+      }
+    ]
+  },
+  "mobs.gardevoirmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.gardevoirmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/gardevoirmega"
       }
     ]
   },
@@ -3428,12 +3572,30 @@
       }
     ]
   },
+  "mobs.latiasmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.latiasmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/latiasmega"
+      }
+    ]
+  },
   "mobs.latios": {
     "category": "hostile",
     "subtitle": "pkmn.latios.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/latios"
+      }
+    ]
+  },
+  "mobs.latiosmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.latiosmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/latiosmega"
       }
     ]
   },
@@ -3446,6 +3608,15 @@
       }
     ]
   },
+  "mobs.kyogreprimal": {
+    "category": "hostile",
+    "subtitle": "pkmn.kyogreprimal.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/kyogreprimal"
+      }
+    ]
+  },
   "mobs.groudon": {
     "category": "hostile",
     "subtitle": "pkmn.groudon.name",
@@ -3455,12 +3626,30 @@
       }
     ]
   },
+  "mobs.groudonprimal": {
+    "category": "hostile",
+    "subtitle": "pkmn.groudonprimal.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/groudonprimal"
+      }
+    ]
+  },
   "mobs.rayquaza": {
     "category": "hostile",
     "subtitle": "pkmn.rayquaza.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/rayquaza"
+      }
+    ]
+  },
+  "mobs.rayquazamega": {
+    "category": "hostile",
+    "subtitle": "pkmn.rayquazamega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/rayquazamega"
       }
     ]
   },
@@ -4010,6 +4199,15 @@
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/garchomp"
+      }
+    ]
+  },
+  "mobs.garchompmega": {
+    "category": "hostile",
+    "subtitle": "pkmn.garchompmega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/garchompmega"
       }
     ]
   },
@@ -5849,6 +6047,24 @@
       }
     ]
   },
+  "mobs.kyuremblack": {
+    "category": "hostile",
+    "subtitle": "pkmn.kyuremblack.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/kyuremblack"
+      }
+    ]
+  },
+  "mobs.kyuremwhite": {
+    "category": "hostile",
+    "subtitle": "pkmn.kyuremwhite.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/kyurem"
+      }
+    ]
+  },
   "mobs.keldeo": {
     "category": "hostile",
     "subtitle": "pkmn.keldeo.name",
@@ -6062,6 +6278,15 @@
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/floette"
+      }
+    ]
+  },
+  "mobs.floetteeternal": {
+    "category": "hostile",
+    "subtitle": "pkmn.floetteeternal.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/floetteeternal"
       }
     ]
   },
@@ -6488,12 +6713,30 @@
       }
     ]
   },
+  "mobs.zygarde10": {
+    "category": "hostile",
+    "subtitle": "pkmn.zygarde10.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zygarde10"
+      }
+    ]
+  },
   "mobs.zygarde50": {
     "category": "hostile",
     "subtitle": "pkmn.zygarde50.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/zygarde50"
+      }
+    ]
+  },
+  "mobs.zygarde100": {
+    "category": "hostile",
+    "subtitle": "pkmn.zygarde100.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zygarde100"
       }
     ]
   },
@@ -6506,12 +6749,30 @@
       }
     ]
   },
+  "mobs.dianciemega": {
+    "category": "hostile",
+    "subtitle": "pkmn.dianciemega.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/dianciemega"
+      }
+    ]
+  },
   "mobs.hoopaconfined": {
     "category": "hostile",
     "subtitle": "pkmn.hoopaconfined.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/hoopaconfined"
+      }
+    ]
+  },
+  "mobs.hoopaunbound": {
+    "category": "hostile",
+    "subtitle": "pkmn.hoopaunbound.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/hoopaunbound"
       }
     ]
   },
@@ -6767,12 +7028,39 @@
       }
     ]
   },
+  "mobs.lycanrocmidnight": {
+    "category": "hostile",
+    "subtitle": "pkmn.lycanrocmidnight.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/lycanrocmidnight"
+      }
+    ]
+  },
+  "mobs.lycanrocdusk": {
+    "category": "hostile",
+    "subtitle": "pkmn.lycanrocdusk.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/lycanrocdusk"
+      }
+    ]
+  },
   "mobs.wishiwashi": {
     "category": "hostile",
     "subtitle": "pkmn.wishiwashi.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/wishiwashi"
+      }
+    ]
+  },
+  "mobs.wishiwashischool": {
+    "category": "hostile",
+    "subtitle": "pkmn.wishiwashischool.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/wishiwashischool"
       }
     ]
   },
