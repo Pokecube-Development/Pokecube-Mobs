@@ -5530,7 +5530,7 @@
     "subtitle": "pkmn.frillish.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/frillish"
       }
     ]
   },
@@ -5539,7 +5539,7 @@
     "subtitle": "pkmn.jellicent.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/jellicent"
       }
     ]
   },
@@ -6304,7 +6304,7 @@
     "subtitle": "pkmn.skiddo.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/skiddo"
       }
     ]
   },
@@ -6313,7 +6313,7 @@
     "subtitle": "pkmn.gogoat.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/gogoat"
       }
     ]
   },
@@ -6340,7 +6340,7 @@
     "subtitle": "pkmn.furfrou.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/furfrou"
       }
     ]
   },
@@ -6394,7 +6394,7 @@
     "subtitle": "pkmn.spritzee.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/spritzee"
       }
     ]
   },
@@ -6403,7 +6403,7 @@
     "subtitle": "pkmn.aromatisse.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/aromatisse"
       }
     ]
   },
@@ -6412,7 +6412,7 @@
     "subtitle": "pkmn.swirlix.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/swirlix"
       }
     ]
   },
@@ -6421,7 +6421,7 @@
     "subtitle": "pkmn.slurpuff.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/slurpuff"
       }
     ]
   },
@@ -6448,7 +6448,7 @@
     "subtitle": "pkmn.binacle.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/binacle"
       }
     ]
   },
@@ -6457,7 +6457,7 @@
     "subtitle": "pkmn.barbaracle.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/barbaracle"
       }
     ]
   },
@@ -6484,7 +6484,7 @@
     "subtitle": "pkmn.clauncher.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/clauncher"
       }
     ]
   },
@@ -6493,7 +6493,7 @@
     "subtitle": "pkmn.clawitzer.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/clawitzer"
       }
     ]
   },
@@ -6502,7 +6502,7 @@
     "subtitle": "pkmn.helioptile.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/helioptile"
       }
     ]
   },
@@ -6511,7 +6511,7 @@
     "subtitle": "pkmn.heliolisk.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/heliolisk"
       }
     ]
   },
@@ -6565,7 +6565,7 @@
     "subtitle": "pkmn.hawlucha.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/hawlucha"
       }
     ]
   },
@@ -7573,7 +7573,7 @@
     "subtitle": "pkmn.poipole.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/poipole"
       }
     ]
   },
@@ -7582,7 +7582,7 @@
     "subtitle": "pkmn.naganadel.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/naganadel"
       }
     ]
   },
@@ -7591,7 +7591,7 @@
     "subtitle": "pkmn.stakataka.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/stakataka"
       }
     ]
   },
@@ -7600,7 +7600,7 @@
     "subtitle": "pkmn.blacephalon.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/blacephalon"
       }
     ]
   },
@@ -7609,7 +7609,7 @@
     "subtitle": "pkmn.zeraora.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/zeraora"
       }
     ]
   },
@@ -7618,7 +7618,7 @@
     "subtitle": "pkmn.meltan.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/meltan"
       }
     ]
   },
@@ -7627,7 +7627,7 @@
     "subtitle": "pkmn.melmetal.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/rattata"
+        "name": "pokecube_mobs:mobs/melmetal"
       }
     ]
   }
