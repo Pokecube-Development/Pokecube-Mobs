@@ -38786,7 +38786,7 @@
         },
         "formeItems": {
           "values": {
-            "forme": "NGiratina Origin:Idiamond"
+            "forme": "NGiratina Origin:Igriseousorb"
           }
         }
       },
@@ -57290,7 +57290,8 @@
         "mass": 490.0,
         "captureRate": 3,
         "baseFriendship": 100,
-        "expMode": "Slow"
+        "expMode": "Slow",
+		"movementType": "floating"
       },
       "moves": {
         "lvlupMoves": {

@@ -97,7 +97,7 @@
    <Buy id="minecraft:emerald" n="40"/>
   </Trade>
   <Trade chance="0.2">
-   <Sell id="pokecube_legends:whitestone"/>
+   <Sell id="pokecube_legends:lightstone"/>
    <Buy id="minecraft:emerald" n="40"/>
   </Trade>
   <Trade chance="0.2">
@@ -125,11 +125,11 @@
    <Buy id="minecraft:emerald" n="40"/>
   </Trade>
   <Trade chance="0.2">
-   <Sell id="pokecube_legends:dnasplicera"/>
+   <Sell id="pokecube_legends:dna_splicera"/>
    <Buy id="minecraft:emerald" n="40"/>
   </Trade>
   <Trade chance="0.2">
-   <Sell id="pokecube_legends:dnasplicerb"/>
+   <Sell id="pokecube_legends:dna_splicerb"/>
    <Buy id="minecraft:emerald" n="40"/>
   </Trade>
   <Trade chance="0.2">
