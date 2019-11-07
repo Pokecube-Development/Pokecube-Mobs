@@ -1912,7 +1912,7 @@
     "subtitle": "pkmn.unown_a.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/unown_a"
+        "name": "pokecube_mobs:mobs/unown"
       }
     ]
   },
@@ -3811,7 +3811,7 @@
     "subtitle": "pkmn.kricketune.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/kricketunemale"
+        "name": "pokecube_mobs:mobs/kricketune"
       }
     ]
   },
@@ -5152,7 +5152,7 @@
     "subtitle": "pkmn.basculinblue.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/basculinblue"
+        "name": "pokecube_mobs:mobs/basculin"
       }
     ]
   },
@@ -6079,7 +6079,7 @@
     "subtitle": "pkmn.meloettaaria.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/meloettaaria"
+        "name": "pokecube_mobs:mobs/meloetta"
       }
     ]
   },
@@ -6259,7 +6259,7 @@
     "subtitle": "pkmn.pyroar.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/pyroarm"
+        "name": "pokecube_mobs:mobs/pyroar"
       }
     ]
   },
@@ -6385,7 +6385,7 @@
     "subtitle": "pkmn.aegislashblade.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/aegislashblade"
+        "name": "pokecube_mobs:mobs/aegislash"
       }
     ]
   },
@@ -6763,7 +6763,7 @@
     "subtitle": "pkmn.hoopaconfined.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/hoopaconfined"
+        "name": "pokecube_mobs:mobs/hoopa"
       }
     ]
   },
@@ -7024,7 +7024,7 @@
     "subtitle": "pkmn.lycanroc.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/lycanroc"
+        "name": "pokecube_mobs:mobs/lycanrocmidday"
       }
     ]
   },
@@ -7042,7 +7042,7 @@
     "subtitle": "pkmn.lycanrocdusk.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/lycanrocdusk"
+        "name": "pokecube_mobs:mobs/lycanrocmidday"
       }
     ]
   },
