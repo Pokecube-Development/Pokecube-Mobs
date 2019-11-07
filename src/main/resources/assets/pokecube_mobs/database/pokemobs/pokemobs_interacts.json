@@ -6560,7 +6560,12 @@
       "name": "Shaymin Land",
       "stats": {
         "species": "Gratitude",
-        "foodMat": "light"
+        "foodMat": "light",
+		"formeItems": {
+          "values": {
+            "forme": "NShaymin Sky:Igracidea"
+          }
+        }
       }
     },
     {
@@ -9415,19 +9420,64 @@
     {
       "name": "Zygarde 50%",
       "stats": {
-        "species": "Order"
+        "species": "Order",
+		"interactions": [
+          {
+            "key": {
+              "values": {
+                "id": "zygardecube"
+              }
+            },
+            "action": {
+              "values": {
+                "forme": "zygarde100",
+                "type": "forme"
+              }
+            }
+          }
+        ]
       }
     },
     {
       "name": "Zygarde 10%",
       "stats": {
-        "species": "Order"
+        "species": "Order",
+		"interactions": [
+          {
+            "key": {
+              "values": {
+                "id": "zygardecube"
+              }
+            },
+            "action": {
+              "values": {
+                "forme": "zygarde50",
+                "type": "forme"
+              }
+            }
+          }
+        ]
       }
     },
     {
       "name": "Zygarde 100%",
       "stats": {
-        "species": "Order"
+        "species": "Order",
+		"interactions": [
+          {
+            "key": {
+              "values": {
+                "id": "zygardecube"
+              }
+            },
+            "action": {
+              "values": {
+                "forme": "zygarde10",
+                "type": "forme"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -9448,7 +9498,7 @@
 		"megaRules": [
           {
             "name": "Hoopa Unbound",
-            "item_preset": "ender_eye"
+            "item_preset": "prisonbottle"
           }
         ]
       }
