@@ -338,9 +338,9 @@
             "values": {
               "maxLight": "0.5",
               "types": "all",
-              "min": "5",
+              "min": "3",
               "rate": "0.25",
-              "max": "10",
+              "max": "8",
               "day": "false"
             }
           }
@@ -493,6 +493,20 @@
             "values": {
               "types": "village",
               "rate": "0.25"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Meowth Galar",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "village",
+              "rate": "0.25",
+			  "day": "false"
             }
           }
         ]
@@ -696,6 +710,19 @@
         ]
       }
     },
+	{
+      "name": "Ponyta Galar",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.2"
+            }
+          }
+        ]
+      }
+    },
     {
       "name": "Slowpoke",
       "stats": {
@@ -777,6 +804,25 @@
           {
             "values": {
               "types": "lake",
+              "rate": "0.05"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Farfetch\u0027d",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills",
+              "rate": "0.05"
+            }
+          },
+          {
+            "values": {
+              "types": "river",
               "rate": "0.05"
             }
           }
@@ -1202,6 +1248,19 @@
           {
             "values": {
               "types": "village",
+              "rate": "0.2"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Mr. Mime Galar",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "snowy",
               "rate": "0.2"
             }
           }
@@ -2446,6 +2505,26 @@
         ]
       }
     },
+	{
+      "name": "Corsola Galar",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.08"
+			  "day": "false"
+            }
+          },
+          {
+            "values": {
+              "types": "river",
+              "rate": "0.08"
+            }
+          }
+        ]
+      }
+    },
     {
       "name": "Remoraid",
       "stats": {
@@ -2811,6 +2890,29 @@
               "typesBlacklist": "cold",
               "types": "plains",
               "rate": "0.3"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Zigzagoon Galar",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "forest",
+              "rate": "0.3"
+			  "day": "false"
+            }
+          },
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "plains",
+              "rate": "0.3",
+			  "day": "false"
             }
           }
         ]
@@ -5428,6 +5530,19 @@
         ]
       }
     },
+	{
+      "name": "Darumaka Galar",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "snowy",
+              "rate": "0.3"
+            }
+          }
+        ]
+      }
+    },
     {
       "name": "Maractus",
       "stats": {
@@ -5512,6 +5627,32 @@
             "values": {
               "types": "nether",
               "rate": "0.1"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Yamask Galar",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "cave",
+              "rate": "0.5"
+			  "day": "false"
+            }
+          },
+          {
+            "values": {
+              "types": "sandy",
+              "rate": "0.1"
+            }
+          },
+          {
+            "values": {
+              "types": "nether",
+              "rate": "0.11"
             }
           }
         ]
@@ -5913,6 +6054,27 @@
     },
     {
       "name": "Stunfisk",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "swamp",
+              "rate": "0.4",
+              "water": "true"
+            }
+          },
+          {
+            "values": {
+              "types": "lake",
+              "rate": "0.4",
+              "water": "true"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "name": "Stunfisk Galar",
       "stats": {
         "spawnRules": [
           {
@@ -7900,6 +8062,523 @@
           }
         ]
 	  }
-	}
+	},
+	{
+      "name": "Grookey",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "forest",
+              "rate": "0.1"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Scorbunny",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "plains",
+              "rate": "0.1"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Sobble",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "beach",
+              "rate": "0.1"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Skwovet",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "forest",
+              "rate": "0.15"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Rookidee",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills",
+              "rate": "0.23"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Blipbug".
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "forest",
+              "rate": "0.33"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Nickit",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "cold",
+              "rate": "0.5"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Gossifleur",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "plains",
+              "rate": "0.4"
+            }
+          },
+		  {
+			"values": {
+			  "type": "flower",
+			  "rate": "0.7"
+			}
+		  }
+        ]
+	  }
+    },
+	{
+      "name": "Wooloo",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills,cold",
+              "rate": "0.3"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Chewtle",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "lake,beach",
+              "rate": "0.25"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Yamper",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "village",
+              "rate": "0.22"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Rolycoly",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "cave",
+              "rate": "0.4"
+            }
+          },
+		  {
+            "values": {
+              "types": "hills",
+              "rate": "0.18",
+			  "day": "false"
+            }
+          },
+		  {
+            "values": {
+              "types": "nether",
+              "rate": "0.12"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Applin",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "flower",
+              "rate": "0.13"
+            }
+          },
+		  {
+            "values": {
+              "types": "village",
+              "rate": "0.2"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Silicobra",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "sandy",
+              "rate": "0.2"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Cramorant",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "river",
+              "rate": "0.17"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Arrokuda",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "lake,ocean",
+              "rate": "0.12"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Toxel",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "savanna",
+              "rate": "0.2"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Sizzlipede",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "swamp",
+              "rate": "0.1"
+            }
+          },
+		  {
+            "values": {
+              "types": "sandy",
+              "rate": "0.19"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Clobbopus",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "lake,ocean",
+              "rate": "0.2"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Sinistea",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.2"
+            }
+          },
+          {
+            "values": {
+              "types": "village",
+              "rate": "0.1"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Hatenna",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.15"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Impidimp",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "jungle",
+              "rate": "0.2"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Milcery",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "village",
+              "rate": "0.09"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Falinks",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "savanna",
+              "rate": "0.11"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Pincurchin",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "beach",
+              "rate": "0.13"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Snom",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "snowy",
+              "rate": "0.17"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Stonjourner",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "mountain",
+              "rate": "0.2"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Eiscue",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "snowy",
+              "rate": "0.1"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Indeedee",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "nether",
+              "rate": "0.16"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Morpeko",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "mountain",
+              "rate": "0.18"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Cufant",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "mesa",
+              "rate": "0.2"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Dracozolt"
+	},
+	{
+      "name": "Arctozolt"
+	},
+	{
+      "name": "Dracovish"
+	},
+	{
+      "name": "Arctovish"
+	},
+	{
+      "name": "Duraludon",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "hills",
+              "rate": "0.13"
+            }
+          }
+        ]
+	  }
+	},
+	{
+      "name": "Dreepy",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "swamp",
+              "rate": "0.08"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Zacian",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "river",
+              "rate": "0.0"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Zamazenta",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "river",
+              "rate": "0.0"
+            }
+          }
+        ]
+	  }
+    },
+	{
+      "name": "Eternatus",
+	  "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "types": "end",
+              "rate": "0.002"
+            }
+          }
+        ]
+	  }
+    }
   ]
 }
