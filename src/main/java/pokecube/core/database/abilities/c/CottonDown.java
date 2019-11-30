@@ -4,5 +4,5 @@ import pokecube.core.database.abilities.Ability;
 
 public class CottonDown extends Ability
 {
-   
+   // TODO Implement this.
 }

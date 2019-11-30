@@ -4,5 +4,5 @@ import pokecube.core.database.abilities.Ability;
 
 public class IceFace extends Ability
 {
-   
+   // TODO Implement this.
 }
