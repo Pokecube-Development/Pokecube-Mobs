@@ -2218,157 +2218,6 @@
           }
         },
         "mass": 6.0
-    },
-	{
-      "name": "Pikachu Partner",
-      "number": 25,
-      "starter": true,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "60",
-            "spatk": "75",
-            "def": "50",
-            "spd": "120",
-            "hp": "45",
-            "atk": "80"
-          }
-        },
-        "evs": {
-          "values": {
-            "spd": "2"
-          }
-        },
-        "sizes": {
-          "values": {
-            "length": "0.4",
-            "width": "0.4",
-            "height": "0.4"
-          }
-        },
-        "types": {
-          "values": {
-            "type1": "Electric"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Static",
-            "hidden": "Lightningrod"
-          }
-        },
-        "mass": 6.0,
-        "captureRate": 190,
-        "baseExp": 105,
-        "expMode": "Medium Fast",
-        "genderRatio": 127,
-        "logics": {
-          "values": {
-            "shoulder": "TRUE"
-          }
-        }
-      },
-      "moves": {
-        "lvlupMoves": {
-          "values": {
-            "1": "tailwhip,thundershock",
-            "5": "growl",
-            "7": "playnice",
-            "10": "quickattack",
-            "13": "electroball",
-            "18": "thunderwave",
-            "21": "feint",
-            "23": "doubleteam",
-            "26": "spark",
-            "29": "nuzzle",
-            "34": "discharge",
-            "37": "slam",
-            "42": "thunderbolt",
-            "45": "agility",
-            "50": "wildcharge",
-            "53": "lightscreen",
-            "58": "thunder"
-          }
-        },
-        "misc": {
-          "moves": "zippyzap, splishysplash, floatyfall, pikapapow, agility, attract, bestow, bodyslam, brickbreak, captivate, celebrate, chargebeam, charm, confide, counter, covet, curse, defensecurl, detect, dig, discharge, doubleedge, doubleteam, drainingkiss, dynamicpunch, echoedvoice, electricterrain, electroball, electroweb, endeavor, facade, feint, flash, fling, fly, flyingpress, focuspunch, frustration, grassknot, growl, happyhour, headbutt, heartstamp, helpinghand, hiddenpower, holdhands, iciclecrash, irontail, knockoff, laserfocus, lightscreen, magnetrise, megakick, megapunch, meteormash, mimic, mudslap, nastyplot, naturalgift, nuzzle, payday, playnice, protect, quickattack, rage, raindance, reflect, rest, return, rocksmash, rollout, round, secretpower, seismictoss, shockwave, signalbeam, skullbash, slam, sleeptalk, snore, spark, strength, submission, substitute, surf, swagger, sweetkiss, swift, tailwhip, takedown, teeterdance, thunder, thunderbolt, thunderpunch, thundershock, thunderwave, toxic, voltswitch, volttackle, wildcharge, zapcannon"
-        }
-      }
-    },
-    {
-      "name": "Pikachu Ash",
-      "number": 25,
-      "base": false,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "50",
-            "spatk": "50",
-            "def": "40",
-            "spd": "90",
-            "hp": "35",
-            "atk": "55"
-          }
-        },
-        "evs": {
-          "values": {
-            "spd": "2"
-          }
-        },
-        "sizes": {
-          "values": {
-            "length": "0.4",
-            "width": "0.4",
-            "height": "0.4"
-          }
-        },
-        "types": {
-          "values": {
-            "type1": "Electric"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Static",
-            "hidden": "Lightningrod"
-          }
-        },
-        "mass": 6.0,
-        "captureRate": 190,
-        "baseExp": 105,
-        "expMode": "Medium Fast",
-        "genderRatio": 127,
-        "logics": {
-          "values": {
-            "shoulder": "TRUE"
-          }
-        }
-      },
-      "moves": {
-        "lvlupMoves": {
-          "values": {
-            "1": "tailwhip,thundershock",
-            "5": "growl",
-            "7": "playnice",
-            "10": "quickattack",
-            "13": "electroball",
-            "18": "thunderwave",
-            "21": "feint",
-            "23": "doubleteam",
-            "26": "spark",
-            "29": "nuzzle",
-            "34": "discharge",
-            "37": "slam",
-            "42": "thunderbolt",
-            "45": "agility",
-            "50": "wildcharge",
-            "53": "lightscreen",
-            "58": "thunder"
-          }
-        },
-        "misc": {
-          "moves": "agility, attract, bestow, bodyslam, brickbreak, captivate, celebrate, chargebeam, charm, confide, counter, covet, curse, defensecurl, detect, dig, discharge, doubleedge, doubleteam, drainingkiss, dynamicpunch, echoedvoice, electricterrain, electroball, electroweb, endeavor, facade, feint, flash, fling, fly, flyingpress, focuspunch, frustration, grassknot, growl, happyhour, headbutt, heartstamp, helpinghand, hiddenpower, holdhands, iciclecrash, irontail, knockoff, laserfocus, lightscreen, magnetrise, megakick, megapunch, meteormash, mimic, mudslap, nastyplot, naturalgift, nuzzle, payday, playnice, protect, quickattack, rage, raindance, reflect, rest, return, rocksmash, rollout, round, secretpower, seismictoss, shockwave, signalbeam, skullbash, slam, sleeptalk, snore, spark, strength, submission, substitute, surf, swagger, sweetkiss, swift, tailwhip, takedown, teeterdance, thunder, thunderbolt, thunderpunch, thundershock, thunderwave, toxic, voltswitch, volttackle, wildcharge, zapcannon"
-        }
       }
     },
     {
@@ -4703,6 +4552,7 @@
           }
         },
         "mass": 4.2
+      }
     },
     {
       "name": "Meowth Alola",
@@ -8608,6 +8458,7 @@
           }
         },
         "mass": 40.5
+      }
     },
     {
       "name": "Gengar Mega",
@@ -46202,7 +46053,6 @@
           }
         },
 		"movementType": "floating"
-		"movementType": "floating"
       },
       "moves": {
         "lvlupMoves": {
@@ -66837,7 +66687,7 @@
 			"hidden": "Mirror Armor"
           }
         },
-        "mass": 75.0
+        "mass": 75.0,
         "movementType": "flying"
       }
     },
