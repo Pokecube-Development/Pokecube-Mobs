@@ -224,6 +224,10 @@ public class PokecubeMobs implements IMobProvider
         ItemGenerator.fossilVariants.add("tirtouga");
         ItemGenerator.fossilVariants.add("tyrunt");
         ItemGenerator.fossilVariants.add("amaura");
+		ItemGenerator.fossilVariants.add("dracozolt");
+		ItemGenerator.fossilVariants.add("arctozolt");
+		ItemGenerator.fossilVariants.add("dracovish");
+		ItemGenerator.fossilVariants.add("arctovish");
 
         MinecraftForge.EVENT_BUS.register(this);
         BerryHelper.initBerries();
