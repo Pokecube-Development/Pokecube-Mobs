@@ -10793,12 +10793,20 @@
         "evolutions": [
           {
             "name": "Flapple",
-            "item_preset": "metalcoat",
+            "item": {
+              "values": {
+                "id": "minecraft:apple"
+              }
+            },
             "animation": "18"
           },
 		  {
             "name": "Appletun",
-            "item_preset": "duskstone",
+            "item": {
+              "values": {
+                "id": "minecraft:golden_apple"
+              }
+            },
             "animation": "18"
           }
         ],
@@ -10942,7 +10950,7 @@
         "evolutions": [
           {
             "name": "Polteageist",
-            "item_preset": "leafstone",
+            "item_preset": "chippedpot",
             "animation": "18"
           }
         ],
@@ -10955,7 +10963,7 @@
         "evolutions": [
 		  {
             "name": "Polteageist Forgery",
-            "item_preset": "waterstone",
+            "item_preset": "crackedpot",
             "animation": "18"
           }
         ],
@@ -11083,7 +11091,11 @@
         "evolutions": [
           {
             "name": "Alcremie",
-            "item_preset": "firestone",
+            "item": {
+              "values": {
+                "id": "minecraft:milk_bucket"
+              }
+            },
             "animation": "18"
           }
         ],
@@ -11258,7 +11270,7 @@
 		"megaRules": [
           {
             "name": "Zamazenta Crowned",
-            "move": "moonblast"
+            "item_preset": "rustedshield"
           }
         ]
       }
@@ -11270,7 +11282,7 @@
 		"megaRules": [
           {
             "name": "Eternatus Eternamax",
-            "move": "dragondance"
+            "item_preset": "rustedsword"
           }
         ]
       }
