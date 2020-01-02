@@ -954,6 +954,19 @@
         "prey": "Bird Rodent"
       }
     },
+	{
+      "name": "Meowth Galar",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Perrserker",
+            "level": 28
+          }
+        ],
+        "species": "Cat",
+        "prey": "Bird Rodent"
+      }
+    },
     {
       "name": "Meowth Alola",
       "stats": {
@@ -1440,6 +1453,49 @@
         ]
       }
     },
+	{
+      "name": "Ponyta Galar",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Rapidash Galar",
+            "level": 40
+          }
+        ],
+        "species": "Horse",
+        "foodMat": "grass"
+      }
+    },
+    {
+      "name": "Rapidash Galar",
+      "stats": {
+        "species": "Horse",
+        "foodMat": "grass",
+        "interactions": [
+          {
+            "male": false,
+            "key": {
+              "values": {
+                "id": "minecraft:bucket"
+              }
+            },
+            "action": {
+              "values": {
+                "type": "item"
+              },
+              "drops": [
+                {
+                  "values": {
+                    "id": "minecraft:milk_bucket",
+                    "n": "1"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
     {
       "name": "Slowpoke",
       "stats": {
@@ -1534,6 +1590,19 @@
       "stats": {
         "species": "Bird",
         "activeTimes": "day"
+      }
+    },
+	{
+      "name": "Farfetch\u0027d Galar",
+      "stats": {
+        "species": "Bird",
+        "activeTimes": "day",
+		"evolutions": [
+          {
+            "name": "Sirfetch\u0027d",
+            "level": 31
+          }
+        ]
       }
     },
     {
@@ -1832,6 +1901,15 @@
           {
             "name": "Weezing",
             "level": 35
+          },
+		  {
+            "name": "Weezing Galar",
+			"location": {
+              "values": {
+                "types": "industrial"
+              }
+            },
+            "level": 35
           }
         ],
         "species": "PoisonGas"
@@ -1983,6 +2061,18 @@
         "species": "Hominid"
       }
     },
+	{
+      "name": "Mr. Mime Galar",
+      "stats": {
+        "species": "Hominid",
+		"evolutions": [
+          {
+            "name": "Mr. Rime",
+            "level": 42
+          }
+        ]
+      }
+    },
     {
       "name": "Scyther",
       "stats": {
@@ -2116,11 +2206,7 @@
           },
           {
             "name": "Leafeon",
-            "item": {
-              "values": {
-                "id": "minecraft:mossy_cobblestone"
-              }
-            }
+            "item_preset": "leafstone"
           },
           {
             "name": "Glaceon",
@@ -2139,6 +2225,12 @@
             }
           }
         ],
+        "species": "Fox"
+      }
+    },
+	{
+      "name": "Eevee Partner",
+      "stats": {
         "species": "Fox"
       }
     },
@@ -3199,6 +3291,19 @@
         "foodMat": "water"
       }
     },
+	{
+      "name": "Corsola Galar",
+      "stats": {
+        "species": "Coral",
+        "foodMat": "water",
+		"evolutions": [
+          {
+            "name": "Cursola",
+            "level": 38
+          }
+        ]
+      }
+    },
     {
       "name": "Remoraid",
       "stats": {
@@ -3715,6 +3820,55 @@
           }
         ],
         "activeTimes": "dusk day dawn"
+      }
+    },
+	{
+      "name": "Zigzagoon Galar",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Linoone Galar",
+            "level": 20
+          }
+        ],
+        "species": "Mustela",
+        "activeTimes": "dusk dawn"
+      }
+    },
+    {
+      "name": "Linoone Galar",
+      "stats": {
+        "species": "Mustela",
+		"evolutions": [
+          {
+            "name": "Obstagoon",
+            "level": 35
+          }
+        ],
+        "interactions": [
+          {
+            "male": false,
+            "key": {
+              "values": {
+                "id": "minecraft:bucket"
+              }
+            },
+            "action": {
+              "values": {
+                "type": "item"
+              },
+              "drops": [
+                {
+                  "values": {
+                    "id": "minecraft:milk_bucket",
+                    "n": "1"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "activeTimes": "dusk dawn"
       }
     },
     {
@@ -5265,7 +5419,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -5285,7 +5439,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -5305,7 +5459,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -5325,7 +5479,7 @@
           {
             "key": {
               "values": {
-                "id": "minecraft:diamond_hoe"
+                "id": "meteorite"
               }
             },
             "action": {
@@ -6061,6 +6215,15 @@
           {
             "name": "Mr. Mime",
             "move": "mimic"
+          },
+		  {
+            "name": "Mr. Mime Galar",
+            "move": "mimic",
+			"location": {
+              "values": {
+                "types": "snow"
+              }
+            }
           }
         ],
         "species": "Mime"
@@ -6560,7 +6723,12 @@
       "name": "Shaymin Land",
       "stats": {
         "species": "Gratitude",
-        "foodMat": "light"
+        "foodMat": "light",
+		"formeItems": {
+          "values": {
+            "forme": "NShaymin Sky:Igracidea"
+          }
+        }
       }
     },
     {
@@ -7405,6 +7573,29 @@
         "species": "Blazing"
       }
     },
+	{
+      "name": "Darumaka Galar",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Darmanitan Galar",
+            "item": {
+              "values": {
+                "id": "minecraft:packed_ice"
+              }
+            }
+          }
+        ],
+        "species": "ZenCharm",
+        "foodMat": "rock"
+      }
+    },
+    {
+      "name": "Darmanitan Galar",
+      "stats": {
+        "species": "Blazing"
+      }
+    },
     {
       "name": "Maractus",
       "stats": {
@@ -7462,6 +7653,23 @@
         "evolutions": [
           {
             "name": "Cofagrigus",
+            "level": 34
+          }
+        ],
+        "species": "Spirit"
+      }
+    },
+	{
+      "name": "Yamask Galar",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Runerigus",
+			"location": {
+              "values": {
+                "types": "hills"
+              }
+            },
             "level": 34
           }
         ],
@@ -8080,6 +8288,12 @@
         "species": "Fish"
       }
     },
+	{
+      "name": "Stunfisk Galar",
+      "stats": {
+        "species": "Fish"
+      }
+    },
     {
       "name": "Mienfoo",
       "stats": {
@@ -8314,13 +8528,35 @@
     {
       "name": "Tornadus Incarnate",
       "stats": {
+        "species": "Cyclone",
+		"formeItems": {
+          "values": {
+            "forme": "NTornadus Therian:Irevealglass"
+          }
+        }
+      }
+    },
+	{
+      "name": "Tornadus Therian",
+      "stats": {
         "species": "Cyclone"
       }
     },
     {
       "name": "Thundurus Incarnate",
       "stats": {
-        "species": "BoltStrike"
+        "species": "BoltStrike",
+		"formeItems": {
+          "values": {
+            "forme": "NThundurus Therian:Irevealglass"
+          }
+        }
+      }
+    },
+	{
+      "name": "Thundurus Therian",
+      "stats": {
+        "species": "Cyclone"
       }
     },
     {
@@ -8338,11 +8574,39 @@
     {
       "name": "Landorus Incarnate",
       "stats": {
-        "species": "Abundant"
+        "species": "Abundant",
+		"formeItems": {
+          "values": {
+            "forme": "NLandorus Therian:Irevealglass"
+          }
+        }
+      }
+    },
+	{
+      "name": "Landorus Therian",
+      "stats": {
+        "species": "Cyclone"
       }
     },
     {
       "name": "Kyurem",
+      "stats": {
+        "species": "Boundary",
+		"formeItems": {
+          "values": {
+            "forme": "NKyurem Black:Idna_splicera,NKyurem White:Idna_splicerb"
+          }
+        }
+      }
+    },
+	{
+      "name": "Kyurem Black",
+      "stats": {
+        "species": "Boundary"
+      }
+    },
+	{
+      "name": "Kyurem White",
       "stats": {
         "species": "Boundary"
       }
@@ -8351,11 +8615,36 @@
       "name": "Keldeo",
       "stats": {
         "species": "Colt",
+        "foodMat": "grass",
+		"megaRules": [
+          {
+            "name": "Keldeo Resolute",
+            "move": "secretsword"
+          }
+        ]
+      }
+    },
+	{
+      "name": "Keldeo Resolute",
+      "stats": {
+        "species": "Colt",
         "foodMat": "grass"
       }
     },
     {
       "name": "Meloetta Aria",
+      "stats": {
+        "species": "Melody",
+		"megaRules": [
+          {
+            "name": "Meloetta Pirouette",
+            "move": "relicsong"
+          }
+        ]
+      }
+    },
+	{
+      "name": "Meloetta Pirouette",
       "stats": {
         "species": "Melody"
       }
@@ -9337,19 +9626,64 @@
     {
       "name": "Zygarde 50%",
       "stats": {
-        "species": "Order"
+        "species": "Order",
+		"interactions": [
+          {
+            "key": {
+              "values": {
+                "id": "zygardecube"
+              }
+            },
+            "action": {
+              "values": {
+                "forme": "zygarde100",
+                "type": "forme"
+              }
+            }
+          }
+        ]
       }
     },
     {
       "name": "Zygarde 10%",
       "stats": {
-        "species": "Order"
+        "species": "Order",
+		"interactions": [
+          {
+            "key": {
+              "values": {
+                "id": "zygardecube"
+              }
+            },
+            "action": {
+              "values": {
+                "forme": "zygarde50",
+                "type": "forme"
+              }
+            }
+          }
+        ]
       }
     },
     {
       "name": "Zygarde 100%",
       "stats": {
-        "species": "Order"
+        "species": "Order",
+		"interactions": [
+          {
+            "key": {
+              "values": {
+                "id": "zygardecube"
+              }
+            },
+            "action": {
+              "values": {
+                "forme": "zygarde10",
+                "type": "forme"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -9367,12 +9701,11 @@
       "name": "Hoopa Confined",
       "stats": {
         "species": "Mischief",
-		"megaRules": [
-          {
-            "name": "Hoopa Unbound",
-            "item_preset": "ender_eye"
+		"formeItems": {
+          "values": {
+            "forme": "NHoopa Unbound:Iprisonbottle"
           }
-        ]
+        }
       }
     },
     {
@@ -9396,7 +9729,9 @@
             "level": 17
           }
         ]
-      }
+      },
+	  "species": "Bird",
+      "prey": "Insecta"
     },
     {
       "name": "Dartrix",
@@ -9406,7 +9741,9 @@
             "name": "Decidueye",
             "level": 34
           }
-        ]
+        ],
+		"species": "Bird",
+		"prey": "Insecta"
       }
     },
     {
@@ -9417,7 +9754,8 @@
             "name": "Torracat",
             "level": 17
           }
-        ]
+        ],
+		"species": "Cat"
       }
     },
     {
@@ -9428,7 +9766,8 @@
             "name": "Incineroar",
             "level": 34
           }
-        ]
+        ],
+		"species": "Cat"
       }
     },
     {
@@ -9439,7 +9778,8 @@
             "name": "Brionne",
             "level": 17
           }
-        ]
+        ],
+		"species": "Seal"
       }
     },
     {
@@ -9450,7 +9790,8 @@
             "name": "Primarina",
             "level": 34
           }
-        ]
+        ],
+		"species": "Seal"
       }
     },
     {
@@ -9461,7 +9802,8 @@
             "name": "Trumbeak",
             "level": 14
           }
-        ]
+        ],
+		"species": "Bird"
       }
     },
     {
@@ -9472,7 +9814,8 @@
             "name": "Toucannon",
             "level": 28
           }
-        ]
+        ],
+		"species": "Bird"
       }
     },
     {
@@ -9699,7 +10042,8 @@
             "name": "Mudsdale",
             "level": 30
           }
-        ]
+        ],
+		"species": "Horse"
       }
     },
     {
@@ -9727,7 +10071,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Horse"
       }
     },
     {
@@ -9784,7 +10129,8 @@
             "name": "Bewear",
             "level": 27
           }
-        ]
+        ],
+		"species": "Bear"
       }
     },
     {
@@ -9812,7 +10158,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Bear"
       }
     },
     {
@@ -9862,7 +10209,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Orangutan"
       }
     },
     {
@@ -9890,7 +10238,8 @@
               ]
             }
           }
-        ]
+        ],
+		"species": "Monkey"
       }
     },
     {
@@ -9984,7 +10333,8 @@
             "name": "Necrozma Ultra",
             "item_preset": "nether_star"
           }
-        ]
+        ],
+		"species": "Light"
 	  }
     },
 	{
@@ -9992,9 +10342,10 @@
       "stats": {
         "formeItems": {
           "values": {
-            "forme": "NSolgaleo Dusk:Inether_star"
+            "forme": "NSolgaleo Dusk:In_sun"
           }
-        }
+        },
+		"species": "Light"
       }
     },
 	{
@@ -10002,10 +10353,59 @@
       "stats": {       
         "formeItems": {
           "values": {
-            "forme": "NLunala Dawn:Inether_star"
+            "forme": "NLunala Dawn:In_moon"
           }
         },
-        "movementType": "flying"
+        "movementType": "flying",
+		"species": "Light"
+      }
+    },
+	{
+      "name": "Nihilego",
+      "stats": {
+        "species": "UB-01"
+      }
+    },
+	{
+      "name": "Buzzwole",
+      "stats": {
+        "species": "UB-02"
+      }
+    },
+	{
+      "name": "Pheromosa",
+      "stats": {
+        "species": "UB-02"
+      }
+    },
+	{
+      "name": "Xurkitree",
+      "stats": {
+        "species": "UB-03"
+      }
+    },
+	{
+      "name": "Celesteela",
+      "stats": {
+        "species": "UB-04"
+      }
+    },
+	{
+      "name": "Kartana",
+      "stats": {
+        "species": "UB-04"
+      }
+    },
+	{
+      "name": "Guzzlord",
+      "stats": {
+        "species": "UB-05"
+      }
+    },
+	{
+      "name": "Marshadow",
+      "stats": {
+        "species": "Shadow"
       }
     },
 	{
@@ -10016,7 +10416,32 @@
             "name": "Naganadel",
             "move": "dragonpulse"
           }
-        ]
+        ],
+		"species": "UB Adhesive"
+      }
+    },
+	{
+      "name": "Naganadel",
+      "stats": {
+		"species": "UB Stinger"
+      }
+    },
+	{
+      "name": "Stakataka",
+      "stats": {
+		"species": "UB Assembly"
+      }
+    },
+	{
+      "name": "Blacephalon",
+      "stats": {
+		"species": "UB Burst"
+      }
+    },
+	{
+      "name": "Zeraora",
+      "stats": {
+		"species": "Cat"
       }
     },
 	{
@@ -10027,8 +10452,840 @@
 			"name": "Melmetal",
 			"level": 32
 		  }
-	    ]
+	    ],
+		"species": "Steel"
 	  }
+    },
+	{
+      "name": "Grookey",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Thwackey",
+            "level": 16,
+            "animation": "18"
+          }
+        ],
+        "species": "Monkey",
+        "foodMat": "berry"
+      }
+    },
+	{
+      "name": "Thwackey",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Rillaboom",
+            "level": 35,
+            "animation": "18"
+          }
+        ],
+        "species": "Monkey",
+        "foodMat": "berry"
+      }
+    },
+	{
+      "name": "Rillaboom",
+      "stats": {
+        "species": "Gorila",
+		"foodMat": "berry"
+      }
+	},
+	{
+      "name": "Scorbunny",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Raboot",
+            "level": 16,
+            "animation": "18"
+          }
+        ],
+        "species": "Leporidae",
+        "foodMat": "grass"
+      }
+    },
+	{
+      "name": "Raboot",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Cinderace",
+            "level": 35,
+            "animation": "18"
+          }
+        ],
+        "species": "Leporidae",
+        "foodMat": "grass"
+      }
+    },
+	{
+      "name": "Cinderace",
+      "stats": {
+        "species": "Leporidae",
+		"foodMat": "grass"
+      }
+	},
+	{
+      "name": "Sobble",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Drizzile",
+            "level": 16,
+            "animation": "18"
+          }
+        ],
+        "species": "Lizard",
+        "prey": "insecta"
+      }
+    },
+	{
+      "name": "Drizzile",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Inteleon",
+            "level": 35,
+            "animation": "18"
+          }
+        ],
+        "species": "Lizard",
+        "prey": "insecta"
+      }
+    },
+	{
+      "name": "Inteleon",
+      "stats": {
+        "species": "Lizard",
+		"prey": "insecta"
+      }
+	},
+	{
+      "name": "Skwovet",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Greedent",
+            "level": 24,
+            "animation": "18"
+          }
+        ],
+        "species": "Rodent"
+      }
+    },
+	{
+      "name": "Greedent",
+      "stats": {
+        "species": "Rodent"
+      }
+	},
+	{
+      "name": "Rookidee",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Corvisquire",
+            "level": 18,
+            "animation": "18"
+          }
+        ],
+        "species": "Bird",
+        "prey": "insecta"
+      }
+    },
+	{
+      "name": "Corvisquire",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Corviknight",
+            "level": 38,
+            "animation": "18"
+          }
+        ],
+        "species": "Bird",
+        "prey": "insecta"
+      }
+    },
+	{
+      "name": "Corviknight",
+      "stats": {
+        "species": "Bird",
+		"prey": "insecta"
+      }
+	},
+	{
+      "name": "Blipbug",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Dottler",
+            "level": 10,
+            "animation": "18"
+          }
+        ],
+        "species": "Insecta",
+        "foodMat": "grass"
+      }
+    },
+	{
+      "name": "Dottler",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Orbeetle",
+            "level": 30,
+            "animation": "18"
+          }
+        ],
+        "species": "Insecta",
+        "foodMat": "grass"
+      }
+    },
+	{
+      "name": "Orbeetle",
+      "stats": {
+        "species": "Insecta",
+		"foodMat": "berry"
+      }
+	},
+	{
+      "name": "Nickit",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Thievul",
+            "level": 18,
+            "animation": "18"
+          }
+        ],
+        "species": "Fox"
+      }
+    },
+	{
+      "name": "Thievul",
+      "stats": {
+        "species": "Fox"
+      }
+	},
+	{
+      "name": "Gossifleur",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Eldegoss",
+            "level": 20,
+            "animation": "18"
+          }
+        ],
+        "species": "Weed",
+		"foodMat": "light"
+      }
+    },
+	{
+      "name": "Eldegoss",
+      "stats": {
+        "species": "Weed",
+		"foodMat": "light"
+      }
+	},
+	{
+      "name": "Wooloo",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Dubwool",
+            "level": 24,
+            "animation": "18"
+          }
+        ],
+        "species": "Artiodactyla",
+        "foodMat": "grass"
+      }
+    },
+	{
+      "name": "Dubwool",
+      "stats": {
+        "species": "Artiodactyla",
+		"foodMat": "grass"
+      }
+	},
+	{
+      "name": "Chewtle",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Drednaw",
+            "level": 22,
+            "animation": "18"
+          }
+        ],
+        "species": "Turtle"
+      }
+    },
+	{
+      "name": "Drednaw",
+      "stats": {
+        "species": "Turtle"
+      }
+	},
+	{
+      "name": "Yamper",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Boltund",
+            "level": 25,
+            "animation": "18"
+          }
+        ],
+        "species": "Dog"
+      }
+    },
+	{
+      "name": "Boltund",
+      "stats": {
+        "species": "Dog"
+      }
+	},
+	{
+      "name": "Rolycoly",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Carkol",
+            "level": 18,
+            "animation": "18"
+          }
+        ],
+        "species": "Mineral",
+        "foodMat": "rock",
+		"hatedMaterials": "water"
+      }
+    },
+	{
+      "name": "Carkol",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Coalossal",
+            "level": 34,
+            "animation": "18"
+          }
+        ],
+        "species": "Mineral",
+        "foodMat": "rock",
+		"hatedMaterials": "water"
+      }
+    },
+	{
+      "name": "Coalossal",
+      "stats": {
+        "species": "Mineral",
+		"foodMat": "rock",
+		"hatedMaterials": "water"
+      }
+	},
+	{
+      "name": "Applin",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Flapple",
+            "item": {
+              "values": {
+                "id": "minecraft:apple"
+              }
+            },
+            "animation": "18"
+          },
+		  {
+            "name": "Appletun",
+            "item": {
+              "values": {
+                "id": "minecraft:golden_apple"
+              }
+            },
+            "animation": "18"
+          }
+        ],
+        "species": "Insecta"
+      }
+    },
+	{
+      "name": "Flapple",
+      "stats": {
+        "species": "Dragon"
+      }
+	},
+	{
+      "name": "Appletun",
+      "stats": {
+        "species": "Dragon"
+      }
+	},
+	{
+      "name": "Silicobra",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Sandaconda",
+            "level": 36,
+            "animation": "18"
+          }
+        ],
+        "species": "Snake"
+      }
+    },
+	{
+      "name": "Sandaconda",
+      "stats": {
+        "species": "Snake"
+      }
+	},
+	{
+      "name": "Cramorant",
+      "stats": {
+        "species": "Bird"
+      }
+	},
+	{
+      "name": "Cramorant Gulping",
+      "stats": {
+        "species": "Bird"
+      }
+	},
+	{
+      "name": "Arrokuda",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Barraskewda",
+            "level": 26,
+            "animation": "18"
+          }
+        ],
+        "species": "Fish"
+      }
+    },
+	{
+      "name": "Barraskewda",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Toxel",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Toxtricity Amped",
+            "level": 30,
+            "animation": "18"
+          },
+		  {
+            "name": "Toxtricity Lowkey",
+            "level": 30,
+			"trade": true,
+            "animation": "18"
+          }
+        ],
+        "species": "Dragon"
+      }
+    },
+	{
+      "name": "Toxtricity Amped",
+      "stats": {
+        "species": "Dragon"
+      }
+	},
+	{
+      "name": "Toxtricity Lowkey",
+      "stats": {
+        "species": "Dragon"
+      }
+	},
+	{
+      "name": "Sizzlipede",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Centiskorch",
+            "level": 28,
+            "animation": "18"
+          }
+        ],
+        "species": "Insecta"
+      }
+    },
+	{
+      "name": "Centiskorch",
+      "stats": {
+        "species": "Insecta"
+      }
+	},
+	{
+      "name": "Clobbopus",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Grapploct",
+            "move": "Taunt",
+            "animation": "18"
+          }
+        ],
+        "species": "Fish"
+      }
+    },
+	{
+      "name": "Grapploct",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Sinistea",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Polteageist",
+            "item_preset": "chippedpot",
+            "animation": "18"
+          }
+        ],
+        "species": "Fish"
+      }
+    },	
+	{
+      "name": "Sinistea Forgery",
+      "stats": {
+        "evolutions": [
+		  {
+            "name": "Polteageist Forgery",
+            "item_preset": "crackedpot",
+            "animation": "18"
+          }
+        ],
+        "species": "Fish"
+      }
+    },
+	{
+      "name": "Polteageist Forgery",
+      "stats": {
+        "species": "Object"
+      }
+	},
+	{
+      "name": "Polteageist",
+      "stats": {
+        "species": "Object"
+      }
+	},
+	{
+      "name": "Hatenna",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Hattrem",
+            "level": 32,
+            "animation": "18"
+          }
+        ],
+        "species": "Mineral",
+        "foodMat": "rock"
+      }
+    },
+	{
+      "name": "Hattrem",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Hatterene",
+            "level": 42,
+            "animation": "18"
+          }
+        ],
+        "species": "Mineral",
+        "foodMat": "rock"
+      }
+    },
+	{
+      "name": "Hatterene",
+      "stats": {
+        "species": "Mineral",
+		"foodMat": "rock"
+      }
+	},
+	{
+      "name": "Impidimp",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Morgrem",
+            "level": 32,
+            "animation": "18"
+          }
+        ],
+        "species": "Goblin"
+      }
+    },
+	{
+      "name": "Morgrem",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Grimmsnarl",
+            "level": 42,
+            "animation": "18"
+          }
+        ],
+        "species": "Goblin"
+      }
+    },
+	{
+      "name": "Grimmsnarl",
+      "stats": {
+        "species": "Goblin"
+      }
+	},
+	{
+      "name": "Obstagoon",
+      "stats": {
+        "species": "Mustela"
+      }
+	},
+	{
+      "name": "Perrserker",
+      "stats": {
+        "species": "Cat"
+      }
+	},
+	{
+      "name": "Cursola",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Sirfetch\u0027d",
+      "stats": {
+        "species": "Duck"
+      }
+	},
+	{
+      "name": "Mr. Rime",
+      "stats": {
+        "species": "Hominid"
+      }
+	},
+	{
+      "name": "Runerigus",
+      "stats": {
+        "species": "Goblin"
+      }
+	},
+	{
+      "name": "Milcery",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Alcremie",
+            "item": {
+              "values": {
+                "id": "minecraft:milk_bucket"
+              }
+            },
+            "animation": "18"
+          }
+        ],
+        "species": "Cream"
+      }
+    },
+	{
+      "name": "Alcremie",
+      "stats": {
+        "species": "Cream"
+      }
+	},
+	{
+      "name": "Falinks",
+      "stats": {
+        "species": "Goblin"
+      }
+	},
+	{
+      "name": "Pincurchin",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Snom",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Frosmoth",
+			"happy": true,
+            "time": "night",
+            "animation": "18"
+          }
+        ],
+        "species": "Insecta"
+      }
+    },
+	{
+      "name": "Frosmoth",
+      "stats": {
+        "species": "Butterfly"
+      }
+	},
+	{
+      "name": "Stonjourner",
+      "stats": {
+        "species": "Rock"
+      }
+	},
+	{
+      "name": "Eiscue",
+      "stats": {
+        "species": "Penguin"
+      }
+	},
+	{
+      "name": "Indeedee",
+      "stats": {
+        "species": "Hearing"
+      }
+	},
+	{
+      "name": "Morpeko",
+      "stats": {
+        "species": "Rodent Leporidae"
+      }
+	},
+	{
+      "name": "Morpeko Hangry",
+      "stats": {
+        "species": "Rodent Leporidae"
+      }
+	},
+	{
+      "name": "Cufant",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Copperajah",
+            "level": 34,
+            "animation": "18"
+          }
+        ],
+        "species": "Elephant"
+      }
+    },
+	{
+      "name": "Copperajah",
+      "stats": {
+        "species": "Elephant"
+      }
+	},
+	{
+      "name": "Dracozolt",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Arctozolt",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Dracovish",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Arctovish",
+      "stats": {
+        "species": "Fish"
+      }
+	},
+	{
+      "name": "Duraludon",
+      "stats": {
+        "species": "Mineral"
+      }
+	},
+	{
+      "name": "Dreepy",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Drakloak",
+            "level": 50,
+            "animation": "18"
+          }
+        ],
+        "species": "Dragon"
+      }
+    },
+	{
+      "name": "Drakloak",
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Dragapult",
+            "level": 60,
+            "animation": "18"
+          }
+        ],
+        "species": "Dragon"
+      }
+    },
+	{
+      "name": "Dragapult",
+      "stats": {
+        "species": "Dragon"
+      }
+	},
+	{
+      "name": "Zacian",
+      "stats": {
+        "species": "Wolf",
+		"megaRules": [
+          {
+            "name": "Zacian Crowned",
+            "move": "moonblast"
+          }
+        ]
+      }
+    },
+	{
+      "name": "Zamazenta",
+      "stats": {
+        "species": "Wolf",
+		"megaRules": [
+          {
+            "name": "Zamazenta Crowned",
+            "item_preset": "rustedshield"
+          }
+        ]
+      }
+    },
+	{
+      "name": "Eternatus",
+      "stats": {
+        "species": "Alien",
+		"megaRules": [
+          {
+            "name": "Eternatus Eternamax",
+            "item_preset": "rustedsword"
+          }
+        ]
+      }
     }
   ]
 }

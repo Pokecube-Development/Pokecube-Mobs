@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Wooly_mane,Right_legChild,HeadChild,Left_legChild" head="Head,Head,Head,Head,Head,Head,head,head,Head_Vert_1,head,Head,Head,Head,Neck,Head,Head,shape2,head,head,Head,Head,Head,Head,Head,Neck,Head,Head,Neck,head,Head,Head,head,Head,head,Head,neck(head),Body,head,Head,Head,Head,Shield,Head,head,Head,head,Shield,Head,Mouth,Head,Neck,head,Thorax,Nose,head,Head,head,Head,Head,Neck(head),Head,Head,Head1,head,Head_dome,head,Head1,Head,Head_jelly,head,Head,Head,head,Bottom_Head_Piece,head,Head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Right_Shroom,Left_Shroom" trans="Left_arm,Esmerald_22,Body 4,Esmerald_21,Esmerald_2,Esmerald_1,Top_Hat,Tail,Body 2,Body 3,Hat,Body,Body 1,Right_arm,Hat 1,Esmerald_12,Hat 2,Esmerald_11"/>
+  <phase type="Walking">
+   <part name="Nageoire droite">
+    <component length="15" name="Nageoire D" rotChange="0.0,-75.0,0.0," startKey="0"/>
+    <component length="15" name="Nageoire D*" rotChange="0.0,75.0,0.0," startKey="15"/>
+   </part>
+   <part name="Corps 2">
+    <component length="15" name="Queue 1" rotChange="51.55948072536745,0.0,0.0," rotOffset="0.5194807253674512,-0.0,-0.0," startKey="0"/>
+    <component length="15" name="Queue 1*" rotChange="-62.60999999999999,0.0,0.0," startKey="15"/>
+   </part>
+   <part name="Nageoire droite">
+    <component length="15" name="Nageoire G" rotChange="0.0,75.0,0.0," rotOffset="-0.0,-0.0,1.169590617183431," startKey="0"/>
+    <component length="15" name="Nageoire G*" rotChange="0.0,-75.0,0.0," startKey="15"/>
+   </part>
+   <part name="Tête 1">
+    <component length="30" name="Tête" posOffset="0.0,1.9,7.1," rotOffset="90.49,-0.0,-0.0," startKey="0"/>
+   </part>
+   <part name="Corps 1">
+    <component length="15" name="Corps" posChange="0.0,-5.0,0.0," rotOffset="-90.0,-0.0,-0.0," startKey="0"/>
+    <component length="15" name="Corps *" posChange="0.0,5.0,0.0," startKey="15"/>
+   </part>
+   <part name="Corps 3">
+    <component length="15" name="QUeue 2" posChange="0.0,0.5999999999999996,1.0," rotChange="47.12,0.0,0.0," startKey="0"/>
+    <component length="15" name="QUeue 2 *" posChange="0.0,-0.5999999999999996,-1.0," rotChange="-47.12,0.0,0.0," startKey="15"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

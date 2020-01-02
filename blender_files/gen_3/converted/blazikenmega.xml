@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Wooly_mane,Right_legChild,HeadChild,Left_legChild" head="head,head,Head,Head,head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Right_Shroom,Left_Shroom"/>
+  <phase type="Idle">
+   <part name="RightUpperArm">
+    <component length="12" name="RUA1" rotChange="0.0,-13.040000000000013,0.0," rotOffset="10.43,13.04,-17.699362361464352," startKey="0"/>
+    <component length="10" name="RUA2" rotChange="0.0,13.040000000000006,0.0," startKey="17"/>
+   </part>
+   <part name="Head1">
+    <component length="10" name="H1" rotOffset="-13.04,-0.0,-0.0," startKey="0"/>
+   </part>
+   <part name="LeftLowerArm">
+    <component length="10" name="LLA1" rotOffset="-5.22,64.09,-0.0," startKey="0"/>
+   </part>
+   <part name="LeftLowerLeg">
+    <component length="6" name="LLL1" rotChange="5.22,0.0,0.0," rotOffset="13.0,-0.0,-0.0," startKey="0"/>
+    <component length="6" name="LLL2" rotChange="7.819999999999998,0.0,0.0," startKey="6"/>
+    <component length="6" name="LLL3" rotChange="-10.430000000000005,0.0,0.0," startKey="15"/>
+    <component length="6" name="LLL4" rotChange="-2.6099999999999977,0.0,0.0," startKey="21"/>
+   </part>
+   <part name="LowBody">
+    <component length="12" name="B1" rotChange="2.6099999999999994,0.0,0.0," rotOffset="13.48,-0.0,-0.0," startKey="0"/>
+    <component length="12" name="B2" rotChange="-2.6099999999999994,0.0,0.0," startKey="15"/>
+   </part>
+   <part name="RightLowerArm">
+    <component length="10" name="RLA1" rotChange="0.0,0.0,7.105427357601002E-15," rotOffset="-0.0,47.48,-0.0," startKey="0"/>
+   </part>
+   <part name="RightUpperLeg">
+    <component length="10" name="RUL1" posOffset="0.0,1.5,0.0," rotOffset="103.17,-13.09,-0.0," startKey="0"/>
+   </part>
+   <part name="UpBody">
+    <component length="6" name="UB1" posChange="0.0,0.3,0.0," posOffset="-0.6,0.0,0.0," startKey="0"/>
+    <component length="6" name="UB2" posChange="0.0,0.5,0.0," startKey="6"/>
+    <component length="6" name="UB3" posChange="0.0,-0.5,0.0," startKey="15"/>
+    <component length="6" name="UB4" posChange="0.0,-0.10000000000000003,0.0," startKey="21"/>
+   </part>
+   <part name="RightLowerLeg">
+    <component length="10" name="RLL1" posOffset="0.5,0.0,-0.4," rotOffset="-114.83,-0.0,-0.0," startKey="0"/>
+   </part>
+   <part name="LeftUpperLeg">
+    <component length="6" name="LUL1" rotChange="-5.209999999999999,2.6099999999999994,10.439999999999998," rotOffset="-18.509999999999998,15.7,8.04," startKey="0"/>
+    <component length="6" name="LUL2" rotChange="-2.6100000000000003,2.5999999999999996,-7.105427357601002E-15," startKey="6"/>
+    <component length="6" name="LUL3" rotChange="5.209999999999999,-2.6099999999999994,-10.440000000000001," startKey="15"/>
+    <component length="6" name="LUL4" rotChange="2.6099999999999994,-2.5999999999999996,0.009999999999998899," startKey="21"/>
+   </part>
+   <part name="Hip">
+    <component length="6" name="Hip1" rotChange="0.0,0.0,-7.830000000000002," rotOffset="-0.0,31.3,-0.0," startKey="0"/>
+    <component length="6" name="Hip2" rotChange="0.0,0.0,7.830000000000002," startKey="6"/>
+    <component length="6" name="Hip3" rotChange="0.0,0.0,-2.610000000000003," startKey="15"/>
+    <component length="6" name="Hip4" rotChange="0.0,0.0,2.609999999999996," startKey="21"/>
+   </part>
+   <part name="LeftUpperArm">
+    <component length="12" name="LUA1" rotChange="-7.820000000000004,10.430000000000007,0.0," startKey="0"/>
+    <component length="10" name="LUA2" rotChange="7.820000000000004,-10.430000000000007,0.0," startKey="17"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

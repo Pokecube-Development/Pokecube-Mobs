@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <phase type="walking">
+   <part name="Tale">
+    <component length="10" name="1" rotChange="0.9999999999999982,0.0,0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="-1.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="Shape2">
+    <component length="10" name="1" rotChange="2.0,0.0,0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="-2.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="Shape2">
+    <component length="10" name="1" rotChange="-2.0,0.0,0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="2.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="Tale2">
+    <component length="10" name="1" rotChange="-3.0,0.0,0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="3.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="Shape2">
+    <component length="10" name="1" rotChange="2.0,0.0,0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="-2.0,0.0,0.0," startKey="10"/>
+   </part>
+  </phase>
+  <phase type="sleeping">
+  </phase>
+ </model>
+</ModelAnimator>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <phase type="idle">
+   <part name="headChild">
+    <component length="40" name="1" rotChange="0.0,-190.984214413642,0.0019961268878052607," rotOffset="-0.0,-0.0019961268878052607,0.004214413641998149," startKey="0"/>
+    <component length="40" name="2" rotChange="0.0,-180.0,0.0," startKey="40"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" shearable="Left_Shroom,Right_Shroom"/>
+  <phase type="wa">
+   <part name="rrll">
+    <component length="10" name="1" rotChange="-30.0,0.0,0.0," rotOffset="-20.0,-0.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="30.0,0.0,0.0," startKey="10"/>
+   </part>
+   <part name="rfll">
+    <component length="10" name="1" rotChange="30.0,0.0,0.0," rotOffset="20.0,-0.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="-30.0,0.0,0.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

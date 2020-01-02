@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" shearable="Right_Shroom,Left_Shroom"/>
+  <phase type="flight">
+   <part name="Left_wing_base">
+    <component length="10" name="leftwingup" rotChange="0.0,0.0,105.0," rotOffset="-0.0,70.0,-0.0," startKey="0"/>
+    <component length="10" name="leftwingdown" rotChange="0.0,0.0,-105.0," startKey="10"/>
+   </part>
+   <part name="Right_wing_base">
+    <component length="10" name="rightwingup" rotChange="0.0,0.0,-101.3," rotOffset="-0.0,-70.0,-0.0," startKey="0"/>
+    <component length="10" name="rightwingdown" rotChange="0.0,0.0,101.3," rotOffset="-0.0,3.700000000000003,-0.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

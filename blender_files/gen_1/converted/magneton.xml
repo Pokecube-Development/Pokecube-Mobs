@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <phase type="idle">
+   <part name="magnet2Left1">
+    <component length="10" name="1" rotChange="0.0,7.40623414685615E-6,-5.000000417413029," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,5.0," startKey="10"/>
+   </part>
+   <part name="magnet3Right1">
+    <component length="10" name="1" rotChange="0.0,-2.123357769789891E-5,5.000001042250528," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-5.0," startKey="10"/>
+   </part>
+   <part name="magnetRight1">
+    <component length="10" name="1" rotChange="0.0,-1.916894827758142E-6,5.000001042250528," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-5.0," startKey="10"/>
+   </part>
+   <part name="magnet3Left1">
+    <component length="10" name="1" rotChange="0.0,-2.1584174646704923E-5,-5.000000417413029," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,5.0," startKey="10"/>
+   </part>
+   <part name="magnetLeft1">
+    <component length="10" name="1" rotChange="0.0,1.916894827758142E-6,-5.000000417413029," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,5.0," startKey="10"/>
+   </part>
+   <part name="magnet2Right1">
+    <component length="10" name="1" rotChange="0.0,-1.0755794704664368E-5,5.000000417413029," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-5.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

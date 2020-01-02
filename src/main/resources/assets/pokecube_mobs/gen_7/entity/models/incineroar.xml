@@ -55,10 +55,10 @@
    </part>
   </phase>
   <phase type="walking">
-   <part name="body">
-    <component length="10" name="1" rotChange="0,-2,0," rotOffset="5,0,0," startKey="0"/>
-    <component length="10" name="2" rotChange="0,4,0," startKey="5"/>
-    <component length="10" name="3" rotChange="0,-2,0," startKey="10"/>
+   <part name="body1">
+    <component length="10" name="1" rotChange="0,-5,0," rotOffset="5,0,0," startKey="0"/>
+    <component length="10" name="2" rotChange="0,10,0," startKey="5"/>
+    <component length="10" name="3" rotChange="0,-5,0," startKey="10"/>
    </part>
    <part name="arm1">
     <component length="10" name="1" rotChange="0,30,0," rotOffset="0,0,-50," startKey="0"/>
@@ -66,7 +66,7 @@
     <component length="10" name="3" rotChange="0,30,0," startKey="15"/>
    </part>
    <part name="arm1_1">
-    <component length="1" name="1" rotOffset="0,-35,-10," startKey="0"/>
+    <component length="1" name="1" rotOffset="0,-25,-10," startKey="0"/>
    </part>
    <part name="hand1_001">
     <component length="1" name="1" rotOffset="-25,0,0," startKey="0"/>
@@ -77,7 +77,7 @@
     <component length="10" name="3" rotChange="0,30,0," startKey="15"/>
    </part>
    <part name="arm2_1">
-    <component length="1" name="1" rotOffset="0,35,10," startKey="0"/>
+    <component length="1" name="1" rotOffset="0,25,10," startKey="0"/>
    </part>
    <part name="hand2_001">
     <component length="1" name="1" rotOffset="-25,0,0," startKey="0"/>

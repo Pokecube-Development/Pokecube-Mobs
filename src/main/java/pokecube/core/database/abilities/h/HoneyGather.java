@@ -8,6 +8,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.PokecubeMod;
 import thut.api.maths.Vector3;
 
 public class HoneyGather extends Ability
@@ -32,11 +33,12 @@ public class HoneyGather extends Ability
     @Override
     public void onUpdate(IPokemob mob)
     {
-        double diff = (0.0002 * range * range);
+        double diff = (0.001 * range * range);
         diff = Math.min(0.5, diff);
-        if (Math.random() < 1 - diff) return;
-
         EntityLivingBase entity = mob.getEntity();
+        double randNum = Math.random();
+        if (randNum < 1 - diff || entity.getEntityWorld().isRemote) return;
+
         Vector3 here = Vector3.getNewVector().set(entity);
         Random rand = entity.getRNG();
 
@@ -49,16 +51,14 @@ public class HoneyGather extends Ability
         {
             IGrowable growable = (IGrowable) block;
             if (growable.canGrow(entity.getEntityWorld(), here.getPos(), here.getBlockState(entity.getEntityWorld()),
-                    entity.getEntityWorld().isRemote))
+                    false))
             {
-                if (!entity.getEntityWorld().isRemote)
+                if (PokecubeMod.debug) PokecubeMod.log("Honey Gather Bonemeal at: " + here.getPos());
+                if (growable.canUseBonemeal(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(),
+                        state))
                 {
-                    if (growable.canUseBonemeal(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(),
-                            state))
-                    {
-                        growable.grow(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(), state);
-                        return;
-                    }
+                    growable.grow(entity.getEntityWorld(), entity.getEntityWorld().rand, here.getPos(), state);
+                    return;
                 }
             }
         }

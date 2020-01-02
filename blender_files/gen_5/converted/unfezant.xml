@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata dyeable="Wooly_mane,Right_legChild,HeadChild,Left_legChild" head="Head,Head,Head,head,head,Head_Vert_1,head,Head,Head,Neck,Head,Head,shape2,head,Head,Head,Head,Head,Neck,Head,Head,head,Head,Head,head,Head,Head,neck(head),head,Head,Shield,Head,head,Head,head,Shield,Head,Mouth,Head,Neck,head,Thorax,Nose,head,Head,head,Head,Head,Neck(head),Head,Head1,head,head,Head1,Head,Head_jelly,head,Head,head,Bottom_Head_Piece,head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Right_Shroom,Left_Shroom" trans="Esmerald_22,Esmerald_21,Esmerald_2,Esmerald_1,Esmerald_12,Esmerald_11"/>
+  <phase type="flying">
+   <part name="Right_wing">
+    <component length="10" name="1" rotChange="0.0,-70.0,0.0," rotOffset="61.99999779155708,-14.000000104994276,-126.99999863585691," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,70.0,0.0," startKey="10"/>
+   </part>
+   <part name="Left_wing">
+    <component length="10" name="1" rotChange="0.0,70.0,0.0," rotOffset="-98.00000220844292,14.000000104994271,-53.000001364143074," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,-70.0,0.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>

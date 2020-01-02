@@ -137,6 +137,7 @@ public class PokecubeMobs implements IMobProvider
         ModPokecubeML.scanPaths.add("assets/pokecube_mobs/gen_5/entity/models/");
         ModPokecubeML.scanPaths.add("assets/pokecube_mobs/gen_6/entity/models/");
         ModPokecubeML.scanPaths.add("assets/pokecube_mobs/gen_7/entity/models/");
+		ModPokecubeML.scanPaths.add("assets/pokecube_mobs/gen_8/entity/models/");
         CommonProxy.registerModelProvider(MODID, this);
 
         ItemGenerator.variants.add("waterstone");
@@ -223,6 +224,10 @@ public class PokecubeMobs implements IMobProvider
         ItemGenerator.fossilVariants.add("tirtouga");
         ItemGenerator.fossilVariants.add("tyrunt");
         ItemGenerator.fossilVariants.add("amaura");
+		ItemGenerator.fossilVariants.add("dracozolt");
+		ItemGenerator.fossilVariants.add("arctozolt");
+		ItemGenerator.fossilVariants.add("dracovish");
+		ItemGenerator.fossilVariants.add("arctovish");
 
         MinecraftForge.EVENT_BUS.register(this);
         BerryHelper.initBerries();
@@ -307,6 +312,8 @@ public class PokecubeMobs implements IMobProvider
             return "gen_6/entity/models/";
         case 7:
             return "gen_7/entity/models/";
+		case 8:
+			return "gen_8/entity/models/";
         }
         return "entity/models/";
     }
@@ -388,6 +395,8 @@ public class PokecubeMobs implements IMobProvider
             return "gen_6/entity/textures/";
         case 7:
             return "gen_7/entity/textures/";
+		case 8:
+            return "gen_8/entity/textures/";
         }
         return "entity/textures/";
     }

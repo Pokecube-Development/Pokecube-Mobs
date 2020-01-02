@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelAnimator>
+ <model>
+  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
+  <metadata head="Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1"/>
+  <phase type="idle">
+   <part name="Right_wing_base">
+    <component length="10" name="1" rotOffset="-90.0,50.0,80.0," startKey="0"/>
+   </part>
+   <part name="Left_wing_base">
+    <component length="10" name="1" rotOffset="-90.0,-50.0,-80.00000041741302," startKey="0"/>
+   </part>
+   <part name="Right_wing_tip">
+    <component length="10" name="1" rotOffset="-0.0,172.34,-0.0," startKey="0"/>
+   </part>
+   <part name="Left_wing_tip">
+    <component length="10" name="1" rotOffset="-0.0,-172.0,-0.0," startKey="0"/>
+   </part>
+  </phase>
+  <phase type="flying">
+   <part name="Right_wing_base">
+    <component length="10" name="1" rotChange="0.0,0.0,-120.0," rotOffset="-0.0,-60.0,-0.0," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,120.0," startKey="10"/>
+   </part>
+   <part name="Left_wing_base">
+    <component length="10" name="1" rotChange="0.0,0.0,120.0," rotOffset="-0.0,60.0,-4.1741301970432687E-7," startKey="0"/>
+    <component length="10" name="2" rotChange="0.0,0.0,-120.0," startKey="10"/>
+   </part>
+  </phase>
+ </model>
+</ModelAnimator>
