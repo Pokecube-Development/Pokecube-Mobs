@@ -7933,7 +7933,7 @@
     "subtitle": "pkmn.chewtle.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/dubwool"
+        "name": "pokecube_mobs:mobs/chewtle"
       }
     ]
   },
@@ -8099,12 +8099,12 @@
       }
     ]
   },
-  "mobs.centiskroch": {
+  "mobs.centiskorch": {
     "category": "hostile",
-    "subtitle": "pkmn.centiskroch.name",
+    "subtitle": "pkmn.centiskorch.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/centiskroch"
+        "name": "pokecube_mobs:mobs/centiskorch"
       }
     ]
   },
