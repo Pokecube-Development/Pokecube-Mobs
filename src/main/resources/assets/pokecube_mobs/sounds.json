@@ -7933,7 +7933,7 @@
     "subtitle": "pkmn.chewtle.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/dubwool"
+        "name": "pokecube_mobs:mobs/chewtle"
       }
     ]
   },
@@ -8099,12 +8099,12 @@
       }
     ]
   },
-  "mobs.centiskroch": {
+  "mobs.centiskorch": {
     "category": "hostile",
-    "subtitle": "pkmn.centiskroch.name",
+    "subtitle": "pkmn.centiskorch.name",
     "sounds": [
       {
-        "name": "pokecube_mobs:mobs/centiskroch"
+        "name": "pokecube_mobs:mobs/centiskorch"
       }
     ]
   },
@@ -8468,12 +8468,30 @@
       }
     ]
   },
+  "mobs.zaciancrowned": {
+    "category": "hostile",
+    "subtitle": "pkmn.zaciancrowned.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zacians"
+      }
+    ]
+  },
   "mobs.zamazenta": {
     "category": "hostile",
     "subtitle": "pkmn.zamazenta.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/zamazenta"
+      }
+    ]
+  },
+  "mobs.zamazentacrowned": {
+    "category": "hostile",
+    "subtitle": "pkmn.zamazentacrowned.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zamazentas"
       }
     ]
   },
