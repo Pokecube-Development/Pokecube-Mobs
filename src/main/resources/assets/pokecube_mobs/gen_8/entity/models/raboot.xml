@@ -65,16 +65,16 @@
   </phase>
   <phase type="idle">
    <part name="arm1">
-    <component name="1" rotOffset="0,30,-60" length="1" startKey="0"/>
+    <component name="1" rotOffset="0,-30,-30" length="1" startKey="0"/>
    </part>
    <part name="arm1_1">
-    <component name="1" rotOffset="20,-110,0" length="1" startKey="0"/>
+    <component name="1" rotOffset="0,-10,-110" length="1" startKey="0"/>
    </part>
    <part name="arm2">
-    <component name="1" rotOffset="0,-30,60" length="1" startKey="0"/>
+    <component name="1" rotOffset="0,30,30" length="1" startKey="0"/>
    </part>
    <part name="arm2_1">
-    <component name="1" rotOffset="20,110,0" length="1" startKey="0"/>
+    <component name="1" rotOffset="0,10,110" length="1" startKey="0"/>
    </part>
    <part name="p1">
     <component length="20" name="1" rotChange="0,0,5" startKey="0"/>

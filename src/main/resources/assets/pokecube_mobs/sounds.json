@@ -8468,12 +8468,30 @@
       }
     ]
   },
+  "mobs.zaciancrowned": {
+    "category": "hostile",
+    "subtitle": "pkmn.zaciancrowned.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zacians"
+      }
+    ]
+  },
   "mobs.zamazenta": {
     "category": "hostile",
     "subtitle": "pkmn.zamazenta.name",
     "sounds": [
       {
         "name": "pokecube_mobs:mobs/zamazenta"
+      }
+    ]
+  },
+  "mobs.zamazentacrowned": {
+    "category": "hostile",
+    "subtitle": "pkmn.zamazentacrowned.name",
+    "sounds": [
+      {
+        "name": "pokecube_mobs:mobs/zamazentas"
       }
     ]
   },

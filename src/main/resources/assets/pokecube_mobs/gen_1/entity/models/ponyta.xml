@@ -7,7 +7,7 @@
    <part name="Head" tex="ponytahead"/>
    <animation diffs="0.39,0" part="Head" trigger="random:0.005:25"/>
    <part name="Flame" tex="flame"/>
-   <animation diffs="0,0, 0,0, 0,0, 0,0.335, 0,0.335, 0,0.335, 0,0.665, 0,0.665, 0,0.665" part="Flame" trigger="sequence"/>
+   <animation diffs="0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0.3, 0,0.3, 0,0.3, 0,0.3, 0,0.3, 0,0.3, 0,0.3, 0,0.65, 0,0.65, 0,0.65, 0,0.65, 0,0.65, 0,0.65, 0,0.65" part="Flame" trigger="sequence"/>
   </customTex>
   <phase type="sitting">
    <part name="body">
