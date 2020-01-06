@@ -11717,7 +11717,7 @@
 	{
       "name": "Eevee",
       "number": 133,
-      "starter": false,
+      "base": true,
       "stats": {
         "stats": {
           "values": {
