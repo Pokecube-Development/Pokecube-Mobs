@@ -8929,6 +8929,46 @@
         }
       }
     },
+	{
+      "name": "Kingler Gigantamax",
+      "number": 99,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "50",
+            "spatk": "50",
+            "def": "115",
+            "spd": "75",
+            "hp": "55",
+            "atk": "130"
+          }
+        },
+        "evs": {
+          "values": {
+            "atk": "2"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "2.0",
+            "width": "2.3",
+            "height": "5.3"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Water"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Hyper Cutter, Shell Armor",
+            "hidden": "Sheer Force"
+          }
+        },
+        "mass": 60.0
+      }
+    },
     {
       "name": "Voltorb",
       "number": 100,
