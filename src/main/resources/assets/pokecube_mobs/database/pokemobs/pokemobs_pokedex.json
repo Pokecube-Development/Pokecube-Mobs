@@ -2181,46 +2181,6 @@
       }
     },
 	{
-      "name": "Pikachu Ash",
-      "number": 25,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "50",
-            "spatk": "50",
-            "def": "40",
-            "spd": "90",
-            "hp": "35",
-            "atk": "55"
-          }
-        },
-        "evs": {
-          "values": {
-            "spd": "2"
-          }
-        },
-        "sizes": {
-          "values": {
-            "length": "0.4",
-            "width": "0.4",
-            "height": "0.4"
-          }
-        },
-        "types": {
-          "values": {
-            "type1": "Electric"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Static",
-            "hidden": "Lightningrod"
-          }
-        },
-        "mass": 6.0
-      }
-    },
-	{
       "name": "Pikachu Gigantamax",
       "number": 25,
       "stats": {
@@ -11757,7 +11717,7 @@
 	{
       "name": "Eevee",
       "number": 133,
-      "starter": true,
+      "starter": false,
       "stats": {
         "stats": {
           "values": {
