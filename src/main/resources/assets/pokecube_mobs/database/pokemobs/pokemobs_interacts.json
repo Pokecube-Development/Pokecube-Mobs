@@ -11258,7 +11258,7 @@
 		"megaRules": [
           {
             "name": "Zacian Crowned",
-            "move": "moonblast"
+            "item_preset": "rustedsword"
           }
         ]
       }
@@ -11278,13 +11278,7 @@
 	{
       "name": "Eternatus",
       "stats": {
-        "species": "Alien",
-		"megaRules": [
-          {
-            "name": "Eternatus Eternamax",
-            "item_preset": "rustedsword"
-          }
-        ]
+        "species": "Alien"
       }
     }
   ]
