@@ -2776,10 +2776,8 @@
         "spawnRules": [
           {
             "values": {
-              "types": "cold",
-              "min": "1",
-              "rate": "0.0",
-              "max": "1"
+              "types": "savanna",
+              "rate": "0.0"
             }
           }
         ]
@@ -2806,7 +2804,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "ruin",
+              "types": "forest",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6438,7 +6436,7 @@
         "spawnRules": [
           {
             "values": {
-              "types": "hills,mountain",
+              "types": "hills",
               "min": "1",
               "rate": "0.0",
               "max": "1"
@@ -6979,10 +6977,8 @@
         "spawnRules": [
           {
             "values": {
-              "types": "spooky",
-              "min": "1",
-              "rate": "0.0",
-              "max": "1"
+              "types": "forest",
+              "rate": "0.0"
             }
           }
         ]
@@ -7783,17 +7779,7 @@
       }
     },
     {
-      "name": "Cosmog",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "end",
-              "rate": "0.005"
-            }
-          }
-        ]
-      }
+      "name": "Cosmog"
     },
 	{
       "name": "Marshadow",
@@ -7886,169 +7872,37 @@
       }
     },
     {
-      "name": "Nihilego",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "spooky",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Nihilego"
     },
 	{
-      "name": "Buzzwole",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "forest",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Buzzwole"
     },
 	{
-      "name": "Pheromosa",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "sandy",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Pheromosa"
     },
 	{
-      "name": "Xurkitree",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "industrial",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Xurkitree"
     },
 	{
-      "name": "Celesteela",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "meteor",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Celesteela"
     },
 	{
-      "name": "Kartana",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "plains",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Kartana"
     },
 	{
-      "name": "Guzzlord",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "nether",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Guzzlord"
     },
 	{
-      "name": "Necrozma",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "end",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Necrozma"
     },
 	{
-      "name": "Poipole",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "end",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Poipole"
     },
 	{
-      "name": "Stakataka",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "hills",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Stakataka"
     },
 	{
-      "name": "Blacephalon",
-      "stats": {
-        "spawnRules": [
-          {
-            "values": {
-              "types": "village",
-              "min": "1",
-              "rate": "0.01",
-              "max": "1"
-            }
-          }
-        ]
-      }
+      "name": "Blacephalon"
     },
 	{
       "name": "Meltan",
