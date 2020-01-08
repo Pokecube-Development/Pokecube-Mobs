@@ -7872,37 +7872,137 @@
       }
     },
     {
-      "name": "Nihilego"
+      "name": "Nihilego",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub001",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Buzzwole"
+      "name": "Buzzwole",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub002",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Pheromosa"
+      "name": "Pheromosa",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub003",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Xurkitree"
+      "name": "Xurkitree",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub001",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Celesteela"
+      "name": "Celesteela",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub003",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Kartana"
+      "name": "Kartana",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub002",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Guzzlord"
+      "name": "Guzzlord",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub004",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
       "name": "Necrozma"
     },
 	{
-      "name": "Poipole"
+      "name": "Poipole",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub002",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Stakataka"
+      "name": "Stakataka",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub003",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
-      "name": "Blacephalon"
+      "name": "Blacephalon",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "biomes": "pokecube_legends:ub001",
+              "rate": "1"
+            }
+          }
+        ]
+      }
     },
 	{
       "name": "Meltan",
