@@ -65229,7 +65229,8 @@
         "mass": 1.8,
         "captureRate": 45,
         "baseFriendship": 0,
-        "expMode": "Slow"
+        "expMode": "Slow",
+		"movementType": "flying"
       },
       "moves": {
         "lvlupMoves": {
@@ -65291,7 +65292,8 @@
         "mass": 150.0,
         "captureRate": 45,
         "baseFriendship": 0,
-        "expMode": "Slow"
+        "expMode": "Slow",
+		"movementType": "flying"
       },
       "moves": {
         "lvlupMoves": {
