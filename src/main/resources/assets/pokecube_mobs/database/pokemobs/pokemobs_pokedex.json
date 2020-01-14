@@ -46577,6 +46577,46 @@
         }
       }
     },
+	{
+      "name": "Garbodor Gigantamax",
+      "number": 569,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "82",
+            "spatk": "60",
+            "def": "82",
+            "spd": "75",
+            "hp": "80",
+            "atk": "95"
+          }
+        },
+        "evs": {
+          "values": {
+            "atk": "2"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "3.9",
+            "width": "3.9",
+            "height": "5.9"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Poison"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Stench, Weak Armor",
+            "hidden": "Aftermath"
+          }
+        },
+        "mass": 307.3
+      }
+    },
     {
       "name": "Zorua",
       "number": 570,
