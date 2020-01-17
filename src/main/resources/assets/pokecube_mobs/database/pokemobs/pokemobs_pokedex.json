@@ -6820,7 +6820,7 @@
           }
         },
         "mass": 24.0,
-        "captureRate": 3,
+        "captureRate": 180,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Medium Fast",
@@ -6965,7 +6965,7 @@
           }
         },
         "mass": 80.0,
-        "captureRate": 3,
+        "captureRate": 60,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Medium Fast",
@@ -22098,7 +22098,7 @@
           }
         },
         "mass": 17.5,
-        "captureRate": 3,
+        "captureRate": 200,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Medium Fast",
@@ -22244,7 +22244,7 @@
           }
         },
         "mass": 32.5,
-        "captureRate": 3,
+        "captureRate": 80,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Medium Fast",
@@ -45168,7 +45168,7 @@
           }
         },
         "mass": 40.0,
-        "captureRate": 3,
+        "captureRate": 110,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Medium Slow",
@@ -45317,7 +45317,7 @@
           }
         },
         "mass": 120.0,
-        "captureRate": 3,
+        "captureRate": 55,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Medium Slow",
@@ -45438,7 +45438,7 @@
           }
         },
         "mass": 120.0,
-        "captureRate": 3,
+        "captureRate": 60,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Slow",
@@ -46017,7 +46017,7 @@
           }
         },
         "mass": 1.5,
-        "captureRate": 3,
+        "captureRate": 180,
         "baseExp": 270,
         "baseFriendship": 35,
         "expMode": "Medium Fast",

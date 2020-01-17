@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.arrokuda.name"
         }
       ]
     },
@@ -15,18 +15,18 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.arrokuda.name"
         }
       ]
     }
   },
   "criteria": {
-    "hatch_lumineon": {
+    "hatch_arrokuda": {
       "trigger": "pokecube:hatch",
       "conditions": {
-        "entry": "lumineon"
+        "entry": "arrokuda"
       }
     }
   },
-  "parent": "pokecube_mobs:hatch/hatch_finneonfemale"
+  "parent": "pokecube_mobs:hatch/root"
 }

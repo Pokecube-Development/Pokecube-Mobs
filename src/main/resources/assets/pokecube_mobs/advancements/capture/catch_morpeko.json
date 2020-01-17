@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.morpeko.name"
         }
       ]
     },
@@ -15,19 +15,19 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.morpeko.name"
         }
       ]
     }
   },
   "criteria": {
-    "catch_lumineon": {
+    "catch_morpeko": {
       "trigger": "pokecube:catch",
       "conditions": {
         "lenient": true,
-        "entry": "lumineon"
+        "entry": "morpeko"
       }
     }
   },
-  "parent": "pokecube_mobs:capture/catch_finneonfemale"
+  "parent": "pokecube_mobs:capture/get_first_pokemob"
 }

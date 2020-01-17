@@ -7816,7 +7816,7 @@
             "values": {
               "types": "hills",
               "min": "1",
-              "rate": "0.002",
+              "rate": "0.08",
               "max": "1"
             }
           }
@@ -7903,7 +7903,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub002",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -7916,7 +7916,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub003",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -7929,7 +7929,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub001",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -7942,7 +7942,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub003",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -7955,7 +7955,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub002",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -7968,7 +7968,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub004",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -7996,7 +7996,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub002",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -8009,7 +8009,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub003",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]
@@ -8022,7 +8022,7 @@
           {
             "values": {
               "biomes": "pokecube_legends:ub001",
-              "rate": "1"
+              "rate": "0.5"
             }
           }
         ]

@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.catch",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.corvisquire.name"
         }
       ]
     },
@@ -15,19 +15,19 @@
       "translate": "achievement.pokecube.catch.desc",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.corvisquire.name"
         }
       ]
     }
   },
   "criteria": {
-    "catch_lumineon": {
+    "catch_corvisquire": {
       "trigger": "pokecube:catch",
       "conditions": {
         "lenient": true,
-        "entry": "lumineon"
+        "entry": "corvisquire"
       }
     }
   },
-  "parent": "pokecube_mobs:capture/catch_finneonfemale"
+  "parent": "pokecube_mobs:capture/catch_rookidee"
 }

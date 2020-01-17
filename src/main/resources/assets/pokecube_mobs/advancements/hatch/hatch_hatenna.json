@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.hatenna.name"
         }
       ]
     },
@@ -15,18 +15,18 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.hatenna.name"
         }
       ]
     }
   },
   "criteria": {
-    "hatch_lumineon": {
+    "hatch_hatenna": {
       "trigger": "pokecube:hatch",
       "conditions": {
-        "entry": "lumineon"
+        "entry": "hatenna"
       }
     }
   },
-  "parent": "pokecube_mobs:hatch/hatch_finneonfemale"
+  "parent": "pokecube_mobs:hatch/root"
 }

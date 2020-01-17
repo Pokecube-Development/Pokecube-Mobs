@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.hatch",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.toxel.name"
         }
       ]
     },
@@ -15,18 +15,18 @@
       "translate": "achievement.pokecube.hatch.desc",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.toxel.name"
         }
       ]
     }
   },
   "criteria": {
-    "hatch_lumineon": {
+    "hatch_toxel": {
       "trigger": "pokecube:hatch",
       "conditions": {
-        "entry": "lumineon"
+        "entry": "toxel"
       }
     }
   },
-  "parent": "pokecube_mobs:hatch/hatch_finneonfemale"
+  "parent": "pokecube_mobs:hatch/root"
 }

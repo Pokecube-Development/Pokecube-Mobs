@@ -7,7 +7,7 @@
       "translate": "achievement.pokecube.kill",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.boltund.name"
         }
       ]
     },
@@ -15,19 +15,19 @@
       "translate": "achievement.pokecube.kill.desc",
       "with": [
         {
-          "translate": "pkmn.lumineon.name"
+          "translate": "pkmn.boltund.name"
         }
       ]
     }
   },
   "criteria": {
-    "kill_lumineon": {
+    "kill_boltund": {
       "trigger": "pokecube:kill",
       "conditions": {
         "lenient": true,
-        "entry": "lumineon"
+        "entry": "boltund"
       }
     }
   },
-  "parent": "pokecube_mobs:kill/kill_finneonfemale"
+  "parent": "pokecube_mobs:kill/kill_yamper"
 }
