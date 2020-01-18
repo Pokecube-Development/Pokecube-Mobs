@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ModelAnimator>
- <model>
-  <phase name="global" offset="0,0,0" rotation="1,0,0,0" scale="1.0"/>
-  <metadata dyeable="Right_legChild,HeadChild,Wooly_mane,Left_legChild" head="Head,Head,head,head,head,Head,Head,Neck,Head,shape2,head,head,Head,Head,Head,Head,head,Head,head,neck(head),head,Head,Head,Head,Shield,head,head,Shield,Head,Mouth,Neck,head,head,Neck(head),Head,Head1,head,Head_dome,Head1,Head,Head_jelly,head,Head,Bottom_Head_Piece,Head,Head,Head,Head,Head,Head_Vert_1,Head,Head,Head,Head,Head,Neck,Neck,Head,Head,head,Head,Body,Head,Head,Head,Thorax,Nose,Head,head,Head,Head,Head,head,Head,head,head,Head,Head" headAxis="1" headAxis2="0" headCap="-60,60" headDir="1" horn2="shape15" shearable="Left_Shroom,Right_Shroom" trans="Esmerald_22,Body 4,Esmerald_21,Esmerald_2,Top_Hat,Tail,Body 2,Body,Right_arm,Esmerald_12,Esmerald_11,Left_arm,Esmerald_1,Body 3,Hat,Body 1,Hat 1,Hat 2"/>
- </model>
-</ModelAnimator>
